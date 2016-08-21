@@ -1,0 +1,23 @@
+{
+  "name": "compsoc-website",
+  "version": "0.0.1",
+  "description": "The Durham University Computing Society Website",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ducompsoc/website.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ducompsoc/website/issues"
+  },
+  "homepage": "https://github.com/ducompsoc/website#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0"
+  }
+}
