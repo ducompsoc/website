@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ducompsoc/website#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6"
   }
 }
