@@ -1,0 +1,19 @@
+body {
+    font-family: 'Jura', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    padding: 15px .5em;
+}
+
+.navbar-toggle {
+    margin-right: .5em;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top {
+    position: relative;
+    margin-bottom: 0px;
+}
+
