@@ -1,0 +1,91 @@
+//-
+   Created by Alistair on 28/08/2016.
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title= "DU CompSoc Home"
+        //- Bootstrap
+        link(href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+        link(href="/indexStyle.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Jura:400,600|Raleway" rel="stylesheet")
+    body
+
+        //- Content wrapped for sticky footer
+        .wrapper
+
+            nav.navbar.navbar-inverse.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="#") Durham University CompSoc
+
+                    div#navbar.navbar-collapse.collapse
+                        form.navbar-form.navbar-right
+                            div.form-group
+                                input.form-control(type="text" placeholder="Email")
+                                input.form-control(type="password" placeholder="Password")
+                                button.btn.btn-success(type="submit") Sign in
+
+
+
+            //- Main jumbotron for a primary marketing message or call to action
+            div.jumbotron
+                 div.container
+                     h1 Hello, world!
+                     p Welcome to the Durham University Computing Society.
+                     p
+                        a.btn.btn-primary.btn-lg(href="#" role="button") Learn more &raquo;
+
+
+
+            div.container
+                //- Example row of columns
+                div.row
+                    div.col-md-3
+                        h2 The Team
+                        p Click to know the Who's Who of CompSoc.
+                        p
+                            a.btn.btn-default(href="#" role="button") View details &raquo;
+
+                    div.col-md-3
+                        h2 What's On
+                        p Click to know what's happening in CompSoc, our past events and upcoming events.
+                        p
+                            a.btn.btn-default(href="#" role="button") View details &raquo;
+
+                    div.col-md-3
+                        h2 Our Sponsors
+                        p They help us run smoothly and happily :) Click to know more.
+                        p
+                            a.btn.btn-default(href="#" role="button") View details &raquo;
+
+                    div.col-md-3
+                        h2 Say Hi To Us!
+                        p.
+                            Click to get in touch with us by email, social media or leave your valuable feedback and
+                            suggestions.
+                        p
+                            a.btn.btn-default(href="#" role="button") View details &raquo;
+
+
+
+            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
+
+
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
+
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
