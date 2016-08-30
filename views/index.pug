@@ -1,16 +1,14 @@
 //-
    Created by Alistair on 28/08/2016.
+
+//- See head.pug for CSS imports and such
+include ./partials/head.pug
+
 doctype html
 html(lang="en")
-    head
-        meta(charset="utf-8")
-        meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1")
-        title= "DU CompSoc Home"
-        //- Bootstrap
-        link(href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
-        link(href="/indexStyle.css" rel="stylesheet")
-        link(href="https://fonts.googleapis.com/css?family=Jura:400,600|Raleway" rel="stylesheet")
+
+    //- Add the header with page title DU CompSoc - Homepage
+    +head("Homepage")
     body
 
         //- Content wrapped for sticky footer
