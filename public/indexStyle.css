@@ -43,6 +43,24 @@ object {
     }
 }
 
+@media (max-width: 426px) {
+    .banner-container {
+        position: relative;
+        overflow: hidden;
+        height: 140px;
+    }
+    .banner {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        height: 200px;
+        width: auto;
+    }
+}
+
 .form-control {
     margin-bottom: 0.5em;
 }
