@@ -41,6 +41,24 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
+app.get('/team', function (req, res) {
+    res.render('team');
+});
+
+app.get('/events', function (req, res) {
+    res.render('events');
+});
+
+app.get('/sponsors', function (req, res) {
+    res.render('sponsors');
+});
+
+app.get('/contact', function (req, res) {
+    res.render('contact');
+});
+
+
+
 // Start listening on port 3000 -- if running locally navigate to localhost:3000 in a browser to see the results!
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
