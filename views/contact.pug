@@ -1,0 +1,74 @@
+//- Created by Soumya on 01-09-2016
+
+//- See head.pug for css imports etc.
+include ./partials/head.pug
+
+doctype(html)
+html(lang="en")
+
+    //- add the header with page title DU Compsoc- Contact Us
+    +head("Contact Us")
+
+    body
+        //- content wrapped for sticky footer
+        .wrapper
+
+            nav.navbar.navbar-inverse.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="#") Durham University CompSoc
+                    div#navbar.navbar-collapse.collapse
+                        form.navbar-form.navbar-right
+                            div.form-group
+                                input.form-control(type="text" placeholder="Email")
+                                input.form-control(type="text" placeholder="Password")
+                                button.btn.btn-success(type="submit") Sign in
+            //- main jumbotron
+            div.jumbotron
+                 div.container
+                      h1 Say Hi To Us!
+                      p Wanna join us? Welcome, with open arms :)
+                      p Like Us? Have any valuable suggestions? We're all ears!
+
+            div.container
+                 //- row contains four columns, each with a description
+                 div.row
+                      div.col-md-3
+                          h2 Join Us
+                          p Whether you're a cyber genius or have never touched the keyboard, we welcome everyone.
+                          form.form-group
+                              input.form-control(type="text" placeholder="Name")
+                              input.form-control(type="text" placeholder="Email")
+                              input.form-control(type="text" placeholder="Password")
+                              button.btn.btn-success(type="submit") Register
+                      div.col-md-3
+                          h2 Drop us a mail
+                          p compsoc@durham.ac.uk
+                      div.col-md-3
+                          h2 We're social !
+                          p Like us on <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts">Facebook </a>
+                          p Follow Us on Twitter
+                      div.col-md-3
+                          h2 We value your opinion
+                          p Leave your comments/feedback/suggestions below.
+                          form.form-group
+                              input.form-control(type="text" placeholder="Name")
+                              input.form-control(type="text" placeholder="Comments")
+                              button.btn.btn-success(type="submit") Submit
+
+            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&1q=1
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
+
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
