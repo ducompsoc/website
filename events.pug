@@ -1,0 +1,60 @@
+//- Created by Soumya on 01-09-2016
+
+//- See head.pug for css imports etc.
+include ./partials/head.pug
+
+doctype(html)
+html(lang="en")
+
+    //- add the header with page title DU Compsoc- Events
+    +head("Events")
+    body
+        //- content wrapped for sticky footer
+        .wrapper
+
+            nav.navbar.navbar-inverse.navbar-fixed-top
+              .container
+                .navbar-header
+                    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar")
+                        span.sr-only Toggle navigation
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href="#") Durham University CompSoc
+
+                div#navbar.navbar-collapse.collapse
+                    form.navbar-form.navbar-right
+                        div.form-group
+                            input.form-control(type="text" placeholder="Email")
+                            input.form-control(type="text" placeholder="Password")
+                            button.btn.btn-success(type="submit") Sign in
+            //- main jumbotron
+            div.jumbotron
+                div.container
+                    h1 What's On
+                    p We feature tech-events all the year round, from tech-talks to hackathons. So you can have a glimpse inside the life of a techie or meet new people and build some awesome stuff.
+                    p Take a look at what we've done so far and what's coming in.
+
+            div.container
+                //- row contains two columns, each with a description
+                div.row
+                     div.col-md-6
+                        h2 What We've Done!
+                        p Here's all events we've conducted in the past.
+
+                     div.col-md-6
+                        h2 What Next?
+                        p Mark your calendars for the upcoming events!
+
+
+            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&1q=1
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
+
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
