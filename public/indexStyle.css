@@ -1,0 +1,65 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jura', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    padding: 15px .5em;
+}
+
+.navbar-toggle {
+    margin-right: .5em;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top {
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.footer {
+    background-color: #eee;
+    display: flex;
+    height: 3em;
+}
+
+/* Specific stylings for large screens */
+@media (min-width: 768px) {
+    .navbar-form .form-control {
+        margin-right: 0.5em;
+        margin-bottom: 0em;
+    }
+}
+
+.form-control {
+    margin-bottom: 0.5em;
+}
+
+.col-md-3 {
+    margin: 2em 0em;
+}
+
+/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1 */
+* {
+    margin: auto;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -3em; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+    height: 3em; /* .push must be the same height as .footer */
+}
