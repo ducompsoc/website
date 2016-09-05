@@ -1,0 +1,105 @@
+//about page
+//created by Soumya on 30-08-2016
+include ./partials/head.pug
+
+doctype html
+html(lang="en")
+
+    //header with page title About-DU CompSoc
+    +head("About")
+    body
+
+        //content wrapped for sticky footer
+        .wrapper
+
+            nav.navbar.navbar-inverse.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar")
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.navbar-brand(href="#") Durham University CompSoc
+                    div#navbar.navbar-collapse.collapse
+                        form.navbar-form.navbar-right
+                            div.form-group
+                                input.form-control(type="text" placeholder="Email")
+                                input.form-control(type="password" placeholder="Password")
+                                button.btn.btn-success(type="submit") Sign in
+
+
+            // Main jumbotron
+            div.jumbotron
+                 div.container
+                      h1 About Us
+                      p Let us introduce ourselves
+
+            div.container
+                  div.row
+                      div.col-md-6
+                          br
+                          br
+                          p
+                          p We’re Durham University’s Computing Society – run entirely by students. The university might be very old, but we’re young ! And we look for passionate problem solvers to come together, do stuff and participate in really cool hack-a-thons and tech-events all the year round.
+                          p Click around to know more about us.
+
+                            //images carousel (next to the description)
+
+                      div.col-md-6
+                          #carousel-images.carousel.slide(data-ride=carousel)
+                              ol.carousel-indicators
+                                  li.active(data-target="#carousel-images" data-slide-to="0")
+                                  li(data-target="#carousel-images" data-slide-to="1")
+                                  li(data-target="#carousel-images" data-slide-to="2")
+                                  li(data-target="#carousel-images" data-slide-to="3")
+
+                              div.carousel-inner(role="listbox")
+                                  div.item.active
+                                      img(src="#" alt="img1" width="555" height="345")
+                                  div.item
+                                      img(src="#" alt="img2" width="555" height="345")
+                                  div.item
+                                      img(src="#" alt="img3" width="555" height="345")
+                                  div.item
+                                      img(src="#" alt="img4" width="555" height="345")
+
+                                  //left and right controls
+
+                              a.left.carousel-control(href="#carousel-images" role="button" data-slide="prev")
+                                  span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+                                  span.sr-only Previous
+                              a.right.carousel-control(href="#carousel-images" role="button" data-slide="next")
+                                  span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+                                  span.sr-only Next
+                  div.row
+                      div.col-md-3
+                          h2 The Team
+                          p Click to know the Who's Who of CompSoc.
+                          p
+                              a.btn.btn-default(href="#" role="button") View details &raquo;
+                      div.col-md-3
+                          h2 What's On
+                          p Click to know what's happening in CompSoc, our past events and upcoming events.
+                          p
+                              a.btn.btn-default(href="#" role="button") View details &raquo;
+                      div.col-md-3
+                          h2 Our Sponsors
+                          p They help us run smoothly and happily :) Click to know more.
+                          p
+                              a.btn.btn-default(href="#" role="button") View details &raquo;
+                      div.col-md-3
+                          h2 Say Hi To Us!
+                          p  Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
+                          p
+                              a.btn.btn-default(href="#" role="button") View details &raquo;
+            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
+
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
