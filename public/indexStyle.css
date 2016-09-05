@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Jura', sans-serif;
 }
 
+object {
+    width: 100%;
+}
+
 .navbar-brand {
     font-family: 'Jura', sans-serif;
     font-weight: 600;
@@ -36,6 +40,24 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-form .form-control {
         margin-right: 0.5em;
         margin-bottom: 0em;
+    }
+}
+
+@media (max-width: 426px) {
+    .banner-container {
+        position: relative;
+        overflow: hidden;
+        height: 140px;
+    }
+    .banner {
+        position: absolute;
+        top: -9999px;
+        bottom: -9999px;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        height: 200px;
+        width: auto;
     }
 }
 
