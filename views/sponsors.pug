@@ -2,53 +2,40 @@
 
 //- See head.pug for css imports etc.
 include ./partials/head.pug
+include ./partials/nav.pug
 
 doctype(html)
 html(lang="en")
 
-  //- add the header with page title DU Compsoc- Sponsors
-  +head("Sponsors")
-  body
-    //- content wrapped for sticky footer
-    .wrapper
+    //- add the header with page title DU Compsoc- Sponsors
+    +head("Sponsors")
+    body
+        //- content wrapped for sticky footer
+        .wrapper
 
-      nav.navbar.navbar-inverse.navbar-fixed-top
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar")
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a.navbar-brand(href="#") Durham University CompSoc
-          div#navbar.navbar-collapse.collapse
-            form.navbar-form.navbar-right
-              div.form-group
-                input.form-control(type="text" placeholder="Email")
-                input.form-control(type="text" placeholder="Password")
-                button.btn.btn-success(type="submit") Sign in
-      //- main jumbotron
-      div.jumbotron
-        div.container
-          h1 Our Sponsors
-          p Here's a big thank you to all who help us grow :)
+            +nav
 
-      div.container
-        //- contains pictures of our sponsors which act as links to their official websites.
-        div.row
-            h2 Meet our sponsors
-            //add another row with appropriate number of columns acc to number of sponsors
-            //images of sponsors act as links to their websites
+            //- main jumbotron
+            div.jumbotron
+                div.container
+                    h1 Our Sponsors
+                    p Here's a big thank you to all who help us grow :)
+
+            div.container
+                //- contains pictures of our sponsors which act as links to their official websites.
+                div.row
+                    h2 Meet our sponsors
+                    //add another row with appropriate number of columns acc to number of sponsors
+                    //images of sponsors act as links to their websites
 
 
-      //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&1q=1
-      .push
-    .footer
-      div &copy; 2016 Durham University CompSoc
+            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&1q=1
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
 
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-    //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
 
-    //- Include all compiled plugins (below), or include individual files as needed
-    script(src="/bootstrap/dist/js/bootstrap.min.js")
+        //- Include all compiled plugins (below), or include individual files as needed
+        script(src="/bootstrap/dist/js/bootstrap.min.js")

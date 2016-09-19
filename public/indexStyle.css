@@ -31,16 +31,16 @@ object {
      border-bottom-width: 0px;
 }
 
+.nav.navbar-nav {
+    font-weight: 600;
+}
+
 .banner-container {
     height: 150px;
 }
 
 .banner-container > object {
     height: 150px;
-}
-
-.nav.navbar-nav {
-    font-weight: 600;
 }
 
 .fa {
