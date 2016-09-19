@@ -10,74 +10,7 @@ object {
     width: 100%;
 }
 
-.navigation {
-    height: 50px;
-    background-color: #2c2c2c;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-}
-
-.navigation-brand {
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #eee;
-    flex-basis: 334px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-.navigation-links {
-    flex: 0 420px;
-    display: flex;
-    display: -webkit-flex;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: snow;
-    list-style: none;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    align-items: center;
-    -webkit-align-items: center;
-    margin-bottom: 0;
-    padding-left: 0;
-    margin-left: auto;
-    margin-right: 0.5em;
-}
-
-.navigation-link {
-
-}
-
-.navigation-logo {
-    display: none;
-    width: 45px;
-    flex: 0 45px;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-.navigation-mobile-text {
-    display: none;
-    flex: auto;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    font-family: 'Jura', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #eee;
-    text-align: center;
-}
-
-.navigation-expand-links > i {
-    padding: 0.5em;
-    font-size: x-large;
-}
-
-/*.navbar-brand {
+.navbar-brand {
     font-family: 'Jura', sans-serif;
     font-weight: 600;
     padding: 15px .5em;
@@ -85,6 +18,11 @@ object {
 
 .navbar-toggle {
     margin-right: .5em;
+}
+
+.navbar-header > button {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top {
@@ -95,7 +33,15 @@ object {
 
 .nav.navbar-nav {
     font-weight: 600;
-}*/
+}
+
+.banner-container {
+    height: 150px;
+}
+
+.banner-container > object {
+    height: 150px;
+}
 
 .fa {
     color: #95c5cd;
@@ -109,36 +55,6 @@ object {
     background-color: #eee;
     display: flex;
     height: 3em;
-}
-
-@media (max-width: 844px) {
-    .banner-container {
-        position: relative;
-        overflow: hidden;
-        height: 130px;
-    }
-    .banner {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        height: 270px;
-        width: auto;
-    }
-    .navigation-brand {
-        display: none;
-    }
-    .navigation-logo {
-        display: block;
-    }
-    .navigation-links {
-        display: none;
-    }
-    .navigation-mobile-text {
-        display: block;
-    }
 }
 
 .form-control {

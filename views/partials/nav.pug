@@ -1,53 +1,24 @@
 
 mixin nav
 
-    .navigation
-        //- Desktop
-        .navigation-brand Durham University CompSoc
-        //- Mobile
-        object.navigation-logo(data="../img/ComputerIconNoTextBlue.svg" type="image/svg+xml")
-        .navigation-mobile-text DU CompSoc
-        .navigation-expand-links
-            span.sr-only Toggle navigation
-            i.fa.fa-bars(aria-hidden="true")
+    nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar")
+                    span.sr-only Toggle navigation
+                    i.fa.fa-bars(aria-hidden="true")
+                a.navbar-brand(href="/") Durham University CompSoc
 
-
-        ul.navigation-links
-            li.navigation-link
-                a(href="about") About
-            li.navigation-link
-                a(href="events") Events
-            li.navigation-link
-                a(href="sponsors") Sponsors
-            li.navigation-link
-                a(href="team") Team
-            li.navigation-link
-                a(href="contact") Contact
-
-    //nav.navbar.navbar-inverse.navbar-fixed-top
-    //    .container
-    //        .navbar-header
-    //            button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
-    //            aria-expanded="false" aria-controls="navbar")
-    //                span.sr-only Toggle navigation
-    //                i.fa.fa-bars(aria-hidden="true")
-    //            a.navbar-brand(href="/") Durham University CompSoc
-    //
-    //        div#navbar.navbar-collapse.collapse
-    //            ul.nav.navbar-nav
-    //                li
-    //                    a(href="about") About
-    //                li
-    //                    a(href="events") Events
-    //                li
-    //                    a(href="sponsors") Sponsors
-    //                li
-    //                    a(href="team") Team
-    //                li
-    //                    a(href="contact") Contact
-
-                //form.navbar-form.navbar-right
-                //    div.form-group
-                //        input.form-control(type="text" placeholder="Email")
-                //        input.form-control(type="password" placeholder="Password")
-                //        button.btn.btn-success(type="submit") Sign in
+            div#navbar.navbar-collapse.collapse.navbar-right
+                ul.nav.navbar-nav
+                    li
+                        a(href="about") About
+                    li
+                        a(href="events") Events
+                    li
+                        a(href="sponsors") Sponsors
+                    li
+                        a(href="team") Team
+                    li
+                        a(href="contact") Contact
