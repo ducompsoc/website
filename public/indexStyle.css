@@ -20,9 +20,31 @@ object {
     margin-right: .5em;
 }
 
+.navbar-header > button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
 .navbar.navbar-inverse.navbar-fixed-top {
-    position: relative;
-    margin-bottom: 0px;
+     position: relative;
+     margin-bottom: 0px;
+     border-bottom-width: 0px;
+}
+
+.banner-container {
+    height: 150px;
+}
+
+.banner-container > object {
+    height: 150px;
+}
+
+.nav.navbar-nav {
+    font-weight: 600;
+}
+
+.fa {
+    color: #95c5cd;
 }
 
 .jumbotron {
@@ -33,32 +55,6 @@ object {
     background-color: #eee;
     display: flex;
     height: 3em;
-}
-
-/* Specific stylings for large screens */
-@media (min-width: 768px) {
-    .navbar-form .form-control {
-        margin-right: 0.5em;
-        margin-bottom: 0em;
-    }
-}
-
-@media (max-width: 426px) {
-    .banner-container {
-        position: relative;
-        overflow: hidden;
-        height: 140px;
-    }
-    .banner {
-        position: absolute;
-        top: -9999px;
-        bottom: -9999px;
-        left: -9999px;
-        right: -9999px;
-        margin: auto;
-        height: 200px;
-        width: auto;
-    }
 }
 
 .form-control {
