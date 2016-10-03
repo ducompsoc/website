@@ -27,6 +27,9 @@ html(lang="en")
                         h2 Do you love technology? Programming? Or just want to learn something new?
                         h3 CompSoc runs talks, hackathons and workshops for its members throughout the year -- all with free pizza courtesy of ScottLogic!
                         h3 Join today to be notified of upcoming events.
+                        //- Dirty dirty hack
+                        h3.hiredGradButton
+                            a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
 
 
             div.container
@@ -58,14 +61,12 @@ html(lang="en")
                         p
                             a.btn.btn-default(href="#" role="button") View details &raquo;
 
-
-
             //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
             .push
         .footer
             div &copy; 2016 Durham University CompSoc
 
-
+        #hiredgrad-signup
 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
         //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
@@ -73,3 +74,6 @@ html(lang="en")
         //- Include all compiled plugins (below), or include individual files as needed
         script(src="/bootstrap/dist/js/bootstrap.min.js")
         script(src="/js/index.js")
+
+        //- HiredGrad
+        script(src="http://hiredgrad.com/rest/resources/society/js/57e3b53ce4b0db35d5037a80/branded")

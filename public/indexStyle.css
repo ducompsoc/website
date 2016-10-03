@@ -101,3 +101,7 @@ html, body {
 .push {
     height: 3em; /* .push must be the same height as .footer */
 }
+
+.hiredGradButton {
+    text-align: center;
+}

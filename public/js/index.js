@@ -12,23 +12,24 @@ $(window).resize(function () {
     }
 });
 
-$(window).load(function() {
+$(document).ready(function() {
     var windowWidth = $(window).width();
-    if(windowWidth > 768) {
-        resizeGT768();
-    }
-    else if(windowWidth < 769) {
-        resizeLTE768(windowWidth);
-    }
 
     var a = document.getElementsByClassName("banner")[0];
 
-    a.addEventListener("load",function(){
+    a.addEventListener("load", function(){
         // get the inner DOM of alpha.svg
         var svgDoc = a.contentDocument;
         // get the inner element by id
         var delta = svgDoc.getElementById("Layer_1");
         delta.setAttribute("viewBox", "105 35 210 70");
+
+        if(windowWidth > 768) {
+            resizeGT768();
+        }
+        else if(windowWidth < 769) {
+            resizeLTE768(windowWidth);
+        }
     });
 });
 
