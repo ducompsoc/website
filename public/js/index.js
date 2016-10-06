@@ -10,10 +10,9 @@ $(window).resize(function () {
     else if(windowWidth < 769) {
         resizeLTE768(windowWidth);
     }
-});
+}).resize();
 
 $(document).ready(function() {
-    var windowWidth = $(window).width();
 
     var a = document.getElementsByClassName("banner")[0];
 
@@ -23,6 +22,8 @@ $(document).ready(function() {
         // get the inner element by id
         var delta = svgDoc.getElementById("Layer_1");
         delta.setAttribute("viewBox", "105 35 210 70");
+
+        var windowWidth = $(window).width();
 
         if(windowWidth > 768) {
             resizeGT768();
