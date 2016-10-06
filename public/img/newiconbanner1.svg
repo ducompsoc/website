@@ -24,7 +24,7 @@
      id="metadata295"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs293"/>
+     id="defs293"><style type="text/css">@import url('//fonts.googleapis.com/css?family=Jura:400,600');</style></defs>
      <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -605,25 +605,23 @@
        style="fill:#95c5cd" /></g><g
      id="g4678"
      transform="matrix(1.0007458,0,0,1.0324941,-1.0130364e-5,-8.3723097)"><text
-       sodipodi:linespacing="125%"
        y="78.479698"
-       x="133.9843"
+       x="210"
        font-size="34.7249"
        id="text285"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.72500229px;line-height:125%;font-family:Jura;-inkscape-font-specification:'Jura, Semi-Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">COMPSOC</text>
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:34.72500229px;line-height:125%;font-family:Jura;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff">COMPSOC</text>
 <text
-       sodipodi:linespacing="125%"
        y="94.797089"
-       x="134.66557"
+       x="210"
        font-size="8.0252"
        id="text287"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.02524948px;line-height:125%;font-family:Jura;-inkscape-font-specification:'Jura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff">{DURHAM UNIVERSITY COMPUTING SOCIETY}</text
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:8.02524948px;line-height:125%;font-family:Jura;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffffff">{DURHAM UNIVERSITY COMPUTING SOCIETY}</text
        >
 <line
        stroke-miterlimit="10"
-       x1="135.15948"
-       y1="84.095009"
-       x2="284.52753"
-       y2="84.095009"
+       x1="135"
+       y1="84"
+       x2="285"
+       y2="84"
        id="line289"
        style="clip-rule:evenodd;fill:#95c5cd;fill-rule:evenodd;stroke:#95c5cd;stroke-width:1.96754348;stroke-miterlimit:10" /></g></svg>
