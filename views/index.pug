@@ -1,82 +1,58 @@
 //-
    Created by Alistair on 28/08/2016.
 
-//- See head.pug for CSS imports and such
-include ./partials/head.pug
-include ./partials/nav.pug
+extends templates/marginals.pug
 
-doctype html
-html(lang="en")
+block title
+    title Homepage - DU CompSoc
+    
+block content
+    //- Main jumbotron for a primary marketing message or call to action
+    .banner-container
+        object.banner(data="../img/newiconbanner1.svg" type="image/svg+xml")
 
-    //- Add the header with page title DU CompSoc - Homepage
-    +head("Homepage")
-    body
-
-        //- Content wrapped for sticky footer
-        .wrapper
-
-            +nav
-
-            //- Main jumbotron for a primary marketing message or call to action
-            .banner-container
-                object.banner(data="../img/newiconbanner1.svg" type="image/svg+xml")
-
-            .jumbotron.banner-jumbotron
-                .panel.panel-default
-                    .panel-body
-                        h2 Do you love technology? Programming? Or just want to learn something new?
-                        h3 CompSoc runs talks, hackathons and workshops for its members throughout the year -- all with free pizza courtesy of ScottLogic!
-                        h3 Join today to be notified of upcoming events.
-                        //- Dirty dirty hack
-                        h3.hiredGradButton
-                            a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
+    .jumbotron.banner-jumbotron
+        .panel.panel-default
+            .panel-body
+                h2 Do you love technology? Programming? Or just want to learn something new?
+                h3 CompSoc runs talks, hackathons and workshops for its members throughout the year -- all with free pizza courtesy of ScottLogic!
+                h3 Join today to be notified of upcoming events.
+                //- Dirty dirty hack
+                h3.hiredGradButton
+                    a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
 
 
-            div.container
-                //- Example row of columns
-                div.row
-                    div.col-md-3
-                        h2 The Team
-                        p Click to know the Who's Who of CompSoc.
-                        p
-                            a.btn.btn-default(href="#" role="button") View details &raquo;
-                        
+    div.container
+        //- Example row of columns
+        div.row
+            div.col-md-3
+                h2 The Team
+                p Click to know the Who's Who of CompSoc.
+                p
+                    a.btn.btn-default(href="#" role="button") View details &raquo;
 
-                    div.col-md-3
-                        h2 What's On
-                        p Click to know what's happening in CompSoc, our past events and upcoming events.
-                        p
-                            a.btn.btn-default(href="#" role="button") View details &raquo;
-                        
+            div.col-md-3
+                h2 What's On
+                p Click to know what's happening in CompSoc, our past events and upcoming events.
+                p
+                    a.btn.btn-default(href="#" role="button") View details &raquo;
 
-                    div.col-md-3
-                        h2 Our Sponsors
-                        p They help us run smoothly and happily :) Click to know more.
-                        p
-                            a.btn.btn-default(href="#" role="button") View details &raquo;
-                        
+            div.col-md-3
+                h2 Our Sponsors
+                p They help us run smoothly and happily :) Click to know more.
+                p
+                    a.btn.btn-default(href="#" role="button") View details &raquo;
 
-                    div.col-md-3
-                        h2 Say Hi To Us!
-                        p
-                            Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
-                        p
-                            a.btn.btn-default(href="#" role="button") View details &raquo;                        
+            div.col-md-3
+                h2 Say Hi To Us!
+                p Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
+                p
+                    a.btn.btn-default(href="#" role="button") View details &raquo;
 
+    #hiredgrad-signup
 
-            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
-            .push
-        .footer
-            div &copy; 2016 Durham University CompSoc
+block scripts
+    script(src="/js/index.js")
 
-        #hiredgrad-signup
-
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
-
-        //- Include all compiled plugins (below), or include individual files as needed
-        script(src="/bootstrap/dist/js/bootstrap.min.js")
-        script(src="/js/index.js")
-
-        //- HiredGrad
-        script(src="http://hiredgrad.com/rest/resources/society/js/57e3b53ce4b0db35d5037a80/branded")
+    //- HiredGrad
+    script(src="http://hiredgrad.com/rest/resources/society/js/57e3b53ce4b0db35d5037a80/branded")

@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        block title
+            title Undefined
+        //- Bootstrap
+        link(href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+        link(href="/font-awesome/css/font-awesome.min.css" rel="stylesheet")
+        link(href="/indexStyle.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Jura:400,600|Raleway:400,600" rel="stylesheet")
+    body
+        .wrapper
+            nav.navbar.navbar-inverse.navbar-fixed-top
+                .container
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar")
+                            span.sr-only Toggle navigation
+                            i.fa.fa-bars(aria-hidden="true")
+                        a.navbar-brand(href="/") Durham University CompSoc
+
+                    div#navbar.navbar-collapse.collapse.navbar-right
+                        ul.nav.navbar-nav
+                            li
+                                a(href="about") About
+                            li
+                                a(href="events") Events
+                            li
+                                a(href="sponsors") Sponsors
+                            li
+                                a(href="team") Team
+                            li
+                                a(href="contact") Contact
+            block content
+            .push
+        .footer
+            div &copy; 2016 Durham University CompSoc
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        script(src="/bootstrap/dist/js/bootstrap.min.js")
+        block scripts

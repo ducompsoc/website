@@ -1,48 +1,25 @@
 //- Created by Soumya on 01-09-2016
 
-//- See head.pug for css imports etc.
-include ./partials/head.pug
-include ./partials/nav.pug
-    
-doctype(html)
-html(lang="en")
+extends templates/base.pug
 
-    //- add the header with page title DU Compsoc- The Team
-    +head("The Team")
-    body
-        //- content wrapped for sticky footer
-        .wrapper
+block title
+    title The Team - DUCompSoc
 
-            +nav
+block head
+    h1 The Team
+    p Have a look at the students who help keep the society in shape.
 
-            //- main jumbotron
-            div.jumbotron
-                div.container
-                    h1 The Team
-                    p Have a look at the students who help keep the society in shape.
-
-            div.container
-                 div.row
-                     div.col-md-3
-                         h2 The President
-                         p description
-                     div.col-md-3
-                         h2 The Secretary
-                         p description
-                     div.col-md-3
-                         h2 The Treasurer
-                         p description
-                     div.col-md-3
-                         h2 The Web Officer
-                         p description
-
-            //- http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&1q=1
-            .push
-        .footer
-            div &copy; 2016 Durham University CompSoc
-
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-        //-script(window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>'))
-
-        //- Include all compiled plugins (below), or include individual files as needed
-        script(src="/bootstrap/dist/js/bootstrap.min.js")
+block body
+    div.row
+        div.col-md-3
+            h2 The President
+            p description
+        div.col-md-3
+            h2 The Secretary
+            p description
+        div.col-md-3
+            h2 The Treasurer
+            p description
+        div.col-md-3
+            h2 The Web Officer
+            p description
