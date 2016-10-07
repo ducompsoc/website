@@ -1,9 +1,16 @@
-extends marginals.pug
-    
-block content
-    div.jumbotron
-        div.container
-            block head
-
-    div.container
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        block head
+            title DUCompSoc
+        //- Bootstrap
+        link(href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+        link(href="/font-awesome/css/font-awesome.min.css" rel="stylesheet")
+        link(href="/indexStyle.css" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Jura:400,600|Raleway:400,600" rel="stylesheet")
+    body
         block body
+        block scripts
