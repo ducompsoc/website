@@ -10,7 +10,9 @@ $(window).resize(function () {
     else if(windowWidth < 769) {
         resizeLTE768(windowWidth);
     }
-}).resize();
+});
+
+$(window).load($(window).resize);
 
 $(document).ready(function() {
 
