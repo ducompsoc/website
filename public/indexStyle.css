@@ -70,6 +70,14 @@ object {
     padding-bottom: 0;
 }
 
+/**
+change background color of jumbotron
+**/
+
+.jumbotron {
+  background-color: #909090
+}
+
 .footer {
     background-color: #333;
     display: flex;
