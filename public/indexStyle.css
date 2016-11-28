@@ -75,7 +75,7 @@ change background color of jumbotron
 **/
 
 .jumbotron {
-  background-color: #80dfff;
+  background: linear-gradient(to top right, white, #95c5cd);
 }
 
 .footer {
