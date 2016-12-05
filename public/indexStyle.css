@@ -110,6 +110,13 @@ html, body {
     height: 3em; /* .push must be the same height as .footer */
 }
 
+img {
+
+  display:inline-flex;
+  margin: 10px;
+  margin-left: 0px;
+}
+
 .hiredGradButton {
     text-align: center;
 }
