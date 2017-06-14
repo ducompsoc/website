@@ -1,0 +1,29 @@
+@media (min-width: 992px) {
+    .homepage-btn-horizontal {
+        display: inline-block !important;
+    }
+    .homepage-btn-vertical {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .homepage-btn-horizontal {
+        display: none !important;
+    }
+    .homepage-btn-vertical {
+        display: inline-block !important;
+    }
+}
+
+.btn-container {
+    margin-bottom: 20px;
+}
+
+#main-info {
+    margin-bottom: 0;
+}
+
+#main-title {
+    margin-top: 10px;
+}
