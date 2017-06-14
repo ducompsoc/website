@@ -63,19 +63,10 @@ object {
 
 .banner-jumbotron {
     margin-bottom: 0;
-    background: -webkit-linear-gradient(#58595b, #eee);
     padding-top: 0;
     display: inline-block;
     width: 100%;
     padding-bottom: 0;
-}
-
-/**
-change background color of jumbotron
-**/
-
-.jumbotron {
-  background: linear-gradient(to top, #eeeeee , #95c5cd);
 }
 
 .footer {
