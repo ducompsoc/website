@@ -12,19 +12,23 @@ block title
 block content
     //- row contains four columns, each with a description
     div.row
-        div.col-md-4
-            h2 Drop us a mail
-            p computing.society@durham.ac.uk
-        div.col-md-4
+        div.col-md-6
             h2 We're social !
-            p <i class="fa fa-facebook-official" aria-hidden="true"></i>  Like us on <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts">Facebook </a>
-            p <i class="fa fa-twitter" aria-hidden="true"></i>  Follow Us on <a href = "http://twitter.com/ducompsoc/">Twitter </a>
-            p <i class="fa fa-slack" aria-hidden="true"></i>  Join us on <a href = "https://ducompsoc.slack.com/">Slack</a>
-            p <i class="fa fa-linkedin-square" aria-hidden="true"></i> Connect with us on <a href = "https://linkedin.com/company/ducompsoc">LinkedIn </a>
-        div.col-md-4
-            h2 We value your opinion
-            p Leave your comments/feedback/suggestions below.
+            div.row
+                div.col-md-3
+                    p <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "http://twitter.com/ducompsoc/"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+            div.row
+                div.col-md-3
+                    p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+        div.col-md-6
+            h2 Drop Us a Message
+            p Leave your queries/comments/feedback/suggestions below.
             form.form-group
                 input.form-control(type="text" placeholder="Name")
-                input.form-control(type="text" placeholder="Comments")
+                input.form-control(type="text" placeholder="Email")
+                input.form-control(type="text" placeholder="Message")
                 button.btn.btn-success(type="submit") Submit
