@@ -1,71 +1,73 @@
 //- about page
 //- created by Soumya on 30-08-2016
 
-extends templates/standard.pug
+extends layouts/banner-content.pug
 
 block head
     title About - DUCompSoc
 
 block title
-    h1 About Us
-    p Let us introduce ourselves
+    object(data="../img/about-banner-text-bg.svg" type="image/svg+xml")
+    link(href="/aboutStyle.css" rel="stylesheet")
 
 block content
     div.row
-        div.col-md-6
-            p
-                | CompSoc is Durham University’s Computing Society. It is a community run entirely by students and aims
-                | to promote and educate in all things technology. Established in 1998 the society has a long history.
-                | Today, we hold weekly meetings, workshops and hackathons for our members all year round.
-            p
-                | Browse through the site to find out more!
+        .container
+            div.col-md-6
+                p#information
+                    | CompSoc is Durham University’s Computing Society. It is run entirely by students and serves to promote
+                    | programming, development and general computing. We are a community of passionate problem solvers who
+                    | come together to run weekly meetings, workshops and hackathons throughout the year. No matter if
+                    | you're a novice or expert, come down to see what we have to offer! <br/><br/>
+                    | Browse around the site to find out more!
 
-            //images carousel (next to the description)
+                //images carousel (next to the description)
 
-        div.col-md-6
-            #carousel-images.carousel.slide(data-ride=carousel)
-                ol.carousel-indicators
-                    li.active(data-target="#carousel-images" data-slide-to="0")
-                    li(data-target="#carousel-images" data-slide-to="1")
-                    li(data-target="#carousel-images" data-slide-to="2")
-                    li(data-target="#carousel-images" data-slide-to="3")
+            div.col-md-6
+                #carousel-images.carousel.slide(data-ride=carousel)
+                    ol.carousel-indicators
+                        li.active(data-target="#carousel-images" data-slide-to="0")
+                        li(data-target="#carousel-images" data-slide-to="1")
+                        li(data-target="#carousel-images" data-slide-to="2")
+                        li(data-target="#carousel-images" data-slide-to="3")
 
-                div.carousel-inner(role="listbox")
-                    div.item.active
-                        img(src="./img/Group_pic.jpg" alt="img1" width="555" height="345")
-                    div.item
-                        img(src="./img/sl.jpg" alt="img2" width="555" height="345")
-                    div.item
-                        img(src="./img/BPST.jpg" alt="img3" width="555" height="345")
-                    div.item
-                        img(src="./img/Durhack3.jpg" alt="img4" width="555" height="345")
+                    div.carousel-inner(role="listbox")
+                        div.item.active
+                            img(src="./img/Group_pic.jpg" alt="img1" width="555" height="345")
+                        div.item
+                            img(src="./img/sl.jpg" alt="img2" width="555" height="345")
+                        div.item
+                            img(src="./img/BPST.jpg" alt="img3" width="555" height="345")
+                        div.item
+                            img(src="./img/Durhack3.jpg" alt="img4" width="555" height="345")
 
-                    //left and right controls
+                        //left and right controls
 
-                a.left.carousel-control(href="#carousel-images" role="button" data-slide="prev")
-                    span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-                    span.sr-only Previous
-                a.right.carousel-control(href="#carousel-images" role="button" data-slide="next")
-                    span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-                    span.sr-only Next
+                    a.left.carousel-control(href="#carousel-images" role="button" data-slide="prev")
+                        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+                        span.sr-only Previous
+                    a.right.carousel-control(href="#carousel-images" role="button" data-slide="next")
+                        span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+                        span.sr-only Next
     div.row
-        div.col-md-3
-            h2 The Team
-            p Click to know the Who's Who of CompSoc.
-            p
-                a.btn.btn-default(href="team" role="button") View details &raquo;
-        div.col-md-3
-            h2 What's On
-            p Click to know what's happening in CompSoc, our past events and upcoming events.
-            p
-                a.btn.btn-default(href="events" role="button") View details &raquo;
-        div.col-md-3
-            h2 Our Sponsors
-            p They help us run smoothly and happily :) Click to know more.
-            p
-                a.btn.btn-default(href="sponsors" role="button") View details &raquo;
-        div.col-md-3
-            h2 Say Hi To Us!
-            p  Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
-            p
-                a.btn.btn-default(href="contact" role="button") View details &raquo;
+        .container
+            div.col-md-3
+                h2 The Team
+                p Click to know the Who's Who of CompSoc.
+                p
+                    a.btn.btn-default(href="team" role="button") View details &raquo;
+            div.col-md-3
+                h2 What's On
+                p Click to know what's happening in CompSoc, our past events and upcoming events.
+                p
+                    a.btn.btn-default(href="events" role="button") View details &raquo;
+            div.col-md-3
+                h2 Our Sponsors
+                p They help us run smoothly and happily :) Click to know more.
+                p
+                    a.btn.btn-default(href="sponsors" role="button") View details &raquo;
+            div.col-md-3
+                h2 Say Hi To Us!
+                p  Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
+                p
+                    a.btn.btn-default(href="contact" role="button") View details &raquo;
