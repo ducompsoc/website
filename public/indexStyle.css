@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #eeeeee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,8 +28,8 @@ object {
 
 .navbar.navbar-inverse.navbar-fixed-top {
      position: relative;
-     margin-bottom: 0px;
-     border-bottom-width: 0px;
+     margin-bottom: 0;
+     border-bottom-width: 0;
 }
 
 .nav.navbar-nav {
@@ -102,17 +103,61 @@ html, body {
 }
 
 img {
-
   display:inline-flex;
   margin: 10px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .hiredGradButton {
     text-align: center;
 }
 
-.fa-facebook-official:hover{color: #3b5998;}
-.fa-linkedin-square:hover{color: #0077b5;}
-.fa-twitter:hover{color: #1da1f2;}
-.fa-slack:hover{color: grey;}
+.page-title-jumbotron {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #58595b;
+    color: #eeeeee;
+}
+
+.page-title-jumbotron > h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.page-title-jumbotron > p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.page-title-row {
+    background-color: #58595b;
+    margin: 0;
+}
+
+.page-content-row {
+    padding-top: 4rem;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-slack:hover {
+  color: grey;
+}
