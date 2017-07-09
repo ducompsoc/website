@@ -85,21 +85,20 @@ object {
     margin: 2em 0em;
 }*/
 
-/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1 */
+/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
+   (second answer)
+*/
 * {
     margin: auto;
 }
+
 html, body {
     height: 100%;
 }
+
+/* Height of navbar minus height of footer */
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -3em; /* the bottom margin is the negative value of the footer's height */
-}
-.push {
-    height: 3em; /* .push must be the same height as .footer */
+    min-height: calc(100vh - 50px - 3em);
 }
 
 img {
