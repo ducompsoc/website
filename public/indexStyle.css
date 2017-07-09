@@ -145,3 +145,19 @@ img {
     width: 100%;
     margin: 0;
 }
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-slack:hover {
+  color: grey;
+}
