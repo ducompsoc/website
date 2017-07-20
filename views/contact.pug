@@ -6,24 +6,50 @@ block head
 
 block title
     h1 Say Hi To Us!
-    p 
+    p
     p Like Us? Have any valuable suggestions? We're all ears!
 
 block content
-    //- row contains four columns, each with a description
-    div.row    
-        div.col-md-4
-            h2 Drop us a mail
-            p computing.society@durham.ac.uk
-        div.col-md-4
+    //- row contains two columns, each with the content
+    div.row
+        div.col-md-6
             h2 We're social !
-            p <img src="./img/fb.png" alt="Facebook" width="20" height="20"></img>  Like us on <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts">Facebook </a>
-            p <img src="./img/tw.png" alt="Twitter" width="20" height="20"></img>  Follow Us on <a href = "http://twitter.com/ducompsoc/">Twitter </a>
-            p <img src="./img/slack.png" alt="Slack" width="20" height="20"></img>  Join us on <a href = "https://ducompsoc.slack.com/">Slack</a>
-        div.col-md-4
-            h2 We value your opinion
-            p Leave your comments/feedback/suggestions below.
-            form.form-group
-                input.form-control(type="text" placeholder="Name")
-                input.form-control(type="text" placeholder="Comments")
+            div.row
+                div.col-md-3
+                    p <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "http://twitter.com/ducompsoc/"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+            div.row
+                div.col-md-3
+                    p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+        div.col-md-6
+            h2 Drop Us a Message
+            p Leave your queries/comments/feedback/suggestions below.
+            form.form-group(action="contactform.php" method="POST")
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-user
+                    input.form-control(type="text" placeholder="Name" name="realname" id="realname")
+                br
+
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-at
+                    input.form-control(type="email" placeholder="Email" name="email" id="email")
+
+                br
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-pencil
+                    input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
+
+                br
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-envelope
+                    textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
+
+                br
                 button.btn.btn-success(type="submit") Submit

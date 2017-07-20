@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #eeeeee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,8 +28,8 @@ object {
 
 .navbar.navbar-inverse.navbar-fixed-top {
      position: relative;
-     margin-bottom: 0px;
-     border-bottom-width: 0px;
+     margin-bottom: 0;
+     border-bottom-width: 0;
 }
 
 .nav.navbar-nav {
@@ -63,19 +64,10 @@ object {
 
 .banner-jumbotron {
     margin-bottom: 0;
-    background: -webkit-linear-gradient(#58595b, #eee);
     padding-top: 0;
     display: inline-block;
     width: 100%;
     padding-bottom: 0;
-}
-
-/**
-change background color of jumbotron
-**/
-
-.jumbotron {
-  background: linear-gradient(to top, #eeeeee , #95c5cd);
 }
 
 .footer {
@@ -93,30 +85,78 @@ change background color of jumbotron
     margin: 2em 0em;
 }*/
 
-/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1 */
+/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
+   (second answer)
+*/
 * {
     margin: auto;
 }
+
 html, body {
     height: 100%;
 }
+
+/* Height of navbar minus height of footer */
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -3em; /* the bottom margin is the negative value of the footer's height */
-}
-.push {
-    height: 3em; /* .push must be the same height as .footer */
+    min-height: calc(100vh - 50px - 3em);
 }
 
 img {
-
   display:inline-flex;
   margin: 10px;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .hiredGradButton {
     text-align: center;
+}
+
+.page-title-jumbotron {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #58595b;
+    color: #eeeeee;
+}
+
+.page-title-jumbotron > h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.page-title-jumbotron > p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.page-title-row {
+    background-color: #58595b;
+    margin: 0;
+}
+
+.page-content-row {
+    padding-top: 4rem;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-slack:hover {
+  color: grey;
 }

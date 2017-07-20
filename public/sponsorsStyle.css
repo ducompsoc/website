@@ -1,0 +1,22 @@
+@media (min-width: 992px) {
+    .sponsor-header {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .sponsor-header {
+        margin-top: 1em;
+    }
+}
+
+.sponsor-img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.sponsor-row {
+    margin-bottom: 1em;
+}

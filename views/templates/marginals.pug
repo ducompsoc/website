@@ -1,33 +1,28 @@
 extends base.pug
 
-block body
-    .wrapper
-        nav.navbar.navbar-inverse.navbar-fixed-top
-            .container
-                .navbar-header
-                    button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar")
-                        span.sr-only Toggle navigation
-                        i.fa.fa-bars(aria-hidden="true")
-                    a.navbar-brand(href="/") Durham University CompSoc
+block nav
+    nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar")
+                    span.sr-only Toggle navigation
+                    i.fa.fa-bars(aria-hidden="true")
+                a.navbar-brand(href="/") Durham University CompSoc
 
-                div#navbar.navbar-collapse.collapse.navbar-right
-                    ul.nav.navbar-nav
-                        li
-                            a(href="about") About
-                        li
-                            a(href="events") Events
-                        li
-                            a(href="sponsors") Sponsors
-                        li
-                            a(href="team") Team
-                        li
-                            a(href="contact") Contact
-        block body
-        .push
-    .footer
-        div &copy; 2016-2017 Durham University CompSoc
-        
+            div#navbar.navbar-collapse.collapse.navbar-right
+                ul.nav.navbar-nav
+                    li
+                        a(href="about") About
+                    li
+                        a(href="events") Events
+                    li
+                        a(href="sponsors") Sponsors
+                    li
+                        a(href="team") Team
+                    li
+                        a(href="contact") Contact
+
 block scripts
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(src="/bootstrap/dist/js/bootstrap.min.js")

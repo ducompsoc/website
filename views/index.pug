@@ -7,59 +7,60 @@ block head
     title Homepage - DU CompSoc
     link(href="/homepageStyle.css" rel="stylesheet")
     
-block body
-    //- Main jumbotron for a primary marketing message or call to action
-    .banner-container
-        object.banner(data="../img/newiconbanner1.svg" type="image/svg+xml")
+block content
+    .wrapper
+        //- Main jumbotron for a primary marketing message or call to action
+        .banner-container
+            object.banner(data="../img/newiconbanner1.svg" type="image/svg+xml")
 
-    .jumbotron.banner-jumbotron
-        .panel.panel-default#main-info
-            .panel-body
-                h2#main-title Do you love technology? Programming? Or just want to learn something new?
-                h3 CompSoc runs talks, hackathons and workshops for its members throughout the year -- all with free pizza courtesy of ScottLogic!
-                h3 Join today to be notified of upcoming events.
-                //- Dirty dirty hack
-                h3.hiredGradButton
-                    a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
+        .jumbotron.banner-jumbotron
+            .panel.panel-default#main-info
+                .panel-body
+                    h2#main-title Do you love technology? Programming? Or just want to learn something new?
+                    h3 CompSoc runs talks, hackathons and workshops for its members throughout the year -- all with free pizza courtesy of ScottLogic!
+                    h3 Join today to be notified of upcoming events.
+                    //- Dirty dirty hack
+                    h3.hiredGradButton
+                        a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
 
 
-    div.container
-        //- Example row of columns
-        div.row
-            div.col-md-3
-                h2 The Team
-                p Click to know the Who's Who of CompSoc.
-                a.btn.btn-default.homepage-btn-vertical(href="team" role="button") View details &raquo;
+        div.container
+            //- Example row of columns
+            div.row
+                div.col-md-3
+                    h2 The Team
+                    p Click to know the Who's Who of CompSoc.
+                    a.btn.btn-default.homepage-btn-vertical(href="team" role="button") View details &raquo;
 
-            div.col-md-3
-                h2 What's On
-                p Click to know what's happening in CompSoc, our past events and upcoming events.
-                a.btn.btn-default.homepage-btn-vertical(href="events" role="button") View details &raquo;
+                div.col-md-3
+                    h2 What's On
+                    p Click to know what's happening in CompSoc, our past events and upcoming events.
+                    a.btn.btn-default.homepage-btn-vertical(href="events" role="button") View details &raquo;
 
-            div.col-md-3
-                h2 Our Sponsors
-                p They help us run smoothly and happily :) Click to know more.
-                a.btn.btn-default.homepage-btn-vertical(href="sponsors" role="button") View details &raquo;
+                div.col-md-3
+                    h2 Our Sponsors
+                    p They help us run smoothly and happily :) Click to know more.
+                    a.btn.btn-default.homepage-btn-vertical(href="sponsors" role="button") View details &raquo;
 
-            div.col-md-3
-                h2 Say Hi To Us!
-                p Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
-                a.btn.btn-default.homepage-btn-vertical(href="contact" role="button") View details &raquo;
+                div.col-md-3
+                    h2 Say Hi To Us!
+                    p Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
+                    a.btn.btn-default.homepage-btn-vertical(href="contact" role="button") View details &raquo;
 
-        .row.btn-container
-            .col-md-3
-                a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
+            .row.btn-container
+                .col-md-3
+                    a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
 
-            .col-md-3
-                a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
+                .col-md-3
+                    a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
 
-            .col-md-3
-                a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
+                .col-md-3
+                    a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
 
-            .col-md-3
-                a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
+                .col-md-3
+                    a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
 
-    #hiredgrad-signup
+        #hiredgrad-signup
 
 block scripts
     script(src="/js/index.js")
