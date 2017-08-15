@@ -21,14 +21,22 @@
     vertical)
  */
 @media (max-width: 991px) {
-    .homepage-btn-horizontal {
+    .btn-container {
         display: none !important;
     }
     .homepage-btn-vertical {
         display: inline-block !important;
     }
+    /* Add padding at the top to all but the first in order to space quick links */
+    .quickLinks > .row > .col-md-3:first-child {
+        padding-top: 0;
+    }
+    .quickLinks > .row > .col-md-3 {
+        padding-top: 2rem;
+    }
 }
 
+/* Ignore margin for headers as spacing is handled by containing element */
 .quickLinks > h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
