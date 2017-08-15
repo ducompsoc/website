@@ -81,10 +81,6 @@ object {
     margin-bottom: 0.5em;
 }
 
-/*.col-md-3 {
-    margin: 2em 0em;
-}*/
-
 /* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
    (second answer)
 */
@@ -101,43 +97,8 @@ html, body {
     min-height: calc(100vh - 50px - 3em);
 }
 
-img {
-  display:inline-flex;
-  margin: 10px;
-  margin-left: 0;
-}
-
 .hiredGradButton {
     text-align: center;
-}
-
-.page-title-jumbotron {
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #58595b;
-    color: #eeeeee;
-}
-
-.page-title-jumbotron > h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.page-title-jumbotron > p {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-
-.page-title-row {
-    background-color: #58595b;
-    margin: 0;
-}
-
-.page-content-row {
-    padding-top: 4rem;
 }
 
 .row {
