@@ -4,12 +4,12 @@
 extends layouts/banner-content.pug
 include ./quickLinks.pug
 
-block head
+block append head
     title About - DUCompSoc
+    link(href="/aboutStyle.css" rel="stylesheet")
 
 block title
     object(data="../img/about-banner-text-bg.svg" type="image/svg+xml")
-    link(href="/aboutStyle.css" rel="stylesheet")
 
 block content
     div.row
@@ -25,7 +25,7 @@ block content
                 //images carousel (next to the description)
 
             div.col-md-6
-                #carousel-images.carousel.slide(data-ride=carousel)
+                #carousel-images.carousel.slide(data-ride=carousel data-interval="false")
                     ol.carousel-indicators
                         li.active(data-target="#carousel-images" data-slide-to="0")
                         li(data-target="#carousel-images" data-slide-to="1")
@@ -34,13 +34,13 @@ block content
 
                     div.carousel-inner(role="listbox")
                         div.item.active
-                            img(src="./img/Group_pic.jpg" alt="img1" width="555" height="345")
+                            img(src="./img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg" alt="img1")
                         div.item
-                            img(src="./img/sl.jpg" alt="img2" width="555" height="345")
+                            img(src="./img/about_carousel_2-Scott_Logic_Hackathon_2016-17.jpg" alt="img2")
                         div.item
-                            img(src="./img/BPST.jpg" alt="img3" width="555" height="345")
+                            img(src="./img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg" alt="img3")
                         div.item
-                            img(src="./img/Durhack3.jpg" alt="img4" width="555" height="345")
+                            img(src="./img/about_carousel_4-Joe_Nash_Durhack_Presentation_2016-17.jpg" alt="img4")
 
                         //left and right controls
 
