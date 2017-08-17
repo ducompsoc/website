@@ -12,15 +12,26 @@ block title
 
 block content
     //- contains pictures of our sponsors which act as links to their official websites.
-    .row.sponsor-row
-        .container
-            .col-lg-2
-            .col-lg-3
-                img.sponsor-img(src="./img/sl_logo.png")
-            .col-lg-5
-                h3.sponsor-header Scott Logic
-                p
-                    | Scott Logic is a software consultancy company headquartered in the UK. Today, they employ over 190
-                    | of the best people in the industry.
-                    | <a href="http://www.scottlogic.com">http://www.scottlogic.com</a>
-            .col-lg-2
+    div.row
+        div.panel-group
+            div.panel.panel-default
+                div.panel-heading
+                    h3
+                        a(data-toggle="collapse" href="#sp17") 2017/18
+                #sp17.panel-collapse.collapse
+                    div.panel-body
+                        div.col-md-3
+                            h4 BlackRock
+                        div.col-md-3
+                            h4 Radix
+                        div.col-md-3
+                            h4 HiredGrad
+        div.panel-group
+            div.panel.panel-default
+                div.panel-heading
+                    h3
+                        a(data-toggle="collapse" href="#sp17") 2017/18
+                #sp17.panel-collapse.collapse
+                    div.panel-body
+                        div.col-md-12
+                            h4 ScottLogic
