@@ -1,11 +1,11 @@
 .page-title-jumbotron {
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    background-color: #58595b;
-    color: #eeeeee;
+    /*position: relative;*/
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #58595b !important;
+    color: #eeeeee !important;
 }
 
 .page-title-jumbotron > h1 {
@@ -21,6 +21,9 @@
 .page-title-row {
     background-color: #58595b;
     margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
 }
 
 .page-content-row {
