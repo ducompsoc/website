@@ -1,7 +1,3 @@
-#information {
-    font-size: medium;
-}
-
 /* Padding trick - the padding knows the width of the div so can set the height
    accordingly to be 16:9.
 */

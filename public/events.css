@@ -1,0 +1,22 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    padding-bottom: 2rem;
+}
+
+.row:last-child {
+    padding-bottom: 0;
+}
+
+.btn {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.collapse > p, .collapsing > p {
+    margin-top: 1rem;
+}
+

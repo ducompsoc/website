@@ -121,3 +121,7 @@ html, body {
 .fa-slack:hover {
   color: grey;
 }
+
+.information {
+    font-size: medium !important;
+}
