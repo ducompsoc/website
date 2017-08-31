@@ -3,25 +3,15 @@
 
 extends layouts/banner-content.pug
 include ./quickLinks.pug
+include ./pageBanner.pug
 
 block append head
     title About - DUCompSoc
     link(href="/aboutStyle.css" rel="stylesheet")
 
+//- The main title and banner with icons
 block title
-    .banner-left
-        object.banner(data="../img/about-banner-left.svg" type="image/svg+xml")
-    .jumbotron.page-title-jumbotron
-        h1 About Us
-        h2 Find out more about the society
-        .link-icons
-            object(data="../img/Teal-Icons/facebook-square.svg" type="image/svg+xml")
-            object(data="../img/Teal-Icons/envelope-square.svg" type="image/svg+xml")
-            object(data="../img/Teal-Icons/calendar.svg" type="image/svg+xml")
-            object(data="../img/Teal-Icons/slack.svg" type="image/svg+xml")
-            object(data="../img/Teal-Icons/github-square.svg" type="image/svg+xml")
-    .banner-right
-        object.banner(data="../img/about-banner-right.svg" type="image/svg+xml")
+    +pageBanner('About Us', 'Find out more about the society')
 
 block content
     div.row

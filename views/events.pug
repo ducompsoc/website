@@ -1,14 +1,12 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title Events - DUCompSoc
+    link(href="/events.css" rel="stylesheet")
 
 block title
-    h1 What's On
-    p We feature tech-events all the year round, from tech-talks to hackathons. So you can have a glimpse inside the life of a techie or meet new people and build some awesome stuff.
-    p Take a look at what we've done so far and what's coming in.
+    +pageBanner("Events", "Check out our past and future events")
 
 block content
     //- row contains two columns, each with a description
