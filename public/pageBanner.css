@@ -12,6 +12,7 @@
 
 .page-title-jumbotron > h2 {
     margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 .page-title-jumbotron > h1 {
@@ -46,6 +47,7 @@
         flex: 0 0 auto;
         max-width: 285px;
         margin-left: 3rem;
+        margin-left: 4rem;
         margin-right: 3rem;
         padding: 0;
     }
@@ -102,6 +104,7 @@
         flex: 0 0 auto;
         max-width: 285px;
         margin-left: 3rem;
+        margin-left: 4rem;
         margin-right: 3rem;
     }
 }
