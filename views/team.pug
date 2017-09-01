@@ -1,13 +1,12 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title The Team - DUCompSoc
+    link(href="/team.css" rel="stylesheet")
 
 block title
-    h1 The Team
-    p Have a look at the students who help keep the society in shape.
+    +pageBanner('The Team', 'Meet the students shaping the society')
 
 block content
     div.row
