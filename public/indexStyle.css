@@ -57,7 +57,7 @@ object {
     border-radius: 0;
 }
 
-.panel-body > h2, h3 {
+.panel-body > h2, .panel-body > h3 {
     text-align: center;
     color: #333;
 }
@@ -120,4 +120,8 @@ html, body {
 
 .fa-slack:hover {
   color: grey;
+}
+
+.information {
+    font-size: medium !important;
 }

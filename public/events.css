@@ -1,0 +1,36 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+.col-md-6 {
+    margin-top: 2.5rem;
+}
+
+.col-md-6 > .row:last-child {
+    padding-bottom: 0;
+}
+
+.col-md-6 > .row, .col-md-6 > .information {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+}
+
+
+
+.btn {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.collapse > p, .collapsing > p {
+    margin-top: 1rem;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}

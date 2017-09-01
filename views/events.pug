@@ -1,97 +1,87 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title Events - DUCompSoc
+    link(href="/events.css" rel="stylesheet")
 
 block title
-    h1 What's On
-    p We feature tech-events all the year round, from tech-talks to hackathons. So you can have a glimpse inside the life of a techie or meet new people and build some awesome stuff.
-    p Take a look at what we've done so far and what's coming in.
+    +pageBanner("Events", "Check out our past and future events")
 
 block content
-    //- row contains two columns, each with a description
-    div.row
-        div.col-md-6
+    .container
+        .col-md-12
+            h2 What's On
+            p.information.
+                CompSoc holds events all the year round, from hackathons to tech-talks to weekly meetings. Come down and learn
+                something new, meet new people and build some awesome stuff.
+            p.information.
+                Take a look at past and future events:
+
+        .col-md-6
             h2 What We've Done!
-            p Here's all events we've conducted in the past.
-            div.col-md-6
+            p.information Here's all events we've conducted in the past.
 
-                    div.row
-                        //a(href="https://durhack.com") DurHack 2017
-                        //p
-                        .container
-                        a.btn.btn-info.btn-block(href='#dhk', data-toggle='collapse') Durhack 2017
-                        #dhk.collapse
-                            p Durham University had its first ever 24-hour Hackathon sponsored by big names like Durham County Council, Github, MLH, Sunderland Software City, Durham Students Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data from in and around Durham, participants from various UK Universities utilized it to produce something that can potentially make a differemce to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success.
+            .row
+                //a(href="https://durhack.com") DurHack 2017
+                img(src="./img/events/events_Durhack_2017.png")
+                a.btn.btn-info.btn-block(href='#dhk', data-toggle='collapse') Durhack 2017
+                #dhk.collapse
+                    p Durham University had its first ever 24-hour Hackathon sponsored by big names like Durham County Council, Github, MLH, Sunderland Software City, Durham Students Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data from in and around Durham, participants from various UK Universities utilized it to produce something that can potentially make a differemce to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success.
 
-                    div.row
-                        //p
-                        //a(href="https://localhackday.mlh.io/") MLH Local Hack Day
-                        //p
-                        img(src = "./img/hackday.jpg" width="300" height="200")
-                        //a(href="https://durhack.com")
-                        p
-                        .container
-                        a.btn.btn-info.btn-block(href='#lhd', data-toggle='collapse') MLH Local Hack Day 2017
-                        #lhd.collapse
-                            p We organized 12-hour long event for building, problem solving, coding and meeting new people on December 3, 2016 and that turned out to be a success :)
+            .row
+                //p
+                //a(href="https://localhackday.mlh.io/") MLH Local Hack Day
+                img(src = "./img/hackday.jpg")
+                //a(href="https://durhack.com")
+                a.btn.btn-info.btn-block(href='#lhd', data-toggle='collapse') MLH Local Hack Day 2017
+                #lhd.collapse
+                    p We organized 12-hour long event for building, problem solving, coding and meeting new people on December 3, 2016 and that turned out to be a success :)
 
-                    div.row
-                        //p
-                        //a(href="https://www.facebook.com/events/1322032881161709/") Build-A-Chatbot!
-                        p
-                        <img src = "./img/buildachatbot.jpg" width="300" height="200">
-                        p
-                        .container
-                        a.btn.btn-info.btn-block(href='#bac', data-toggle='collapse') Build-A-Chatbot!
-                        #bac.collapse
-                            p Build-A-Chatbot with Joe Nash, Program Manager at Github. Joe is a functional programmer and hacker with a passion for developer relations and community building, who joined us for a fun evening learning to build a Facebook chatbot.
+            .row
+                //p
+                //a(href="https://www.facebook.com/events/1322032881161709/") Build-A-Chatbot!
+                img(src = "./img/buildachatbot.jpg")
+                a.btn.btn-info.btn-block(href='#bac', data-toggle='collapse') Build-A-Chatbot!
+                #bac.collapse
+                    p Build-A-Chatbot with Joe Nash, Program Manager at Github. Joe is a functional programmer and hacker with a passion for developer relations and community building, who joined us for a fun evening learning to build a Facebook chatbot.
 
-                    div.row
-                        //p
-                        //a(href="https://www.facebook.com/events/1890151881207928/") Introduction to Coding Workshop
-                        p
-                        <img src = "./img/edcode.jpg" width="300" height="200"></a>
-                        .container
-                        a.btn.btn-info.btn-block(href='#icw', data-toggle='collapse') Introduction to Coding Workshop
-                        #icw.collapse
-                            p We held the first session of a weekly Introduction to Coding Workshop in Collaboration with <a href="http://www.entrepreneursdurham.com/"> Entrepreneurs Durham </a> on November 29 to help people master the skills of web development!
+            .row
+                //p
+                //a(href="https://www.facebook.com/events/1890151881207928/") Introduction to Coding Workshop
+                img(src = "./img/edcode.jpg")
+                .container
+                a.btn.btn-info.btn-block(href='#icw', data-toggle='collapse') Introduction to Coding Workshop
+                #icw.collapse
+                    p We held the first session of a weekly Introduction to Coding Workshop in Collaboration with <a href="http://www.entrepreneursdurham.com/"> Entrepreneurs Durham </a> on November 29 to help people master the skills of web development!
 
-                    div.row
-                        //p
-                        //a(href = "https://www.facebook.com/events/369911576674539/") BP Supply and Trading Event.
-                        p
-                        img(src = "./img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg" width="300" height="200")
-                        .container
-                        a.btn.btn-info.btn-block(href='#bpst', data-toggle='collapse') BP Supply and Trading Event
-                        #bpst.collapse
-                            p The BP Supply and Trading Event was held on October 24, 2016 where Justin Fay from BP enlightened students about their graduate and placement roles and how technology is integrated into BP's business.
+            .row
+                //p
+                //a(href = "https://www.facebook.com/events/369911576674539/") BP Supply and Trading Event.
+                img(src = "./img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg")
+                .container
+                a.btn.btn-info.btn-block(href='#bpst', data-toggle='collapse') BP Supply and Trading Event
+                #bpst.collapse
+                    p The BP Supply and Trading Event was held on October 24, 2016 where Justin Fay from BP enlightened students about their graduate and placement roles and how technology is integrated into BP's business.
 
-                    div.row
-                        //p
-                        //a(href = "https://www.facebook.com/events/1608529472702814/") ScottLogic Durham University Hackathon
-                        p
-                        img(src = "./img/winners.jpg" width="300" height="200")
-                        .container
-                        a.btn.btn-info.btn-block(href='#slh', data-toggle='collapse') ScottLogic Durham Hackathon
-                        #slh.collapse
-                            p Our sponsors ScottLogic organised a Hackathon on May 4, 2016. Another fun event with code, lots of free pizza and beer!
+            .row
+                //p
+                //a(href = "https://www.facebook.com/events/1608529472702814/") ScottLogic Durham University Hackathon
+                img(src = "./img/winners.jpg")
+                .container
+                a.btn.btn-info.btn-block(href='#slh', data-toggle='collapse') ScottLogic Durham Hackathon
+                #slh.collapse
+                    p Our sponsors ScottLogic organised a Hackathon on May 4, 2016. Another fun event with code, lots of free pizza and beer!
 
-                    div.row
-                        //p
-                        //a(href = "https://www.facebook.com/events/234166873592041/") Dur(h).ac._k
-                        p
-                        img(src = "./img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg" width="300" height="200")
-                        .container
-                        a.btn.btn-info.btn-block(href='#dhack', data-toggle='collapse') Dur(h).ac._k
-                        #dhack.collapse
-                            p Joe Nash from Paypal talked to the students on March 2, 2016 about what hackathons are, how they are often misunderstood as attempts to break into systems, and how they are a brilliant opportunity to network with people from all parts of the world, develop new skills and an opportunity to land in a job as well! That's how Joe ended up working at PayPal. The students also got introduced to NodeJS.
+            .row
+                //p
+                //a(href = "https://www.facebook.com/events/234166873592041/") Dur(h).ac._k
+                img(src = "./img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg")
+                .container
+                a.btn.btn-info.btn-block(href='#dhack', data-toggle='collapse') Dur(h).ac._k
+                #dhack.collapse
+                    p Joe Nash from Paypal talked to the students on March 2, 2016 about what hackathons are, how they are often misunderstood as attempts to break into systems, and how they are a brilliant opportunity to network with people from all parts of the world, develop new skills and an opportunity to land in a job as well! That's how Joe ended up working at PayPal. The students also got introduced to NodeJS.
 
-                    br
-
-        div.col-md-6
+        .col-md-6
             h2 What Next?
-            p Mark your calendars for the upcoming events!
-            div.col-md-6
+            p.information Mark your calendars for the upcoming events!
