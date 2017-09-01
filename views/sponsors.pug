@@ -1,14 +1,12 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title Sponsors - DU CompSoc
     link(href="/sponsorsStyle.css" rel="stylesheet")
 
 block title
-    h1 Our Sponsors & Partners
-    p Here's a big thank you to all who help us grow :)
+    +pageBanner("Sponsors", "Thank you to all who help us grow")
 
 block content
     //- contains pictures of our sponsors which act as links to their official websites.
