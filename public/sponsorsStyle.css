@@ -6,7 +6,7 @@
 
 @media (max-width: 991px) {
     .sponsor-header {
-        margin-top: 1em;
+        margin-top: 1rem;
     }
 }
 
@@ -15,8 +15,22 @@
     max-height: 100%;
     vertical-align: top;
     margin: 0;
+    width: 100%;
 }
 
 .sponsor-row {
     margin-bottom: 1em;
+}
+
+.panel-heading > h3 {
+    text-align: center;
+    margin: auto;
+}
+
+.col-md-6 > p {
+    margin-bottom: 0;
+}
+
+.panel-group:last-child {
+    margin-bottom: 0;
 }
