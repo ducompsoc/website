@@ -1,47 +1,45 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title Sponsors - DU CompSoc
     link(href="/sponsorsStyle.css" rel="stylesheet")
 
 block title
-    h1 Our Sponsors & Partners
-    p Here's a big thank you to all who help us grow :)
+    +pageBanner("Sponsors", "Thank you to all who help us grow")
 
 block content
     //- contains pictures of our sponsors which act as links to their official websites.
     div.row
-        div.panel-group
-            div.panel.panel-default
-                div.panel-heading
-                    h3
-                        a(data-toggle="collapse" href="#sp17-18") 2017/18
-                #sp17-18.panel-collapse.collapse.in
-                    div.panel-body
-                        div.col-md-3
-                            h4 BlackRock
-                        div.col-md-3
-                            h4 Radix
-                        div.col-md-3
-                            h4 HiredGrad
-        div.panel-group
-            div.panel.panel-default
-                div.panel-heading
-                    h3
-                        a(data-toggle="collapse" href="#sp16-17") 2016/17
-                #sp16-17.panel-collapse.collapse
-                    div.panel-body
-                        .row.sponsor-row
-                            .container
-                                .col-lg-2
-                                .col-lg-3
-                                    img.sponsor-img(src="./img/sl_logo.png")
-                                .col-lg-5
-                                    h3.sponsor-header Scott Logic
-                                    p
-                                        | Scott Logic is a software consultancy company headquartered in the UK. Today, they employ over 190
-                                        | of the best people in the industry.
-                                        | <a href="http://www.scottlogic.com">http://www.scottlogic.com</a>
-                                .col-lg-2 
+        .container
+            div.panel-group
+                div.panel.panel-default
+                    div.panel-heading
+                        h3
+                            a(data-toggle="collapse" href="#sp17-18") 2017/18
+                    #sp17-18.panel-collapse.collapse.in
+                        div.panel-body
+                            div.col-md-3
+                                h4 BlackRock
+                            div.col-md-3
+                                h4 Radix
+                            div.col-md-3
+                                h4 HiredGrad
+            div.panel-group
+                div.panel.panel-default
+                    div.panel-heading
+                        h3
+                            a(data-toggle="collapse" href="#sp16-17") 2016/17
+                    #sp16-17.panel-collapse.collapse
+                        div.panel-body
+                            .row.sponsor-row
+                                    .col-md-1
+                                    .col-md-4
+                                        img.sponsor-img(src="./img/sl_logo.png")
+                                    .col-md-6
+                                        h3.sponsor-header Scott Logic
+                                        p
+                                            | Scott Logic is a software consultancy company headquartered in the UK. Today, they employ over 190
+                                            | of the best people in the industry.
+                                            | <a href="http://www.scottlogic.com">http://www.scottlogic.com</a>
+                                    .col-md-1
