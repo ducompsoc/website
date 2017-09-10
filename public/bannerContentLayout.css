@@ -30,3 +30,14 @@
     padding-top: 2.7rem;
     padding-bottom: 2.7rem;
 }
+
+/* Spacing is performed by the containing elements, not the text */
+h2, h3 {
+    margin-top: 0 !important;
+}
+
+/* Keeps text in expanding panels centered */
+.panel-heading > h3 {
+    margin: auto;
+    text-align: center;
+}
