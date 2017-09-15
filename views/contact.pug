@@ -1,8 +1,9 @@
 //- Created by Soumya on 01-09-2016
 extends templates/standard.pug
 
-block head
+block append head
     title Contact Us - DUCompSoc
+    link(href="/contact.css" rel="stylesheet")
 
 block title
     h1 Say Hi To Us!
@@ -24,10 +25,12 @@ block content
                     p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
                 div.col-md-3
                     p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+
         div.col-md-6
             h2 Drop Us a Message
             p Leave your queries/comments/feedback/suggestions below.
-            form.form-group(action="contactform.php" method="POST")
+
+            form.form-group(action="/api/contact" method="POST")
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-user
@@ -38,18 +41,22 @@ block content
                     span.input-group-addon
                         i.fa.fa-at
                     input.form-control(type="email" placeholder="Email" name="email" id="email")
-
                 br
+
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-pencil
                     input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
-
                 br
+
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-envelope
                     textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
-
                 br
-                button.btn.btn-success(type="submit") Submit
+
+                button.btn.btn-success#send-email(type="submit") Submit
+                .g-recaptcha#captcha(data-sitekey="6LdYtzAUAAAAAMyts382GORnfFZNI4Yf0-AgVpJ9")
+
+block append scripts
+    script(src="https://www.google.com/recaptcha/api.js")
