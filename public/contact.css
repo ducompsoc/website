@@ -2,6 +2,12 @@
     margin-bottom: 2rem;
 }
 
-#captcha {
-    margin: 0;
+.success-message, .form-error-message, .captcha-error-message {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+/* So reCaptcha overlay is in front of inputs */
+.form-control {
+    z-index: 0 !important;
 }

@@ -30,7 +30,8 @@ block content
             h2 Drop Us a Message
             p Leave your queries/comments/feedback/suggestions below.
 
-            form.form-group#send-email
+            //- Don't use HTML5 validation. Makes for v. inflexible user experience.
+            form.form-group#send-email(novalidate)
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-user
@@ -55,9 +56,19 @@ block content
                     textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
                 br
 
-                button.btn.btn-success#send-email-btn(type="submit") Submit
-                .g-recaptcha#captcha(data-sitekey="6LdYtzAUAAAAAMyts382GORnfFZNI4Yf0-AgVpJ9")
+                button.btn.btn-success#send-email-btn Submit
+
+                p.success-message.
+                    Thank you for your interest! A member of the CompSoc team will be in touch shortly :)
+
+                p.form-error-message.
+                    One or more inputs was invalid. Please check the inputs and try again.
+
+                p.captcha-error-message.
+                    Sorry, that captcha was invalid. Please validate the captcha and try again.
+
+                .g-recaptcha(data-sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" data-callback="successfulCaptcha" data-size="invisible")
 
 block append scripts
-    script(src="https://www.google.com/recaptcha/api.js")
     script(src="/js/contact.js")
+    script(src="https://www.google.com/recaptcha/api.js" async defer)
