@@ -1,15 +1,15 @@
 //- Created by Soumya on 17-08-2017
-
 extends layouts/banner-content.pug
 include ./pageBanner.pug
 
 block append head
-    title Blog - DUCompSoc
+    title About - DUCompSoc
     link(href="/aboutStyle.css" rel="stylesheet")
+
 
 //- The main title and banner with icons
 block title
-    +pageBanner('Blog', 'Stories from our Sponsors, Partners and Us')
+    +pageBanner('About Us', 'Find out more about the society')
+
 
 block content
-    //- blog posts
