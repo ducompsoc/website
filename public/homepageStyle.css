@@ -9,3 +9,20 @@
 .quickLinks {
     padding: 2rem 2rem;
 }
+
+/* HiredGrad Hacks */
+#hiredGradSignUpModal {
+    overflow-y: scroll !important;
+}
+
+.iframe {
+    height: 790px !important;
+    max-width: 600px !important;
+    display: block !important;
+}
+
+@media (max-width: 524px) {
+    .iframe {
+        max-height: 680px !important;
+    }
+}
