@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #eeeeee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,8 +28,8 @@ object {
 
 .navbar.navbar-inverse.navbar-fixed-top {
      position: relative;
-     margin-bottom: 0px;
-     border-bottom-width: 0px;
+     margin-bottom: 0;
+     border-bottom-width: 0;
 }
 
 .nav.navbar-nav {
@@ -56,7 +57,7 @@ object {
     border-radius: 0;
 }
 
-.panel-body > h2, h3 {
+.panel-body > h2, .panel-body > h3 {
     text-align: center;
     color: #333;
 }
@@ -80,34 +81,47 @@ object {
     margin-bottom: 0.5em;
 }
 
-/*.col-md-3 {
-    margin: 2em 0em;
-}*/
-
-/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1 */
+/* http://stackoverflow.com/questions/42294/how-do-you-get-the-footer-to-stay-at-the-bottom-of-a-web-page?noredirect=1&lq=1
+   (second answer)
+*/
 * {
     margin: auto;
 }
+
 html, body {
     height: 100%;
 }
+
+/* Height of navbar minus height of footer */
 .wrapper {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -3em; /* the bottom margin is the negative value of the footer's height */
-}
-.push {
-    height: 3em; /* .push must be the same height as .footer */
-}
-
-img {
-
-  display:inline-flex;
-  margin: 10px;
-  margin-left: 0px;
+    min-height: calc(100vh - 50px - 3em);
 }
 
 .hiredGradButton {
     text-align: center;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin-square:hover {
+  color: #0077b5;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-slack:hover {
+  color: grey;
+}
+
+.information {
+    font-size: medium !important;
 }

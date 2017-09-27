@@ -1,0 +1,12 @@
+extends ../templates/marginals.pug
+
+block head
+    link(href="/bannerContentLayout.css" rel="stylesheet")
+
+block content
+    .wrapper
+        .row.page-title-row
+            block title
+        .row.page-content-row
+            block content
+    .push

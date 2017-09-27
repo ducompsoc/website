@@ -1,29 +1,28 @@
-@media (min-width: 992px) {
-    .homepage-btn-horizontal {
-        display: inline-block !important;
-    }
-    .homepage-btn-vertical {
-        display: none !important;
-    }
-}
-
-@media (max-width: 991px) {
-    .homepage-btn-horizontal {
-        display: none !important;
-    }
-    .homepage-btn-vertical {
-        display: inline-block !important;
-    }
-}
-
-.btn-container {
-    margin-bottom: 20px;
-}
-
 #main-info {
     margin-bottom: 0;
 }
 
 #main-title {
     margin-top: 10px;
+}
+
+.quickLinks {
+    padding: 2rem 2rem;
+}
+
+/* HiredGrad Hacks */
+#hiredGradSignUpModal {
+    overflow-y: scroll !important;
+}
+
+.iframe {
+    height: 790px !important;
+    max-width: 600px !important;
+    display: block !important;
+}
+
+@media (max-width: 524px) {
+    .iframe {
+        max-height: 680px !important;
+    }
 }

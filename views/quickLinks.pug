@@ -1,0 +1,42 @@
+//-
+    Creates the quick links at the bottom of the Homepage and About page.
+    Created by Alistair on 09/07/2017.
+
+
+mixin quickLinks
+    link(href="/quickLinks.css" rel="stylesheet")
+    div.container.quickLinks
+        //- Separate text and buttons into two separate rows
+        div.row
+            div.col-md-3
+                h2 The Team
+                p Click to know the Who's Who of CompSoc.
+                a.btn.btn-default.homepage-btn-vertical(href="team" role="button") View details &raquo;
+
+            div.col-md-3
+                h2 What's On
+                p Click to know what's happening in CompSoc, our past events and upcoming events.
+                a.btn.btn-default.homepage-btn-vertical(href="events" role="button") View details &raquo;
+
+            div.col-md-3
+                h2 Our Sponsors
+                p They help us run smoothly and happily :) Click to know more.
+                a.btn.btn-default.homepage-btn-vertical(href="sponsors" role="button") View details &raquo;
+
+            div.col-md-3
+                h2 Say Hi To Us!
+                p Click to get in touch with us by email, social media or leave your valuable feedback and suggestions.
+                a.btn.btn-default.homepage-btn-vertical(href="contact" role="button") View details &raquo;
+
+        .row.btn-container
+            .col-md-3
+                a.btn.btn-default.homepage-btn-horizontal(href="team" role="button") View details &raquo;
+
+            .col-md-3
+                a.btn.btn-default.homepage-btn-horizontal(href="events" role="button") View details &raquo;
+
+            .col-md-3
+                a.btn.btn-default.homepage-btn-horizontal(href="sponsors" role="button") View details &raquo;
+
+            .col-md-3
+                a.btn.btn-default.homepage-btn-horizontal(href="contact" role="button") View details &raquo;

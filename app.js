@@ -57,7 +57,13 @@ app.get('/contact', function (req, res) {
     res.render('contact');
 });
 
+app.get('/blog', function (req, res) {
+    res.render('blog');
+});
 
+app.get('/durhack', function (req, res) {
+    res.render('durhack');
+});
 
 // Start listening on port 9000 -- if running locally navigate to localhost:9000 in a browser to see the results!
 app.listen(9000, function () {

@@ -1,26 +1,91 @@
-//- Created by Soumya on 01-09-2016
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-extends templates/standard.pug
-
-block head
+block append head
     title Sponsors - DU CompSoc
     link(href="/sponsorsStyle.css" rel="stylesheet")
 
 block title
-    h1 Our Sponsors
-    p Here's a big thank you to all who help us grow :)
+    +pageBanner("Sponsors", "Thank you to all who help us grow")
 
 block content
     //- contains pictures of our sponsors which act as links to their official websites.
-    .row.sponsor-row
+    div.row
         .container
-            .col-lg-2
-            .col-lg-3
-                img.sponsor-img(src="./img/sl_logo.png")
-            .col-lg-5
-                h3.sponsor-header Scott Logic
-                p
-                    | Scott Logic is a software consultancy company headquartered in the UK. Today, they employ over 190
-                    | of the best people in the industry.
-                    | <a href="http://www.scottlogic.com">http://www.scottlogic.com</a>
-            .col-lg-2
+            div.panel-group
+                div.panel.panel-default
+                    div.panel-heading
+                        h3
+                            a(data-toggle="collapse" href="#sp17-18") 2017/18
+                    #sp17-18.panel-collapse.collapse.in
+                        div.panel-body
+                            div.row
+                                div.col-md-1
+                                div.col-md-2
+                                    br
+                                    br
+                                    a(href="http://www.blackrock.com")
+                                        img.sponsor-img(src="./img/sponsors/blackrock.jpg")
+                                div.col-md-2
+                                    a(href="http://www.hiredgrad.com")
+                                        img.sponsor-img(src="./img/sponsors/hiredgrad.png")
+                                div.col-md-2
+                                    br
+                                    a(href="http://www.radix.website")
+                                        img.sponsor-img(src="./img/sponsors/radix.png")
+                                div.col-md-2
+                                    br
+                                    br
+                                    a(href="http://www.schroders.com")
+                                        img.sponosr-img(src="./img/sponsors/schroders.svg")
+                                div.col-md-2
+                                    br
+                                    br
+                                    a(href="http://www.scottlogic.com")
+                                        img.sponsor-img(src="./img/sponsors/sl_logo.png")
+                                div.col-md-1
+
+
+                            div.row
+                                div.col-md-1
+                                div.col-md-2
+                                    p
+                                        | <b>BlackRock</b> combines the best of being a technology pioneer and financial leader. Since our inception in 1988, we’ve grown from an entrepreneurial start-up into the world’s largest investment manager by putting technology - and continuous innovation - at the heart of our business.
+                                        | Today, as the world’s largest asset manager, with more than $5.7 trillion under management, BlackRock brings together financial leadership and state-of-the-art technology to provide answers to millions of investors who entrust their financial futures to us.
+                                div.col-md-2
+                                    p
+                                        | <b>HiredGrad</b> helps societies grow, and provides incredible career value to the members, by connecting them with top, fast-growing companies that are typically hard to reach.
+
+                                div.col-md-2
+                                    p
+                                        |Since it's launch 2 years ago, <b>.TECH Domains</b> has become the de factor domain extension for programmers, startups, tech brands and enthusiasts. With over 250,000 registrations, .TECH has seen a rapid adoption globally, including brands like Viacom.tech, TNW.tech and CES.tech. .TECH has been a constant promoter of the developer and student community, including supporting coding schools, university clubs, college fests as well as over 200 hackathons  worldwide.
+                                div.col-md-2
+                                    p
+                                        | <b>Schroders</b> description
+
+                                div.col-md-2
+                                    p
+                                        | <b>Scott Logic</b> is a software consultancy company headquartered in the UK. Today, they employ over 190
+                                        | of the best people in the industry.
+
+                                div.col-md-1
+
+
+            div.panel-group
+                div.panel.panel-default
+                    div.panel-heading
+                        h3
+                            a(data-toggle="collapse" href="#sp16-17") 2016/17
+                    #sp16-17.panel-collapse.collapse
+                        div.panel-body
+                            .row.sponsor-row
+                                    .col-md-1
+                                    .col-md-4
+                                        img.sponsor-img(src="./img/sponsors/sl_logo.png")
+                                    .col-md-6
+                                        h3.sponsor-header Scott Logic
+                                        p
+                                            | Scott Logic is a software consultancy company headquartered in the UK. Today, they employ over 190
+                                            | of the best people in the industry.
+                                            | <a href="http://www.scottlogic.com">http://www.scottlogic.com</a>
+                                    .col-md-1

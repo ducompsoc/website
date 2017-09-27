@@ -1,0 +1,42 @@
+/*  This Stylesheet describes the stylings of the sections of text at the
+    bottom of the About and Index (Homepage) pages. The headings are The Team,
+    Events, Our Sponsors and Say Hi To Us!.
+    This was necessary to have all the buttons aligning vertically.
+ */
+
+/*
+    Display the buttons for viewing widescreen (when everything is horizontal)
+ */
+@media (min-width: 992px) {
+    .homepage-btn-horizontal {
+        display: inline-block !important;
+    }
+    .homepage-btn-vertical {
+        display: none !important;
+    }
+}
+
+/*
+    Display the buttons for viewing portrait (eg on mobile when things are
+    vertical)
+ */
+@media (max-width: 991px) {
+    .btn-container {
+        display: none !important;
+    }
+    .homepage-btn-vertical {
+        display: inline-block !important;
+    }
+    /* Add padding at the top to all but the first in order to space quick links */
+    .quickLinks > .row > .col-md-3:first-child {
+        padding-top: 0;
+    }
+    .quickLinks > .row > .col-md-3 {
+        padding-top: 2rem;
+    }
+}
+
+/* Ignore margin for headers as spacing is handled by containing element */
+.quickLinks > h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}

@@ -1,30 +1,57 @@
-//- Created by Soumya on 01-09-2016
-extends templates/standard.pug
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
-block head
+block append head
     title Contact Us - DUCompSoc
+    link(href="/aboutStyle.css" rel="stylesheet")
 
+
+//- The main title and banner with icons
 block title
-    h1 Say Hi To Us!
-    p
-    p Like Us? Have any valuable suggestions? We're all ears!
+    +pageBanner('Say Hi!', 'Get in touch')
 
 block content
-    //- row contains four columns, each with a description
-    div.row
-        div.col-md-4
-            h2 Drop us a mail
-            p computing.society@durham.ac.uk
-        div.col-md-4
-            h2 We're social !
-            p <i class="fa fa-facebook-official" aria-hidden="true"></i>  Like us on <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts">Facebook </a>
-            p <i class="fa fa-twitter" aria-hidden="true"></i>  Follow Us on <a href = "http://twitter.com/ducompsoc/">Twitter </a>
-            p <i class="fa fa-slack" aria-hidden="true"></i>  Join us on <a href = "https://ducompsoc.slack.com/">Slack</a>
-            p <i class="fa fa-linkedin-square" aria-hidden="true"></i> Connect with us on <a href = "https://linkedin.com/company/ducompsoc">LinkedIn </a>
-        div.col-md-4
-            h2 We value your opinion
-            p Leave your comments/feedback/suggestions below.
-            form.form-group
-                input.form-control(type="text" placeholder="Name")
-                input.form-control(type="text" placeholder="Comments")
-                button.btn.btn-success(type="submit") Submit
+    //- row contains two columns, each with the content
+    .container
+        div.row
+            div.col-md-6
+                h2 We're social !
+                div.row
+                    div.col-md-3
+                        p <a href = "https://www.facebook.com/DurhamCompsoc/"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+                    div.col-md-3
+                        p <a href = "http://twitter.com/ducompsoc/"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+                div.row
+                    div.col-md-3
+                        p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
+                    div.col-md-3
+                        p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
+            div.col-md-6
+                h2 Drop Us a Message
+                p Leave your queries/comments/feedback/suggestions below.
+                form.form-group(action="contactform.php" method="POST")
+                    div.input-group
+                        span.input-group-addon
+                            i.fa.fa-user
+                        input.form-control(type="text" placeholder="Name" name="realname" id="realname")
+                    br
+
+                    div.input-group
+                        span.input-group-addon
+                            i.fa.fa-at
+                        input.form-control(type="email" placeholder="Email" name="email" id="email")
+
+                    br
+                    div.input-group
+                        span.input-group-addon
+                            i.fa.fa-pencil
+                        input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
+
+                    br
+                    div.input-group
+                        span.input-group-addon
+                            i.fa.fa-envelope
+                        textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
+
+                    br
+                    button.btn.btn-success(type="submit") Submit

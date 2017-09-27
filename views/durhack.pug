@@ -1,0 +1,24 @@
+//- Created by Soumya on 17-08-2017
+extends layouts/banner-content.pug
+include ./pageBanner.pug
+
+block append head
+    title DurHack - DUCompSoc
+    link(href="/aboutStyle.css" rel="stylesheet")
+    link(href="/durhackStyle.css")
+
+
+//- The main title and banner with icons
+block title
+    +pageBanner('DurHack', '24-hour inter-uni hackathon')
+
+
+block content
+    .container
+        #up-info
+            h4 Please check back soon for information about DurHack 2017-18.
+            h4 Meanwhile, why not have a look at our previous and our very first season!
+            br
+            br
+            a(href = "http://durhack.com")
+                h3 Take Me There!
