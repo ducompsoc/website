@@ -3,7 +3,7 @@ include ./pageBanner.pug
 
 block append head
     title Contact Us - DUCompSoc
-    link(href="/aboutStyle.css" rel="stylesheet")
+    link(href="/contact.css" rel="stylesheet")
 
 
 //- The main title and banner with icons
@@ -12,46 +12,85 @@ block title
 
 block content
     //- row contains two columns, each with the content
-    .container
-        div.row
-            div.col-md-6
-                h2 We're social !
-                div.row
-                    div.col-md-3
-                        p <a href = "https://www.facebook.com/DurhamCompsoc/"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
-                    div.col-md-3
-                        p <a href = "http://twitter.com/ducompsoc/"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
-                div.row
-                    div.col-md-3
-                        p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
-                    div.col-md-3
-                        p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
-            div.col-md-6
-                h2 Drop Us a Message
-                p Leave your queries/comments/feedback/suggestions below.
-                form.form-group(action="contactform.php" method="POST")
-                    div.input-group
-                        span.input-group-addon
-                            i.fa.fa-user
-                        input.form-control(type="text" placeholder="Name" name="realname" id="realname")
-                    br
+    div.row
+        div.col-md-6
+            h2 We're social !
+            div.row
+                div.col-md-3
+                    p <a href = "https://www.facebook.com/DurhamCompsoc/?fref=ts"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "http://twitter.com/ducompsoc/"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+            div.row
+                div.col-md-3
+                    p <a href = "https://ducompsoc.slack.com/"><i class="fa fa-slack fa-5x" aria-hidden="true"></i></a>
+                div.col-md-3
+                    p <a href = "https://linkedin.com/company/ducompsoc"><i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i></a>
 
-                    div.input-group
-                        span.input-group-addon
-                            i.fa.fa-at
-                        input.form-control(type="email" placeholder="Email" name="email" id="email")
+        div.col-md-6
+            h2 Drop Us a Message
+            p Leave your queries/comments/feedback/suggestions below.
 
-                    br
-                    div.input-group
-                        span.input-group-addon
-                            i.fa.fa-pencil
-                        input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
+            //- Don't use HTML5 validation. Makes for v. inflexible user experience.
+            form.form-group#send-email(novalidate)
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-user
+                    input.form-control(type="text" placeholder="Name" name="realname" id="realname")
 
-                    br
-                    div.input-group
-                        span.input-group-addon
-                            i.fa.fa-envelope
-                        textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
+                p.no-name-message.
+                    All fields are required.
 
-                    br
-                    button.btn.btn-success(type="submit") Submit
+                br
+
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-at
+                    input.form-control(type="email" placeholder="Email" name="email" id="email")
+
+                p.no-email-message.
+                    All fields are required.
+
+                p.invalid-email-message.
+                    Sorry, that email address appears to be invalid.
+
+                br
+
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-pencil
+                    input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
+
+                p.no-subject-message.
+                    All fields are required.
+
+                br
+
+                div.input-group
+                    span.input-group-addon
+                        i.fa.fa-envelope
+                    textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
+
+                p.no-body-message.
+                    All fields are required.
+
+                br
+
+                button.btn.btn-success#send-email-btn Submit
+
+                p.success-message.
+                    Thank you for your interest! A member of the CompSoc team will be in touch shortly :)
+
+                p.form-error-message.
+                    One or more inputs was invalid. Please check the inputs and try again.
+
+                p.captcha-error-message.
+                    Sorry, that captcha was invalid. Please validate the captcha and try again.
+
+                p.failure-error-message.
+                    Sorry, your message could not be sent at this time. Please try again later.
+
+                .g-recaptcha(data-sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" data-callback="successfulCaptcha" data-size="invisible")
+
+block append scripts
+    script(src="/js/contact.js")
+    script(src="https://www.google.com/recaptcha/api.js" async defer)
