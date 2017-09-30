@@ -88,6 +88,10 @@ app.get('/blog', function (req, res) {
     res.render('blog');
 });
 
+app.get('/durhack', function (req, res) {
+    res.render('durhack');
+});
+
 /**
  * Parse body and run reCAPTCHA authentication. If successful, use nodemailer to send an email to
  * computing.society@durham.ac.uk with the user's message.

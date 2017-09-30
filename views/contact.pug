@@ -1,14 +1,14 @@
-//- Created by Soumya on 01-09-2016
-extends templates/standard.pug
+extends layouts/banner-content.pug
+include ./pageBanner.pug
 
 block append head
     title Contact Us - DUCompSoc
     link(href="/contact.css" rel="stylesheet")
 
+
+//- The main title and banner with icons
 block title
-    h1 Say Hi To Us!
-    p
-    p Like Us? Have any valuable suggestions? We're all ears!
+    +pageBanner('Say Hi!', 'Get in touch')
 
 block content
     //- row contains two columns, each with the content
