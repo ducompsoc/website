@@ -2,12 +2,24 @@
     margin-bottom: 2rem;
 }
 
-.success-message, .form-error-message, .captcha-error-message {
+.success-message {
     display: none;
     margin-bottom: 2rem;
 }
 
-/* So reCaptcha overlay is in front of inputs */
+/* So reCAPTCHA overlay is in front of inputs */
 .form-control {
     z-index: 0 !important;
+}
+
+.no-name-message, .no-email-message, .invalid-email-message, .no-subject-message, .no-body-message {
+    display: none;
+    margin-top: 1rem;
+    color: red;
+}
+
+.failure-error-message, .form-error-message, .captcha-error-message {
+    display: none;
+    color: red;
+    margin-bottom: 2rem;
 }

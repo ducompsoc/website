@@ -36,24 +36,43 @@ block content
                     span.input-group-addon
                         i.fa.fa-user
                     input.form-control(type="text" placeholder="Name" name="realname" id="realname")
+
+                p.no-name-message.
+                    All fields are required.
+
                 br
 
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-at
                     input.form-control(type="email" placeholder="Email" name="email" id="email")
+
+                p.no-email-message.
+                    All fields are required.
+
+                p.invalid-email-message.
+                    Sorry, that email address appears to be invalid.
+
                 br
 
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-pencil
                     input.form-control(type="text" placeholder="Message Title/Subject" name="subject" id="subject")
+
+                p.no-subject-message.
+                    All fields are required.
+
                 br
 
                 div.input-group
                     span.input-group-addon
                         i.fa.fa-envelope
                     textarea.form-control(rows="5" id="msgbody" name="msgbody" placeholder="Your Message")
+
+                p.no-body-message.
+                    All fields are required.
+
                 br
 
                 button.btn.btn-success#send-email-btn Submit
@@ -66,6 +85,9 @@ block content
 
                 p.captcha-error-message.
                     Sorry, that captcha was invalid. Please validate the captcha and try again.
+
+                p.failure-error-message.
+                    Sorry, your message could not be sent at this time. Please try again later.
 
                 .g-recaptcha(data-sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" data-callback="successfulCaptcha" data-size="invisible")
 
