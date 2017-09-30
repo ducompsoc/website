@@ -92,16 +92,16 @@ app.get('/blog', function (req, res) {
  * Parse body and run reCAPTCHA authentication. If successful, use nodemailer to send an email to
  * computing.society@durham.ac.uk with the user's message.
  */
-app.post('/api/contact', urlencodedParser, captchaAuth, function (req, res) {
+app.post('/api/contact', urlencodedParser, captchaAuth, inputValidation, function (req, res) {
     res.set('Content-Type', 'text/plain');
 
-    // setup email data with unicode symbols
+    // Set up email data with unicode symbols
     const mailOptions = {
         from: 'computing.society@durham.ac.uk',
-        to: 'computing.society@durham.ac.uk', // list of receivers
-        subject: req.body["subject"], // Subject line
+        to: 'computing.society@durham.ac.uk',
+        subject: req.body["subject"],
         text: "From: " + req.body["realname"] + " - " + req.body["email"] + "\n\n" +
-            req.body["msgbody"] // plain text body
+            req.body["msgbody"]
     };
 
     transporter.sendMail(mailOptions, function (err, info) {
@@ -117,6 +117,13 @@ app.post('/api/contact', urlencodedParser, captchaAuth, function (req, res) {
     res.sendStatus(200);
 });
 
+/**
+ * Runs reCAPTCHA authentication to protect against bot attacks.
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
 function captchaAuth(req, res, next) {
 
     const postData = querystring.stringify({
@@ -154,6 +161,55 @@ function captchaAuth(req, res, next) {
 
     captchaReq.write(postData);
     captchaReq.end();
+}
+
+/**
+ * Middleware that performs basic validations for inputs to api/contact.
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
+function inputValidation(req, res, next) {
+
+    const emailRegex = new RegExp("^(?=[A-Z0-9][A-Z0-9@._%+-]{5,253}$)[A-Z0-9._%+-]{1,64}@(?:(?=[A-Z0-9-]{1,63}\.)" +
+        "[A-Z0-9]+(?:-[A-Z0-9]+)*\.){1,8}[A-Z]{2,63}$", "i");
+
+    // Remove whitespace from beginning and end (better done functionally?)
+    req.body["realname"] = req.body["realname"].trim();
+    req.body["email"] = req.body["email"].trim();
+    req.body["subject"] = req.body["subject"].trim();
+    req.body["msgbody"] = req.body["msgbody"].trim();
+
+    if (req.body["realname"].length === 0) {
+        res.sendStatus(400);
+        return;
+    }
+
+    if (req.body["email"].length === 0) {
+        res.sendStatus(400);
+        return;
+    }
+
+    console.log(req.body["email"]);
+
+    if (!emailRegex.test(req.body["email"]) === true) {
+        res.sendStatus(400);
+        return;
+    }
+
+    if (req.body["subject"].length === 0) {
+        res.sendStatus(400);
+        return;
+    }
+
+    if (req.body["msgbody"].length === 0) {
+        res.sendStatus(400);
+        return;
+    }
+
+    next();
+
 }
 
 // Start listening on port 9000 -- if running locally navigate to localhost:9000 in a browser to see the results!
