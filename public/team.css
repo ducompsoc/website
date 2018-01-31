@@ -1,0 +1,12 @@
+.container > .row {
+    margin-bottom: 1rem;
+}
+
+.col-md-2 > h3, .exec-photo {
+    margin-bottom: 0.5rem;
+}
+
+.exec-photo {
+    width: 100%;
+    max-width: 250px;
+}
