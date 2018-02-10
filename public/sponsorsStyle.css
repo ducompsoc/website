@@ -1,25 +1,20 @@
-@media (min-width: 992px) {
-    .sponsor-header {
-        margin-top: 0;
-    }
-}
-
 @media (max-width: 991px) {
-    .sponsor-header {
-        margin-top: 1rem;
+    .sponsor-row {
+        margin-bottom: 0 !important;
     }
 }
 
 .sponsor-img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 50px;
     vertical-align: top;
-    margin: 0;
-    width: 100%;
+    margin: auto;
+    margin-bottom: 1em;
+    display: block;
 }
 
 .sponsor-row {
-    margin-bottom: 1em;
+    margin-bottom: 3rem;
 }
 
 .panel-heading > h3 {
@@ -28,7 +23,9 @@
 }
 
 .col-md-6 > p {
-    margin-bottom: 0;
+    font-size: medium;
+    text-align: justify;
+    margin-bottom: 3rem;
 }
 
 .panel-group:last-child {
@@ -37,4 +34,8 @@
 
 p {
   text-align: justify;
+}
+
+.panel-body {
+  padding: 3rem !important;
 }
