@@ -12,7 +12,8 @@ block content
     .wrapper
         //- Main jumbotron for a primary marketing message or call to action
         .banner-container
-            object.banner(data="../img/newiconbanner1.svg" type="image/svg+xml")
+            object.mobile-banner(data="../img/mobile-banner-o.svg" type="image/svg+xml")
+            object.desktop-banner(data="../img/homepage-banner-o.svg" type="image/svg+xml")
 
         .jumbotron.banner-jumbotron
             .panel.panel-default#main-info
@@ -29,7 +30,6 @@ block content
         #hiredgrad-signup
 
 block scripts
-    script(src="/js/index.js")
 
     //- HiredGrad
     script(src="http://hiredgrad.com/rest/resources/society/js/57e3b53ce4b0db35d5037a80/branded")

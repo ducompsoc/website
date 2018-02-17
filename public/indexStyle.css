@@ -37,12 +37,12 @@ object {
 }
 
 .banner-container {
-    height: 150px;
+    height: auto;
     line-height: 0;
 }
 
 .banner-container > object {
-    height: 150px;
+    height: auto;
 }
 
 .fa {
