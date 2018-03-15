@@ -52,6 +52,8 @@ app.use(express.static('node_modules'));
 /**
  * The res.locals object can contain variables scoped to a particular request. Chained with app.use (with the default
  * / route) this makes the currentYear variable available to every response.
+ *
+ * reference:   https://expressjs.com/en/api.html#res.locals
  */
 app.use(function (req, res, next) {
     res.locals.currentYear = 2018;
