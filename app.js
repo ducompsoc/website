@@ -44,6 +44,10 @@ app.set('view engine', 'pug');
  */
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
+app.use(function (req, res, next) {
+    res.locals.currentYear = 2018;
+    next();
+});
 
 /**
  * Set up urlencodedParser function to use as middleware.
