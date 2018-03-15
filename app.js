@@ -36,14 +36,23 @@ app.set('view engine', 'pug');
  * app.use takes a path and a function. Path defaults to / meaning that the function is called for every requested
  * route.
  *
+ *
+ * reference:   https://expressjs.com/en/4x/api.html#app.use
+ */
+
+/**
  * express.static is a built in function that serves static files. In this case it makes all files in the public and
  * node modules folders available.
  *
- * reference:   https://expressjs.com/en/4x/api.html#app.use
- *              https://expressjs.com/en/4x/api.html#express.static
+ * reference:   https://expressjs.com/en/4x/api.html#express.static
  */
 app.use(express.static('public'));
 app.use(express.static('node_modules'));
+
+/**
+ * The res.locals object can contain variables scoped to a particular request. Chained with app.use (with the default
+ * / route) this makes the currentYear variable available to every response.
+ */
 app.use(function (req, res, next) {
     res.locals.currentYear = 2018;
     next();
