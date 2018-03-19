@@ -56,7 +56,7 @@ app.use(express.static('node_modules'));
  * reference:   https://expressjs.com/en/api.html#res.locals
  */
 app.use(function (req, res, next) {
-    res.locals.currentYear = 2018;
+    res.locals.currentYear = new Date().getFullYear();
     next();
 });
 
