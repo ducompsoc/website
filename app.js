@@ -104,7 +104,8 @@ app.get('/blog', function (req, res) {
 });
 
 app.get('/durhack', function (req, res) {
-    res.render('durhack');
+    // res.render('durhack');
+    res.redirect("http://durhack.tech/");
 });
 
 /**
