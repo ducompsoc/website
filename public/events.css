@@ -34,3 +34,8 @@ h2:first-child {
 p:last-child {
     margin-bottom: 0;
 }
+
+#sponsor-us-msg {
+    text-align: center;
+    padding-top: 2rem;
+}
