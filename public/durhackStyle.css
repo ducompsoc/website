@@ -1,4 +1,12 @@
-#up-info{
-  text-align: center;
-  
+/*#up-info {*/
+    /*text-align: center;*/
+
+/*}*/
+
+p {
+    font-size: medium;
+}
+
+p.image {
+    text-align:center;
 }

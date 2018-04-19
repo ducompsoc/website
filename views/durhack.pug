@@ -5,7 +5,7 @@ include ./pageBanner.pug
 block append head
     title DurHack - Durham CompSoc
     link(href="/aboutStyle.css" rel="stylesheet")
-    link(href="/durhackStyle.css")
+    link(href="/durhackStyle.css" rel="stylesheet")
 
 
 //- The main title and banner with icons
@@ -16,9 +16,26 @@ block title
 block content
     .container
         #up-info
-            h4 Please check back soon for information about DurHack 2017-18.
-            h4 Meanwhile, why not have a look at our previous and our very first season!
-            br
-            br
-            a(href = "http://durhack.com")
-                h3 Take Me There!
+            h2 DurHack is CompSoc's Flagship Annual Hackathon
+            p CompSoc runs a large-scale annual hackathon with students from all sorts of universities from all over the country. At DurHack 2017, we had students come from as far as Croatia!
+            p Planning is well underway for another hackathon in late 2018 – <a class="typeform-share link" href="https://ducompsoc.typeform.com/to/bMrpxS" data-mode="drawer_right" target="_blank">sign up to our mailing list</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> to be amongst the first to hear about it!
+            p If you're interested in sponsoring CompSoc's next big hackathon, please #[a(href="/contact") get in touch].
+
+            hr
+
+            h3 DurHack 2017
+            h5 9th-10th December 2017
+            p CompSoc brought back DurHack for a second year running and it was a huge success. With Durham County Council, Barclays, TPP, .TECH Domains, Waterstons, Entrepreneurs Durham, The Keyboard Company, the Department of Computer Science and Durham Students' Union on board as sponsors, this event was jam-packed with prizes and was not a hackathon to be missed!
+            p.image #[img(src="./img/events/events_durhack_2.jpg")]
+
+            hr
+
+            h3 DurHack
+            h5 28th-29th January 2017
+            p DurHack first ran in January 2017, CompSoc's first ever 24-hour hackathon sponsored by big names like Durham County Council, GitHub, MLH, Sunderland Software City, Durham Students' Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data sets from in and around Durham, participants from various UK universities utilised it to produce something that can potentially make a different to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success.
+            p.image #[img(src="./img/events/events_Durhack_2017.png")]
+
+            hr
+
+            h3 Meanwhile, why not have a look at our DurHack website!
+            h4 #[a(href = "http://durhack.tech") Take me there!]
