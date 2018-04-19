@@ -82,6 +82,10 @@ object {
     max-width: 70%;
 }
 
+.footer p {
+    text-align:center;
+}
+
 .footer a {
     color: #d8d8d8;
 }
