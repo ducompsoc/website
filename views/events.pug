@@ -10,24 +10,55 @@ block title
 
 block content
     .container
+
+
         .col-md-12
             h2 What's On
-            p.information.
-                CompSoc holds events all the year round, from hackathons to tech-talks to weekly meetings. Come down and learn
-                something new, meet new people and build some awesome stuff.
-            p.information.
+            p.information
+                CompSoc holds events all the year round, from hackathons to tech-talks to weekly meetings. Come down and learn something new, meet new people and build some awesome stuff.
+            p.information
                 Take a look at past and future events:
 
+
         .col-md-6
+            h2 What's Next?
+            p.information Mark your calendars for these upcoming events!
+
+            .row
+                blockquote We have a couple of projects in the works for after exams – #[a(href="https://ducompsoc.typeform.com/to/bMrpxS" target="_blank") sign up to our mailing list] to be the first to hear about them!
+
+
+        .col-md-6
+
             h2 What We've Done!
             p.information Here's all events we've conducted in the past.
 
             .row
-                //a(href="https://durhack.com") DurHack 2017
+                img(src="./img/events/events_tpp_pub_quiz.jpg")
+                a.btn.btn-info.btn-block(href="#tpp", data-toggle="collapse") TPP CompSoc Pub Quiz
+                #tpp.collapse
+                    p Come and join TPP and CompSoc at The Boat Club by Elvet Bridge on 27th February 2018 and test your programming skills in our Pub Quiz. Bring a laptop and your favourite code editor – your problem-solving skills will be tested! Free food, beer, and soft drinks will be provided for all students. We’ll also be giving away great prizes such as Raspberry Pis and Amazon vouchers. With no entry fee, there’s nothing stopping you from assembling a group (max team size 6) of your most intelligent friends and coming along!
+
+            .row
+                img(src="./img/events/events_durhack_2.jpg")
+                a.btn.btn-info.btn-block(href="#dhk2", data-toggle="collapse") DurHack 2017
+                #dhk2.collapse
+                    p CompSoc brought back #[a(href="http://durhack.tech") DurHack] for a second year running and it was a massive success. With #[a(href="http://www.durham.gov.uk/") Durham County Council], #[a(href="https://jobs.barclays.co.uk/") Barclays], #[a(href="https://tpptop50.com/") TPP], #[a(href="https://get.tech").TECH Domains], #[a(href="https://www.waterstons.com/careers") Waterstons], #[a(href="http://www.entrepreneursdurham.co.uk/") Entrepreneurs Durham], #[a(href="http://www.keyboardco.com/") The Keyboard Company], the #[a(href="https://www.dur.ac.uk/computer.science/") Department of Computer Science] and #[a(href="https://www.durhamsu.com/") Durham Students' Union] on board as sponsors, this event was jam-packed with prizes and was not a hackathon to be missed!
+
+
+            .row
+                img(src="./img/events/thg.png")
+                a.btn.btn-info.btn-block(href="#thg", data-toggle="collapse") THG Company Presentation and Drinks
+                #thg.collapse
+                    p Join THG at 18:00 on 24th October 2017 at ER152, Elvet Riverside, to know more about their company and careers with them, followed by drinks.
+
+
+            .row
+                //a(href="https://durhack.com") DurHack
                 img(src="./img/events/events_Durhack_2017.png")
-                a.btn.btn-info.btn-block(href='#dhk', data-toggle='collapse') Durhack 2017
+                a.btn.btn-info.btn-block(href='#dhk', data-toggle='collapse') Durhack
                 #dhk.collapse
-                    p Durham University had its first ever 24-hour Hackathon sponsored by big names like Durham County Council, Github, MLH, Sunderland Software City, Durham Students Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data from in and around Durham, participants from various UK Universities utilized it to produce something that can potentially make a differemce to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success.
+                    p Durham University had its first ever 24-hour hackathon sponsored by big names like Durham County Council, GitHub, MLH, Sunderland Software City, Durham Students Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data from in and around Durham, participants from various UK Universities utilized it to produce something that can potentially make a differemce to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success.
 
             .row
                 //p
@@ -36,7 +67,7 @@ block content
                 //a(href="https://durhack.com")
                 a.btn.btn-info.btn-block(href='#lhd', data-toggle='collapse') MLH Local Hack Day 2017
                 #lhd.collapse
-                    p We organized 12-hour long event for building, problem solving, coding and meeting new people on December 3, 2016 and that turned out to be a success :)
+                    p We organised 12-hour long event for building, problem solving, coding and meeting new people on December 3, 2016 and that turned out to be a success :)
 
             .row
                 //p
@@ -80,15 +111,4 @@ block content
                 .container
                 a.btn.btn-info.btn-block(href='#dhack', data-toggle='collapse') Dur(h).ac._k
                 #dhack.collapse
-                    p Joe Nash from Paypal talked to the students on March 2, 2016 about what hackathons are, how they are often misunderstood as attempts to break into systems, and how they are a brilliant opportunity to network with people from all parts of the world, develop new skills and an opportunity to land in a job as well! That's how Joe ended up working at PayPal. The students also got introduced to NodeJS.
-
-        .col-md-6
-            h2 What Next?
-            p.information Mark your calendars for the upcoming events!
-
-            .row
-                //a(href="https://thehutgroup.com") The Hut Group Company Presentation and Drinks
-                img(src="./img/events/thg.png")
-                a.btn.btn-info.btn-block(href='#thg', data-toggle='collapse') THG Company Presentation & Drinks
-                #thg.collapse
-                    p Join THG on October 24, 1830 hrs at ER152, Elvet Riverside to know more about their company and careers with them, followed by drinks.
+                    p Joe Nash from PayPal talked to the students on March 2, 2016 about what hackathons are, how they are often misunderstood as attempts to break into systems, and how they are a brilliant opportunity to network with people from all parts of the world, develop new skills and an opportunity to land in a job as well! That's how Joe ended up working at PayPal. The students also got introduced to NodeJS.
