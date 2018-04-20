@@ -121,7 +121,8 @@ app.post('/api/contact', urlencodedParser, captchaAuth, inputValidation, functio
         to: 'computing.society@durham.ac.uk',
         subject: req.body["subject"],
         text: "From: " + req.body["realname"] + " - " + req.body["email"] + "\n\n" +
-            req.body["msgbody"]
+            req.body["msgbody"],
+        replyTo: req.body["email"]
     };
 
     transporter.sendMail(mailOptions, function (err, info) {
