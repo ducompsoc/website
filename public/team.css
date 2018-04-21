@@ -55,10 +55,19 @@ body {
     box-shadow: none;
 }
 
+.panel-body-cards {
+    border-top: 0 !important;
+}
+
 .panel-body-cards > .row {
     margin-top: 30px;
 }
 
 .panel-body-cards > .row:first-child {
     margin-top: 15px !important;
+}
+
+.panel-heading-cards {
+    border: 1px solid #ddd !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
