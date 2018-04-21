@@ -39,3 +39,12 @@ p {
 .panel-body {
   padding: 3rem !important;
 }
+
+#sponsor-us-msg {
+    margin-top: 2rem;
+    text-align:center;
+}
+
+#sponsor-us-msg p {
+    text-align:center;
+}

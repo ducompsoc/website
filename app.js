@@ -105,6 +105,7 @@ app.get('/blog', function (req, res) {
 
 app.get('/durhack', function (req, res) {
     res.render('durhack');
+    // res.redirect("http://durhack.tech/");
 });
 
 /**
@@ -120,7 +121,8 @@ app.post('/api/contact', urlencodedParser, captchaAuth, inputValidation, functio
         to: 'computing.society@durham.ac.uk',
         subject: req.body["subject"],
         text: "From: " + req.body["realname"] + " - " + req.body["email"] + "\n\n" +
-            req.body["msgbody"]
+            req.body["msgbody"],
+        replyTo: req.body["email"]
     };
 
     transporter.sendMail(mailOptions, function (err, info) {
@@ -233,5 +235,5 @@ function inputValidation(req, res, next) {
 
 // Start listening on port 9000 -- if running locally navigate to localhost:9000 in a browser to see the results!
 app.listen(9000, function () {
-    console.log('Example app listening on port 9000!');
+    console.log('CompSoc app listening on port 9000!');
 });

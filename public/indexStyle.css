@@ -73,8 +73,22 @@ object {
 .footer {
     background-color: #333;
     display: flex;
-    height: 3em;
+    min-height: 6em;
     color: #9d9d9d;
+    text-align:center;
+    height: auto;
+}
+
+.footer div {
+    max-width: 70%;
+}
+
+.footer p {
+    text-align:center;
+}
+
+.footer a {
+    color: #d8d8d8;
 }
 
 .form-control {
@@ -94,7 +108,7 @@ html, body {
 
 /* Height of navbar minus height of footer */
 .wrapper {
-    min-height: calc(100vh - 50px - 3em);
+    min-height: calc(100vh - 50px - 6em);
 }
 
 .hiredGradButton {
@@ -124,4 +138,17 @@ html, body {
 
 .information {
     font-size: medium !important;
+}
+
+hr {
+    border-top: 1px solid #dcdcdc;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.typeformButton a {
+    border-color: #398439;
+    transition: all 0.15s;
 }
