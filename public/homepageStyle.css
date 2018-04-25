@@ -1,3 +1,8 @@
+/* Don't show navbar over typeform */
+.navbar {
+    z-index: 1 !important;
+}
+
 #main-info {
     margin-bottom: 0;
 }
