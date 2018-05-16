@@ -39,3 +39,8 @@ p:last-child {
     text-align: center;
     padding-top: 2rem;
 }
+
+.sign-up-link {
+    padding: 0;
+    border: 0;
+}
