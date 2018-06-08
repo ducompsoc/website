@@ -3,12 +3,32 @@
     z-index: 1 !important;
 }
 
-#main-info {
-    margin-bottom: 0;
+.main-info-panel {
+    margin-bottom: 0 !important;
+}
+
+.main-info-panel-body {
+    text-align: center;
 }
 
 #main-title {
     margin-top: 10px;
+}
+
+/* Should probably look at reducing the number of !important statements */
+.typeformButton {
+    text-decoration: none;
+    font-family:  Jura, sans-serif !important;
+    font-size: 20px !important;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5 !important;
+    margin-bottom: 0.2rem !important;
+    margin-top: 0.5rem !important;
 }
 
 .quickLinks {
@@ -41,22 +61,5 @@
     }
     .desktop-banner {
         display: block;
-    }
-}
-
-/* HiredGrad Hacks */
-#hiredGradSignUpModal {
-    overflow-y: scroll !important;
-}
-
-.iframe {
-    height: 790px !important;
-    max-width: 600px !important;
-    display: block !important;
-}
-
-@media (max-width: 524px) {
-    .iframe {
-        max-height: 680px !important;
     }
 }

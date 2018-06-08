@@ -1,12 +1,11 @@
-//-
-   Created by Alistair on 28/08/2016.
-
 extends templates/marginals.pug
 include ./quickLinks.pug
 
 block head
     title Homepage - Durham CompSoc
     link(href="/homepageStyle.css" rel="stylesheet")
+    script(defer src="https://embed.typeform.com/embed.js")
+    script(defer src="/js/typeform.js")
 
 block content
     .wrapper
@@ -16,26 +15,11 @@ block content
             object.desktop-banner(data="../img/homepage-banner-o.svg" type="image/svg+xml")
 
         .jumbotron.banner-jumbotron
-            .panel.panel-default#main-info
-                .panel-body
-                    h2#main-title Do you love technology? Programming? Or just want to learn something new?
+            .panel.panel-default.main-info-panel
+              .panel-body.main-info-panel-body
+                    h2 Do you love technology? Programming? Or just want to learn something new?
                     h3 CompSoc runs talks, hackathons and workshops for Durham students throughout the year.
                     h3 Join today to be notified of upcoming events.
-
-                    // Old HiredGrad modal
-                    //- Dirty dirty hack
-                    //h3.hiredGradButton
-                        a.btn.btn-success(href="#hiredGradSignUpModal" data-toggle="modal" role="button") Join Now!
-
-                    // Shiny new Typeform
-                    h3.typeformButton
-                        <a class="typeform-share button btn btn-success" href="https://ducompsoc.typeform.com/to/bMrpxS" data-mode="drawer_right" style="display:inline-block;text-decoration:none;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:7px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Join now! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                    button(class="typeformButton button btn btn-success sign-up-link") Join Now!
 
         +quickLinks
-
-        #hiredgrad-signup
-
-block scripts
-
-    //- HiredGrad
-    //script(src="http://hiredgrad.com/rest/resources/society/js/57e3b53ce4b0db35d5037a80/branded")

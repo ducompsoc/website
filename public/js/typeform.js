@@ -10,10 +10,6 @@ var typeformCallback = typeformEmbed.makePopup(
   }
 );
 
-
-console.log($('.sign-up-link')[0]);
-console.log(typeformEmbed);
-
 $('.sign-up-link').on('click', function() {
   typeformCallback.open();
 });
