@@ -110,7 +110,7 @@ app.get('/durhack', function (req, res) {
 
 app.get('/hackhack', function (req, res) {
     res.redirect("https://ducompsoc.typeform.com/to/Vbn4yT");
-}
+});
 
 /**
  * Parse body and run reCAPTCHA authentication. If successful, use nodemailer to send an email to
