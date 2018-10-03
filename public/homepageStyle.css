@@ -29,6 +29,15 @@
     line-height: 1.5 !important;
     margin-bottom: 0.2rem !important;
     margin-top: 0.5rem !important;
+    padding: 20px 60px;
+}
+
+button.sign-up-link {
+    padding: 20px 60px !important;
+    font-size: 40px !important;
+    border: 4px solid #2f712f !important;
+    box-shadow: 0 0 10px 4px rgba(26, 60, 29, 0.4) !important;
+    margin: 10px !important;
 }
 
 .quickLinks {
