@@ -11,6 +11,6 @@ var typeformCallback = typeformEmbed.makePopup(
 );
 
 $('.sign-up-link').on('click', function() {
-  // typeformCallback.open();
-    window.location.href = "https://www.durhamsu.com/groups/computing-766e/join";
+  typeformCallback.open();
+    // window.location.href = "https://www.durhamsu.com/groups/computing-766e/join";
 });
