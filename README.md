@@ -29,7 +29,7 @@ cd compsoc_website
 
 You can check the contents of directory by typing `ls` in bash (Mac and Linux) or `dir` (Windows).
 
-The branch initially checked out is the master branch of the project. This branch will always contain the latest release of the website. 
+The branch initially checked out is the master branch of the project. This branch will always contain the latest release of the website.
 
 The develop branch is where all the new features are branched from and merged into using a strategy similar to the one found [here](http://nvie.com/posts/a-successful-git-branching-model/).
 
@@ -75,7 +75,42 @@ npm start
 ```
 in your terminal/command line downloads the project's modules and their dependencies (via npm install) and runs the file app.js with node (via node app.js). If all is well, you should be greeted with the message
 ```bash
-Example app listening on port 3000!
-``` 
+CompSoc app listening on port 9000!
+```
 
-Navigate to localhost:3000 in a web browser and you should recognise the CompSoc website!
+Navigate to `http://localhost:9000` in a web browser and you should recognise the CompSoc website!
+
+# Events
+Events are loaded dynamically from `public/data/events.json`.
+
+They are broken into two categories: `upcoming` and `past`, which are self-explanatory.
+
+Events are rendered on the page in the order they're stored in `events.json`. For consistency's sake, this should be **reverse chronological order**.
+
+## Add a New Event
+To add a new upcoming event, put it as the first element in the `events.upcoming` array.
+
+### Parameter Definitions
+
+#### `name`
+The name of the event, e.g. `Annual General Meeting 2018`
+
+#### `shortname`
+A short **unique** acronym for the event (used for the HTML `id` attribute), e.g. `agm18`
+
+#### `image_url`
+The URL of the image to load for the event. This image should have a 16:9 aspect ratio and be stored in `public/img/events/`.
+
+#### `more_info_url` (optional)
+Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show (`More info about EVENT_NAME`).
+
+#### `text`
+An **array** in which each string element is a new paragraph. e.g.
+```javascript
+"text": [
+    "We're recruiting new people to run CompSoc.",
+    "Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019."
+]```
+
+## Move an Event into the Past
+To move an event to the past, simply move it from the `events.upcoming` array to the beginning of the `events.past` array.
