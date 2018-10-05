@@ -49,6 +49,7 @@
                 "name": "TPP CompSoc Pub Quiz – February 2018",
                 "shortname": "tpp_quiz_feb18",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
+                "more_info_url": "https://www.facebook.com/events/2030221730580619/",
                 "text": [
                     "Come and join TPP and CompSoc at The Boat Club by Elvet Bridge on 27th February 2018 and test your programming skills in our Pub Quiz. Bring a laptop and your favourite code editor – your problem-solving skills will be tested! Free food, beer, and soft drinks will be provided for all students. We’ll also be giving away great prizes such as Raspberry Pis and Amazon vouchers. With no entry fee, there’s nothing stopping you from assembling a group (max team size 6) of your most intelligent friends and coming along!"
                 ]
@@ -57,6 +58,7 @@
                 "name": "DurHack 2017",
                 "shortname": "dh17",
                 "image_url": "/img/events/events_durhack_2.jpg",
+                "more_info_url": "/durhack",
                 "text": [
                     "CompSoc brought back <a href=\"http://durhack.tech\">DurHack</a> for a second year running and it was a huge success. With <a href=\"http://www.durham.gov.uk/\">Durham County Council</a>, <a href=\"https://jobs.barclays.co.uk/\">Barclays</a>, <a href=\"https://tpptop50.com\">TPP</a>, <a href=\"https://get.tech\">.TECH Domains</a>, <a href=\"https://www.waterstons.com/careers\">Waterstons</a>, <a href=\"http://www.entrepreneursdurham.co.uk/\">Entrepreneurs Durham</a>, <a href=\"http://www.keyboardco.com\">The Keyboard Company</a>, the <a href=\"https:///www.dur.ac.uk/computer.science\">Department of Computer Science</a> and <a href=\"https://www.durhamsu.com\">Durham Students' Union</a> on board as sponsors, this event was jam-packed with prizes and was not a hackathon to be missed!"
                 ]
@@ -65,6 +67,7 @@
                 "name": "THG Company Presentation and Drinks",
                 "shortname": "thg",
                 "image_url": "/img/events/thg.png",
+                "more_info_url": "https://www.facebook.com/events/325627244576664/",
                 "text": [
                     "Join THG at 18:00 on 24th October 2017 at ER152, Elvet Riverside, to know more about their company and careers with them, followed by drinks."
                 ]
@@ -73,7 +76,7 @@
                 "name": "DurHack",
                 "shortname": "dh1",
                 "image_url": "/img/events/events_Durhack_2017.png",
-                "more_info_url": "https://durhack.com",
+                "more_info_url": "/durhack",
                 "text": [
                     "Durham University had its first ever 24-hour hackathon sponsored by big names like Durham County Council, GitHub, MLH, Sunderland Software City, Durham Students' Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data sets from in and around Durham, participants from various UK universities utilised it to produce something that can potentially make a difference to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success."
                 ]
