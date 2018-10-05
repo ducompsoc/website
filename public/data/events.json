@@ -1,0 +1,105 @@
+{
+    "events": {
+        "upcoming": [
+            {
+                "name": "DurHack 2018",
+                "shortname": "dh18",
+                "image_url": "/img/events/events_dh18_dark.png",
+                "text": [
+                    "DurHack is back! Join us from <b>17<sup>th</sup>–18<sup>th</sup> November 2018</b> at the <b>Calman Learning Centre</b> for the third edition of DurHack. This year, <b>150</b> hackers from Durham and around the world will be pushing the boundaries of technology to new limits.",
+                    "See <a href=\"https://durhack.com\">durhack.com</a> for tickets and more information."
+                ]
+            }
+        ],
+        "past": [
+            {
+                "name": "TPP CompSoc Pub Quiz – February 2018",
+                "shortname": "tpp_quiz_feb18",
+                "image_url": "/img/events/events_tpp_pub_quiz.jpg",
+                "text": [
+                    "Come and join TPP and CompSoc at The Boat Club by Elvet Bridge on 27th February 2018 and test your programming skills in our Pub Quiz. Bring a laptop and your favourite code editor – your problem-solving skills will be tested! Free food, beer, and soft drinks will be provided for all students. We’ll also be giving away great prizes such as Raspberry Pis and Amazon vouchers. With no entry fee, there’s nothing stopping you from assembling a group (max team size 6) of your most intelligent friends and coming along!"
+                ]
+            },
+            {
+                "name": "DurHack 2017",
+                "shortname": "dh17",
+                "image_url": "/img/events/events_durhack_2.jpg",
+                "text": [
+                    "CompSoc brought back <a href=\"http://durhack.tech\">DurHack</a> for a second year running and it was a huge success. With <a href=\"http://www.durham.gov.uk/\">Durham County Council</a>, <a href=\"https://jobs.barclays.co.uk/\">Barclays</a>, <a href=\"https://tpptop50.com\">TPP</a>, <a href=\"https://get.tech\">.TECH Domains</a>, <a href=\"https://www.waterstons.com/careers\">Waterstons</a>, <a href=\"http://www.entrepreneursdurham.co.uk/\">Entrepreneurs Durham</a>, <a href=\"http://www.keyboardco.com\">The Keyboard Company</a>, the <a href=\"https:///www.dur.ac.uk/computer.science\">Department of Computer Science</a> and <a href=\"https://www.durhamsu.com\">Durham Students' Union</a> on board as sponsors, this event was jam-packed with prizes and was not a hackathon to be missed!"
+                ]
+            },
+            {
+                "name": "THG Company Presentation and Drinks",
+                "shortname": "thg",
+                "image_url": "/img/events/thg.png",
+                "text": [
+                    "Join THG at 18:00 on 24th October 2017 at ER152, Elvet Riverside, to know more about their company and careers with them, followed by drinks."
+                ]
+            },
+            {
+                "name": "DurHack",
+                "shortname": "dh1",
+                "image_url": "/img/events/events_Durhack_2017.png",
+                "more_info_url": "https://durhack.com",
+                "text": [
+                    "Durham University had its first ever 24-hour hackathon sponsored by big names like Durham County Council, GitHub, MLH, Sunderland Software City, Durham Students' Union, Entrepreneurs Durham, Waterstons, Barclays, Microsoft and Durham University. With enormous data sets from in and around Durham, participants from various UK universities utilised it to produce something that can potentially make a difference to the region. 24 hours of coding interspersed with workshops, games, VR, short sleep sprints and awesome food, the event was a massive success."
+                ]
+            },
+            {
+                "name": "MLH Local Hack Day",
+                "shortname": "lhd",
+                "image_url": "/img/hackday.jpg",
+                "more_info_url": "https://localhackday.mlh.io/",
+                "text": [
+                    "We organised a 12-hour-long event for building, problem-solving, coding and meeting new people on 3rd December 2016, and it turned out to be a great success! :-)"
+                ]
+            },
+            {
+                "name": "Build-A-Chatbot!",
+                "shortname": "bac",
+                "image_url": "/img/buildachatbot.jpg",
+                "more_info_url": "https://www.facebook.com/events/1322032881161709/",
+                "text": [
+                    "Build-A-Chatbot with Joe Nash, Program Manager at Github. Joe is a functional programmer and hacker with a passion for developer relations and community building, who joined us for a fun evening on 1st December 2016, learning to build a Facebook chatbot."
+                ]
+            },
+            {
+                "name": "Introduction to Coding Workshop",
+                "shortname": "icw",
+                "image_url": "/img/edcode.jpg",
+                "more_info_url": "https://www.facebook.com/events/1890151881207928/",
+                "text": [
+                    "We held the first session of a weekly Introduction to Coding workshop in collaboration with <a href=\"http://www.entrepreneursdurham.co.uk\">Entrepreneurs Durham</a> on 29th November 2016"
+                ]
+            },
+            {
+                "name": "BP Supply and Trading Event",
+                "shortname": "bpst",
+                "image_url": "/img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg",
+                "more_info_url": "https://www.facebook.com/events/369911576674539/",
+                "text": [
+                    "The BP Supply and Trading Event was held on 24th October 2016, where Justin Fay from BP enlightened students about their graduate and placement roles and how technology is integrated into BP's business."
+                ]
+            },
+            {
+                "name": "Scott Logic Durham University Hackathon",
+                "shortname": "slh",
+                "image_url": "/img/winners.jpg",
+                "more_info_url": "https://www.facebook.com/events/1608529472702814/",
+                "text": [
+                    "Our sponsors Scott Logic organised a hackathon on 4th May 2016. Another fun event with code, lots of free pizza and beer!"
+                ]
+            },
+            {
+                "name": "Dur(h).ac._k",
+                "shortname": "dhack",
+                "image_url": "/img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg",
+                "more_info_url": "https://www.facebook.com/events/234166873592041/",
+                "text": [
+                    "Joe Nash from PayPal talked to the students on 2nd March 2016 about what hackathons are, how they are often misunderstood as attempts to break into systems, and how they are a brilliant opportunity to network with people from all parts of the world, develop new skills and an opportunity to land in a job as well! That's how Joe ended up working at PayPal.",
+                    "The students also got introduced to NodeJS."
+                ]
+            }
+        ]
+    }
+}

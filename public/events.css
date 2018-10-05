@@ -7,11 +7,11 @@ img {
     margin-top: 2.5rem;
 }
 
-.col-md-6 > .row:last-child {
+.col-md-6 .row:last-child {
     padding-bottom: 0;
 }
 
-.col-md-6 > .row, .col-md-6 > .information {
+.col-md-6 .row, .col-md-6 .information {
     padding-bottom: 2rem;
     margin-bottom: 0;
 }
@@ -43,4 +43,17 @@ p:last-child {
 .sign-up-link {
     padding: 0;
     border: 0;
+}
+
+img.loading {
+    width: 106px;
+    height: 106px;
+}
+
+.row.loading-gif {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
