@@ -13,6 +13,39 @@
         ],
         "past": [
             {
+                "name": "CompSoc at DSU Freshers Fair 2018",
+                "shortname": "ff18",
+                "image_url": "/img/events/ff18.jpg",
+                "more_info_url": "https://www.facebook.com/events/194160121380478/",
+                "text": [
+                    "Join CompSoc at the Freshers Fair to collect freebies and learn more about our activities!",
+                    "We’ll be in ER140! Come and join us if you’re interested in tech, computers, programming, or want to learn, and we’ll give you some freebies!"
+                ]
+            },
+            {
+                "name": "TPP CompSoc Pub Quiz – June 2018",
+                "shortname": "tpp_quiz_jun18",
+                "image_url": "/img/events/events_tpp_pub_quiz.jpg",
+                "more_info_url": "https://www.facebook.com/events/162858361233386/",
+                "text": [
+                    "TPP is excited to announce a Coding Challenge on Monday 11th June, in collaboration with CompSoc!",
+                    "Unlike a typical pub quiz, you'll need to exercise your problem solving skills to tackle the range of challenges set instead of applying your general knowledge.",
+                    "<b>Bring a laptop and your favourite code editor; your programming skills will be tested!</b>",
+                    "There will be free food and drinks, both soft and alcoholic, available for attendees throughout the whole event. There will also be great prizes on offer for the winning teams (Raspberry Pi computers and a Hotel Chocolat hamper).",
+                    "We recommend teams of about 5-6 people, but smaller groups are welcome too, and if you're unsure who to come with then we'll be happy to match you up with other keen problem solvers on the day. Some questions require specific knowledge so you will want a programmer on your team!",
+                    "Entry is free of charge and doesn’t require a ticket, so feel free to just show up on the day!"
+                ]
+            },
+            {
+                "name": "Annual General Meeting 2018",
+                "shortname": "agm18",
+                "image_url": "/img/events/agm_18.png",
+                "more_info_url": "https://www.facebook.com/events/2172930349611497/",
+                "text": [
+                    "We're recruiting new people to run CompSoc. Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019. Enthusiasm, commitment and perseverance will be needed for all of these roles. However, they are excellent additions to your CV and you will gain a lot of experience working with companies and sponsors in a corporate manner, and you will add a lot of professional skills to your skill set."
+                ]
+            },
+            {
                 "name": "TPP CompSoc Pub Quiz – February 2018",
                 "shortname": "tpp_quiz_feb18",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
