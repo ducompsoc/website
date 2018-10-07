@@ -109,7 +109,7 @@ Short description of the event, displayed on the homepage, e.g. `Join CompSoc at
 
 #### `text`
 An **array** in which each string element is a new paragraph. e.g.
-```javascript
+```json
 "text": [
     "We're recruiting new people to run CompSoc.",
     "Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019."
