@@ -85,10 +85,13 @@ Events are loaded dynamically from `public/data/events.json`.
 
 They are broken into two categories: `upcoming` and `past`, which are self-explanatory.
 
-Events are rendered on the page in the order they're stored in `events.json`. For consistency's sake, this should be **reverse chronological order**.
+Events are rendered on the page in the order they're stored in `events.json`.
+
+For consistency's sake, **past** events should be in **reverse chronological order** (i.e. most recent at the top).  
+**Upcoming** events should be in **chronological order** (i.e. soonest at the top).
 
 ## Add a New Event
-To add a new upcoming event, put it as the first element in the `events.upcoming` array.
+To add a new upcoming event, put it as the last element in the `events.upcoming` array.
 
 ### Parameter Definitions
 
@@ -99,7 +102,7 @@ The name of the event, e.g. `Annual General Meeting 2018`
 A short **unique** acronym for the event (used for the HTML `id` attribute), e.g. `agm18`
 
 #### `date`
-The date of the event, shown on the homepage. Be consistent with format, e.g. `17th November 2018`.
+The date of the event, shown on the homepage only. Be consistent with format, e.g. `17<sup>th</sup> November 2018`.
 
 #### `image_url`
 The URL of the image to load for the event. This image should have a 16:9 aspect ratio and be stored in `public/img/events/`.
