@@ -20,7 +20,7 @@ $(document).ready(() => {
             } else {
                 more_info_text = `More info about ${event.name}`;
             }
-            eventHTML += `<a href="${event.more_info_url}">&raquo; ${more_info_text}</a>`;
+            eventHTML += `<a href="${event.more_info_url}" target="_blank">&raquo; ${more_info_text}</a>`;
         }
 
         eventHTML += '</div></div>';
