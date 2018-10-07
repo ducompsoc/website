@@ -102,10 +102,10 @@ A short **unique** acronym for the event (used for the HTML `id` attribute), e.g
 The URL of the image to load for the event. This image should have a 16:9 aspect ratio and be stored in `public/img/events/`.
 
 #### `more_info_url` (optional)
-Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show (`More info about EVENT_NAME`).
+Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show `More info about EVENT_NAME`.
 
 #### `short_text` (optional)
-Short description of the event, displayed on the homepage.
+Short description of the event, displayed on the homepage, e.g. `Join CompSoc at the AGM to elect new exec`.
 
 #### `text`
 An **array** in which each string element is a new paragraph. e.g.
