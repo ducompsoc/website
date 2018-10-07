@@ -98,18 +98,21 @@ The name of the event, e.g. `Annual General Meeting 2018`
 #### `short_name`
 A short **unique** acronym for the event (used for the HTML `id` attribute), e.g. `agm18`
 
+#### `date`
+The date of the event, shown on the homepage. Be consistent with format, e.g. `17th November 2018`.
+
 #### `image_url`
 The URL of the image to load for the event. This image should have a 16:9 aspect ratio and be stored in `public/img/events/`.
 
 #### `more_info_url` (optional)
 Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show `More info about EVENT_NAME`.
 
-#### `short_text` (optional)
+#### `short_text`
 Short description of the event, displayed on the homepage, e.g. `Join CompSoc at the AGM to elect new exec`.
 
 #### `text`
 An **array** in which each string element is a new paragraph. e.g.
-```json
+```javascript
 "text": [
     "We're recruiting new people to run CompSoc.",
     "Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019."
