@@ -6,8 +6,8 @@ $(document).ready(() => {
     const generateEventHTML = ((event, type) => {
         let eventHTML = `<div class="row">
             <img src="${event.image_url}" />
-            <a class="btn btn-info btn-block" href="#${event.shortname}" data-toggle="collapse">${event.name}</a>
-            <div class="collapse ${type === 'upcoming' ? 'in' : ''}" id="${event.shortname}">`;
+            <a class="btn btn-info btn-block" href="#${event.short_name}" data-toggle="collapse">${event.name}</a>
+            <div class="collapse ${type === 'upcoming' ? 'in' : ''}" id="${event.short_name}">`;
 
         event.text.forEach((line) => {
             eventHTML += `<p>${line}</p>`;

@@ -3,7 +3,7 @@
         "upcoming": [
             {
                 "name": "DurHack 2018",
-                "shortname": "dh18",
+                "short_name": "dh18",
                 "image_url": "/img/events/events_dh18_dark.png",
                 "text": [
                     "DurHack is back! Join us from <b>17<sup>th</sup>–18<sup>th</sup> November 2018</b> at the <b>Calman Learning Centre</b> for the third edition of DurHack. This year, <b>150</b> hackers from Durham and around the world will be pushing the boundaries of technology to new limits.",
@@ -14,7 +14,7 @@
         "past": [
             {
                 "name": "CompSoc at DSU Freshers Fair 2018",
-                "shortname": "ff18",
+                "short_name": "ff18",
                 "image_url": "/img/events/ff18.jpg",
                 "more_info_url": "https://www.facebook.com/events/194160121380478/",
                 "text": [
@@ -24,7 +24,7 @@
             },
             {
                 "name": "TPP CompSoc Pub Quiz – June 2018",
-                "shortname": "tpp_quiz_jun18",
+                "short_name": "tpp_quiz_jun18",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
                 "more_info_url": "https://www.facebook.com/events/162858361233386/",
                 "text": [
@@ -38,7 +38,7 @@
             },
             {
                 "name": "Annual General Meeting 2018",
-                "shortname": "agm18",
+                "short_name": "agm18",
                 "image_url": "/img/events/agm_18.png",
                 "more_info_url": "https://www.facebook.com/events/2172930349611497/",
                 "text": [
@@ -47,7 +47,7 @@
             },
             {
                 "name": "TPP CompSoc Pub Quiz – February 2018",
-                "shortname": "tpp_quiz_feb18",
+                "short_name": "tpp_quiz_feb18",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
                 "more_info_url": "https://www.facebook.com/events/2030221730580619/",
                 "text": [
@@ -56,7 +56,7 @@
             },
             {
                 "name": "DurHack 2017",
-                "shortname": "dh17",
+                "short_name": "dh17",
                 "image_url": "/img/events/events_durhack_2.jpg",
                 "more_info_url": "/durhack",
                 "text": [
@@ -65,7 +65,7 @@
             },
             {
                 "name": "THG Company Presentation and Drinks",
-                "shortname": "thg",
+                "short_name": "thg",
                 "image_url": "/img/events/thg.png",
                 "more_info_url": "https://www.facebook.com/events/325627244576664/",
                 "text": [
@@ -74,7 +74,7 @@
             },
             {
                 "name": "DurHack",
-                "shortname": "dh1",
+                "short_name": "dh1",
                 "image_url": "/img/events/events_Durhack_2017.png",
                 "more_info_url": "/durhack",
                 "text": [
@@ -83,7 +83,7 @@
             },
             {
                 "name": "MLH Local Hack Day",
-                "shortname": "lhd",
+                "short_name": "lhd",
                 "image_url": "/img/hackday.jpg",
                 "more_info_url": "https://localhackday.mlh.io/",
                 "text": [
@@ -92,7 +92,7 @@
             },
             {
                 "name": "Build-A-Chatbot!",
-                "shortname": "bac",
+                "short_name": "bac",
                 "image_url": "/img/buildachatbot.jpg",
                 "more_info_url": "https://www.facebook.com/events/1322032881161709/",
                 "text": [
@@ -101,7 +101,7 @@
             },
             {
                 "name": "Introduction to Coding Workshop",
-                "shortname": "icw",
+                "short_name": "icw",
                 "image_url": "/img/edcode.jpg",
                 "more_info_url": "https://www.facebook.com/events/1890151881207928/",
                 "text": [
@@ -110,7 +110,7 @@
             },
             {
                 "name": "BP Supply and Trading Event",
-                "shortname": "bpst",
+                "short_name": "bpst",
                 "image_url": "/img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg",
                 "more_info_url": "https://www.facebook.com/events/369911576674539/",
                 "text": [
@@ -119,7 +119,7 @@
             },
             {
                 "name": "Scott Logic Durham University Hackathon",
-                "shortname": "slh",
+                "short_name": "slh",
                 "image_url": "/img/winners.jpg",
                 "more_info_url": "https://www.facebook.com/events/1608529472702814/",
                 "text": [
@@ -128,7 +128,7 @@
             },
             {
                 "name": "Dur(h).ac._k",
-                "shortname": "dhack",
+                "short_name": "dhack",
                 "image_url": "/img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg",
                 "more_info_url": "https://www.facebook.com/events/234166873592041/",
                 "text": [

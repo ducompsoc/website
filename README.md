@@ -95,7 +95,7 @@ To add a new upcoming event, put it as the first element in the `events.upcoming
 #### `name`
 The name of the event, e.g. `Annual General Meeting 2018`
 
-#### `shortname`
+#### `short_name`
 A short **unique** acronym for the event (used for the HTML `id` attribute), e.g. `agm18`
 
 #### `image_url`
