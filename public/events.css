@@ -57,3 +57,23 @@ img.loading {
 .hidden {
     display: none;
 }
+
+.event-date {
+    text-align: center;
+    font-weight: bold;
+    padding: 4px 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+}
+
+#upcoming_events .event-date {
+    background: #307798;
+    color: #f0f0f0;
+    font-size: 28px;
+}
+#past_events .event-date {
+    background: #636363;
+    color: #dfdfdf;
+    font-size: 16px;
+}

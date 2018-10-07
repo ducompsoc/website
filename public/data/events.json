@@ -4,6 +4,7 @@
             {
                 "name": "DurHack 2018",
                 "short_name": "dh18",
+                "date": "17<sup>th</sup>–18<sup>th</sup> October 2018",
                 "image_url": "/img/events/events_dh18_dark.png",
                 "text": [
                     "DurHack is back! Join us from <b>17<sup>th</sup>–18<sup>th</sup> November 2018</b> at the <b>Calman Learning Centre</b> for the third edition of DurHack. This year, <b>150</b> hackers from Durham and around the world will be pushing the boundaries of technology to new limits.",
@@ -15,6 +16,7 @@
             {
                 "name": "CompSoc at DSU Freshers Fair 2018",
                 "short_name": "ff18",
+                "date": "3<sup>rd</sup> October 2018",
                 "image_url": "/img/events/ff18.jpg",
                 "more_info_url": "https://www.facebook.com/events/194160121380478/",
                 "text": [
@@ -25,6 +27,7 @@
             {
                 "name": "TPP CompSoc Pub Quiz – June 2018",
                 "short_name": "tpp_quiz_jun18",
+                "date": "11<sup>th</sup> June 2018",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
                 "more_info_url": "https://www.facebook.com/events/162858361233386/",
                 "text": [
@@ -39,6 +42,7 @@
             {
                 "name": "Annual General Meeting 2018",
                 "short_name": "agm18",
+                "date": "12th March 2018",
                 "image_url": "/img/events/agm_18.png",
                 "more_info_url": "https://www.facebook.com/events/2172930349611497/",
                 "text": [
@@ -48,6 +52,7 @@
             {
                 "name": "TPP CompSoc Pub Quiz – February 2018",
                 "short_name": "tpp_quiz_feb18",
+                "date": "27<sup>th</sup> February 2018",
                 "image_url": "/img/events/events_tpp_pub_quiz.jpg",
                 "more_info_url": "https://www.facebook.com/events/2030221730580619/",
                 "text": [
@@ -57,6 +62,7 @@
             {
                 "name": "DurHack 2017",
                 "short_name": "dh17",
+                "date": "9<sup>th</sup>–10<sup>th</sup> December 2017",
                 "image_url": "/img/events/events_durhack_2.jpg",
                 "more_info_url": "/durhack",
                 "text": [
@@ -66,6 +72,7 @@
             {
                 "name": "THG Company Presentation and Drinks",
                 "short_name": "thg",
+                "date": "24<sup>th</sup> October 2017",
                 "image_url": "/img/events/thg.png",
                 "more_info_url": "https://www.facebook.com/events/325627244576664/",
                 "text": [
@@ -75,6 +82,7 @@
             {
                 "name": "DurHack",
                 "short_name": "dh1",
+                "date": "28<sup>th</sup>–29<sup>th</sup> January 2017",
                 "image_url": "/img/events/events_Durhack_2017.png",
                 "more_info_url": "/durhack",
                 "text": [
@@ -84,6 +92,7 @@
             {
                 "name": "MLH Local Hack Day",
                 "short_name": "lhd",
+                "date": "3<sup>rd</sup> December 2016",
                 "image_url": "/img/hackday.jpg",
                 "more_info_url": "https://localhackday.mlh.io/",
                 "text": [
@@ -93,15 +102,17 @@
             {
                 "name": "Build-A-Chatbot!",
                 "short_name": "bac",
+                "date": "1<sup>st</sup> December 2016",
                 "image_url": "/img/buildachatbot.jpg",
                 "more_info_url": "https://www.facebook.com/events/1322032881161709/",
                 "text": [
-                    "Build-A-Chatbot with Joe Nash, Program Manager at Github. Joe is a functional programmer and hacker with a passion for developer relations and community building, who joined us for a fun evening on 1st December 2016, learning to build a Facebook chatbot."
+                    "Build-A-Chatbot with Joe Nash, Program Manager at GitHub. Joe is a functional programmer and hacker with a passion for developer relations and community building, who joined us for a fun evening on 1st December 2016, learning to build a Facebook chatbot."
                 ]
             },
             {
                 "name": "Introduction to Coding Workshop",
                 "short_name": "icw",
+                "date": "29<sup>th</sup> November 2016",
                 "image_url": "/img/edcode.jpg",
                 "more_info_url": "https://www.facebook.com/events/1890151881207928/",
                 "text": [
@@ -111,6 +122,7 @@
             {
                 "name": "BP Supply and Trading Event",
                 "short_name": "bpst",
+                "date": "24<sup>th</sup> October 2016",
                 "image_url": "/img/about_carousel_3-BP_Supply_And_Trading_2016-17.jpg",
                 "more_info_url": "https://www.facebook.com/events/369911576674539/",
                 "text": [
@@ -120,6 +132,7 @@
             {
                 "name": "Scott Logic Durham University Hackathon",
                 "short_name": "slh",
+                "date": "4<sup>th</sup> May 2016",
                 "image_url": "/img/winners.jpg",
                 "more_info_url": "https://www.facebook.com/events/1608529472702814/",
                 "text": [
@@ -129,6 +142,7 @@
             {
                 "name": "Dur(h).ac._k",
                 "short_name": "dhack",
+                "date": "2<sup>nd</sup> March 2016",
                 "image_url": "/img/about_carousel_1-Joe_Nash_Durhack_Initial_Talks_Group_Photo_2016-17.jpg",
                 "more_info_url": "https://www.facebook.com/events/234166873592041/",
                 "text": [

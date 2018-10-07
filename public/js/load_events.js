@@ -5,6 +5,7 @@ $(document).ready(() => {
 
     const generateEventHTML = ((event, type) => {
         let eventHTML = `<div class="row">
+            <p class="event-date">${event.date}</p>
             <img src="${event.image_url}" />
             <a class="btn btn-info btn-block" href="#${event.short_name}" data-toggle="collapse">${event.name}</a>
             <div class="collapse ${type === 'upcoming' ? 'in' : ''}" id="${event.short_name}">`;
