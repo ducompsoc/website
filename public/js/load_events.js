@@ -24,7 +24,7 @@ $(document).ready(() => {
             eventHTML += `<a href="${event.more_info_url}" target="_blank">&raquo; ${more_info_text}</a>`;
         }
 
-        eventHTML += '</div></div>';
+        eventHTML += '<hr /></div></div>';
 
         return eventHTML;
     });
