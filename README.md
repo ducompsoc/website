@@ -104,13 +104,17 @@ The URL of the image to load for the event. This image should have a 16:9 aspect
 #### `more_info_url` (optional)
 Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show (`More info about EVENT_NAME`).
 
+#### `short_text` (optional)
+Short description of the event, displayed on the homepage.
+
 #### `text`
 An **array** in which each string element is a new paragraph. e.g.
 ```javascript
 "text": [
     "We're recruiting new people to run CompSoc.",
     "Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019."
-]```
+]
+```
 
 ## Move an Event into the Past
 To move an event to the past, simply move it from the `events.upcoming` array to the beginning of the `events.past` array.
