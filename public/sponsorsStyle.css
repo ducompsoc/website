@@ -13,7 +13,7 @@
     display: block;
 }
 
-.sponsor-row {
+div.sponsor-row {
     margin-bottom: 3rem;
 }
 
@@ -25,7 +25,7 @@
 .col-md-6 > p {
     font-size: medium;
     text-align: justify;
-    margin-bottom: 3rem;
+    margin-bottom: .75rem;
 }
 
 .panel-group:last-child {
