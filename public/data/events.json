@@ -2,20 +2,6 @@
     "events": {
         "upcoming": [
             {
-                "name": "TPP CompSoc Pub Quiz",
-                "short_name": "tpp_quiz_oct18",
-                "date": "23<sup>rd</sup> October 2018",
-                "image_url": "/img/events/events_tpp_pub_quiz.jpg",
-                "more_info_url": "https://www.facebook.com/events/353265825415828/",
-                "text": [
-                    "TPP is excited to announce a Coding Challenge on <b>Tuesday 23<sup>rd</sup> October 2018</b>, in collaboration with CompSoc!",
-                    "Unlike a typical pub quiz, you'll need to exercise your problem solving skills to tackle the range of challenges set instead of applying your general knowledge.",
-                    "There will be free food and drinks, both soft and alcoholic, available for attendees throughout the whole event. There will also be great prizes on offer for the winning teams (Such as Raspberry Pi computers and a Hotel Chocolat hamper).",
-                    "We recommend teams of about 5-6 people, but smaller groups are welcome too, and if you're unsure who to come with then we'll be happy to match you up with other keen problem solvers on the day. Some questions require specific knowledge so you will want a programmer on your team!",
-                    "Entry is free of charge and doesn’t require a ticket, so feel free to just show up on the day!"
-                ]
-            },
-            {
                 "name": "Scott Logic Coding Challenge",
                 "short_name": "slcc",
                 "date": "3<sup>rd</sup> November 2018",
@@ -48,6 +34,20 @@
             }
         ],
         "past": [
+            {
+                "name": "TPP CompSoc Pub Quiz – October 2018",
+                "short_name": "tpp_quiz_oct18",
+                "date": "23<sup>rd</sup> October 2018",
+                "image_url": "/img/events/events_tpp_pub_quiz.jpg",
+                "more_info_url": "https://www.facebook.com/events/353265825415828/",
+                "text": [
+                    "TPP is excited to announce a Coding Challenge on <b>Tuesday 23<sup>rd</sup> October 2018</b>, in collaboration with CompSoc!",
+                    "Unlike a typical pub quiz, you'll need to exercise your problem solving skills to tackle the range of challenges set instead of applying your general knowledge.",
+                    "There will be free food and drinks, both soft and alcoholic, available for attendees throughout the whole event. There will also be great prizes on offer for the winning teams (Such as Raspberry Pi computers and a Hotel Chocolat hamper).",
+                    "We recommend teams of about 5-6 people, but smaller groups are welcome too, and if you're unsure who to come with then we'll be happy to match you up with other keen problem solvers on the day. Some questions require specific knowledge so you will want a programmer on your team!",
+                    "Entry is free of charge and doesn’t require a ticket, so feel free to just show up on the day!"
+                ]
+            },
             {
                 "name": "CompSoc at DSU Freshers Fair 2018",
                 "short_name": "ff18",
