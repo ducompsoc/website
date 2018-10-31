@@ -16,8 +16,6 @@ img {
     margin-bottom: 0;
 }
 
-
-
 .btn {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
@@ -72,6 +70,7 @@ img.loading {
     color: #f0f0f0;
     font-size: 28px;
 }
+
 #past_events .event-date {
     background: #636363;
     color: #dfdfdf;
