@@ -2,27 +2,6 @@
     "events": {
         "upcoming": [
             {
-                "name": "Scott Logic Coding Challenge",
-                "short_name": "slcc",
-                "date": "3<sup>rd</sup> November 2018",
-                "image_url": "/img/events/slcc.png",
-                "more_info_url": "https://www.facebook.com/events/247433799281385/",
-                "text": [
-                    "Scott Logic will be hosting an AI coding challenge in <b>E240, Higginson Building</b> at <b>1pm on Saturday 3<sup>rd</sup> November 2018</b> to help students with an interest in software development to use their coding skills in a fun challenge. This will give you an opportunity to practise your coding skills and will give you more experience to help boost your CV.",
-                    "The event is open to all Computing Society members. You don't need to be a Computer Science student to take part however, you will need to have a reasonable working knowledge of Java. Do bring some friends if you want to but this isn't essential we can group people together into teams on the day.",
-                    "There will be prizes for the best teams, and perhaps more importantly, there will also be several Scott Logic developers there to help. They're all very friendly, so feel free to chat with them about what it's like to do their job, and get tips from them to help you start your career in software development.",
-                    "<b>What will I be doing?</b>",
-                    "The code challenge is a turn-based game for AI bots written in Java. At the start of each turn your bot will be provided with the current game state, e.g. map size, your team details and visible food items. Your task is to provide the next move for each of your players so that they can collect food, defend the home base or attack enemy locations. You’ll have some utility routines at your disposal, e.g. distance between two locations, a basic routing algorithm, but it’s up to you how you balance the activities of your players to maximise your chances of winning.",
-                    "Once you’ve designed and written your bot you’ll be able to upload it to the game server and pit it against a series of test bots to hone your skills. The final challenge will be a battle against bots developed by your rival teams.",
-                    "<b>What will the format for the afternoon look like?</b>",
-                    "13:00 - Welcome, setup, and introduction to the AI challenge<br />13:30 - Challenge starts<br />17:00 - Challenge finishes, debrief and awarding of prizes<br />Followed by pizza and drinks at <b>The Library</b> bar on <b>Saddler Street</b>",
-                    "<b>What should I bring?</b>",
-                    "Please bring a laptop with the following software installed:",
-                    "<em>Essential:</em><ul><li>JDK (preferably 1.9, but we'll double-check for compatibility), with <code>JAVA_HOME</code> set appropriately</li></ul>",
-                    "<em>Recommended:</em><ul><li>Bash, CMD or other terminal</li><li>An IDE (e.g. IntelliJ, NetBeans or Eclipse, a text editor would work but might slow development)</li><li>git (although we can also provide a zip file or other means of accessing the contestant starter kit)</li></ul>"
-                ]
-            },
-            {
                 "name": "DurHack 2018",
                 "short_name": "dh18",
                 "date": "17<sup>th</sup>–18<sup>th</sup> November 2018",
@@ -34,6 +13,28 @@
             }
         ],
         "past": [
+            {
+                "name": "Scott Logic Coding Challenge",
+                "short_name": "slcc",
+                "date": "3<sup>rd</sup> November 2018",
+                "image_url": "/img/events/slcc.png",
+                "more_info_url": "https://www.facebook.com/events/247433799281385/",
+                "text": [
+                    "Scott Logic hosted an AI coding challenge in <b>E240, Higginson Building</b> at <b>1pm on Saturday 3<sup>rd</sup> November 2018</b> to help students with an interest in software development use their coding skills in a fun challenge. This gave students an opportunity to practise their coding skills and gave them more experience to help boost their CVs.",
+                    "The event was open to all Computing Society members. You didn't need to be a Computer Science student to take part, however, having a reasonable working knowledge of Java was helpful.",
+                    "The best team, <em>BaddaBing BaddaBoom</em>, won Amazon vouchers!",
+                    "There were also several Scott Logic developers there to help. They were very friendly, so chatting with them about what it's like to do their job, and get tips from them to help you start your career in software development, was a great idea.",
+                    "<b>What was the coding challenge?</b>",
+                    "The code challenge was a turn-based game for AI bots written in Java. At the start of each turn, your bot was provided with the current game state, e.g. map size, your team details and visible food items. Your task was to provide the next move for each of your players so that they could collect food, defend the home base or attack enemy locations. Students had some utility routines at their disposal, e.g. distance between two locations, a basic routing algorithm, but it was up to them how they balanced the activities of their players to maximise their chances of winning.",
+                    "Once students had designed and written their bots, they uploaded them to the game server and pitted them against a series of test bots to hone their skills. The final challenge was a battle against bots developed by rival teams.",
+                    "<b>What was the format for the afternoon?</b>",
+                    "13:00 – Welcome, setup, and introduction to the AI challenge<br />13:30 – Challenge starts<br />17:00 – Challenge finishes, debrief and awarding of prizes<br />Followed by pizza and drinks at <b>The Library</b> bar on <b>Saddler Street</b>",
+                    "<b>What were the requirements?</b>",
+                    "Students had to bring a laptop with the following software installed:",
+                    "<em>Essential:</em><ul><li>JDK (preferably 1.9, but we'll double-check for compatibility), with <code>JAVA_HOME</code> set appropriately</li></ul>",
+                    "<em>Recommended:</em><ul><li>Bash, CMD or other terminal</li><li>An IDE (e.g. IntelliJ, NetBeans or Eclipse, a text editor would work but might slow development)</li><li>git (although we can also provide a zip file or other means of accessing the contestant starter kit)</li></ul>"
+                ]
+            },
             {
                 "name": "TPP CompSoc Pub Quiz – October 2018",
                 "short_name": "tpp_quiz_oct18",
