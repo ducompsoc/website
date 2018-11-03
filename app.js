@@ -105,11 +105,6 @@ app.get('/blog', function (req, res) {
 
 app.get('/durhack', function (req, res) {
     res.render('durhack');
-    // res.redirect("http://durhack.tech/");
-});
-
-app.get('/hackhack', function (req, res) {
-    res.redirect("https://ducompsoc.typeform.com/to/Vbn4yT");
 });
 
 /**
