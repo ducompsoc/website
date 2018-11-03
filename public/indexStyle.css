@@ -149,3 +149,8 @@ hr {
     border-color: #398439;
     transition: all 0.15s;
 }
+
+code {
+    color: #0c5966;
+    background: #f2f6f9;
+}
