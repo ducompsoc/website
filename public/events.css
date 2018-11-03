@@ -76,3 +76,9 @@ img.loading {
     color: #dfdfdf;
     font-size: 16px;
 }
+
+p.stay-tuned-text {
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}

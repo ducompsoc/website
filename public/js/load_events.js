@@ -37,6 +37,8 @@ $(document).ready(() => {
             $('#upcoming_events').append(generateEventHTML(event, 'upcoming'));
         });
 
+        $('.stay-tuned-text').show();
+
         // Render the past events
         data.events.past.forEach((event) => {
             $('#past_events').append(generateEventHTML(event, 'past'));
