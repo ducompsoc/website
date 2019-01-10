@@ -1,6 +1,18 @@
 {
     "events": {
         "upcoming": [
+
+        ],
+        "past": [
+            {
+                "name": "Afternoon with Arista",
+                "short_name": "arista",
+                "date": "28<sup>th</sup> November 2018",
+                "image_url": "/img/events/arista.jpg",
+                "text": [
+                    "A workshop associated with HPC in industry, followed later by a career talk on what to expect from employers, internships, interviews, and your first few months in the industry."
+                ]
+            },
             {
                 "name": "DurHack 2018",
                 "short_name": "dh18",
@@ -10,9 +22,7 @@
                     "DurHack is back! Join us from <b>17<sup>th</sup>–18<sup>th</sup> November 2018</b> at the <b>Calman Learning Centre</b> for the third edition of DurHack. This year, <b>150</b> hackers from Durham and around the world will be pushing the boundaries of technology to new limits.",
                     "See <a href=\"https://durhack.com\">durhack.com</a> for tickets and more information."
                 ]
-            }
-        ],
-        "past": [
+            },
             {
                 "name": "Scott Logic Coding Challenge",
                 "short_name": "slcc",
