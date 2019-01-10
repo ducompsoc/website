@@ -62,7 +62,7 @@
     transition: background 0.2s;
 }
 
-.quickLinks .dh18 .date {
+.quickLinks .dh18 .date, .quickLinks .dh18 a {
     color: #dab8e9;
 }
 
