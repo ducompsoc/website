@@ -70,7 +70,7 @@
     background: #545354;
 }
 
-.quickLinks h1 {
+.quickLinks .eventsHeader {
     margin-bottom: 28px;
     text-align: center;
 }
