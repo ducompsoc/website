@@ -1,6 +1,9 @@
 {
     "events": {
         "upcoming": [
+
+        ],
+        "past": [
             {
                 "name": "American Express - Web Dev and Deployment",
                 "short_name": "amex",
@@ -8,13 +11,11 @@
                 "image_url": "/img/events/amex.png",
                 "more_info_url": "https://www.facebook.com/events/242934183268890/",
                 "text": [
-                    "Having your own personal website can be a great way to stand out from the crowd.",
-                    "The aim of the workshop is to give attendees the tools to build and deploy their very own website. We’ll cover some examples, what to include, popular technologies and deployment methods.",
-                    "Whether you already have your own website and are simply looking to get it online or you haven’t even begun, we’ll have something useful for you! The session will consist of a short introduction, followed by hands-on help from American Express demonstrators."
+                  "Having your own personal website can be a great way to stand out from the crowd.",
+                  "The aim of the workshop is to give attendees the tools to build and deploy their very own website. We’ll cover some examples, what to include, popular technologies and deployment methods.",
+                  "Whether you already have your own website and are simply looking to get it online or you haven’t even begun, we’ll have something useful for you! The session will consist of a short introduction, followed by hands-on help from American Express demonstrators."
                 ]
-            }
-        ],
-        "past": [
+            },
             {
                 "name": "Afternoon with Arista – HPC in Industry",
                 "short_name": "arista",
