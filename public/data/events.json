@@ -1,13 +1,24 @@
 {
     "events": {
         "upcoming": [
-
+          {
+            "name": "Artificial Intelligence at Waterstons",
+            "short_name": "ai_waterstons",
+            "date": "6<sup>th</sup> February 2019",
+            "image_url": "/img/events/ai_waterstons.png",
+            "more_info_url": "https://www.facebook.com/events/294134691142826/",
+            "text": [
+              "We are seeing AI everywhere in technology, from taking better pictures on your phone, to self-driving cars. Waterstons present an introduction to AI, through everyone’s favourite game: Rock, Paper, Scissors, Waterbomb, Dynamite.",
+              "Compete in teams to build the ultimate game playing AI, and then challenge the other teams’ AIs to see who has mastered the game.",
+              "Waterstons developers will be on hand to help you learn how to code the AI, setup, and deploy. Any programming language will be suitable."
+            ]
+          }
         ],
         "past": [
             {
                 "name": "American Express - Web Dev and Deployment",
                 "short_name": "amex",
-                "date": "23<sup>rd</sup> January 2018",
+                "date": "23<sup>rd</sup> January 2019",
                 "image_url": "/img/events/amex.png",
                 "more_info_url": "https://www.facebook.com/events/242934183268890/",
                 "text": [
