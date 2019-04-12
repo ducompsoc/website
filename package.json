@@ -20,10 +20,13 @@
   "homepage": "https://github.com/ducompsoc/website#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bootstrap": "^3.4.0",
+    "bootstrap": "^3.4.1",
+    "clean-css": "^4.2.1",
     "express": "^4.16.4",
     "font-awesome": "^4.6.3",
+    "lodash": "^4.17.11",
     "nodemailer": "^4.7.0",
-    "pug": "2.0.0-beta6"
+    "pug": "2.0.0-beta6",
+    "pug-filters": "^3.1.0"
   }
 }
