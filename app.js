@@ -23,6 +23,10 @@ const poolConfig = {
 
 const transporter = nodemailer.createTransport(poolConfig);
 
+// Store this in memory so that we don't have to read from the file system for each request
+// Populated by getCurrentGitCommitHash()
+let currentGitCommit;
+
 var app = express();
 
 // Remove information about the server for security reasons
@@ -57,6 +61,7 @@ app.use(express.static('node_modules'));
  */
 app.use(function (req, res, next) {
     res.locals.currentYear = new Date().getFullYear();
+    res.locals.currentGitCommitHash = getCurrentGitCommitHash();
     next();
 });
 
@@ -138,6 +143,25 @@ app.post('/api/contact', urlencodedParser, captchaAuth, inputValidation, functio
 
     res.sendStatus(200);
 });
+
+/**
+ * Get the hash of the current git commit.
+ * @returns {*}
+ */
+function getCurrentGitCommitHash() {
+    if (currentGitCommit) {
+        return currentGitCommit;
+    }
+
+    const rev = fs.readFileSync('.git/HEAD').toString();
+    if (rev.indexOf(':') === -1) {
+        currentGitCommit = rev.trim();
+    } else {
+        currentGitCommit = fs.readFileSync('.git/' + rev.substring(5).trim()).toString().trim();
+    }
+
+    return currentGitCommit;
+}
 
 /**
  * Runs reCAPTCHA authentication to protect against bot attacks.
@@ -237,4 +261,5 @@ function inputValidation(req, res, next) {
 // Start listening on port 9000 -- if running locally navigate to localhost:9000 in a browser to see the results!
 app.listen(9000, function () {
     console.log((new Date()).toString() + ': CompSoc app listening on port 9000!');
+    console.log((new Date()).toString() + ': Using git commit ' + getCurrentGitCommitHash());
 });
