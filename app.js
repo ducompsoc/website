@@ -126,10 +126,12 @@ app.post('/api/contact', urlencodedParser, captchaAuth, inputValidation, functio
 
     transporter.sendMail(mailOptions, function (err, info) {
         if(err) {
-            console.error(err);
+            console.error((new Date()).toString() + 'ERROR SENDING EMAIL: \n' + err);
             res.sendStatus(500);
         }
         else {
+            console.log((new Date()).toString() + 'SENT EMAIL: \n' + info);
+            console.log(info);
             res.sendStatus(200);
         }
     });
@@ -234,5 +236,5 @@ function inputValidation(req, res, next) {
 
 // Start listening on port 9000 -- if running locally navigate to localhost:9000 in a browser to see the results!
 app.listen(9000, function () {
-    console.log('CompSoc app listening on port 9000!');
+    console.log((new Date()).toString() + ': CompSoc app listening on port 9000!');
 });
