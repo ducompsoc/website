@@ -1,6 +1,33 @@
 {
     "events": {
-        "upcoming": [],
+        "upcoming": [
+            {
+                "name": "TPP Coding Challenge with CompSoc",
+                "short_name": "tpp_quiz_jun19",
+                "date": "10<sup>th</sup> June 2019",
+                "image_url": "/img/events/events_tpp_pub_quiz.jpg",
+                "more_info_url": "https://www.facebook.com/events/451374975639599/",
+                "text": [
+                    "TPP is excited to announce a Coding Challenge on <b>Monday 10<sup>th</sup> June 2019</b>, in collaboration with CompSoc!",
+                    "Unlike a typical pub quiz, you'll need to exercise your problem solving skills to tackle the range of challenges set instead of applying your general knowledge.",
+                    "There will be free food and drinks, both soft and alcoholic, available for attendees throughout the whole event. There will also be Raspberry Pis available to members of the winning team.",
+                    "We recommend teams of about 5-6 people, but smaller groups are welcome too, and if you're unsure who to come with then we'll be happy to match you up with other keen problem solvers on the day. Some questions require specific knowledge so you will want a programmer on your team!",
+                    "Tickets are limited. Please see the Facebook event for more information."
+                ]
+            },
+            {
+                "name": "Tech Careers Event",
+                "short_name": "tech_careers_event",
+                "date": "14<sup>th</sup> June 2019",
+                "image_url": "/img/events/events_careers_in_tech.jpg",
+                "more_info_url": "https://careers.dur.ac.uk/leap/event.html?id=17613&service=Careers+Centre",
+                "text": [
+                    "Technology is omnipresent and finds application across a multitude of industries. We are bringing together professionals and current students with experience from about 15 different industries like Big Tech, Automobile, Finance, Scientific Computing, Consumer Goods, Cybersecurity, Data, UX Design, Research, etc. to name a few, who you can chat with to find out what working with technology in a particular field entails. You will also have an opportunity to learn about unconventional technology careers like Technology Journalism and Scientific Publishing via a live stream with leading professionals.",
+                    "The event is FREE and OPEN TO ALL and will be held on 14 June, 13.30 - 16.30. Please register your interest through the link below.",
+                    "There's also free one-on-one CV and LinkedIn review with our careers advisors to help you this application season. Bring your friends along and spread the word!"
+                ]
+            }
+        ],
         "past": [
             {
                 "name": "Artificial Intelligence at Waterstons",
