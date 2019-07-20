@@ -10,3 +10,11 @@ p {
 p.image {
     text-align:center;
 }
+
+#dh-intro {
+    column-width: 400px;
+}
+
+#dh-intro .image img {
+    max-height: 350px;
+}
