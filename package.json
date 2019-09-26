@@ -1,6 +1,14 @@
 {
-  "name": "website2",
+  "name": "compsoc-website",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Durham Computing Society <computing.society@durham.ac.uk>",
+  "contributors": [
+    {
+      "name": "Ethan Waite",
+      "email": "ethan.w@compsoc.tech"
+    }
+  ],
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.10.2",
@@ -26,7 +34,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && react-snap",
+    "build": "react-scripts build",
+    "build:prod": "npm run build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -29,8 +29,6 @@ let currentGitCommit;
 
 var app = express();
 
-app.use(require('cors')());
-
 // Remove information about the server for security reasons
 app.disable('x-powered-by');
 
@@ -105,8 +103,6 @@ function captchaAuth(req, res, next) {
         response: req.body["g-recaptcha-response"]
 	});
 
-	console.log(req.body);
-
     const captchaReqOptions = {
         hostname: "google.com",
         port: 443,
@@ -125,7 +121,6 @@ function captchaAuth(req, res, next) {
                 next();
             }
             else {
-				console.log(jsonObject);
                 res.sendStatus(403);
             }
 

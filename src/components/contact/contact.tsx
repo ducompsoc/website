@@ -117,11 +117,6 @@ export class Contact extends React.PureComponent<{}, IContactState> {
 		this.recaptchaRef.current!.execute();
 	}
 
-	/* private handleSend = (event: React.MouseEvent) => {
-		event.preventDefault();
-		console.log('hi');
-	} */
-
 	private handleCaptchaChange = (token: string | null) => {
 		if (!token) {
 			return;
@@ -129,7 +124,7 @@ export class Contact extends React.PureComponent<{}, IContactState> {
 
 		const { name, email, subject, content } = this.state;
 
-		fetch(true ? 'http://127.0.0.1:9000/api/contact' : '/api/contact', {
+		fetch('/api/contact', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
