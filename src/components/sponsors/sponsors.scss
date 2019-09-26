@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.sponsors-page {
+	.foot {
+		margin: 12px 0px 64px 0px;
+
+		.tagline {
+			padding: 9px 64px;
+		}
+
+		@media screen and (max-width: $breakpoint-medium) {
+			.tagline {
+				padding-left: 48px;
+			}
+
+			.prev-link {
+				margin-left: 48px;
+			}
+		}
+	}
+}

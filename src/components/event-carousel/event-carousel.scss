@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+.event-carousel {
+	position: relative;
+	left: calc(-33% + 64px);
+	width: calc(100% + 33% - 64px);
+	flex-wrap: nowrap;
+
+	> div {
+		padding: 9px;
+	}
+
+	> .event {
+		flex: 0 0 auto;
+		width: 25%;
+
+		&.past {
+			opacity: 0.2;
+			pointer-events: none;
+		}
+	}
+
+	> .event.upcoming, > .filler {
+		opacity: 0;
+		transition: 1s ease;
+
+		@media screen and (min-width: $breakpoint-medium) {
+			margin: 0px -32px 0px 32px;
+		}
+
+		&.animated {
+			opacity: 1;
+			margin: 0px;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-medium) {
+		&.row {
+			width: 100%;
+			left: 0px;
+			flex-direction: column;
+		}
+
+		> .event {
+			width: 100%;
+
+			&.past {
+				display: none;
+			}
+		}
+
+		> .event.upcoming, > .filler {
+			transition-delay: 0s !important;
+		}
+	}
+}

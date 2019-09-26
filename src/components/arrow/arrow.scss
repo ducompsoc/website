@@ -1,0 +1,18 @@
+.arrow-line {
+	display: inline-block;
+	width: 64px;
+	height: 8px;
+	border-top: solid 2px #000;
+	margin: 8px -8px 0px 0px;
+}
+
+.arrow-head {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-width: 2px 2px 0px 0px;
+	border-color: #000;
+	margin-top: 2px;
+	transform: rotate(45deg);
+}

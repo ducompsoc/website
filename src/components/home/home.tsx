@@ -1,0 +1,78 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import Helmet from 'react-helmet';
+
+import { Button } from '../button/button';
+import { JoinBanner } from '../join-banner/join-banner';
+import { EventCarousel } from '../event-carousel/event-carousel';
+import { getFeature } from '../../util/events';
+import { popup } from '../../util/typeform';
+
+import './home.scss';
+
+const feature = getFeature();
+
+export class Home extends React.PureComponent {
+	public render() {
+		return (
+			<div className="home">
+				<Helmet>
+					<title>Homepage » Durham CompSoc</title>
+				</Helmet>
+
+				<div className="feature" style={{ backgroundImage: `url(/images/${feature.image})` }}>
+					<div className="flex"></div>
+					<div className="container">
+						<div className="info">
+							<h3><span><span>{feature.title}</span></span></h3>
+							<span><span>{feature.tagline.join(' ')}</span></span>
+						</div>
+
+						<div className="cta">
+							<Button onClick={this.handleJoinClick}>Join now</Button>
+						</div>
+					</div>
+				</div>
+
+				<div className="container">
+					<div className="comment">
+						<div className="row">
+							<div className="flex">
+								CompSoc is Durham University Computing Society. It is run entirely by students and serves to promote programming, development and general computing. We are a community of passionate problem solvers who come together to run weekly meetings, workshops and hackathons throughout the year. No matter if you're a novice or expert, come down to see what we have to offer!
+							</div>
+						</div>
+					</div>
+
+					<div className="events-header row center">
+						<div className="events-title">
+							<h2>Events</h2>
+						</div>
+
+						<div className="flex"></div>
+
+						<div>
+							<a href="/" onClick={this.handleJoinLinkClick} className="subscribe-link">
+								<FontAwesomeIcon icon={faEnvelope} />
+								<span>Subscribe</span>
+							</a>
+						</div>
+					</div>
+
+					<EventCarousel />
+				</div>
+
+				<JoinBanner />
+			</div>
+		);
+	}
+
+	private handleJoinLinkClick = (event: React.MouseEvent) => {
+		event.preventDefault();
+		this.handleJoinClick();
+	}
+
+	private handleJoinClick = () => {
+		popup.open();
+	}
+}

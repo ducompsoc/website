@@ -2,3 +2,5 @@
 node_modules
 unimportantFile\.json
 .DS_Store
+build
+dist

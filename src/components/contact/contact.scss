@@ -1,0 +1,45 @@
+@import '../../variables.scss';
+
+.contact {
+	> .container {
+		padding-left: 64px;
+	}
+
+	form {
+		margin: 32px 0px;
+	}
+
+	input, textarea {
+		border: solid 1px #999;
+		font-family: Source Code Pro, 'Courier New', Courier, monospace;
+		font-size: 18px;
+		padding: 18px;
+		margin-bottom: 9px;
+		box-sizing: border-box;
+	}
+
+	input {
+		width: 60%;
+	}
+
+	textarea {
+		width: 80%;
+		height: 256px;
+	}
+
+	.success, .error {
+		background-color: #000;
+		color: #fff;
+		padding: 16px;
+
+		&.error {
+			background-color: #b02626;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-small) {
+		input, textarea {
+			width: 100%;
+		}
+	}
+}

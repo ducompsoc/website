@@ -1,0 +1,90 @@
+/**
+ * Hello! CompSoc's styling uses Sass. It's like CSS, but with a few extra bits
+ * added (e.g. you can nest CSS selectors so things look less messy). Check out
+ * https://sass-lang.com/guide
+ */
+
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Jura:700|Montserrat:400,700|Lato:400|Source+Code+Pro:400,700&display=swap');
+
+body {
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, div {
+	box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.center, .align-center {
+	align-items: center;
+}
+
+.center {
+	justify-content: center;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.flex {
+	flex: 1;
+}
+
+.container {
+	width: 90%;
+	max-width: 1400px;
+	margin: 0px auto;
+}
+
+h2 {
+	background-color: #000;
+	font-size: 48px;
+	color: #fff;
+	padding: 24px 24px 24px 64px;
+	transition: 2s ease;
+
+	@media screen and (max-width: $breakpoint-small) {
+		padding-left: 48px;
+	}
+}
+
+.arrow-line {
+	display: inline-block;
+	width: 58px;
+	height: 8px;
+	border-top: solid 2px #000;
+	margin: 8px -8px 0px 0px;
+}
+
+.arrow-head {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-width: 2px 2px 0px 0px;
+	border-color: #000;
+	margin-top: 2px;
+	transform: rotate(45deg);
+}
+
+.reversed {
+	.arrow-line {
+		margin: 8px 0px 0px -8px;
+	}
+
+	.arrow-head {
+		transform: rotate(-135deg);
+	}
+}

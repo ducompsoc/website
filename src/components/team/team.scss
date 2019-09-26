@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.team {
+	margin-bottom: 64px;
+
+	> .container {
+		> p, .grid, .prev-link {
+			padding-left: 64px;
+
+			@media screen and (max-width: $breakpoint-small) {
+				padding-left: 48px;
+			}
+		}
+
+		@media screen and (max-width: $breakpoint-medium) {
+			.grid.row {
+				flex-direction: column;
+
+				> div {
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}

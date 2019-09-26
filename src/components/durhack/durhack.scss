@@ -1,0 +1,38 @@
+@import '../../variables.scss';
+
+.durhack-page {
+	> .container > .row {
+		margin-bottom: 96px;
+
+		@media screen and (max-width: $breakpoint-medium) {
+			flex-direction: column;
+		}
+
+		.time {
+			min-width: 320px;
+			padding: 0px 64px;
+
+			h3 {
+				font-size: 96px;
+				margin: 0px;
+			}
+
+			.date {
+				font-family: Source Code Pro, 'Courier New', Courier, monospace;
+				color: #666;
+			}
+		}
+
+		.description {
+			padding: 0px 64px;
+
+			img {
+				width: 80%;
+			}
+		}
+
+		.button .inner .text {
+			min-width: 180px; /* hack to make buttons the same size */
+		}
+	}
+}

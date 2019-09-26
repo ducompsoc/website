@@ -1,0 +1,22 @@
+.team-member {
+	text-align: center;
+	padding: 32px;
+
+	img {
+		width: 96px;
+		height: 96px;
+		border-radius: 100%;
+		transform: scale(0);
+		transition: .5s ease;
+	}
+
+	h4 {
+		margin-bottom: 4px;
+	}
+}
+
+// Bit of a hack: We want all the avatars in a grid to be animated at once. So,
+// "wow" is actually a class in the parent component. :-(
+.wow.animated .team-member img {
+	transform: scale(1);
+}

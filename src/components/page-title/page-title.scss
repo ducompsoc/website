@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.page-title {
+	background-size: cover;
+	background-position: center;
+
+	> .container {
+		height: 182px;
+		position: relative;
+		padding-top: 128px;
+		margin-bottom: 96px;
+	}
+
+	h2 {
+		position: absolute;
+		bottom: -52px;
+		display: inline-block;
+		padding-right: 128px;
+		margin: 0px;
+
+		@media screen and (max-width: $breakpoint-small) {
+			width: 100%;
+			padding-right: 0px;
+		}
+	}
+}

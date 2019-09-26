@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+header {
+	background-color: black;
+	color: #fff;
+
+	.logo {
+		padding: 18px 0px 24px 0px;
+
+		h1, div {
+			font-family: Jura, Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			margin: 0px;
+		}
+
+		h1 {
+			font-size: 42px;
+			padding-bottom: 4px;
+		}
+
+		div {
+			font-size: 14px;
+		}
+	}
+
+	> .container > a {
+		font-family: Source Code Pro, 'Courier New', Courier, monospace;
+		border-bottom: solid 2px transparent;
+		padding-bottom: 6px;
+		margin-left: 64px;
+		transition: .3s ease;
+		cursor: pointer;
+
+		&:hover, &.active {
+			border-bottom-color: #fff;
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	@media screen and (max-width: $breakpoint-medium) {
+		h1 {
+			margin-bottom: 9px;
+		}
+
+		.logo {
+			text-align: center;
+		}
+
+		> .container {
+			flex-direction: column;
+
+			> div {
+				width: 100%;
+			}
+
+			> a {
+				padding: 16px;
+				margin: 0px;
+			}
+
+			&.closed > a {
+				display: none;
+			}
+
+			.menu {
+				display: block;
+
+				> button {
+					background-color: transparent;
+					border: none;
+					color: #fff;
+					padding: 32px;
+					margin-right: -18px;
+				}
+			}
+
+			.menu > button:hover, &.open .menu > button {
+				background-color: #fff;
+				color: #000;
+			}
+		}
+	}
+}
