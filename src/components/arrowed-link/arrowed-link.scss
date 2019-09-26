@@ -1,0 +1,23 @@
+.arrowed-link {
+	font-family: Source Code Pro, 'Courier New', Courier, monospace;
+	align-items: center;
+	color: #666;
+	text-decoration: none;
+
+	.text {
+		border-bottom: solid 1px transparent;
+		margin: 0px 9px 0px 0px;
+	}
+
+	&.reversed .text {
+		margin: 0px 0px 0px 9px;
+	}
+
+	&:hover .text, .arrow-line, .arrow-head {
+		border-color: #666;
+	}
+
+	.arrow-head {
+		margin: 0px -2px 0px -2px;
+	}
+}

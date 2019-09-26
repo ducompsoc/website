@@ -2,7 +2,7 @@
 
 A well documented repository is a good repository. Hopefully after reading this readme you should have all you need to set up a local testing environment and get started with developing new and exciting features for the website!
 
-# Setup
+# How do I run it?
 
 ## Git
 
@@ -69,58 +69,37 @@ If the terminal gives you a bunch of information (the NPM help page) then you ar
 
 NPM is Node's Package Manager and is used to install third party libraries and frameworks. The package.json file in the root (top most) directory of the project (compsoc_website if you've been following along) stores all the modules that project relies upon.
 
+Install dependencies by running:
+```bash
+npm install
+```
+
 Running
 ```bash
 npm start
 ```
-in your terminal/command line downloads the project's modules and their dependencies (via npm install) and runs the file app.js with node (via node app.js). If all is well, you should be greeted with the message
-```bash
-CompSoc app listening on port 9000!
-```
+in your terminal/command line will start up a local web server that runs the web app. You will be sent to the homepage (or, just head straight to http://localhost:3000/).
 
-Navigate to `http://localhost:9000` in a web browser and you should recognise the CompSoc website!
+And that's it!
 
-# Events
-Events are loaded dynamically from `public/data/events.json`.
+But, the contact form requires you to start a separate Node.js webserver. If you're wanting to develop something with the contact form, head into the `server` directory and do something similar (i.e. `cd website`, then `npm install`, and then `npm start`).
 
-They are broken into two categories: `upcoming` and `past`, which are self-explanatory.
+# How do I update the site?
 
-Events are rendered on the page in the order they're stored in `events.json`.
+The majority of the website's dynamic content is located in a single configuration file, which you can find at `src/config.tsx`.
 
-For consistency's sake, **past** events should be in **reverse chronological order** (i.e. most recent at the top).  
-**Upcoming** events should be in **chronological order** (i.e. soonest at the top).
+So, to change the homepage content, add new events, add team members, and add sponsors, this should be the only place you'd need to make some changes.
 
-## Add a New Event
-To add a new upcoming event, put it as the last element in the `events.upcoming` array.
+For documentation, please refer to `src/util/data.tsx` as a reference; each property has a full explanation of what it does.
 
-### Parameter Definitions
+## But what if I want to update something that isn't covered here?
 
-#### `name`
-The name of the event, e.g. `Annual General Meeting 2018`
+The site's main code is in `src/components`. Quite a lot of static assets are in the `public` folder.
 
-#### `short_name`
-A short **unique** acronym for the event (used for the HTML `id` attribute), e.g. `agm18`
+Be aware that we use some extra stuff to make developing the site a bit more fun:
 
-#### `date`
-The date of the event, shown on the homepage only. Be consistent with format, e.g. `17<sup>th</sup> November 2018`.
+* For JavaScript, we use TypeScript (which is why files have the extension `.tsx`). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
+* For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
+* For the site, we use React. This lets us split the code up into separate components.
 
-#### `image_url`
-The URL of the image to load for the event. This image should have a 16:9 aspect ratio and be stored in `public/img/events/`.
-
-#### `more_info_url` (optional)
-Optional URL to a page with more info about the event. This could be a link to a Facebook event (in which case the page will show `Facebook Event for EVENT_NAME`) or a URL to another site, in which case the page will show `More info about EVENT_NAME`.
-
-#### `short_text`
-Short description of the event, displayed on the homepage, e.g. `Join CompSoc at the AGM to elect new exec`.
-
-#### `text`
-An **array** in which each string element is a new paragraph. e.g.
-```javascript
-"text": [
-    "We're recruiting new people to run CompSoc.",
-    "Exec roles are held from the end of the AGM in March 2018 to the end of the AGM in March 2019."
-]
-```
-
-## Move an Event into the Past
-To move an event to the past, simply move it from the `events.upcoming` array to the beginning of the `events.past` array.
+As an aside, running `npm run build` will generate a folder called `build` containing all the final HTML files we should host in production. We use `react-snap` to make sure these files are understandable for search engines.

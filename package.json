@@ -1,32 +1,65 @@
 {
   "name": "compsoc-website",
-  "version": "0.0.1",
-  "description": "The Durham University Computing Society Website",
-  "private": true,
-  "scripts": {
-    "prestart": "npm install",
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ducompsoc/website.git"
-  },
-  "author": "",
+  "version": "0.1.0",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ducompsoc/website/issues"
-  },
-  "homepage": "https://github.com/ducompsoc/website#readme",
+  "author": "Durham Computing Society <computing.society@durham.ac.uk>",
+  "contributors": [
+    {
+      "name": "Ethan Waite",
+      "email": "ethan.w@compsoc.tech"
+    }
+  ],
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "bootstrap": "^3.4.1",
-    "clean-css": "^4.2.1",
-    "express": "^4.16.4",
-    "font-awesome": "^4.6.3",
-    "lodash": "^4.17.13",
-    "nodemailer": "^4.7.0",
-    "pug": "2.0.0-beta6",
-    "pug-filters": "^3.1.0"
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-regular-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@typeform/embed": "^0.12.1",
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.2",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "classnames": "^2.2.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-google-recaptcha": "^2.0.1",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "typescript": "3.5.3",
+    "wowjs": "^1.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:prod": "npm run build && react-snap",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/react-google-recaptcha": "^1.1.0",
+    "@types/react-helmet": "^5.0.10",
+    "@types/react-router-dom": "^4.3.5",
+    "node-sass": "^4.12.0",
+    "react-snap": "^1.23.0"
   }
 }

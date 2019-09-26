@@ -1,0 +1,91 @@
+@import '../../variables.scss';
+
+footer {
+	background-color: #000;
+	font-family: Source Code Pro, 'Courier New', Courier, monospace;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	padding: 0px 12px;
+
+	@media screen and (max-width: $breakpoint-small) {
+		.row {
+			flex-direction: column-reverse;
+
+			.links {
+				padding-left: 0px;
+			}
+		}
+
+		.sponsors.row {
+			flex-direction: column;
+		}
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.info a {
+		border-bottom: solid 1px #fff;
+	}
+
+	.section {
+		padding: 32px 0px;
+	}
+
+	.separator {
+		border-top: solid 1px #fff;
+	}
+
+	.links {
+		padding: 9px 0px 0px 64px;
+
+		.oss {
+			margin-top: 24px;
+		}
+
+		> div {
+			display: block;
+
+			> a {
+				white-space: nowrap;
+				padding: 0px 3px 0px 0px;
+				transition: .3s ease;
+
+				&:hover {
+					padding: 0px 0px 0px 3px;
+				}
+			}
+		}
+	}
+
+	.sponsors {
+		margin-top: 32px;
+
+		> div {
+			flex-grow: 1;
+			flex-basis: 0px;
+			text-align: center;
+			padding: 0px 16px;
+			margin-top: 12px;
+
+			a {
+				opacity: 0.8;
+				transition: .5s ease;
+
+				&:hover {
+					opacity: 1;
+				}
+
+				img {
+					width: auto;
+					height: 48px;
+					border: none;
+					filter: grayscale(100%) brightness(100); /* make them white! */
+				}
+			}
+		}
+	}
+}

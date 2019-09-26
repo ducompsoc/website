@@ -1,0 +1,81 @@
+.event-card {
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	min-height: 420px;
+	border: solid 1px #eee;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #000;
+	padding: 4px;
+	transition: .5s ease;
+
+	&.linked {
+		&:hover {
+			transform: scale(1.02);
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+
+	&.filler > div {
+		text-align: center;
+		padding: 24px;
+	}
+
+	p {
+		height: 76px;
+		font-family: Lato, Arial, Helvetica, sans-serif;
+		overflow: hidden;
+
+		/* This has weirdly good browser support. https://caniuse.com/#search=line-clamp */
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		text-overflow: ellipsis;
+
+		&, a {
+			color: #666;
+		}
+	}
+
+	> .inner {
+		height: 100%;
+		background-color: #eee;
+		border-radius: 4px;
+
+		.image {
+			height: 190px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.info {
+			padding: 24px;
+
+			h4 {
+				margin: 0px;
+			}
+
+			.when {
+				background-color: #000;
+				font-family: Source Code Pro, 'Courier New', Courier, monospace;
+				font-weight: bold;
+				color: #fff;
+				padding: 12px 36px 12px 12px;
+				white-space: nowrap;
+			}
+
+			.location {
+				color: #666;
+				padding: 12px;
+			}
+
+			.arrow-line, .arrow-head {
+				border-color: #666;
+			}
+		}
+	}
+}

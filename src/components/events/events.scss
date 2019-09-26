@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+.events-page {
+	> .container {
+		padding-left: 64px;
+
+		@media screen and (max-width: $breakpoint-small) {
+			padding-left: 0px;
+		}
+
+		> h4 {
+			font-family: Source Code Pro, 'Courier New', Courier, monospace;
+			font-size: 32px;
+			color: #666;
+		}
+
+		.grid {
+			margin-left: -9px;
+			margin-bottom: 64px;
+
+			> div {
+				width: 33%;
+				padding: 9px;
+			}
+
+			@media screen and (max-width: $breakpoint-medium) {
+				&.row {
+					flex-direction: column;
+
+					> div {
+						width: 100%;
+					}
+				}
+			}
+
+			@media screen and (max-width: $breakpoint-large) {
+				> div {
+					width: 50%;
+				}
+			}
+
+			/* Awkward hack: If we're running low on space, sacrifice the pretty arrows. */
+			@media screen and (max-width: 1400px) and (min-width: $breakpoint-medium) {
+				&.row > div .arrow-line {
+					display: none;
+				}
+			}
+		}
+	}
+}
