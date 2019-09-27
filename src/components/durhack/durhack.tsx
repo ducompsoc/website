@@ -20,6 +20,7 @@ export class DurHack extends React.PureComponent {
 					<div className="row">
 						<div className="time">
 							<h3>2019</h3>
+							<div className="date">23rd - 24th November</div>
 						</div>
 
 						<div className="description">
@@ -28,11 +29,11 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								<strong>DurHack 2019 is coming this November.</strong>
+								<strong>DurHack 2019 is on 23rd - 24th November 2019.</strong>
 							</p>
 
 							<p>
-								Find out all about it at:
+								Find out all about it and get your free tickets at:
 							</p>
 
 							<div>
