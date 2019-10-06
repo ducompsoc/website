@@ -15,6 +15,12 @@ const feature = getFeature();
 
 export class Home extends React.PureComponent {
 	public render() {
+		let button = <Button onClick={this.handleJoinClick}>Join now</Button>;
+
+		if (feature.button) {
+			button = <Button onClick={this.handleFeatureButtonClick}>{feature.button.text}</Button>
+		}
+
 		return (
 			<div className="home">
 				<Helmet>
@@ -30,7 +36,7 @@ export class Home extends React.PureComponent {
 						</div>
 
 						<div className="cta">
-							<Button onClick={this.handleJoinClick}>Join now</Button>
+							{button}
 						</div>
 					</div>
 				</div>
@@ -74,5 +80,9 @@ export class Home extends React.PureComponent {
 
 	private handleJoinClick = () => {
 		popup.open();
+	}
+
+	private handleFeatureButtonClick = () => {
+		window.open(feature.button!.destination);
 	}
 }
