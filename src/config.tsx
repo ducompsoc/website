@@ -69,8 +69,8 @@ export const config: ISiteData = {
 			link: 'https://durhack.com',
 			thumbnail: 'events/durhack2018photo.jpg',
 			when: {
-				dates: [new Date('2019-11-01T12:00:00Z')], // todo: fake date -- dunno when durhack is yet
-				text: 'November 2019',
+				dates: [new Date('2019-11-23T09:00:00Z')],
+				text: '23rd November 2019',
 			},
 			/* feature: {
 				title: 'DurHack 2019 is coming!',
@@ -85,6 +85,31 @@ export const config: ISiteData = {
 				priority: 2, // durhack is important
 				daysBefore: 7,
 			}, */
+		},
+		{
+			name: 'Durham Local Hack Day – Learn',
+			description: [
+				'CompSoc will be hosting a free workshop on 12 October, where we will teach you how to build and deploy your first website! Come to E240 in the Higginson Building.',
+			],
+			link: 'https://www.facebook.com/events/525510958210911/',
+			thumbnail: 'events/lhd2019.jpg',
+			when: {
+				dates: [new Date('2019-10-12T09:30:00+01:00')],
+				text: '12th October, 9:30am',
+			},
+			feature: {
+				title: 'Local Hack Day on Saturday',
+				tagline: [
+					'CompSoc will be hosting a free workshop, where we will teach you how to build and deploy your first website!',
+					'Come to E240 in the Higginson Building on Saturday 12 October from 9:30 till 16:30. Pizza is provided!',
+				],
+				image: 'stock/d.jpg',
+				daysBefore: 5,
+				button: {
+					text: 'Go to Facebook event',
+					destination: 'https://www.facebook.com/events/525510958210911/',
+				},
+			},
 		},
 
 		// The events below have been scraped from the previous CompSoc website.
