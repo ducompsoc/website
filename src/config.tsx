@@ -34,18 +34,18 @@ export const config: ISiteData = {
 			thumbnail: 'stock/j.jpg',
 			when: {
 				dates: [
-					new Date('2019-10-07T18:15:00+01:00'),
-					new Date('2019-10-14T18:15:00+01:00'),
-					new Date('2019-10-21T18:15:00+01:00'),
-					new Date('2019-10-28T18:15:00Z'), // BST ends 27th October
-					new Date('2019-11-04T18:15:00Z'),
-					new Date('2019-11-11T18:15:00Z'),
-					new Date('2019-11-18T18:15:00Z'),
-					new Date('2019-11-25T18:15:00Z'),
-					new Date('2019-12-02T18:15:00Z'),
-					new Date('2019-12-09T18:15:00Z'),
+					new Date('2019-10-07T18:00:00+01:00'),
+					new Date('2019-10-14T18:00:00+01:00'),
+					new Date('2019-10-21T18:00:00+01:00'),
+					new Date('2019-10-28T18:00:00Z'), // BST ends 27th October
+					new Date('2019-11-04T18:00:00Z'),
+					new Date('2019-11-11T18:00:00Z'),
+					new Date('2019-11-18T18:00:00Z'),
+					new Date('2019-11-25T18:00:00Z'),
+					new Date('2019-12-02T18:00:00Z'),
+					new Date('2019-12-09T18:00:00Z'),
 				],
-				text: 'Mondays, 6:45pm',
+				text: 'Mondays, 6pm',
 			},
 			location: 'Room E240',
 			/* feature: {
