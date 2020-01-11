@@ -43,24 +43,62 @@ export const config: ISiteData = {
 					new Date('2019-11-18T18:00:00Z'),
 					new Date('2019-11-25T18:00:00Z'),
 					new Date('2019-12-02T18:00:00Z'),
-					new Date('2019-12-09T18:00:00Z'),
+					new Date('2020-01-13T18:00:00Z'),
+					new Date('2019-01-27T18:00:00Z'),
+					new Date('2019-02-10T18:00:00Z'),
+					new Date('2019-02-24T18:00:00Z'),
+					new Date('2019-03-09T18:00:00Z'),
 				],
 				text: 'Mondays, 6pm',
 			},
-			location: 'Room E240',
-			/* feature: {
-				title: 'Come along to our weekly meeting',
+			location: 'TLC 113',
+			feature: {
+				title: 'Weekly meetings now in TLC 113',
 				tagline: [
-					'Durham University Computing Society\'s weekly meeting takes place every Monday at 6:45pm, in E240 (Higginson Building).',
-					'In the past, we\'ve had quizzes, helping people with projects, programming help, and casual social events.',
+					'We\'re moving! Durham University Computing Society\'s weekly meeting is now in TLC 113 (Teaching & Learning Centre).',
+					'Come along on Monday at 6pm.',
 				],
-				image: 'stock/j.jpg',
+				image: 'stock/a.jpg',
 				priority: -1,
 				daysBefore: 7,
-			}, */
+			},
 		},
 
 		// New events.
+		{
+			name: 'Acing the Technical Interview Workshop',
+			description: [
+				'We\'ll be running a workshop in place of this week\'s weekly meeting.',
+			],
+			link: '',
+			thumbnail: 'stock/t.jpg',
+			when: {
+				dates: [new Date('2020-01-20T18:00:00Z')],
+				text: '20th January, 6pm'
+			},
+			location: 'TLC 113',
+			feature: {
+				title: 'Come along to our workshop on Monday!',
+				tagline: [
+					'We\'re running our Acing the Technical Interview Workshop on Monday, 6pm in TLC 113.'
+				],
+				image: 'stock/a.jpg',
+				priority: -1,
+				daysBefore: 7,
+			},
+		},
+		{
+			name: 'BAE Systems Capture the Flag',
+			description: [
+				'BAE Systems Applied Intelligence are running a Capture the Flag event, a day of cyber security challenges and games. This event is ticketed.',
+			],
+			link: 'https://www.facebook.com/events/2327862003984760/',
+			thumbnail: 'stock/r.jpg',
+			when: {
+				dates: [new Date('2020-01-18T09:30:00Z')],
+				text: '18th January, 9:30am'
+			},
+		},
 		{
 			name: 'DurHack 2019',
 			description: [

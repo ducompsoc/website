@@ -51,7 +51,7 @@ export const Footer: React.FC = () => (
 			<div className="container row">
 				<div className="info">
 					<p>
-						&copy; 2016-2019 <a href="/">Durham University Computing Society</a>.
+						&copy; 2016-2020 <a href="/">Durham University Computing Society</a>.
 					</p>
 
 					<p>
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => (
 					</p>
 
 					<p>
-						DurHack 2018 photos by Durham Photographer. See durhack.com.
+						DurHack 2018-2019 photos by Durham Photographer. See durhack.com.
 					</p>
 				</div>
 
