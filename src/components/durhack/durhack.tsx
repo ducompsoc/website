@@ -25,15 +25,23 @@ export class DurHack extends React.PureComponent {
 
 						<div className="description">
 							<p>
-								CompSoc runs a large-scale annual hackathon with students from all sorts of backgrounds. At DurHack 2018, we had 150 students from all over the UK and Europe!
+								CompSoc runs a large-scale annual hackathon with students from all sorts of backgrounds.
 							</p>
 
 							<p>
-								<strong>DurHack 2019 is on 23rd - 24th November 2019.</strong>
+								In 2019, DurHack returned for its fourth iteration, which welcomed 200 students from all over the UK and Europe.
 							</p>
 
 							<p>
-								Find out all about it and get your free tickets at:
+								Sponsors like Durham County Council, Atom Bank, Goldman Sachs, Waterstons, Capital One, and StarLeaf helped to make this our largest hackathon yet.
+							</p>
+
+							<p>
+								<img src="/images/durhack/2019.jpg" alt="Photograph from DurHack 2019" />
+							</p>
+
+							<p>
+								See submissions and photos from the event at:
 							</p>
 
 							<div>
@@ -41,7 +49,7 @@ export class DurHack extends React.PureComponent {
 							</div>
 
 							<p>
-								If you’re interested in sponsoring DurHack:
+								If you’re interested in sponsoring DurHack 2020:
 							</p>
 
 							<div>
