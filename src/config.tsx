@@ -44,10 +44,10 @@ export const config: ISiteData = {
 					new Date('2019-11-25T18:00:00Z'),
 					new Date('2019-12-02T18:00:00Z'),
 					new Date('2020-01-13T18:00:00Z'),
-					new Date('2019-01-27T18:00:00Z'),
-					new Date('2019-02-10T18:00:00Z'),
-					new Date('2019-02-24T18:00:00Z'),
-					new Date('2019-03-09T18:00:00Z'),
+					new Date('2020-01-27T18:00:00Z'),
+					new Date('2020-02-10T18:00:00Z'),
+					new Date('2020-02-24T18:00:00Z'),
+					new Date('2020-03-09T18:00:00Z'),
 				],
 				text: 'Mondays, 6pm',
 			},
@@ -443,11 +443,23 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			'2019/2020',
 			'2018/2019',
 			'2017/2018',
 			'2016/2017'
 		],
 		companies: [
+			{
+				name: 'Teach First',
+				link: 'https://www.teachfirst.org.uk/',
+				image: 'sponsors/teach-first.png',
+				thumb: 'sponsors/teach-first-horiz.svg',
+				description: [
+					'Education in the UK isn’t fair. We need to unlock the potential in every child, not just some.',
+					'Teach First develop the inspiring teachers and leaders who will make it happen. Together, we’ll build a better future with a fair education for all.Teach First are the UK’s largest graduate recruiter, voted top 10 in The Times Top 100. They seek, develop and support teaches and leaders who are determined to make a difference where it’s needed the most.',
+				],
+				years: ['2019/2020'],
+			},
 			{
 				name: 'Scott Logic',
 				link: 'https://www.scottlogic.com/careers/',

@@ -68,7 +68,7 @@ footer {
 			flex-grow: 1;
 			flex-basis: 0px;
 			text-align: center;
-			padding: 0px 16px;
+			padding: 0px 8px;
 			margin-top: 12px;
 
 			a {
@@ -83,7 +83,7 @@ footer {
 					width: auto;
 					height: 48px;
 					border: none;
-					filter: grayscale(100%) brightness(100); /* make them white! */
+					filter: invert(50%) grayscale(100%) brightness(100); /* make them white! */
 				}
 			}
 		}

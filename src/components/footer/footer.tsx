@@ -8,7 +8,8 @@ import { config } from '../../config';
 import './footer.scss';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const sponsors = config.sponsors.companies.filter(company => company.years.includes(config.sponsors.years[0]));
+const [thisYear, lastYear] = config.sponsors.years;
+const sponsors = config.sponsors.companies.filter(company => company.years.includes(thisYear) || company.years.includes(lastYear));
 
 const links: { name: string; to: string }[] = [
 	{
@@ -40,7 +41,7 @@ export const Footer: React.FC = () => (
 				Our sponsors:
 
 				<div className="sponsors row center wrap">
-					{sponsors.map(sponsor => <div key={sponsor.name}><a href={sponsor.link} target="_blank" rel="noopener noreferrer"><img src={`/images/${sponsor.image}`} alt={sponsor.name} title={sponsor.name} /></a></div>)}
+					{sponsors.map(sponsor => <div key={sponsor.name}><a href={sponsor.link} target="_blank" rel="noopener noreferrer"><img src={`/images/${sponsor.thumb || sponsor.image}`} alt={sponsor.name} title={sponsor.name} /></a></div>)}
 				</div>
 			</div>
 		</div>
@@ -63,7 +64,7 @@ export const Footer: React.FC = () => (
 					</p>
 
 					<p>
-						DurHack 2018-2019 photos by Durham Photographer. See durhack.com.
+						DurHack 2018-2019 photos by Durham Photographer. See <a href="https://durhack.com" target="_blank" rel="noopener noreferrer">durhack.com</a>.
 					</p>
 				</div>
 

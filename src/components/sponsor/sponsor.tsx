@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { ISponsor } from '../../util/data';
+import { ArrowedLink } from '../arrowed-link/arrowed-link';
 
 import './sponsor.scss';
 
@@ -18,6 +19,8 @@ export const Sponsor: React.FC<ISponsorProps> = ({ company }: ISponsorProps) => 
 			<h3>{company.name}</h3>
 
 			{company.description.map((content, index) => <p key={index} dangerouslySetInnerHTML={{ __html: content }}></p>)}
+
+			<ArrowedLink to={company.link} external={true}>Find out more</ArrowedLink>
 		</div>
 	</div>
 );

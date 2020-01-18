@@ -244,6 +244,13 @@ export interface ISponsor {
 	image: string;
 
 	/**
+	 * The path to the logo of the company to use in the footer. Please only
+	 * specify if a different image should be used in the footer (e.g. if the
+	 * logo is unreadable that small).
+	 */
+	thumb?: string;
+
+	/**
 	 * An array of academic years this company have ssponsored us. For example,
 	 * a company that sponsored us for two years might have: ["2018/2019",
 	 * "2017/2018"]. Strictly stick to this date format, please!
