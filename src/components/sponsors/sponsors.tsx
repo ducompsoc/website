@@ -8,8 +8,8 @@ import { config } from '../../config';
 
 import './sponsors.scss';
 
-const [thisYear, lastYear] = config.sponsors.years;
-const sponsors = config.sponsors.companies.filter(company => company.years.includes(thisYear) || company.years.includes(lastYear));
+const [thisYear] = config.sponsors.years;
+const sponsors = config.sponsors.companies.filter(company => company.years.includes(thisYear));
 
 export class Sponsors extends React.PureComponent {
 	public render() {

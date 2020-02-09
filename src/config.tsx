@@ -52,7 +52,7 @@ export const config: ISiteData = {
 				text: 'Mondays, 6pm',
 			},
 			location: 'TLC 113',
-			feature: {
+			/* feature: {
 				title: 'Weekly meetings now in TLC 113',
 				tagline: [
 					'We\'re moving! Durham University Computing Society\'s weekly meeting is now in TLC 113 (Teaching & Learning Centre).',
@@ -61,7 +61,7 @@ export const config: ISiteData = {
 				image: 'stock/a.jpg',
 				priority: -1,
 				daysBefore: 7,
-			},
+			}, */
 		},
 
 		// New events.
@@ -467,7 +467,7 @@ export const config: ISiteData = {
 				description: [
 					'At <b>Scott Logic</b>, we design and build software that transforms the performance of some of the world’s biggest and most demanding organisations, and we\'re always on the look out for talented individuals to join our team. Our <a href="https://www.scottlogic.com/careers/graduates-programme/" target="_blank">Graduate Programme</a> is a great way to kickstart your technology career. You’ll learn new skills, work on a diverse set of internal and client projects, and figure out what makes a globally successful software team tick.',
 				],
-				years: ['2018/2019', '2017/2018', '2016/2017'],
+				years: ['2019/2020', '2018/2019', '2017/2018', '2016/2017'],
 			},
 			{
 				name: 'Arista Networks',
@@ -494,7 +494,7 @@ export const config: ISiteData = {
 				description: [
 					'<b>TPP</b> is a cutting-edge software company based in Leeds. We\'re revolutionising healthcare across the world with our pioneering research and technology solutions. We\'re doing some amazing things here at TPP and we have some really exciting projects coming up. That\'s why we\'re looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don\'t require any previous experience at all and we offer amazing starting salaries of £40,000 with generous pay rises.',
 				],
-				years: ['2018/2019', '2017/2018'],
+				years: ['2019/2020', '2018/2019', '2017/2018'],
 			},
 			{
 				name: 'StarLeaf',
@@ -505,7 +505,7 @@ export const config: ISiteData = {
 					'In September, the company was named in the Gartner 2018 Magic Quadrant for Meeting Solutions and one of the fastest growing tech companies in the UK by The Sunday Times Hiscox Tech Track 100.',
 					'StarLeaf\'s culture is built on collaboration, inclusion, creativity and support. This permeates everything they do, across all their teams and operations. They believe everyone at StarLeaf has a part to play in their success and that everyone should be rewarded for their contribution. This is why every single StarLeaf employee becomes a shareholder through the company’s share option scheme.',
 				],
-				years: ['2018/2019'],
+				years: ['2019/2020', '2018/2019'],
 			},
 			{
 				name: 'Schroders',
@@ -543,6 +543,24 @@ export const config: ISiteData = {
 				],
 				years: ['2017/2018'],
 			},
+			{
+				name: 'Waterstons',
+				link: 'https://www.waterstons.com/careers',
+				image: 'sponsors/waterstons.svg',
+				description: [
+					'<strong>Waterstons</strong> are an IT consultancy with a keen business focus based in Durham! We’re open and honest, we’ll challenge you when you need challenging and we’ve been around for over twenty-five years. We provide creative technology-based solutions to improve business performance and increase competitive advantage.',
+				],
+				years: ['2019/2020'],
+			},
+			{
+				name: 'Optiver',
+				link: 'https://www.optiver.com/eu/en/working-at-optiver',
+				image: 'sponsors/optiver.svg',
+				description: [
+					'<strong>Optiver</strong> are a leading global electronic market maker, focused on pricing, execution and risk management. We trade bonds, cash equities, exchange-traded funds, listed derivatives and foreign exchange. We pioneer our own trading strategies and systems using clean code and sophisticated technology. We achieve this by attracting, developing and empowering top talent, in order to sustain our future. ',
+				],
+				years: ['2019/2020'],
+			}
 		],
 	},
 	teams: {

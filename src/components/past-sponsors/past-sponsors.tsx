@@ -7,7 +7,7 @@ import { config } from '../../config';
 
 import './past-sponsors.scss';
 
-const pastYears = config.sponsors.years.slice(2);
+const pastYears = config.sponsors.years.slice(1);
 const sponsors = config.sponsors.companies;
 
 export class PastSponsors extends React.PureComponent {

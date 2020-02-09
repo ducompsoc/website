@@ -8,8 +8,8 @@ import { config } from '../../config';
 import './footer.scss';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-const [thisYear, lastYear] = config.sponsors.years;
-const sponsors = config.sponsors.companies.filter(company => company.years.includes(thisYear) || company.years.includes(lastYear));
+const [thisYear] = config.sponsors.years;
+const sponsors = config.sponsors.companies.filter(company => company.years.includes(thisYear));
 
 const links: { name: string; to: string }[] = [
 	{
