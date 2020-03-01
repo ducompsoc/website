@@ -73,7 +73,7 @@ export const config: ISiteData = {
 			link: '',
 			thumbnail: 'events/electron.png',
 			when: {
-				dates: [new Date('2020-03-01T18:00:00Z')],
+				dates: [new Date('2020-03-02T18:00:00Z')],
 				text: '2nd March, 6pm',
 			},
 			location: 'TLC 113',
