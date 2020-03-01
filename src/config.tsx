@@ -66,6 +66,28 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'Electron Workshop',
+			description: [
+				'We’ll be making a simple desktop chat application together with Electron, Node.js and websockets, all from scratch with no prior web programming knowledge assumed.',
+			],
+			link: '',
+			thumbnail: 'events/electron.png',
+			when: {
+				dates: [new Date('2020-03-01T18:00:00Z')],
+				text: '2nd March, 6pm',
+			},
+			location: 'TLC 113',
+			feature: {
+				title: 'Come along to our Electron workshop',
+				tagline: [
+					'For this week\'s Monday workshop, we’ll be making a simple desktop chat application together, all from scratch with no prior web programming knowledge assumed.',
+					'Come to TLC 113 on Monday at 6pm.'
+				],
+				image: 'stock/a.jpg',
+				daysBefore: 7,
+			},
+		},
+		{
 			name: 'Acing the Technical Interview Workshop',
 			description: [
 				'We\'ll be running a workshop in place of this week\'s weekly meeting.',
