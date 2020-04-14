@@ -1,0 +1,33 @@
+.agm-page {
+	h2 {
+		font-size: 32px;
+	}
+
+	.subtitle {
+		width: 500px;
+	}
+
+	h3 {
+		font-size: 32px;
+		margin-bottom: 0px;
+	}
+
+	.half {
+		width: 50%;
+	}
+
+	.cast {
+		text-align: center;
+		margin: 128px 0px;
+	}
+
+	.half {
+		&:nth-child(odd) {
+			padding-right: 32px;
+		}
+
+		&:nth-child(even) {
+			padding-left: 32px;
+		}
+	}
+}
