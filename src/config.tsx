@@ -589,19 +589,19 @@ export const config: ISiteData = {
 		current: [
 			{
 				name: 'Tom Nudd',
-				image: null,
-				role: 'Publicity Officer',
+				image: 'tom.jpg',
+				role: 'President',
 				description: 'In charge of overseeing everything in the society and reaching out to sponsors.',
 			},
 			{
 				name: 'Irenitemi Agbejule',
-				image: null,
+				image: 'irenitemi.jpg',
 				role: 'Events Officer',
 				description: 'Works with sponsors and guest speakers to organise talks and workshops.',
 			},
 			{
 				name: 'Heidi Januszewski',
-				image: null,
+				image: 'heidi.jpg',
 				role: 'Finance Officer',
 				description: 'Manages CompSoc\'s finances.',
 			},
@@ -645,7 +645,7 @@ export const config: ISiteData = {
 					},
 					{
 						name: 'Tom Nudd',
-						image: null,
+						image: 'tom.jpg',
 						role: 'Publicity Officer',
 					},
 					{
