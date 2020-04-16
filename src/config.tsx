@@ -588,29 +588,29 @@ export const config: ISiteData = {
 	teams: {
 		current: [
 			{
-				name: 'Karl Southern',
-				image: 'karl.jpg',
-				role: 'President',
+				name: 'Tom Nudd',
+				image: null,
+				role: 'Publicity Officer',
 				description: 'In charge of overseeing everything in the society and reaching out to sponsors.',
 			},
 			{
-				name: 'Henry Westmacott',
-				image: 'henry.jpg',
+				name: 'Irenitemi Agbejule',
+				image: null,
 				role: 'Events Officer',
 				description: 'Works with sponsors and guest speakers to organise talks and workshops.',
 			},
 			{
-				name: 'Merry Gibbons',
-				image: 'merry.jpg',
-				role: 'Treasurer',
+				name: 'Heidi Januszewski',
+				image: null,
+				role: 'Finance Officer',
 				description: 'Manages CompSoc\'s finances.',
 			},
-			{
-				name: 'Tom Nudd',
+			/* {
+				name: '...',
 				image: null,
-				role: 'Publicity Officer',
+				role: 'Media & Publicity Officer',
 				description: 'In charge of the website content, social media, the mailing list, and promoting the society around the university.',
-			},
+			}, */
 			{
 				name: 'Ethan Waite',
 				image: 'ethan.jpg',
@@ -618,13 +618,48 @@ export const config: ISiteData = {
 				description: 'Works with the Publicity Officer to manage the technical side of the website.',
 			},
 			{
-				name: 'Kanika Mehta',
-				image: 'kanika.jpg',
+				name: 'Meredith Gibbons',
+				image: 'merry.jpg',
 				role: 'Secretary',
 				description: 'Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.',
 			},
 		],
 		past: [
+			{
+				year: '2019/2020',
+				members: [
+					{
+						name: 'Karl Southern',
+						image: 'karl.jpg',
+						role: 'President',
+					},
+					{
+						name: 'Henry Westmacott',
+						image: 'henry.jpg',
+						role: 'Events Officer',
+					},
+					{
+						name: 'Merry Gibbons',
+						image: 'merry.jpg',
+						role: 'Treasurer',
+					},
+					{
+						name: 'Tom Nudd',
+						image: null,
+						role: 'Publicity Officer',
+					},
+					{
+						name: 'Ethan Waite',
+						image: 'ethan.jpg',
+						role: 'Technical Web Officer',
+					},
+					{
+						name: 'Kanika Mehta',
+						image: 'kanika.jpg',
+						role: 'Secretary',
+					},
+				],
+			},
 			{
 				year: '2018/2019',
 				members: [

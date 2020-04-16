@@ -10,7 +10,7 @@ import './team.scss';
 
 export class Team extends React.PureComponent {
 	public render() {
-		const currentGridWidth = `${200 / config.teams.current.length}%`;
+		const currentGridWidth = `${200 / (Math.ceil(config.teams.current.length / 2) * 2)}%`;
 		const current = config.teams.current.map((member, index) => (
 			<div key={member.name} style={{ width: currentGridWidth }}>
 				<TeamMember current={true} member={member} key={member.name} index={index} />

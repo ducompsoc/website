@@ -14,7 +14,7 @@ export class AGM extends React.PureComponent {
 				<div className="agm-page container">
 
 					<p>
-						CompSoc's Annual General Meeting was conducted between 00:00 and 23:59 on the 15th April 2020. A <a href="http://community.dur.ac.uk/computing.society/proposed_constitution.pdf" target="_blank">new constitution</a> was approved, and your new exec for 2020/2021 was chosen. A full breakdown of the results is now available.
+						CompSoc's Annual General Meeting was conducted between 00:00 and 23:59 on the 15th April 2020. A <a href="http://community.dur.ac.uk/computing.society/proposed_constitution.pdf" target="_blank" rel="noopener noreferrer">new constitution</a> was approved, and your new exec for 2020/2021 was chosen. A full breakdown of the results is now available.
 					</p>
 
 					<Button raised={true} onClick={this.goToResults}>Read the results</Button>
