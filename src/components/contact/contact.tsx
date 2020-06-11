@@ -17,24 +17,28 @@ export const Contact: React.FC = () => (
 
 				<input
 					type="text"
+					name="name"
 					placeholder="Your name"
 					required />
 
 				<input
 					type="email"
+					name="email"
 					placeholder="Your email address"
 					required />
 
 				<input
 					type="text"
+					name="subject"
 					placeholder="Your message subject"
 					required />
 
 				<textarea
+					name="message"
 					placeholder="Your message"
 					required />
 
-				<ReCAPTCHA size="invisible" sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" />
+				<ReCAPTCHA sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" />
 
 				<div><Button>Send</Button></div>
 			</form>
