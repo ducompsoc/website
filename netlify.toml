@@ -1,0 +1,12 @@
+[[redirects]]
+	from = "/about"
+	to = "/"
+	status = 302
+
+[[redirects]]
+	from = "/slack"
+	to = "https://ducompsoc.slack.com"
+	status = 302
+
+[dev]
+	publish = "build/"

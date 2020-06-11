@@ -1,5 +1,5 @@
 import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { useParams } from 'react-router';
 
 import { PageTitle } from '../page-title/page-title';
 import { Button } from '../button/button';
@@ -15,150 +15,51 @@ export interface IContactState {
 	error: string | null;
 }
 
-export class Contact extends React.PureComponent<{}, IContactState> {
-	private recaptchaRef = React.createRef<ReCAPTCHA>();
-
-	constructor(props: {}) {
-		super(props);
-
-		this.state = {
-			name: '',
-			email: '',
-			subject: '',
-			content: '',
-			success: false,
-			error: null,
-		};
+function getForm(isSuccess: boolean) {
+	if (isSuccess) {
+		return <p className="success">Thanks! Your message has been sent. We'll be in touch soon.</p>;
 	}
 
-	public render() {
-		const {
-			name,
-			email,
-			subject,
-			content,
-			success,
-			error,
-		} = this.state;
+	return (
+		<>
+			<p>Leave your queries, comments, feedback, and suggestions below.</p>
+			<form name="contact" method="post" action="/contact/success" data-netlify="true" data-netlify-recaptcha="true">
+				<input
+					type="text"
+					placeholder="Your name"
+					required />
 
-		return (
-			<div className="contact">
-				<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>Contact us</PageTitle>
+				<input
+					type="email"
+					placeholder="Your email address"
+					required />
 
-				<div className="container">
-					<p>Leave your queries, comments, feedback, and suggestions below.</p>
+				<input
+					type="text"
+					placeholder="Your message subject"
+					required />
 
-					{success && <p className="success">Thanks! Your message has been sent. We'll be in touch soon.</p>}
-					{error && !success && <p className="error">{error}</p>}
+				<textarea
+					placeholder="Your message"
+					required />
 
-					<form onSubmit={this.handleSubmit}>
-						<input
-							type="text"
-							onChange={this.handleNameChange}
-							value={name}
-							placeholder="Your name"
-							required
-							disabled={success} />
+				<div data-netlify-recaptcha="true"></div>
+				<div><Button>Send</Button></div>
+			</form>
+		</>
+	);
+}
 
-						<input
-							type="email"
-							onChange={this.handleEmailChange}
-							value={email}
-							placeholder="Your email address"
-							required
-							disabled={success} />
+export const Contact: React.FC = () => {
+	const { success } = useParams<{ success: string }>();
 
-						<input
-							type="text"
-							onChange={this.handleSubjectChange}
-							value={subject}
-							placeholder="Your message subject"
-							required
-							disabled={success} />
+	return (
+		<div className="contact">
+			<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>Contact us</PageTitle>
 
-						<textarea
-							onChange={this.handleContentChange}
-							value={content}
-							placeholder="Your message"
-							required
-							disabled={success} />
-
-						<ReCAPTCHA
-							ref={this.recaptchaRef}
-							size="invisible"
-							sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU"
-							onChange={this.handleCaptchaChange} />
-						{!success && <div><Button>Send</Button></div>}
-					</form>
-				</div>
+			<div className="container">
+				{getForm(success === 'success')}
 			</div>
-		);
-	}
-
-	private handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		this.setState({ name: event.target.value });
-	}
-
-	private handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		this.setState({ email: event.target.value });
-	}
-
-	private handleSubjectChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		this.setState({ subject: event.target.value });
-	}
-
-	private handleContentChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
-		this.setState({ content: event.target.value });
-	}
-
-	private handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-		console.log('submit');
-		event.preventDefault();
-		this.recaptchaRef.current!.execute();
-	}
-
-	private handleCaptchaChange = (token: string | null) => {
-		if (!token) {
-			return;
-		}
-
-		const { name, email, subject, content } = this.state;
-
-		fetch('/api/contact', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				realname: name,
-				email,
-				subject,
-				msgbody: content,
-				'g-recaptcha-response': token,
-			}),
-		})
-			.then(res => {
-				if (!res.ok) {
-					if (res.status >= 500) {
-						throw new Error('internal server error');
-					}
-
-					return res.text().then(error => this.setState({ error }));
-				}
-
-				this.setState({ success: true });
-			})
-			.catch(err => {
-				console.error(err);
-
-				this.setState({
-					error: 'So sorry, but something went wrong while we were trying to ' +
-						'send your message. Instead, please drop us an email at ' +
-						'computing.society[@]durham.ac.uk.',
-				});
-			})
-			.then(() => {
-				this.recaptchaRef.current!.reset();
-			});
-	}
+		</div>
+	);
 }

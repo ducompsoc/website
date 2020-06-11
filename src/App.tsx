@@ -30,7 +30,7 @@ const App: React.FC = () => {
 					<Route path="/team" exact component={Team} />
 					<Route path="/team/previous" exact component={PastTeam} />
 					<Route path="/durhack" component={DurHack} />
-					<Route path="/contact" component={Contact} />
+					<Route path="/contact/:success?" component={Contact} />
 					<Route component={NotFound} />
 				</Switch>
 				<Footer />
