@@ -11,7 +11,7 @@ import { PastSponsors } from './components/past-sponsors/past-sponsors';
 import { PastTeam } from './components/past-team/past-team';
 import { DurHack } from './components/durhack/durhack';
 import { NotFound } from './components/not-found/not-found';
-import { Contact } from './components/contact/contact';
+import { Contact, ContactSuccess } from './components/contact/contact';
 import { Footer } from './components/footer/footer';
 
 import './App.scss';
@@ -30,7 +30,8 @@ const App: React.FC = () => {
 					<Route path="/team" exact component={Team} />
 					<Route path="/team/previous" exact component={PastTeam} />
 					<Route path="/durhack" component={DurHack} />
-					<Route path="/contact/:success?" component={Contact} />
+					<Route path="/contact/success" component={ContactSuccess} />
+					<Route path="/contact" component={Contact} />
 					<Route component={NotFound} />
 				</Switch>
 				<Footer />
