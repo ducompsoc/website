@@ -13,6 +13,8 @@ export const Contact: React.FC = () => (
 		<div className="container">
 			<p>Leave your queries, comments, feedback, and suggestions below.</p>
 			<form name="contact" method="post" action="/contact/success" data-netlify="true" data-netlify-recaptcha="true">
+				<input type="hidden" name="form-name" value="contact" />
+
 				<input
 					type="text"
 					placeholder="Your name"
