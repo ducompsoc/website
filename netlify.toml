@@ -8,5 +8,10 @@
 	to = "https://ducompsoc.slack.com"
 	status = 302
 
+[[redirects]]
+	from = "/constitution"
+	to = "https://community.dur.ac.uk/computing.society/constitution.pdf"
+	status = 302
+
 [dev]
 	publish = "build/"
