@@ -12,15 +12,10 @@
 	from = "/constitution"
 	to = "https://community.dur.ac.uk/computing.society/constitution.pdf"
 	status = 302
-
-[[redirects]]
-	from = "/proposed_constitution"
-	to = "https://community.dur.ac.uk/computing.society/proposed_constitution.pdf"
-	status = 302
-
+	
 [[redirects]]
 	from = "/egm"
-	to = "https://compsocegm.paperform.co/"
+	to = "https://community.dur.ac.uk/computing.society/egm.pdf"
 	status = 302
 
 [dev]
