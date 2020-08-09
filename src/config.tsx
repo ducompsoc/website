@@ -66,6 +66,32 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'DurJam: CompSoc\'s summer game jam',
+			description: [
+				'Make a game from scratch in teams of up to five, in a free 4-day digital event with interactive workshops and prizes for the best submissions. Open to all students and graduates from the last year.',
+			],
+			link: 'https://durj.am/',
+			thumbnail: 'events/durjam.png',
+			when: {
+				dates: [new Date('2020-08-30T18:00:00Z')],
+				text: '26th-30th August',
+			},
+			location: 'Online',
+			feature: {
+				title: 'DurJam: CompSoc\'s summer game jam',
+				tagline: [
+					'CompSoc\'s game jam will run from 26th-30th August. Make a game from scratch in teams of up to five, in a free 4-day digital event with interactive workshops and prizes for the best submissions.',
+				],
+				button: {
+					text: 'Find out more',
+					destination: 'https://durj.am/',
+				},
+				image: 'stock/r.jpg',
+				priority: 2,
+				daysBefore: 31,
+			},
+		},
+		{
 			name: 'Electron Workshop',
 			description: [
 				'We’ll be making a simple desktop chat application together with Electron, Node.js and websockets, all from scratch with no prior web programming knowledge assumed.',
