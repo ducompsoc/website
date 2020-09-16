@@ -540,7 +540,7 @@ export const config: ISiteData = {
 				link: 'https://www.tpp-uk.com/careers',
 				image: 'sponsors/tpp.svg',
 				description: [
-					'<b>TPP</b> is a cutting-edge software company based in Leeds. We\'re revolutionising healthcare across the world with our pioneering research and technology solutions. We\'re doing some amazing things here at TPP and we have some really exciting projects coming up. That\'s why we\'re looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don\'t require any previous experience at all and we offer amazing starting salaries of £40,000 with generous pay rises.',
+					'<b>TPP</b> is a cutting-edge software company based in Leeds. We\'re revolutionising healthcare across the world with our pioneering research and technology solutions. We\'re doing some amazing things here at TPP and we have some really exciting projects coming up. That\'s why we\'re looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don\'t require any previous experience at all and we offer amazing starting salaries of £45,000 with generous pay rises.',
 				],
 				years: ['2019/2020', '2018/2019', '2017/2018'],
 			},
