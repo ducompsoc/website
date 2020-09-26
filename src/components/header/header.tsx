@@ -47,7 +47,6 @@ class HeaderComponent extends React.PureComponent<RouteComponentProps, IHeaderSt
 						</div>
 					</div>
 					<div className="flex"></div>
-					<NavLink to="/agm" onClick={this.close}>AGM</NavLink>
 					<NavLink to="/events" onClick={this.close}>Events</NavLink>
 					<NavLink to="/sponsors" onClick={this.close}>Sponsors</NavLink>
 					<NavLink to="/team" onClick={this.close}>The Team</NavLink>
