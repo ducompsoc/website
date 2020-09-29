@@ -19,6 +19,34 @@ export class DurHack extends React.PureComponent {
 				<div className="container">
 					<div className="row">
 						<div className="time">
+							<h3>2020</h3>
+						</div>
+
+						<div className="description" style={{ width: '100%' }}>
+							<p>
+								DurHack is returning for its fifth iteration this November, with an all-new digital format.
+							</p>
+
+							<p>
+								Pre-register for the event now to be the first to know when tickets become available, at:
+							</p>
+
+							<div>
+								<Button raised={true} onClick={this.goToWebsite}>durhack.com/preregister</Button>
+							</div>
+
+							<p>
+								If you’re interested in sponsoring DurHack 2020:
+							</p>
+
+							<div>
+								<Button raised={true} to="/contact">Get in touch</Button>
+							</div>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="time">
 							<h3>2019</h3>
 							<div className="date">23rd - 24th November</div>
 						</div>
@@ -39,22 +67,6 @@ export class DurHack extends React.PureComponent {
 							<p>
 								<img src="/images/durhack/2019.jpg" alt="Photograph from DurHack 2019" />
 							</p>
-
-							<p>
-								See submissions and photos from the event at:
-							</p>
-
-							<div>
-								<Button raised={true} onClick={this.goToWebsite}>durhack.com</Button>
-							</div>
-
-							<p>
-								If you’re interested in sponsoring DurHack 2020:
-							</p>
-
-							<div>
-								<Button raised={true} to="/contact">Get in touch</Button>
-							</div>
 						</div>
 					</div>
 
@@ -120,6 +132,6 @@ export class DurHack extends React.PureComponent {
 	}
 
 	private goToWebsite = () => {
-		window.open('https://durhack.com');
+		window.open('https://durhack.com/preregister');
 	}
 }

@@ -66,6 +66,32 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'DurHack 2020',
+			description: [
+				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Pre-registration is now open!',
+			],
+			link: 'https://durhack.com/register',
+			thumbnail: 'stock/e.jpg',
+			when: {
+				dates: [new Date('2020-11-31T12:00:00Z')], // not real date
+				text: 'Mid-November',
+			},
+			location: 'Online',
+		},
+		{
+			name: 'MLH Localhost: Intro to Python',
+			description: [
+				'Learn the basics of Python at this online workshop. No prior knowledge is assumed, so this will be especially useful to those new to coding.',
+			],
+			link: 'https://www.facebook.com/events/2420169084955593/',
+			thumbnail: 'stock/m.jpg',
+			when: {
+				dates: [new Date('2020-10-05T19:15:00Z')],
+				text: '5th Oct @ 7:15pm',
+			},
+			location: 'Online',
+		},
+		{
 			name: 'DurJam: CompSoc\'s summer game jam',
 			description: [
 				'Make a game from scratch in teams of up to five, in a free 4-day digital event with interactive workshops and prizes for the best submissions. Open to all students and graduates from the last year.',
