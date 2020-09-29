@@ -70,7 +70,7 @@ export const config: ISiteData = {
 			description: [
 				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Pre-registration is now open!',
 			],
-			link: 'https://durhack.com/register',
+			link: 'https://durhack.com/preregister',
 			thumbnail: 'stock/e.jpg',
 			when: {
 				dates: [new Date('2020-11-31T12:00:00Z')], // not real date
