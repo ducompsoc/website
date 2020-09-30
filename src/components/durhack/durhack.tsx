@@ -32,7 +32,7 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<div>
-								<Button raised={true} onClick={this.goToWebsite}>durhack.com/preregister</Button>
+								<Button raised={true} onClick={this.goToWebsite}>durhack.com</Button>
 							</div>
 
 							<p>
@@ -132,6 +132,6 @@ export class DurHack extends React.PureComponent {
 	}
 
 	private goToWebsite = () => {
-		window.open('https://durhack.com/preregister');
+		window.open('https://durhack.com/');
 	}
 }
