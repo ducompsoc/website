@@ -517,6 +517,7 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			'2020/2021',
 			'2019/2020',
 			'2018/2019',
 			'2017/2018',
@@ -524,15 +525,27 @@ export const config: ISiteData = {
 		],
 		companies: [
 			{
+				name: 'Thought Machine',
+				link: 'https://thoughtmachine.net/',
+				image: 'sponsors/thought-machine.gif',
+				description: [
+					'<strong>Thought Machine</strong> is solving one of the biggest problems in banking. Since we launched in 2014, our mission has been to liberate banks from outdated, legacy technology which makes it difficult for them to innovate in a world where the biggest tech brands such as Netflix and Spotify are operating in the cloud.',
+					'Our flagship product, Vault, is a cloud-native, core banking engine built to run any type of bank - from established global banks all the way to new challenger banks. Vault is used by the likes of Lloyds Bank, Atom Bank and Standard Chartered.',
+					'Every year, we hire many graduates for full-time roles, as well as students for 10-week summer internships and industrial placements in London. You will work in a team with our front end and back end engineers, using cutting-edge technology to deliver both client-facing and internal projects. You will develop ownership and responsibility for your own work and learn how to build software in an agile manner. You’ll gain a wealth of knowledge, skills and experience while having lots of fun in our awesome work environment.',
+					'Join us and make an impact on our mission to revolutionise core banking!',
+				],
+				years: ['2020/2021'],
+			},
+			{
 				name: 'Teach First',
 				link: 'https://www.teachfirst.org.uk/',
 				image: 'sponsors/teach-first.png',
 				thumb: 'sponsors/teach-first-horiz.svg',
 				description: [
 					'Education in the UK isn’t fair. We need to unlock the potential in every child, not just some.',
-					'Teach First develop the inspiring teachers and leaders who will make it happen. Together, we’ll build a better future with a fair education for all.Teach First are the UK’s largest graduate recruiter, voted top 10 in The Times Top 100. They seek, develop and support teaches and leaders who are determined to make a difference where it’s needed the most.',
+					'<strong>Teach First</strong> develop the inspiring teachers and leaders who will make it happen. Together, we’ll build a better future with a fair education for all.Teach First are the UK’s largest graduate recruiter, voted top 10 in The Times Top 100. They seek, develop and support teaches and leaders who are determined to make a difference where it’s needed the most.',
 				],
-				years: ['2019/2020'],
+				years: ['2020/2021', '2019/2020'],
 			},
 			{
 				name: 'Scott Logic',
@@ -541,7 +554,7 @@ export const config: ISiteData = {
 				description: [
 					'At <b>Scott Logic</b>, we design and build software that transforms the performance of some of the world’s biggest and most demanding organisations, and we\'re always on the look out for talented individuals to join our team. Our <a href="https://www.scottlogic.com/careers/graduates-programme/" target="_blank">Graduate Programme</a> is a great way to kickstart your technology career. You’ll learn new skills, work on a diverse set of internal and client projects, and figure out what makes a globally successful software team tick.',
 				],
-				years: ['2019/2020', '2018/2019', '2017/2018', '2016/2017'],
+				years: ['2020/2021', '2019/2020', '2018/2019', '2017/2018', '2016/2017'],
 			},
 			{
 				name: 'Arista Networks',
@@ -568,7 +581,7 @@ export const config: ISiteData = {
 				description: [
 					'<b>TPP</b> is a cutting-edge software company based in Leeds. We\'re revolutionising healthcare across the world with our pioneering research and technology solutions. We\'re doing some amazing things here at TPP and we have some really exciting projects coming up. That\'s why we\'re looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don\'t require any previous experience at all and we offer amazing starting salaries of £45,000 with generous pay rises.',
 				],
-				years: ['2019/2020', '2018/2019', '2017/2018'],
+				years: ['2020/2021', '2019/2020', '2018/2019', '2017/2018'],
 			},
 			{
 				name: 'StarLeaf',
@@ -579,7 +592,7 @@ export const config: ISiteData = {
 					'In September, the company was named in the Gartner 2018 Magic Quadrant for Meeting Solutions and one of the fastest growing tech companies in the UK by The Sunday Times Hiscox Tech Track 100.',
 					'StarLeaf\'s culture is built on collaboration, inclusion, creativity and support. This permeates everything they do, across all their teams and operations. They believe everyone at StarLeaf has a part to play in their success and that everyone should be rewarded for their contribution. This is why every single StarLeaf employee becomes a shareholder through the company’s share option scheme.',
 				],
-				years: ['2019/2020', '2018/2019'],
+				years: ['2020/2021', '2019/2020', '2018/2019'],
 			},
 			{
 				name: 'Schroders',
@@ -624,7 +637,7 @@ export const config: ISiteData = {
 				description: [
 					'<strong>Waterstons</strong> are an IT consultancy with a keen business focus based in Durham! We’re open and honest, we’ll challenge you when you need challenging and we’ve been around for over twenty-five years. We provide creative technology-based solutions to improve business performance and increase competitive advantage.',
 				],
-				years: ['2019/2020'],
+				years: ['2020/2021', '2019/2020'],
 			},
 			{
 				name: 'Optiver',
@@ -633,8 +646,8 @@ export const config: ISiteData = {
 				description: [
 					'<strong>Optiver</strong> are a leading global electronic market maker, focused on pricing, execution and risk management. We trade bonds, cash equities, exchange-traded funds, listed derivatives and foreign exchange. We pioneer our own trading strategies and systems using clean code and sophisticated technology. We achieve this by attracting, developing and empowering top talent, in order to sustain our future. ',
 				],
-				years: ['2019/2020'],
-			}
+				years: ['2020/2021', '2019/2020'],
+			},
 		],
 	},
 	teams: {

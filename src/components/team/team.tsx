@@ -26,7 +26,7 @@ export class Team extends React.PureComponent {
 						The Executive Officers of CompSoc exist to manage and run the society. They are passionate about teaching, putting on events for the society and ensuring it is a fun place for all who are enthused about technology.
 					</p>
 
-					<div className="row grid wrap wow">
+					<div className="row grid wrap center wow">
 						{current}
 					</div>
 
