@@ -28,7 +28,7 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								Pre-register for the event now to be the first to know when tickets become available, at:
+								Tickets are now available for DurHack 2020. Register for the event at:
 							</p>
 
 							<div>
