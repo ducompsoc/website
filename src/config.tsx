@@ -68,13 +68,39 @@ export const config: ISiteData = {
 		{
 			name: 'DurHack 2020',
 			description: [
-				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Pre-registration is now open!',
+				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Tickets are now available and are free!',
 			],
 			link: 'https://durhack.com/',
 			thumbnail: 'stock/e.jpg',
 			when: {
-				dates: [new Date('2020-11-31T12:00:00Z')], // not real date
-				text: 'Mid-November',
+				dates: [new Date('2020-11-14T12:00:00Z')],
+				text: '14th-15th November',
+			},
+			feature: {
+				title: 'Registration now open for DurHack',
+				tagline: [
+					'Secure your place at CompSoc\'s annual hackathon. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.',
+				],
+				button: {
+					text: 'Get your tickets',
+					destination: 'https://durhack.com/',
+				},
+				image: 'stock/e.jpg',
+				priority: 1,
+				daysBefore: 21,
+			},
+			location: 'Online',
+		},
+		{
+			name: 'CompSoc with Thought Machine',
+			description: [
+				'Join Luke and Lorenzo from Thought Machine for a crazy night of fun and madness. Join us on Zoom to be in with a chance of winning some mystery prizes - from the wonderful to the down right weird.',
+			],
+			link: 'https://www.facebook.com/events/1066761363755449',
+			thumbnail: 'events/thoughtmachine.jpg',
+			when: {
+				dates: [new Date('2020-11-02T19:15:00Z')],
+				text: '2nd Nov @ 7.15pm',
 			},
 			location: 'Online',
 		},
