@@ -18,5 +18,10 @@
 	to = "https://community.dur.ac.uk/computing.society/egm.pdf"
 	status = 302
 
+[[redirects]]
+	from = "/scottlogic"
+	to = "https://ducompsoc.typeform.com/to/H9pkxg5V"
+	status = 302
+
 [dev]
 	publish = "build/"
