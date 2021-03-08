@@ -19,8 +19,8 @@
 	status = 302
 
 [[redirects]]
-	from = "/scottlogic"
-	to = "https://ducompsoc.typeform.com/to/H9pkxg5V"
+	from = "/optiver"
+	to = "https://ducompsoc.typeform.com/to/ZKUyetZI"
 	status = 302
 
 [dev]
