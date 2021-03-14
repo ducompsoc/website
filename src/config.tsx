@@ -66,6 +66,30 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'CompSoc AGM 2021',
+			description: [
+				'The AGM is running online on 15th March. Elect your executive committee for 2021/2022.',
+			],
+			link: './agm',
+			thumbnail: 'stock/p.jpg',
+			when: {
+				dates: [new Date('2021-03-15T23:59:59Z')],
+				text: '15th March',
+			},
+			feature: {
+				title: 'Vote for your next CompSoc exec',
+				tagline: [
+					'You can now vote for your CompSoc exec members for the next academic year, in CompSoc\'s AGM. Voting closes at midnight.',
+				],
+				button: {
+					text: 'Vote now',
+					destination: './agm',
+				},
+				image: 'stock/p.jpg',
+				daysBefore: 2,
+			},
+		},
+		{
 			name: 'DurHack 2020',
 			description: [
 				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Tickets are now available and are free!',
