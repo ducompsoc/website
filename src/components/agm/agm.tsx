@@ -12,78 +12,89 @@ export class AGM extends React.PureComponent {
 				<PageTitle image="stock/c.jpg" verticalPosition={40}>CompSoc AGM</PageTitle>
 
 				<div className="agm-page container">
-
 					<p>
-						CompSoc's Annual General Meeting was conducted between 00:00 and 23:59 on the 15th April 2020. A <a href="http://community.dur.ac.uk/computing.society/proposed_constitution.pdf" target="_blank" rel="noopener noreferrer">new constitution</a> was approved, and your new exec for 2020/2021 was chosen. A full breakdown of the results is now available.
+						Today is CompSoc's Annual General Meeting! Between 00:00 and 23:59 on the 15th March 2021, you can vote on who your exec for next year will be. The manifestos for all candidates in this election are included below.
 					</p>
 
-					<Button raised={true} onClick={this.goToResults}>Read the results</Button>
-
-					<p>The manifestos for each member of your new exec have been included below. Thank you to everyone who nominated themselves, and thank you to everyone who participated in Wednesday's vote.</p>
+					<h3>President</h3>
 
 					<div className="row">
 						<div className="half">
-							<h3>President</h3>
 							<h4>Tom Nudd</h4>
+							<p>Hi, I'm Tom and running for re-election as CompSoc President! I have served as President over the last year and Publicity Officer over the previous year.</p>
+							<p>Over the last year, I have helped CompSoc navigate the transition to digital events. Last summer, I spearheaded our first digital game jam, DurJam, which I hope to run again in the coming months. Since then, I have organised a range of workshops, socials, and sponsor events throughout the year, and hope to continue these when in-person events return.</p>
+							<p>Despite the pandemic, I have secured new sponsorship and increased CompSoc's income. I would like to use this income to help provide higher-quality events and introduce CompSoc stash. Having attended 24 hackathons in various capacities, I believe in encouraging CompSoc members to participate in hackathons and would re-introduce the Hackathon Reimbursement Fund for travel expenses when in-person events safely return.</p>
+							<p>If you have any questions, feel free to send me a message or email me (thomas.g.nudd@durham.ac.uk)!</p>
+						</div>
+					</div>
 
-							<p>Hi, I'm Tom. I've served as Publicity Officer over the last year and am running for President this year!</p>
-							<p>In addition to my duties as Publicity Officer - sending the society's emails and promoting events - my contributions include creating and maintaining a document of CompSoc expenses, ordering pizza, purchasing snacks, helping organise a film night, and negotiating a sponsorship contract.</p>
-							<p>If elected, I wish to introduce a series of workshops giving a practical introduction to programming to engage with more people. I will work with DU Women in Tech to hold joint events (in addition to their ongoing work and events) and oversee the merger between our organisations. Additionally, CompSoc must provide a welcoming and discrimination-free space to anyone; I will introduce procedures to ensure the society can effectively handle incidents.</p>
-							<p>I am aware of the importance of supporting our subdivisions (e.g. DurHack) to help them run smoothly, and will help them obtain additional charge cards and work with the incoming Head of Finance. Attending multiple hackathons over the last year has highlighted the importance of providing support to hackers. I will prioritise obtaining additional sponsorship to expand the travel reimbursement budget. Providing a more broad experience would also be important to me - it would be great to work with business and AI societies to collaborate on hosting talks over the coming year.</p>
-							<p>If you have any questions, please message me or drop me an email (thomas.g.nudd@durham.ac.uk)!</p>
+					<h3>Secretary</h3>
+
+					<div className="row">
+						<div className="half">
+							<h4>Steve Thomas</h4>
+							<p>Hi everyone! I'm Steve, a third-year Computer Science student, and I believe I have a lot of experience to bring to the role of Secretary.</p>
+							<p>My organisational qualities have shone through as a Workshop Facilitator for the Raspberry Pi Foundation, having to organise and lead two-day hackathons, and I was a President of a local youth club for over 2 years.</p>
+							<p>I also have a great deal of experience working in a team. I am part of a Durham student start-up, Internly, which has won various rounds of funding from the university and has seen fantastic success in its maiden year. As part of this, I have established a connection with 50+ recruiters and I hope to host a variety of events with these recruiters during my tenure.</p>
+							<p>With me as Secretary, you can hope to see more internship/grad job application support and networking events with Early Careers recruiters from a wide variety of companies. I will also strive to increase the number of workshops we have throughout the year, allowing you to build your skills with new technologies.</p>
 						</div>
 
 						<div className="half">
-							<h3>Secretary</h3>
 							<h4>Meredith Gibbons</h4>
-
-							<p>Hi everyone, my name is Meredith and I would love to be your secretary next year. As someone who has already been on the CompSoc exec (finance assistant), I’m experienced in how the society runs and passionate about making it as good as it can be!</p>
-							<p>Historically, the position of secretary was not very well-defined - I want to change that. As secretary I would not only assist with meetings and logistics, but actively reach out to new sponsors. I would also work closely with existing sponsors and the events officer to facilitate sponsored events and assist with our weekly meetings.</p>
+							<p>I'm the former finance assistant and current secretary of CompSoc. I hope I can take the experience I've gained and make the society even better!</p>
 						</div>
 					</div>
 
+					<h3>CompSoc Finance Officer</h3>
+
 					<div className="row">
 						<div className="half">
-							<h3>CompSoc Finance Officer</h3>
+							<h4>Olivia Hampshire</h4>
+							<p>I've been DUWiT's finance officer for this year and I've really enjoyed it. I'm really passionate about computer science and I think being involved with CompSoc as a member of the exec would be a great experience.</p>
+						</div>
+					</div>
+
+					<h3>Events Officer</h3>
+
+					<div className="row">
+						<div className="half">
+							<h4>Disha Gupta</h4>
+							<p>I would like to be Events Officer so I can help arrange educational talks and social events with potential networking opportunities. I would love to be able to have many events next year to make up for the lack this year.</p>
+							<p>I think I will be suited for this role as I have planned events in the past and I would love to attend CompSoc events so I understand what they need to be like to be well liked!</p>
+						</div>
+					</div>
+
+					<h3>Media &amp; Publicity Officer</h3>
+
+					<div className="row">
+						<div className="half">
 							<h4>Heidi Januszewski</h4>
-
-							<p>Hi there! I’m already involved with DurHack as Press Officer this year and I’m really looking forward to working with the team more! I actually study English and History, which is basically the opposite of what you would expect from someone wanting to do a role associated with finance. However, I have a lot of experience in different positions that require good organisation and time management skills, and I think that these will come in handy for budgeting and sorting out finances. I also just love to try as many different things as I can and I'm dedicated to everything that I do, so I’d love the opportunity to learn something new as Finance Officer!</p>
-						</div>
-
-						<div className="half">
-							<h3>Events Officer</h3>
-							<h4>Irenitemi Agbejule</h4>
-
-							<p>I have experience in hosting and marketing events such as the international nights and cafés for my college's international society in my role as marketing officer. Furthermore I have experience liaising with larger organisations through my work with BT at the start of last year. In addition I am the marketing and photography officer for the JCR at my college as well which shows that I can balance the responsibility of having an exec position alongside other work. I also really enjoy interacting and working with others and making new friends which compsoc has definitely helped with and I really want to be a bigger part of it going forward.</p>
+							<p>Hi all, I'm running to be Media and Publicity Officer this year and would really appreciate your vote! I was Finance Officer last year and therefore know a lot about how the society works. In fact, I actually ended up doing a lot of publicity since we didn't have a Publicity Officer last year! I also created a lot of media for DurJam - our first entirely-online hackathon that we ran last summer - such as our logo and other advertisements that I posted on social media. I really enjoyed both experiences and would love to do more publicity as an official position in CompSoc. This year, I would aim to improve the society's efficiency by sending out our emails more regularly and also by posting on social media more, which will make CompSoc look more professional. I also enjoy art a lot and would like to update the Facebook cover photo and logo in order to give the society a new look.</p>
 						</div>
 					</div>
 
+					<h3>Web Officer</h3>
+
 					<div className="row">
 						<div className="half">
-							<h3>Media &amp; Publicity Officer</h3>
-							<h4>Re-open Nominations</h4>
-							<p>We will be holding an Additional General Meeting for this position at a later date.</p>
-						</div>
-
-						<div className="half">
-							<h3>Web Officer</h3>
 							<h4>Ethan Waite</h4>
-
-							<p>Hi! I’m Ethan, a soon-to-be 3rd Year Computer Science student, and I’d love to be CompSoc’s Web Officer for 2020/2021.</p>
-
-							<p>Last year, I re-implemented both compsoc.tech and durhack.com, giving both a fresh new look and a new modern codebase using TypeScript and Sass. I really wanted the new compsoc.tech design to be the central place for the many events that CompSoc runs over the course of the year, so I made the website dynamically generate based on what’s happening.</p>
-
-							<p>This year, I’d love not only to keep the website up-to-date with what’s going on, but also expand its scope to encourage students to take part in hackathons, to provide more information and context around the workshops that CompSoc runs throughout the year (so the website acts more so as a valuable resource for students interested in programming and technology), and to make sure the website is more appropriately advertising for CompSoc’s annual hackathon, DurHack, especially for students who might not study Computer Science.</p>
-
-							<p>I have experience with HTML, CSS, JavaScript and TypeScript, and I’ve had the pleasure of doing website work for some great companies, like Microsoft. I also really enjoyed running workshops for CompSoc for everyone last year, such as a workshop on Websockets & Electron and a workshop on REST APIs, and I’d love to be able to run more next year too. I’d like to drive CompSoc closer towards running workshops that cover a breadth of topics, are accessible to everyone of various skill levels, and are interactive enough to be really engaging. Thanks!</p>
+							<p>Hi, I’m Ethan! I’m a soon-to-be fourth year CS student, and I’d love to be your CompSoc Web Officer. This year, I’ve had the pleasure of creating the website for CompSoc’s 96-hour Summer Game Jam at www.durj.am, during which I ran a Git workshop, delivered the Closing Ceremony, and helped to organise the event.</p>
+							<p>I created the current CompSoc website at www.compsoc.tech, and beyond that, I built the website, event platform, and livestreaming system for DurHack 2020, at durhack.com.</p>
+							<p>Despite CompSoc being forced online this year, I have helped to run our Monday sessions on Zoom, which includes some socials and my own Web Development workshop. I was also part of CompSoc’s participation in the Virtual Freshers’ Fair, where I delivered our promotional video and took part in the Teams meetings for prospective members.</p>
+							<p>This year, with everything (hopefully) returning a bit closer to normal, I hope to refocus on making CompSoc’s own website more useful, by keeping it up-to-date with what’s going on and making sure that we’re using it alongside our social media channels to promote the opportunities that CompSoc members have. Ultimately, I want to take CompSoc’s website beyond being a marketing tool for prospective students, and become something that existing members feel like they want to frequent.</p>
+							<p>Additionally, I’ve had the opportunity to deliver workshops in Electron &amp; Websockets, in REST APIs, and in AWS, but I’d love to deliver even more workshops in the upcoming academic year. I love all things JavaScript (including TypeScript, Node.js, React), and work professionally with tools like Docker/Kubernetes that I’d love to be able to incorporate.</p>
 						</div>
+					</div>
+
+					<div className="cast">
+						<Button raised={true} onClick={this.goToTypeform}>Cast your vote</Button>
 					</div>
 				</div>
 			</div>
 		);
 	}
 
-	private goToResults = () => {
-		window.open('https://community.dur.ac.uk/computing.society/agm.pdf');
+	private goToTypeform = () => {
+		window.open('https://ducompsoc.typeform.com/to/dUfnrWQt');
 	}
 }
