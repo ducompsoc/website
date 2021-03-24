@@ -642,7 +642,7 @@ export const config: ISiteData = {
 					'In September, the company was named in the Gartner 2018 Magic Quadrant for Meeting Solutions and one of the fastest growing tech companies in the UK by The Sunday Times Hiscox Tech Track 100.',
 					'StarLeaf\'s culture is built on collaboration, inclusion, creativity and support. This permeates everything they do, across all their teams and operations. They believe everyone at StarLeaf has a part to play in their success and that everyone should be rewarded for their contribution. This is why every single StarLeaf employee becomes a shareholder through the company’s share option scheme.',
 				],
-				years: ['2020/2021', '2019/2020', '2018/2019'],
+				years: ['2019/2020', '2018/2019'],
 			},
 			{
 				name: 'Schroders',
@@ -687,7 +687,7 @@ export const config: ISiteData = {
 				description: [
 					'<strong>Waterstons</strong> are an IT consultancy with a keen business focus based in Durham! We’re open and honest, we’ll challenge you when you need challenging and we’ve been around for over twenty-five years. We provide creative technology-based solutions to improve business performance and increase competitive advantage.',
 				],
-				years: ['2020/2021', '2019/2020'],
+				years: ['2019/2020'],
 			},
 			{
 				name: 'Optiver',
