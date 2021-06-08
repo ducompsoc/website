@@ -9,6 +9,11 @@
 	status = 302
 
 [[redirects]]
+	from = "/discord"
+	to = "https://discord.gg/7AC9fbn2rE"
+	status = 302
+
+[[redirects]]
 	from = "/constitution"
 	to = "https://community.dur.ac.uk/computing.society/constitution.pdf"
 	status = 302
