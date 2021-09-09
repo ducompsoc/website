@@ -66,6 +66,19 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'CompSoc at Freshers\' Fair 2021',
+			when: {
+				dates: [new Date('2021-09-29T18:00:00Z')],
+				text: '29th Sept 2021',
+			},
+			thumbnail: 'events/ff19.jpg',
+			link: 'https://www.facebook.com/events/1108743579654456/',
+			location: 'Maiden Castle Sports Centre',
+			description: [
+				'CompSoc will be at Freshers\' Fair! Come say hi if you’re interested in tech, computers, programming, or if you want to learn. Chat to us and find out more about what CompSoc is and what we do!'
+			]
+		},
+		{
 			name: 'CompSoc AGM 2021',
 			description: [
 				'The AGM is running online on 15th March. Elect your executive committee for 2021/2022.',
@@ -709,23 +722,23 @@ export const config: ISiteData = {
 				description: 'In charge of overseeing everything in the society and reaching out to sponsors.',
 			},
 			{
-				name: 'Irenitemi Agbejule',
-				image: 'irenitemi.jpg',
+				name: 'Disha Gupta',
+				image: null,
 				role: 'Events Officer',
 				description: 'Works with sponsors and guest speakers to organise talks and workshops.',
 			},
 			{
-				name: 'Heidi Januszewski',
-				image: 'heidi.jpg',
+				name: 'Olivia Hampshire',
+				image: 'olivia.jpg',
 				role: 'Finance Officer',
 				description: 'Manages CompSoc\'s finances.',
 			},
-			/* {
-				name: '...',
-				image: null,
+			{
+				name: 'Heidi Januszewski',
+				image: 'heidi.jpg',
 				role: 'Media & Publicity Officer',
 				description: 'In charge of the website content, social media, the mailing list, and promoting the society around the university.',
-			}, */
+			},
 			{
 				name: 'Ethan Waite',
 				image: 'ethan.jpg',
@@ -733,13 +746,43 @@ export const config: ISiteData = {
 				description: 'Works with the Publicity Officer to manage the technical side of the website.',
 			},
 			{
-				name: 'Meredith Gibbons',
-				image: 'merry.jpg',
+				name: 'Steve Thomas',
+				image: 'steve.jpg',
 				role: 'Secretary',
 				description: 'Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.',
 			},
 		],
 		past: [
+			{
+				year: '2020/2021',
+				members: [
+					{
+						name: 'Tom Nudd',
+						image: 'tom.jpg',
+						role: 'President',
+					},
+					{
+						name: 'Irenitemi Agbejule',
+						image: 'irenitemi.jpg',
+						role: 'Events Officer',
+					},
+					{
+						name: 'Heidi Januszewski',
+						image: 'heidi.jpg',
+						role: 'Finance Officer',
+					},
+					{
+						name: 'Ethan Waite',
+						image: 'ethan.jpg',
+						role: 'Technical Web Officer',
+					},
+					{
+						name: 'Meredith Gibbons',
+						image: 'merry.jpg',
+						role: 'Secretary',
+					},
+				],
+			},
 			{
 				year: '2019/2020',
 				members: [
