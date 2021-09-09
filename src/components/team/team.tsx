@@ -39,8 +39,6 @@ export class Team extends React.PureComponent {
 							<ArrowedLink to="/team/previous">See previous exec members</ArrowedLink>
 						</div>
 					</div>
-
-					<p>Society logo designed by Molly Watkins.</p>
 				</div>
 			</div>
 		)

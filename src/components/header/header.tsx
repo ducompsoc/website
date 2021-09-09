@@ -38,8 +38,7 @@ class HeaderComponent extends React.PureComponent<RouteComponentProps, IHeaderSt
 					<div className="row center">
 						<div className="logo flex">
 							<Link to="/">
-								<h1>CompSoc</h1>
-								<div>Durham University Computing Society</div>
+								<img src="/images/logos/logo-with-text.png" alt="Durham CompSoc Logo" />
 							</Link>
 						</div>
 						<div className="menu">

@@ -5,7 +5,8 @@ header {
 	color: #fff;
 
 	.logo {
-		padding: 18px 0px 24px 0px;
+		line-height: 0px;
+		padding: 18px 0px;
 
 		h1, div {
 			font-family: Jura, Arial, Helvetica, sans-serif;
@@ -20,6 +21,12 @@ header {
 
 		div {
 			font-size: 14px;
+		}
+
+		img {
+			width: auto;
+			height: 72px;
+			border: none;
 		}
 	}
 
