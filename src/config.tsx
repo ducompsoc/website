@@ -66,6 +66,19 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'DurHack 2021',
+			description: [
+				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Register your interest at durhack.com.',
+			],
+			link: 'https://durhack.com/',
+			thumbnail: 'stock/u.jpg',
+			when: {
+				dates: [new Date('2021-11-28T12:00:00Z')],
+				text: '27th-28th November',
+			},
+			location: 'In-person and online',
+		},
+		{
 			name: 'CompSoc at Freshers\' Fair 2021',
 			when: {
 				dates: [new Date('2021-09-29T18:00:00Z')],

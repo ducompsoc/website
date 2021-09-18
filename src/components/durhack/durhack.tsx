@@ -19,16 +19,25 @@ export class DurHack extends React.PureComponent {
 				<div className="container">
 					<div className="row">
 						<div className="time">
-							<h3>2020</h3>
+							<h3>2021</h3>
+							<div className="date">27th - 28th November</div>
 						</div>
 
 						<div className="description" style={{ width: '100%' }}>
 							<p>
-								DurHack is returning for its fifth iteration this November, with an all-new digital format.
+								CompSoc runs a large-scale annual hackathon with students from all sorts of backgrounds.
 							</p>
 
 							<p>
-								Tickets are now available for DurHack 2020. Register for the event at:
+								DurHack returns for its sixth iteration this November, as one of the first hybrid student hackathons in the UK.
+							</p>
+
+							<p>
+								The event will be taking place in the new Mathematics and Computer Sciences building at Durham University. Students have the option of joining us in-person, or hack-from-home via the event livestream.
+							</p>
+
+							<p>
+								Register your interest now, and we'll let you know when tickets are available.
 							</p>
 
 							<div>
@@ -36,7 +45,7 @@ export class DurHack extends React.PureComponent {
 							</div>
 
 							<p>
-								If you’re interested in sponsoring DurHack 2020:
+								If you’re interested in sponsoring DurHack 2021:
 							</p>
 
 							<div>
@@ -47,15 +56,32 @@ export class DurHack extends React.PureComponent {
 
 					<div className="row">
 						<div className="time">
+							<h3>2020</h3>
+							<div className="date">14th - 15th November</div>
+						</div>
+
+						<div className="description">
+							<p>
+								Not wanting to let the COVID-19 pandemic get in the way of our mission, the fifth iteration of CompSoc’s flagship hackathon successfully took on an all-new digital format with a full hack-from-home experience.
+							</p>
+
+							<p>
+								The event was sponsored by companies such as AWS, who kindly joined us as the Presenting Partner of DurHack 2020.
+							</p>
+
+							<p>
+								<img src="/images/durhack/2020.jpg" alt="Photograph from DurHack 2020" />
+							</p>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="time">
 							<h3>2019</h3>
 							<div className="date">23rd - 24th November</div>
 						</div>
 
 						<div className="description">
-							<p>
-								CompSoc runs a large-scale annual hackathon with students from all sorts of backgrounds.
-							</p>
-
 							<p>
 								In 2019, DurHack returned for its fourth iteration, which welcomed 200 students from all over the UK and Europe.
 							</p>
@@ -82,7 +108,7 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								150 of the best and brighest hackers from Durham and around the world pushed the boundaries of technology to new limits.
+								150 of the best and brightest hackers from Durham and around the world pushed the boundaries of technology to new limits.
 							</p>
 
 							<p>

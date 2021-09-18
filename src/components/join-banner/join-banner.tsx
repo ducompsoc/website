@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 import { Button } from '../button/button';
 import { popup } from '../../util/typeform';
@@ -19,8 +19,8 @@ export class JoinBanner extends React.PureComponent {
 							<FontAwesomeIcon icon={faFacebookF} />
 						</a>
 
-						<a href="https://twitter.com/ducompsoc" target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faTwitter} />
+						<a href="https://instagram.com/ducompsoc" target="_blank" rel="noopener noreferrer">
+							<FontAwesomeIcon icon={faInstagram} />
 						</a>
 
 						<a href="/discord" target="_blank" rel="noopener noreferrer">
