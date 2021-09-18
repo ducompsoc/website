@@ -23,7 +23,7 @@ export class JoinBanner extends React.PureComponent {
 							<FontAwesomeIcon icon={faInstagram} />
 						</a>
 
-						<a href="/discord" target="_blank" rel="noopener noreferrer">
+						<a href="https://compsoc.tech/discord" target="_blank" rel="noopener noreferrer">
 							<FontAwesomeIcon icon={faDiscord} />
 						</a>
 					</div>
