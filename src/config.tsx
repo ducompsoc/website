@@ -736,7 +736,7 @@ export const config: ISiteData = {
 			},
 			{
 				name: 'Disha Gupta',
-				image: null,
+				image: 'disha.jpg',
 				role: 'Events Officer',
 				description: 'Works with sponsors and guest speakers to organise talks and workshops.',
 			},
