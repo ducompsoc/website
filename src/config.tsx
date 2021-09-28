@@ -28,7 +28,7 @@ export const config: ISiteData = {
 		{
 			name: 'Weekly Meeting',
 			description: [
-				'In the past, we\'ve had quizzes, helping people with projects, programming help, casual social events. We\'ll often provide free food to make it up to those of you who miss College supper.',
+				'In the past, we\'ve had quizzes, helping people with projects, programming help, and casual social events. We\'ll often provide free food to make it up to those of you who miss College supper.',
 			],
 			link: '',
 			thumbnail: 'stock/j.jpg',
@@ -48,10 +48,21 @@ export const config: ISiteData = {
 					new Date('2020-02-10T18:00:00Z'),
 					new Date('2020-02-24T18:00:00Z'),
 					new Date('2020-03-09T18:00:00Z'),
+
+					new Date('2021-10-04T18:00:00+01:00'),
+					new Date('2021-10-11T18:00:00+01:00'),
+					new Date('2021-10-18T18:00:00+01:00'),
+					new Date('2021-10-25T18:00:00+01:00'),
+					new Date('2021-11-01T18:00:00Z'), // BST ends 31st October
+					new Date('2021-11-08T18:00:00Z'),
+					new Date('2021-11-15T18:00:00Z'),
+					new Date('2021-11-22T18:00:00Z'),
+					new Date('2021-11-29T18:00:00Z'),
+					new Date('2021-12-06T18:00:00Z'),
 				],
 				text: 'Mondays, 6pm',
 			},
-			location: 'TLC 113',
+			location: 'MCS Venture Lab',
 			/* feature: {
 				title: 'Weekly meetings now in TLC 113',
 				tagline: [
