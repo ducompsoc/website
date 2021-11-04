@@ -62,7 +62,7 @@ export const config: ISiteData = {
 				],
 				text: 'Mondays, 6pm',
 			},
-			location: 'MCS Venture Lab',
+			location: 'TLC 113',
 			/* feature: {
 				title: 'Weekly meetings now in TLC 113',
 				tagline: [
