@@ -77,17 +77,30 @@ export const config: ISiteData = {
 
 		// New events.
 		{
-			name: 'DurHack 2021',
+			name: 'DurHack 2022',
 			description: [
-				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a digital invention marathon. Register your interest at durhack.com.',
+				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.',
 			],
 			link: 'https://durhack.com/',
 			thumbnail: 'stock/u.jpg',
 			when: {
-				dates: [new Date('2021-11-28T12:00:00Z')],
-				text: '27th-28th November',
+				dates: [new Date('2022-02-20T12:00:00Z')],
+				text: '19th-20th February',
 			},
-			location: 'In-person and online',
+			feature: {
+				title: 'Registration now open for DurHack!',
+				tagline: [
+					'Secure your place at CompSoc\'s annual hackathon in February 2022. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.',
+				],
+				button: {
+					text: 'Get your free tickets',
+					destination: 'https://durhack.com/',
+				},
+				image: 'stock/e.jpg',
+				priority: 1,
+				daysBefore: 50,
+			},
+			location: 'MCS building',
 		},
 		{
 			name: 'CompSoc at Freshers\' Fair 2021',

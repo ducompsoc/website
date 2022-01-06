@@ -52,7 +52,7 @@ export const Footer: React.FC = () => (
 			<div className="container row">
 				<div className="info">
 					<p>
-						&copy; 2016-2021 <a href="/">Durham University Computing Society</a>.
+						&copy; 2016-2022 <a href="/">Durham University Computing Society</a>.
 					</p>
 
 					<p>

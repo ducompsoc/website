@@ -19,8 +19,8 @@ export class DurHack extends React.PureComponent {
 				<div className="container">
 					<div className="row">
 						<div className="time">
-							<h3>2021</h3>
-							<div className="date">27th - 28th November</div>
+							<h3>2022</h3>
+							<div className="date">19th - 20th February</div>
 						</div>
 
 						<div className="description" style={{ width: '100%' }}>
@@ -29,15 +29,11 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								DurHack returns for its sixth iteration this November, as one of the first hybrid student hackathons in the UK.
+								DurHack returns for its sixth iteration this November, and will be taking place in the new Mathematics and Computer Sciences building at Durham University.
 							</p>
 
 							<p>
-								The event will be taking place in the new Mathematics and Computer Sciences building at Durham University. Students have the option of joining us in-person, or hack-from-home via the event livestream.
-							</p>
-
-							<p>
-								Register your interest now, and we'll let you know when tickets are available.
+								Free tickets are now available for DurHack 2022. Don't miss out -- sign up now!
 							</p>
 
 							<div>
@@ -45,7 +41,7 @@ export class DurHack extends React.PureComponent {
 							</div>
 
 							<p>
-								If you’re interested in sponsoring DurHack 2021:
+								If you're a business interested in sponsoring DurHack 2022:
 							</p>
 
 							<div>
