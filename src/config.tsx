@@ -791,6 +791,41 @@ export const config: ISiteData = {
 		],
 		past: [
 			{
+				year: '2021/2022',
+				members: [
+					{
+						name: 'Tom Nudd',
+						image: 'tom.jpg',
+						role: 'President',
+					},
+					{
+						name: 'Disha Gupta',
+						image: 'disha.jpg',
+						role: 'Events Officer',
+					},
+					{
+						name: 'Olivia Hampshire',
+						image: 'olivia.jpg',
+						role: 'Finance Officer',
+					},
+					{
+						name: 'Heidi Januszewski',
+						image: 'heidi.jpg',
+						role: 'Media & Publicity Officer',
+					},
+					{
+						name: 'Ethan Waite',
+						image: 'ethan.jpg',
+						role: 'Technical Web Officer',
+					},
+					{
+						name: 'Steve Thomas',
+						image: 'steve.jpg',
+						role: 'Secretary',
+					},
+				]
+			},
+			{
 				year: '2020/2021',
 				members: [
 					{
