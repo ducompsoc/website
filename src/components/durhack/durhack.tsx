@@ -20,7 +20,7 @@ export class DurHack extends React.PureComponent {
 					<div className="row">
 						<div className="time">
 							<h3>2022</h3>
-							<div className="date">19th - 20th February</div>
+							<div className="date">19th - 20th November</div>
 						</div>
 
 						<div className="description" style={{ width: '100%' }}>
@@ -29,12 +29,12 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								DurHack returns for its sixth iteration this November, and will be taking place in the new Mathematics and Computer Sciences building at Durham University.
+								DurHack returns for its seventh iteration this November, and will be taking place in the new Mathematics and Computer Sciences building at Durham University.
 							</p>
 
-							<p>
+							{/*<p>
 								Free tickets are now available for DurHack 2022. Don't miss out -- sign up now!
-							</p>
+							</p>*/}
 
 							<div>
 								<Button raised={true} onClick={this.goToWebsite}>durhack.com</Button>

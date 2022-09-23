@@ -77,6 +77,32 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: 'DurHack 2022.2',
+			description: [
+				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.',
+			],
+			link: 'https://durhack.com/',
+			thumbnail: 'stock/u.jpg',
+			when: {
+				dates: [new Date('2022-11-20T12:00:00Z')],
+				text: '19th-20th November',
+			},
+			feature: {
+				title: 'Registration now open for DurHack!',
+				tagline: [
+					'Secure your place at CompSoc\'s annual hackathon in November 2022. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.',
+				],
+				button: {
+					text: 'Pre-register now',
+					destination: 'https://durhack.com/',
+				},
+				image: 'stock/e.jpg',
+				priority: 1,
+				daysBefore: 50,
+			},
+			location: 'MCS building',
+		},
+		{
 			name: 'DurHack 2022',
 			description: [
 				'DurHack is CompSoc\'s flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.',
