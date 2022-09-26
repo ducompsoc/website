@@ -4,6 +4,11 @@
 	status = 302
 
 [[redirects]]
+	from = "/join"
+	to = "https://docs.google.com/forms/d/e/1FAIpQLScjPyHlUbTRkK1rZa8mquWa7i8kLwWJErsMIQ80ml21jY73-A/viewform"
+	status = 302
+
+[[redirects]]
 	from = "/slack"
 	to = "https://ducompsoc.slack.com"
 	status = 302
@@ -17,7 +22,7 @@
 	from = "/constitution"
 	to = "https://community.dur.ac.uk/computing.society/constitution.pdf"
 	status = 302
-	
+
 [[redirects]]
 	from = "/egm"
 	to = "https://community.dur.ac.uk/computing.society/egm.pdf"

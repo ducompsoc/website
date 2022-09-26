@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 import { Button } from '../button/button';
-import { popup } from '../../util/typeform';
 
 import './interlaced.png';
 import './join-banner.scss';
@@ -33,6 +32,6 @@ export class JoinBanner extends React.PureComponent {
 	}
 
 	private handleJoinClick = () => {
-		popup.open();
+		window.open('/join');
 	}
 }
