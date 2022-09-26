@@ -32,6 +32,6 @@ export class JoinBanner extends React.PureComponent {
 	}
 
 	private handleJoinClick = () => {
-		window.open('/join');
+		window.open('https://compsoc.tech/join');
 	}
 }

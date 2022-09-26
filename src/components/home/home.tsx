@@ -57,7 +57,7 @@ export class Home extends React.PureComponent {
 						<div className="flex"></div>
 
 						<div>
-							<a href="/join" target="_blank" className="subscribe-link">
+							<a href="https://compsoc.tech/join" target="_blank" className="subscribe-link">
 								<FontAwesomeIcon icon={faEnvelope} />
 								<span>Subscribe</span>
 							</a>
@@ -73,7 +73,7 @@ export class Home extends React.PureComponent {
 	}
 
 	private handleJoinClick = () => {
-		window.open('/join');
+		window.open('https://compsoc.tech/join');
 	}
 
 	private handleFeatureButtonClick = () => {
