@@ -57,7 +57,7 @@ export class Home extends React.PureComponent {
 						<div className="flex"></div>
 
 						<div>
-							<a href="https://compsoc.tech/join" target="_blank" className="subscribe-link">
+							<a href="https://compsoc.tech/join" target="_blank" rel="noopener noreferrer" className="subscribe-link">
 								<FontAwesomeIcon icon={faEnvelope} />
 								<span>Subscribe</span>
 							</a>
