@@ -818,7 +818,7 @@ export const config: ISiteData = {
 				name: 'Aaron Cheung',
 				image: 'aaron.jpg',
 				role: 'Outreach Officer',
-				description: 'Responsible for engaging with external organisations and members',
+				description: 'Responsible for engaging with external organisations and members.',
 			}
 		],
 		past: [
