@@ -7,7 +7,6 @@ import { Button } from '../button/button';
 import { JoinBanner } from '../join-banner/join-banner';
 import { EventCarousel } from '../event-carousel/event-carousel';
 import { getFeature } from '../../util/events';
-import { popup } from '../../util/typeform';
 
 import './home.scss';
 
@@ -58,7 +57,7 @@ export class Home extends React.PureComponent {
 						<div className="flex"></div>
 
 						<div>
-							<a href="/" onClick={this.handleJoinLinkClick} className="subscribe-link">
+							<a href="https://compsoc.tech/join" target="_blank" rel="noopener noreferrer" className="subscribe-link">
 								<FontAwesomeIcon icon={faEnvelope} />
 								<span>Subscribe</span>
 							</a>
@@ -73,13 +72,8 @@ export class Home extends React.PureComponent {
 		);
 	}
 
-	private handleJoinLinkClick = (event: React.MouseEvent) => {
-		event.preventDefault();
-		this.handleJoinClick();
-	}
-
 	private handleJoinClick = () => {
-		popup.open();
+		window.open('https://compsoc.tech/join');
 	}
 
 	private handleFeatureButtonClick = () => {
