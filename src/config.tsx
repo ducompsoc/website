@@ -779,41 +779,47 @@ export const config: ISiteData = {
 	teams: {
 		current: [
 			{
-				name: 'Tom Nudd',
-				image: 'tom.jpg',
+				name: 'Disha Gupta',
+				image: 'disha.jpg',
 				role: 'President',
 				description: 'In charge of overseeing everything in the society and reaching out to sponsors.',
 			},
 			{
-				name: 'Disha Gupta',
-				image: 'disha.jpg',
+				name: 'Eve Routledge',
+				image: 'eve.jpg',
 				role: 'Events Officer',
 				description: 'Works with sponsors and guest speakers to organise talks and workshops.',
 			},
 			{
-				name: 'Olivia Hampshire',
-				image: 'olivia.jpg',
+				name: 'Andrew Li',
+				image: 'andrew.jpg',
 				role: 'Finance Officer',
 				description: 'Manages CompSoc\'s finances.',
 			},
 			{
-				name: 'Heidi Januszewski',
-				image: 'heidi.jpg',
+				name: 'Luca Huelle',
+				image: 'luca.jpg',
 				role: 'Media & Publicity Officer',
 				description: 'In charge of the website content, social media, the mailing list, and promoting the society around the university.',
 			},
 			{
-				name: 'Ethan Waite',
-				image: 'ethan.jpg',
+				name: 'Abhinav Bhandari',
+				image: 'abhinav.png',
 				role: 'Technical Web Officer',
 				description: 'Works with the Publicity Officer to manage the technical side of the website.',
 			},
 			{
-				name: 'Steve Thomas',
-				image: 'steve.jpg',
+				name: 'Charlie Thomas',
+				image: 'charlie.jpg',
 				role: 'Secretary',
 				description: 'Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.',
 			},
+			{
+				name: 'Aaron Cheung',
+				image: 'aaron.jpg',
+				role: 'Outreach Officer',
+				description: 'Responsible for engaging with external organisations and members',
+			}
 		],
 		past: [
 			{
