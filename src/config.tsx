@@ -93,7 +93,7 @@ export const config: ISiteData = {
 					'Secure your place at CompSoc\'s annual hackathon in November 2022. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.',
 				],
 				button: {
-					text: 'Pre-register now',
+					text: 'Register now',
 					destination: 'https://durhack.com/',
 				},
 				image: 'stock/e.jpg',
