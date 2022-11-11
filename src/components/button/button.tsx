@@ -1,11 +1,11 @@
-import React from 'react';
-import classnames from 'classnames';
-import { withRouter, RouteComponentProps } from 'react-router';
+import React from "react";
+import classnames from "classnames";
+import { withRouter, RouteComponentProps } from "react-router";
 
-import './button.scss';
+import "./button.scss";
 
 export interface IButtonProps extends RouteComponentProps {
-	size?: 'small' | 'medium' | 'large';
+	size?: "small" | "medium" | "large";
 	children?: React.ReactNode;
 	to?: string;
 	raised?: boolean;
@@ -19,7 +19,8 @@ class ButtonComponent extends React.PureComponent<IButtonProps> {
 		return (
 			<button
 				onClick={this.handleClick}
-				className={classnames('button', size || 'medium', { raised })}>
+				className={classnames("button", size || "medium", { raised })}
+			>
 				<div className="hover"></div>
 				<div className="inner row center">
 					<div className="text">{children}</div>
@@ -39,7 +40,7 @@ class ButtonComponent extends React.PureComponent<IButtonProps> {
 		if (to) {
 			history.push(to);
 		}
-	}
+	};
 }
 
 export const Button = withRouter(ButtonComponent);

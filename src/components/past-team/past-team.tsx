@@ -1,17 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { PageTitle } from '../page-title/page-title';
-import { ArrowedLink } from '../arrowed-link/arrowed-link';
-import { TeamMember } from '../team-member/team-member';
-import { config } from '../../config';
+import { PageTitle } from "../page-title/page-title";
+import { ArrowedLink } from "../arrowed-link/arrowed-link";
+import { TeamMember } from "../team-member/team-member";
+import { config } from "../../config";
 
-import './past-team.scss';
+import "./past-team.scss";
 
 export class PastTeam extends React.PureComponent {
 	public render() {
-		const content = config.teams.past.map(team => {
-			const grid = team.members.map(member => (
-				<div key={member.name}><TeamMember current={false} member={member} key={member.name} /></div>
+		const content = config.teams.past.map((team) => {
+			const grid = team.members.map((member) => (
+				<div key={member.name}>
+					<TeamMember current={false} member={member} key={member.name} />
+				</div>
 			));
 
 			return (
@@ -24,14 +26,18 @@ export class PastTeam extends React.PureComponent {
 
 		return (
 			<div className="past-team">
-				<PageTitle image="stock/b.jpg" verticalPosition={35}>Previous exec</PageTitle>
+				<PageTitle image="stock/b.jpg" verticalPosition={35}>
+					Previous exec
+				</PageTitle>
 
 				<div className="container">
-					<ArrowedLink to="/team" reverse={true}>Back to this year's committee</ArrowedLink>
+					<ArrowedLink to="/team" reverse={true}>
+						Back to this year's committee
+					</ArrowedLink>
 
 					{content}
 				</div>
 			</div>
-		)
+		);
 	}
 }

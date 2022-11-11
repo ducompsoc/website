@@ -1,8 +1,8 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 footer {
 	background-color: #000;
-	font-family: Source Code Pro, 'Courier New', Courier, monospace;
+	font-family: Source Code Pro, "Courier New", Courier, monospace;
 	font-size: 13px;
 	font-weight: bold;
 	color: #fff;
@@ -52,7 +52,7 @@ footer {
 			> a {
 				white-space: nowrap;
 				padding: 0px 3px 0px 0px;
-				transition: .3s ease;
+				transition: 0.3s ease;
 
 				&:hover {
 					padding: 0px 0px 0px 3px;
@@ -73,7 +73,7 @@ footer {
 
 			a {
 				opacity: 0.8;
-				transition: .5s ease;
+				transition: 0.5s ease;
 
 				&:hover {
 					opacity: 1;

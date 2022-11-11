@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .home {
 	.feature {
@@ -25,7 +25,8 @@
 				overflow: visible;
 			}
 
-			> span, h3 > span {
+			> span,
+			h3 > span {
 				background-color: #fff;
 				margin: 0px;
 				padding: 12px 18px 12px 64px;
@@ -49,22 +50,23 @@
 	.comment {
 		margin: 64px 0px;
 
-		.row:before, &:after {
+		.row:before,
+		&:after {
 			display: block;
-			font-family: Source Code Pro, 'Courier New', Courier, monospace;
+			font-family: Source Code Pro, "Courier New", Courier, monospace;
 			font-size: 24px;
 		}
 
 		.row {
 			&:before {
 				width: 64px;
-				content: '/*';
+				content: "/*";
 				margin-top: -6px;
 			}
 		}
 
 		&:after {
-			content: '*/';
+			content: "*/";
 			text-align: right;
 		}
 	}
@@ -82,7 +84,7 @@
 		}
 
 		.subscribe-link {
-			font-family: Source Code Pro, 'Courier New', Courier, monospace;
+			font-family: Source Code Pro, "Courier New", Courier, monospace;
 			font-weight: bold;
 			text-decoration: none;
 			padding: 6px 0px;
@@ -113,7 +115,8 @@
 				}
 			}
 
-			> span, h3 > span {
+			> span,
+			h3 > span {
 				padding-left: 48px;
 			}
 		}

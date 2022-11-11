@@ -8,7 +8,7 @@
 	text-decoration: none;
 	color: #000;
 	padding: 4px;
-	transition: .5s ease;
+	transition: 0.5s ease;
 
 	&.linked {
 		&:hover {
@@ -36,7 +36,8 @@
 		-webkit-box-orient: vertical;
 		text-overflow: ellipsis;
 
-		&, a {
+		&,
+		a {
 			color: #666;
 		}
 	}
@@ -61,7 +62,7 @@
 
 			.when {
 				background-color: #000;
-				font-family: Source Code Pro, 'Courier New', Courier, monospace;
+				font-family: Source Code Pro, "Courier New", Courier, monospace;
 				font-weight: bold;
 				color: #fff;
 				padding: 12px 36px 12px 12px;
@@ -73,7 +74,8 @@
 				padding: 12px;
 			}
 
-			.arrow-line, .arrow-head {
+			.arrow-line,
+			.arrow-head {
 				border-color: #666;
 			}
 		}

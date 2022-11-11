@@ -1,8 +1,8 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .join-banner {
 	/* Background pattern from Toptal Subtle Patterns */
-	background-image: url('./interlaced.png');
+	background-image: url("./interlaced.png");
 	margin-top: 64px;
 
 	> .container {
@@ -19,7 +19,7 @@
 				text-align: center;
 				color: #000;
 				padding: 20px 0px;
-				transition: .5s ease;
+				transition: 0.5s ease;
 
 				&:hover {
 					background-color: #000;

@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .events-page {
 	> .container {
@@ -9,7 +9,7 @@
 		}
 
 		> h4 {
-			font-family: Source Code Pro, 'Courier New', Courier, monospace;
+			font-family: Source Code Pro, "Courier New", Courier, monospace;
 			font-size: 32px;
 			color: #666;
 		}

@@ -1,46 +1,51 @@
-import React from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
-import { PageTitle } from '../page-title/page-title';
-import { Button } from '../button/button';
+import { PageTitle } from "../page-title/page-title";
+import { Button } from "../button/button";
 
-import './contact.scss';
+import "./contact.scss";
 
 export const Contact: React.FC = () => (
 	<div className="contact">
-		<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>Contact us</PageTitle>
+		<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>
+			Contact us
+		</PageTitle>
 
 		<div className="container">
 			<p>Leave your queries, comments, feedback, and suggestions below.</p>
-			<form name="contact" method="post" action="/contact/success" data-netlify="true" data-netlify-recaptcha="true">
+			<form
+				name="contact"
+				method="post"
+				action="/contact/success"
+				data-netlify="true"
+				data-netlify-recaptcha="true"
+			>
 				<input type="hidden" name="form-name" value="contact" />
 
-				<input
-					type="text"
-					name="name"
-					placeholder="Your name"
-					required />
+				<input type="text" name="name" placeholder="Your name" required />
 
 				<input
 					type="email"
 					name="email"
 					placeholder="Your email address"
-					required />
+					required
+				/>
 
 				<input
 					type="text"
 					name="subject"
 					placeholder="Your message subject"
-					required />
+					required
+				/>
 
-				<textarea
-					name="message"
-					placeholder="Your message"
-					required />
+				<textarea name="message" placeholder="Your message" required />
 
 				<ReCAPTCHA sitekey="6LfdeDEUAAAAAB4DSPMWwkqKYrHIvzjvXnU9u4mU" />
 
-				<div><Button>Send</Button></div>
+				<div>
+					<Button>Send</Button>
+				</div>
 			</form>
 		</div>
 	</div>
@@ -48,11 +53,14 @@ export const Contact: React.FC = () => (
 
 export const ContactSuccess: React.FC = () => (
 	<div className="contact">
-		<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>Contact us</PageTitle>
+		<PageTitle image="stock/f-flipped.jpg" verticalPosition={60}>
+			Contact us
+		</PageTitle>
 
 		<div className="container">
-			<p className="success">Thanks! Your message has been sent. We'll be in touch soon.</p>
+			<p className="success">
+				Thanks! Your message has been sent. We'll be in touch soon.
+			</p>
 		</div>
 	</div>
 );
-

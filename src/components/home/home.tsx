@@ -1,14 +1,14 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import Helmet from 'react-helmet';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import Helmet from "react-helmet";
 
-import { Button } from '../button/button';
-import { JoinBanner } from '../join-banner/join-banner';
-import { EventCarousel } from '../event-carousel/event-carousel';
-import { getFeature } from '../../util/events';
+import { Button } from "../button/button";
+import { JoinBanner } from "../join-banner/join-banner";
+import { EventCarousel } from "../event-carousel/event-carousel";
+import { getFeature } from "../../util/events";
 
-import './home.scss';
+import "./home.scss";
 
 const feature = getFeature();
 
@@ -17,7 +17,11 @@ export class Home extends React.PureComponent {
 		let button = <Button onClick={this.handleJoinClick}>Join now</Button>;
 
 		if (feature.button) {
-			button = <Button onClick={this.handleFeatureButtonClick}>{feature.button.text}</Button>
+			button = (
+				<Button onClick={this.handleFeatureButtonClick}>
+					{feature.button.text}
+				</Button>
+			);
 		}
 
 		return (
@@ -26,17 +30,24 @@ export class Home extends React.PureComponent {
 					<title>Homepage » Durham CompSoc</title>
 				</Helmet>
 
-				<div className="feature" style={{ backgroundImage: `url(/images/${feature.image})` }}>
+				<div
+					className="feature"
+					style={{ backgroundImage: `url(/images/${feature.image})` }}
+				>
 					<div className="flex"></div>
 					<div className="container">
 						<div className="info">
-							<h3><span><span>{feature.title}</span></span></h3>
-							<span><span>{feature.tagline.join(' ')}</span></span>
+							<h3>
+								<span>
+									<span>{feature.title}</span>
+								</span>
+							</h3>
+							<span>
+								<span>{feature.tagline.join(" ")}</span>
+							</span>
 						</div>
 
-						<div className="cta">
-							{button}
-						</div>
+						<div className="cta">{button}</div>
 					</div>
 				</div>
 
@@ -44,7 +55,12 @@ export class Home extends React.PureComponent {
 					<div className="comment">
 						<div className="row">
 							<div className="flex">
-								CompSoc is Durham University Computing Society. It is run entirely by students and serves to promote programming, development and general computing. We are a community of passionate problem solvers who come together to run weekly meetings, workshops and hackathons throughout the year. No matter if you're a novice or expert, come down to see what we have to offer!
+								CompSoc is Durham University Computing Society. It is run entirely by
+								students and serves to promote programming, development and general
+								computing. We are a community of passionate problem solvers who come
+								together to run weekly meetings, workshops and hackathons throughout the
+								year. No matter if you're a novice or expert, come down to see what we
+								have to offer!
 							</div>
 						</div>
 					</div>
@@ -57,7 +73,12 @@ export class Home extends React.PureComponent {
 						<div className="flex"></div>
 
 						<div>
-							<a href="https://compsoc.tech/join" target="_blank" rel="noopener noreferrer" className="subscribe-link">
+							<a
+								href="https://compsoc.tech/join"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="subscribe-link"
+							>
 								<FontAwesomeIcon icon={faEnvelope} />
 								<span>Subscribe</span>
 							</a>
@@ -73,10 +94,10 @@ export class Home extends React.PureComponent {
 	}
 
 	private handleJoinClick = () => {
-		window.open('https://compsoc.tech/join');
-	}
+		window.open("https://compsoc.tech/join");
+	};
 
 	private handleFeatureButtonClick = () => {
 		window.open(feature.button!.destination);
-	}
+	};
 }

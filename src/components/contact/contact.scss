@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .contact {
 	> .container {
@@ -9,9 +9,10 @@
 		margin: 32px 0px;
 	}
 
-	input, textarea {
+	input,
+	textarea {
 		border: solid 1px #999;
-		font-family: Source Code Pro, 'Courier New', Courier, monospace;
+		font-family: Source Code Pro, "Courier New", Courier, monospace;
 		font-size: 18px;
 		padding: 18px;
 		margin-bottom: 9px;
@@ -27,7 +28,8 @@
 		height: 256px;
 	}
 
-	.success, .error {
+	.success,
+	.error {
 		background-color: #000;
 		color: #fff;
 		padding: 16px;
@@ -38,7 +40,8 @@
 	}
 
 	@media screen and (max-width: $breakpoint-small) {
-		input, textarea {
+		input,
+		textarea {
 			width: 100%;
 		}
 	}

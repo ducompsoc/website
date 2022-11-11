@@ -14,7 +14,6 @@ export interface ISiteData {
  * A "feature" is the first thing you see when you load the homepage.
  */
 export interface IFeature {
-
 	/**
 	 * What should the large title text say? Please keep this short.
 	 */
@@ -40,13 +39,12 @@ export interface IFeature {
 	 * dark. For example, if the background image above is super bright,
 	 * change this to 'dark'. If in doubt, say 'light'.
 	 */
-	foreground?: 'light' | 'dark'; // default light
+	foreground?: "light" | "dark"; // default light
 
 	/**
 	 * You can optionally specify a button to show in the foreground.
 	 */
 	button?: {
-
 		/**
 		 * What should the button say (e.g. 'Join now', 'Learn more',
 		 * 'See more info', 'Sign up now')? Please avoid 'click here'.
@@ -59,8 +57,7 @@ export interface IFeature {
 		 * list signup.
 		 */
 		destination?: string;
-
-	}
+	};
 }
 
 /**
@@ -68,7 +65,6 @@ export interface IFeature {
  * to make sure we know when to show this feature over the default one.
  */
 export interface IEventFeature extends IFeature {
-
 	/**
 	 * How many days in advance of the event should the event be featured on
 	 * the top?
@@ -81,7 +77,6 @@ export interface IEventFeature extends IFeature {
 	 * same priority, the soonest event wins.
 	 */
 	priority?: number;
-
 }
 
 /**
@@ -119,7 +114,6 @@ export interface IEvent {
 	 * When is the event?
 	 */
 	when: {
-
 		/**
 		 * An array of date objects representing when this event takes place.
 		 * It's an array because some events might be recurring (e.g. our
@@ -134,8 +128,7 @@ export interface IEvent {
 		 * e.g. 'Mondays, 6:15pm', '31st October 2019', 'November 2019'.
 		 */
 		text: string;
-
-	}
+	};
 
 	/**
 	 * Optionally, where is this event? Please keep this very short. (e.g.
@@ -202,7 +195,6 @@ export interface IPastExecTeam {
  * Exec information includes...
  */
 export interface IExec {
-
 	/**
 	 * The current exec. (This is just an array of team members.)
 	 */
@@ -212,14 +204,12 @@ export interface IExec {
 	 * Past teams.
 	 */
 	past: IPastExecTeam[];
-
 }
 
 /**
  * Every sponsor, past or present, must include the following properties.
  */
 export interface ISponsor {
-
 	/**
 	 * The company's name.
 	 */
@@ -256,14 +246,12 @@ export interface ISponsor {
 	 * "2017/2018"]. Strictly stick to this date format, please!
 	 */
 	years: string[];
-
 }
 
 /**
  * For the sponsors page and the footer, we need to know...
  */
 export interface ISponsorList {
-
 	/**
 	 * An array of the companies that are sponsoring us or have sponsored us in
 	 * the past.
@@ -278,5 +266,4 @@ export interface ISponsorList {
 	 * The years must be in order, where the current year is first.
 	 */
 	years: string[];
-
 }
