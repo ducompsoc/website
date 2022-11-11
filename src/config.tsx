@@ -782,17 +782,24 @@ export const config: ISiteData = {
 					"In charge of overseeing everything in the society and reaching out to sponsors.",
 			},
 			{
-				name: "Eve Routledge",
-				image: "eve.jpg",
-				role: "Events Officer",
+				name: "Charlie Thomas",
+				image: "charlie.jpg",
+				role: "Secretary",
 				description:
-					"Works with sponsors and guest speakers to organise talks and workshops.",
+					"Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.",
 			},
 			{
 				name: "Andrew Li",
 				image: "andrew.jpg",
 				role: "Finance Officer",
 				description: "Manages CompSoc's finances.",
+			},
+			{
+				name: "Eve Routledge",
+				image: "eve.jpg",
+				role: "Events Officer",
+				description:
+					"Works with sponsors and guest speakers to organise talks and workshops.",
 			},
 			{
 				name: "Luca Huelle",
@@ -804,16 +811,9 @@ export const config: ISiteData = {
 			{
 				name: "Abhinav Bhandari",
 				image: "abhinav.png",
-				role: "Technical Web Officer",
+				role: "Technical Officer",
 				description:
 					"Works with the Publicity Officer to manage the technical side of the website.",
-			},
-			{
-				name: "Charlie Thomas",
-				image: "charlie.jpg",
-				role: "Secretary",
-				description:
-					"Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.",
 			},
 			{
 				name: "Aaron Cheung",
