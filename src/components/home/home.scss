@@ -131,4 +131,16 @@
 			width: 48px;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint-xsmall) {
+		.feature .info {
+			h3 {
+				font-size: 24px;
+			}
+
+			> span {
+				zoom: 0.9;
+			}
+		}
+	}
 }
