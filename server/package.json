@@ -20,7 +20,7 @@
 	"dependencies": {
 		"body-parser": "^1.18.3",
 		"express": "^4.16.4",
-		"lodash": "^4.17.13",
+		"lodash": "^4.17.21",
 		"nodemailer": "^4.7.0"
 	}
 }
