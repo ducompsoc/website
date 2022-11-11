@@ -14,12 +14,16 @@
 			}
 		}
 
-		@media screen and (max-width: $breakpoint-medium) {
-			.grid.row {
-				flex-direction: column;
+		.grid.row {
+			align-items: stretch;
 
-				> div {
-					width: 100% !important;
+			@media screen and (max-width: $breakpoint-medium) {
+				& {
+					flex-direction: column;
+
+					> div {
+						width: 100% !important;
+					}
 				}
 			}
 		}

@@ -15,11 +15,16 @@
 		}
 
 		.info {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: stretch;
+
 			width: 90%;
 			font-weight: bold;
 			padding: 256px 64px 32px 0px;
 
 			h3 {
+				display: contents;
 				font-size: 48px;
 				margin: 0px;
 				overflow: visible;
@@ -38,6 +43,7 @@
 			}
 
 			h3 > span {
+				padding-bottom: 0;
 				padding-right: 64px;
 			}
 		}
@@ -123,6 +129,18 @@
 
 		.comment .row:before {
 			width: 48px;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-xsmall) {
+		.feature .info {
+			h3 {
+				font-size: 24px;
+			}
+
+			> span {
+				zoom: 0.9;
+			}
 		}
 	}
 }
