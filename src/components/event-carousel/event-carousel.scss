@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .event-carousel {
 	position: relative;
@@ -20,7 +20,8 @@
 		}
 	}
 
-	> .event.upcoming, > .filler {
+	> .event.upcoming,
+	> .filler {
 		opacity: 0;
 		transition: 1s ease;
 
@@ -49,7 +50,8 @@
 			}
 		}
 
-		> .event.upcoming, > .filler {
+		> .event.upcoming,
+		> .filler {
 			transition-delay: 0s !important;
 		}
 	}

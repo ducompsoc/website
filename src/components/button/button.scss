@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .button {
 	position: relative;
@@ -15,7 +15,8 @@
 		> .inner {
 			color: #fff;
 
-			.arrow-line, .arrow-head {
+			.arrow-line,
+			.arrow-head {
 				border-color: #fff;
 			}
 		}
@@ -25,8 +26,11 @@
 		}
 	}
 
-	> .hover, > .inner, > .inner .arrow-line, > .inner .arrow-head {
-		transition: .5s ease;
+	> .hover,
+	> .inner,
+	> .inner .arrow-line,
+	> .inner .arrow-head {
+		transition: 0.5s ease;
 	}
 
 	> .hover {
@@ -40,7 +44,7 @@
 
 	> .inner {
 		position: relative;
-		font-family: Source Code Pro, 'Courier New', Courier, monospace;
+		font-family: Source Code Pro, "Courier New", Courier, monospace;
 		font-weight: bold;
 		font-size: 24px;
 		color: #000;

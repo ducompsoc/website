@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 header {
 	background-color: black;
@@ -8,7 +8,8 @@ header {
 		line-height: 0px;
 		padding: 18px 0px;
 
-		h1, div {
+		h1,
+		div {
 			font-family: Jura, Arial, Helvetica, sans-serif;
 			text-transform: uppercase;
 			margin: 0px;
@@ -31,14 +32,15 @@ header {
 	}
 
 	> .container > a {
-		font-family: Source Code Pro, 'Courier New', Courier, monospace;
+		font-family: Source Code Pro, "Courier New", Courier, monospace;
 		border-bottom: solid 2px transparent;
 		padding-bottom: 6px;
 		margin-left: 64px;
-		transition: .3s ease;
+		transition: 0.3s ease;
 		cursor: pointer;
 
-		&:hover, &.active {
+		&:hover,
+		&.active {
 			border-bottom-color: #fff;
 		}
 	}
@@ -89,7 +91,8 @@ header {
 				}
 			}
 
-			.menu > button:hover, &.open .menu > button {
+			.menu > button:hover,
+			&.open .menu > button {
 				background-color: #fff;
 				color: #000;
 			}

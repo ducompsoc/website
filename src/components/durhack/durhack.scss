@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .durhack-page {
 	> .container > .row {
@@ -18,7 +18,7 @@
 			}
 
 			.date {
-				font-family: Source Code Pro, 'Courier New', Courier, monospace;
+				font-family: Source Code Pro, "Courier New", Courier, monospace;
 				color: #666;
 			}
 		}

@@ -1,20 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { Header } from './components/header/header';
-import { Home } from './components/home/home';
-import { AGM } from './components/agm/agm';
-import { Events } from './components/events/events';
-import { Sponsors } from './components/sponsors/sponsors';
-import { Team } from './components/team/team';
-import { PastSponsors } from './components/past-sponsors/past-sponsors';
-import { PastTeam } from './components/past-team/past-team';
-import { DurHack } from './components/durhack/durhack';
-import { NotFound } from './components/not-found/not-found';
-import { Contact, ContactSuccess } from './components/contact/contact';
-import { Footer } from './components/footer/footer';
+import { Header } from "./components/header/header";
+import { Home } from "./components/home/home";
+import { AGM } from "./components/agm/agm";
+import { Events } from "./components/events/events";
+import { Sponsors } from "./components/sponsors/sponsors";
+import { Team } from "./components/team/team";
+import { PastSponsors } from "./components/past-sponsors/past-sponsors";
+import { PastTeam } from "./components/past-team/past-team";
+import { DurHack } from "./components/durhack/durhack";
+import { NotFound } from "./components/not-found/not-found";
+import { Contact, ContactSuccess } from "./components/contact/contact";
+import { Footer } from "./components/footer/footer";
 
-import './App.scss';
+import "./App.scss";
 
 const App: React.FC = () => {
 	return (
@@ -38,6 +38,6 @@ const App: React.FC = () => {
 			</div>
 		</Router>
 	);
-}
+};
 
 export default App;

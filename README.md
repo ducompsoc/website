@@ -9,11 +9,13 @@ A well documented repository is a good repository. Hopefully after reading this 
 The first step is to clone this repository:
 
 Navigate (using the terminal/command line) to the directory you'd like to place your project directory in
+
 ```bash
 mkdir a_suitable_directory && cd a_suitable_directory
 ```
 
 Then clone the repository!
+
 ```bash
 git clone https://github.com/ducompsoc/website.git compsoc_website
 ```
@@ -23,6 +25,7 @@ If you do not have git installed, get it [here](https://git-scm.com/downloads).
 This will place a folder compsoc_website inside the folder a_suitable_directory.
 
 Navigate to your newly created project folder
+
 ```bash
 cd compsoc_website
 ```
@@ -34,6 +37,7 @@ The branch initially checked out is the master branch of the project. This branc
 The develop branch is where all the new features are branched from and merged into using a strategy similar to the one found [here](http://nvie.com/posts/a-successful-git-branching-model/).
 
 To view all your local branches (that is, branches present on your machine) use
+
 ```bash
 git branch
 ```
@@ -41,6 +45,7 @@ git branch
 If you have been following these instructions you should only see the master branch.
 
 To access the develop branch, we need to check it out
+
 ```bash
 git checkout develop
 ```
@@ -56,28 +61,35 @@ But it's the same folder? Why have the files changed? That's git at work. For mo
 The website's back end runs on the [nodejs](https://nodejs.org/en/) runtime. Head over to https://nodejs.org/en/download/ and download the LTS (long term support) version for your platform.
 
 Once installed, run
+
 ```bash
 node
 ```
+
 in your terminal/command line to check that node has been installed. A little carat should appear. To get back to the command line, type .exit or hit ctrl+C twice.
 
 Also check npm is installed correctly
+
 ```bash
 npm
 ```
+
 If the terminal gives you a bunch of information (the NPM help page) then you are in good shape.
 
 NPM is Node's Package Manager and is used to install third party libraries and frameworks. The package.json file in the root (top most) directory of the project (compsoc_website if you've been following along) stores all the modules that project relies upon.
 
 Install dependencies by running:
+
 ```bash
 npm install
 ```
 
 Running
+
 ```bash
 npm start
 ```
+
 in your terminal/command line will start up a local web server that runs the web app. You will be sent to the homepage (or, just head straight to http://localhost:3000/).
 
 And that's it!
@@ -98,8 +110,8 @@ The site's main code is in `src/components`. Quite a lot of static assets are in
 
 Be aware that we use some extra stuff to make developing the site a bit more fun:
 
-* For JavaScript, we use TypeScript (which is why files have the extension `.tsx`). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
-* For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
-* For the site, we use React. This lets us split the code up into separate components.
+- For JavaScript, we use TypeScript (which is why files have the extension `.tsx`). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
+- For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
+- For the site, we use React. This lets us split the code up into separate components.
 
 As an aside, running `npm run build` will generate a folder called `build` containing all the final HTML files we should host in production. We use `react-snap` to make sure these files are understandable for search engines.

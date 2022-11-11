@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import './page-title.scss';
-import Helmet from 'react-helmet';
+import "./page-title.scss";
+import Helmet from "react-helmet";
 
 export interface IPageTitleProps {
 	image: string;
@@ -10,10 +10,14 @@ export interface IPageTitleProps {
 	children: string;
 }
 
-export const PageTitle: React.FC<IPageTitleProps> = (props: IPageTitleProps) => {
+export const PageTitle: React.FC<IPageTitleProps> = (
+	props: IPageTitleProps
+) => {
 	const style = {
 		backgroundImage: `url(/images/${props.image})`,
-		backgroundPosition: props.verticalPosition ? `0% ${props.verticalPosition}%` : 'center',
+		backgroundPosition: props.verticalPosition
+			? `0% ${props.verticalPosition}%`
+			: "center",
 	};
 
 	return (

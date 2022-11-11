@@ -1,65 +1,65 @@
 {
-  "name": "compsoc-website",
-  "version": "0.1.0",
-  "license": "MIT",
-  "author": "Durham Computing Society <computing.society@durham.ac.uk>",
-  "contributors": [
-    {
-      "name": "Ethan Waite",
-      "email": "ethan.w@compsoc.tech"
-    }
-  ],
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
-    "@typeform/embed": "^0.12.2",
-    "@types/jest": "24.0.18",
-    "@types/node": "12.7.2",
-    "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
-    "classnames": "^2.3.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-google-recaptcha": "^2.1.0",
-    "react-helmet": "^5.2.1",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "3.1.1",
-    "typescript": "3.5.3",
-    "wowjs": "^1.1.3"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build:prod": "npm run build && react-snap",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.3.1",
-    "@types/react-google-recaptcha": "^1.1.2",
-    "@types/react-helmet": "^5.0.17",
-    "@types/react-router-dom": "^5.1.8",
-    "node-sass": "^4.14.1",
-    "react-snap": "^1.23.0"
-  }
+	"name": "compsoc-website",
+	"version": "0.1.0",
+	"license": "MIT",
+	"author": "Durham Computing Society <computing.society@durham.ac.uk>",
+	"contributors": [
+		{
+			"name": "Ethan Waite",
+			"email": "ethan.w@compsoc.tech"
+		}
+	],
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.15.4",
+		"@fortawesome/fontawesome-svg-core": "^1.2.36",
+		"@fortawesome/free-brands-svg-icons": "^5.15.4",
+		"@fortawesome/free-regular-svg-icons": "^5.15.4",
+		"@fortawesome/free-solid-svg-icons": "^5.15.4",
+		"@fortawesome/react-fontawesome": "^0.1.15",
+		"@typeform/embed": "^0.12.2",
+		"@types/jest": "24.0.18",
+		"@types/node": "12.7.2",
+		"@types/react": "16.9.2",
+		"@types/react-dom": "16.9.0",
+		"classnames": "^2.3.1",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-google-recaptcha": "^2.1.0",
+		"react-helmet": "^5.2.1",
+		"react-router-dom": "^5.3.0",
+		"react-scripts": "3.1.1",
+		"typescript": "^4.8.4",
+		"wowjs": "^1.1.3"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"build:prod": "npm run build && react-snap",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/classnames": "^2.3.1",
+		"@types/react-google-recaptcha": "^1.1.2",
+		"@types/react-helmet": "^5.0.17",
+		"@types/react-router-dom": "^5.1.8",
+		"node-sass": "^4.14.1",
+		"react-snap": "^1.23.0"
+	}
 }

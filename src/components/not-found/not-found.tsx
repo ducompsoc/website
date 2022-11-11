@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { Button } from '../button/button';
+import { Button } from "../button/button";
 
-import './not-found.scss';
+import "./not-found.scss";
 
 export const NotFound: React.FC = () => (
 	<div className="not-found column center">

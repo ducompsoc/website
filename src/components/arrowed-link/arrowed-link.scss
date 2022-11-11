@@ -1,5 +1,5 @@
 .arrowed-link {
-	font-family: Source Code Pro, 'Courier New', Courier, monospace;
+	font-family: Source Code Pro, "Courier New", Courier, monospace;
 	align-items: center;
 	color: #666;
 	text-decoration: none;
@@ -13,7 +13,9 @@
 		margin: 0px 0px 0px 9px;
 	}
 
-	&:hover .text, .arrow-line, .arrow-head {
+	&:hover .text,
+	.arrow-line,
+	.arrow-head {
 		border-color: #666;
 	}
 
