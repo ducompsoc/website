@@ -19,8 +19,8 @@ export class EventCard extends React.PureComponent<IEventCardProps> {
 					<div>
 						<h4>And more coming soon</h4>
 						<p>
-							We've got events lined up with sponsors such as TPP and Waterstons. Stay
-							tuned!
+							We have many exciting events lined up for the future, usually at least
+							once every Monday at the TLC. Stay tuned!
 						</p>
 					</div>
 				</div>
