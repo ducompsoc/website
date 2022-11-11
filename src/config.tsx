@@ -103,6 +103,125 @@ export const config: ISiteData = {
 			location: "MCS building",
 		},
 		{
+			name: "Bar Crawl",
+			when: {
+				dates: [new Date("2022-11-14T20:00:00Z")],
+				text: "Monday 14th Nov, 8pm",
+			},
+			thumbnail: "stock/h.jpg",
+			link: "",
+			location: "Durham SU",
+			description: [
+				"Our second bar crawl of the year! Join us in the Kingsgate Bar in the SU from 8pm on Monday to meet ‘CompSoc’ers from all over and unwind the stress of the first six weeks of term.",
+			],
+		},
+		{
+			name: "LaTeX Workshop",
+			when: {
+				dates: [new Date("2022-11-07T17:00:00Z")],
+				text: "Monday 7th Nov, 5pm",
+			},
+			thumbnail: "stock/g.jpg",
+			link: "",
+			location: "TLC026",
+			description: [
+				"Professor Bernard Piette will be walking us through setting up a LaTeX environment & all the essential commands. Afterwards, we'll also look to tackle some Leetcode problems as a group.",
+			],
+		},
+		{
+			name: "Halloween Bar Crawl",
+			when: {
+				dates: [new Date("2022-11-02T20:00:00Z")],
+				text: "2nd Nov, 8pm",
+			},
+			thumbnail: "stock/f.jpg",
+			link: "",
+			location: "Durham SU",
+			description: [
+				"Our second bar crawl of the term. Join us in the Kingsgate Bar in the SU from 8pm on Wednesday to meet ‘CompSoc’ers from all over!",
+			],
+		},
+		{
+			name: "Pizza with a Multi-Billion Dollar Hedge Fund",
+			when: {
+				dates: [new Date("2022-10-26T11:00:00Z")],
+				text: "Wed 26th Oct 2022 11:00-13:00",
+			},
+			thumbnail: "stock/e.jpg",
+			link: "",
+			location: "MCS0014",
+			description: [
+				"This week, the Computer Science department is welcoming a new CompSoc sponsor and leading quantitative investment manager, Qube Research & Technologies (QRT) for a talk diving into the world of electronic trading and life at the fastest growing and best performing quant hedge funds in recent years.",
+			],
+		},
+		{
+			name: "Careers in Research",
+			when: {
+				dates: [new Date("2022-10-24T18:00:00Z")],
+				text: "Monday 24th Oct 2022",
+			},
+			thumbnail: "stock/d.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"Ever wondered what it would be like to go into a career in research? We'll have a panel of PhD students each working on projects from cryptography and graph theory to quantum computing and machine learning! You'll be able to discover more about what it's like conducting real cutting-edge research, ask loads of questions and just find out what a PhD really entails.",
+			],
+		},
+		{
+			name: "Pub Quiz",
+			when: {
+				dates: [new Date("2022-10-17T18:00:00Z")],
+				text: "Monday 17th Oct 2022",
+			},
+			thumbnail: "stock/c.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"This week we take a bit of a break and enjoy a Pub Quiz! There’ll be pizza, there’ll be prizes (probably) and there’ll be terribly difficult questions!? Afterwards, we’ll head to the SU for drinks and pool too.",
+			],
+		},
+		{
+			name: "Internships Intro",
+			when: {
+				dates: [new Date("2022-10-10T18:00:00Z")],
+				text: "Monday 10th Oct 2022",
+			},
+			thumbnail: "stock/b.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"We'll showcase useful resources, internship advice, hear testimonials from past interns, explore LinkedIn and look at CV tips!",
+			],
+		},
+		{
+			name: "Welcome Social",
+			when: {
+				dates: [new Date("2022-10-03T18:00:00Z")],
+				text: "Monday 3rd Oct 2022",
+			},
+			thumbnail: "stock/a.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"Join us for our first social event of the year! There'll be pizza, conversation and lots of fellow 'CompSoc'ers. We'll be in TLC123, so come along and say hi!",
+			],
+		},
+		{
+			name: "CompSoc at Freshers' Fair 2022",
+			when: {
+				dates: [new Date("2022-09-28T18:00:00Z")],
+				text: "28th Sept 2022",
+			},
+			thumbnail: "stock/f.jpg",
+			link: "",
+			location: "Maiden Castle Sports Centre",
+			description: [
+				"CompSoc will be at Freshers' Fair! Come say hi if you’re interested in tech, computers, programming, or if you want to learn. Chat to us and find out more about what CompSoc is and what we do!",
+			],
+		},
+
+		// Previous years' events
+		{
 			name: "DurHack 2022",
 			description: [
 				"DurHack is CompSoc's flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.",
