@@ -763,7 +763,14 @@ export const config: ISiteData = {
 	],
 
 	sponsors: {
-		years: ["2020/2021", "2019/2020", "2018/2019", "2017/2018", "2016/2017"],
+		years: [
+			"2022/2023",
+			"2020/2021",
+			"2019/2020",
+			"2018/2019",
+			"2017/2018",
+			"2016/2017",
+		],
 		companies: [
 			{
 				name: "Thought Machine",
@@ -775,7 +782,7 @@ export const config: ISiteData = {
 					"Every year, we hire many graduates for full-time roles, as well as students for 10-week summer internships and industrial placements in London. You will work in a team with our front end and back end engineers, using cutting-edge technology to deliver both client-facing and internal projects. You will develop ownership and responsibility for your own work and learn how to build software in an agile manner. You’ll gain a wealth of knowledge, skills and experience while having lots of fun in our awesome work environment.",
 					"Join us and make an impact on our mission to revolutionise core banking!",
 				],
-				years: ["2020/2021"],
+				years: ["2022/2023", "2020/2021"],
 			},
 			{
 				name: "Teach First",
@@ -786,7 +793,7 @@ export const config: ISiteData = {
 					"Education in the UK isn’t fair. We need to unlock the potential in every child, not just some.",
 					"<strong>Teach First</strong> develop the inspiring teachers and leaders who will make it happen. Together, we’ll build a better future with a fair education for all.Teach First are the UK’s largest graduate recruiter, voted top 10 in The Times Top 100. They seek, develop and support teaches and leaders who are determined to make a difference where it’s needed the most.",
 				],
-				years: ["2020/2021", "2019/2020"],
+				years: ["2022/2023", "2020/2021", "2019/2020"],
 			},
 			{
 				name: "Scott Logic",
@@ -795,7 +802,14 @@ export const config: ISiteData = {
 				description: [
 					'At <b>Scott Logic</b>, we design and build software that transforms the performance of some of the world’s biggest and most demanding organisations, and we\'re always on the look out for talented individuals to join our team. Our <a href="https://www.scottlogic.com/careers/graduates-programme/" target="_blank">Graduate Programme</a> is a great way to kickstart your technology career. You’ll learn new skills, work on a diverse set of internal and client projects, and figure out what makes a globally successful software team tick.',
 				],
-				years: ["2020/2021", "2019/2020", "2018/2019", "2017/2018", "2016/2017"],
+				years: [
+					"2022/2023",
+					"2020/2021",
+					"2019/2020",
+					"2018/2019",
+					"2017/2018",
+					"2016/2017",
+				],
 			},
 			{
 				name: "Arista Networks",
@@ -822,7 +836,7 @@ export const config: ISiteData = {
 				description: [
 					"<b>TPP</b> is a cutting-edge software company based in Leeds. We're revolutionising healthcare across the world with our pioneering research and technology solutions. We're doing some amazing things here at TPP and we have some really exciting projects coming up. That's why we're looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don't require any previous experience at all and we offer amazing starting salaries of £50,000 with generous pay rises.",
 				],
-				years: ["2020/2021", "2019/2020", "2018/2019", "2017/2018"],
+				years: ["2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
 			},
 			{
 				name: "StarLeaf",
@@ -833,7 +847,7 @@ export const config: ISiteData = {
 					"In September, the company was named in the Gartner 2018 Magic Quadrant for Meeting Solutions and one of the fastest growing tech companies in the UK by The Sunday Times Hiscox Tech Track 100.",
 					"StarLeaf's culture is built on collaboration, inclusion, creativity and support. This permeates everything they do, across all their teams and operations. They believe everyone at StarLeaf has a part to play in their success and that everyone should be rewarded for their contribution. This is why every single StarLeaf employee becomes a shareholder through the company’s share option scheme.",
 				],
-				years: ["2019/2020", "2018/2019"],
+				years: ["2022/2023", "2019/2020", "2018/2019"],
 			},
 			{
 				name: "Schroders",
@@ -878,7 +892,7 @@ export const config: ISiteData = {
 				description: [
 					"<strong>Waterstons</strong> are an IT consultancy with a keen business focus based in Durham! We’re open and honest, we’ll challenge you when you need challenging and we’ve been around for over twenty-five years. We provide creative technology-based solutions to improve business performance and increase competitive advantage.",
 				],
-				years: ["2019/2020"],
+				years: ["2022/2023", "2019/2020"],
 			},
 			{
 				name: "Optiver",
@@ -887,7 +901,20 @@ export const config: ISiteData = {
 				description: [
 					"<strong>Optiver</strong> are a leading global electronic market maker, focused on pricing, execution and risk management. We trade bonds, cash equities, exchange-traded funds, listed derivatives and foreign exchange. We pioneer our own trading strategies and systems using clean code and sophisticated technology. We achieve this by attracting, developing and empowering top talent, in order to sustain our future. ",
 				],
-				years: ["2020/2021", "2019/2020"],
+				years: ["2022/2023", "2020/2021", "2019/2020"],
+			},
+			{
+				name: "Qube RT",
+				link: "https://www.qube-rt.com/careers",
+				image: "sponsors/qrt.svg",
+				thumb: "sponsors/qrt.svg",
+				description: [
+					"<strong>Qube Research & Technologies (QRT)</strong> is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges. ",
+					"We strongly believe that long-term investment into our people is critical to our future success and distinctive culture, as demonstrated by our low turnover in staff and continuous growth. We are proud of our exceptionally talented, collaborative and diverse teams, and now are looking to add motivated, intellectually curious STEM students and graduates with entrepreneurial spirit to our team. We have a number of internship, industrial placement and graduate roles across Software Engineering, Data Engineering & Analytics and Infrastructure & Cloud Engineering, all within our amazing new office that looks out over London.",
+					"We are one of the best performing and fastest growing multi-strat quant hedge funds over the last couple years and we are just getting started…”",
+					'QRT will have roles live by mid-November but in the meantime, don’t apply via the website, instead contact their team first to find out more at <a href="mailto:campus@qube-rt.com">campus@qube-rt.com</a>.',
+				],
+				years: ["2022/2023"],
 			},
 		],
 	},
