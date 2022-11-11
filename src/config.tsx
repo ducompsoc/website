@@ -108,7 +108,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-11-14T20:00:00Z")],
 				text: "Monday 14th Nov, 8pm",
 			},
-			thumbnail: "stock/h.jpg",
+			thumbnail: "events/2022/07.jpg",
 			link: "",
 			location: "Durham SU",
 			description: [
@@ -121,7 +121,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-11-07T17:00:00Z")],
 				text: "Monday 7th Nov, 5pm",
 			},
-			thumbnail: "stock/g.jpg",
+			thumbnail: "events/2022/09.jpg",
 			link: "",
 			location: "TLC026",
 			description: [
@@ -134,7 +134,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-11-02T20:00:00Z")],
 				text: "2nd Nov, 8pm",
 			},
-			thumbnail: "stock/f.jpg",
+			thumbnail: "events/2022/07.jpg",
 			link: "",
 			location: "Durham SU",
 			description: [
@@ -147,7 +147,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-10-26T11:00:00Z")],
 				text: "Wed 26th Oct 2022 11:00-13:00",
 			},
-			thumbnail: "stock/e.jpg",
+			thumbnail: "events/2022/06.jpg",
 			link: "",
 			location: "MCS0014",
 			description: [
@@ -160,7 +160,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-10-24T18:00:00Z")],
 				text: "Monday 24th Oct 2022",
 			},
-			thumbnail: "stock/d.jpg",
+			thumbnail: "events/2022/05.jpg",
 			link: "",
 			location: "TLC123",
 			description: [
@@ -173,7 +173,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-10-17T18:00:00Z")],
 				text: "Monday 17th Oct 2022",
 			},
-			thumbnail: "stock/c.jpg",
+			thumbnail: "events/2022/pubquiz.jpg",
 			link: "",
 			location: "TLC123",
 			description: [
@@ -186,7 +186,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-10-10T18:00:00Z")],
 				text: "Monday 10th Oct 2022",
 			},
-			thumbnail: "stock/b.jpg",
+			thumbnail: "events/2022/03.jpg",
 			link: "",
 			location: "TLC123",
 			description: [
@@ -199,7 +199,7 @@ export const config: ISiteData = {
 				dates: [new Date("2022-10-03T18:00:00Z")],
 				text: "Monday 3rd Oct 2022",
 			},
-			thumbnail: "stock/a.jpg",
+			thumbnail: "events/2022/01.jpg",
 			link: "",
 			location: "TLC123",
 			description: [
