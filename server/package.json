@@ -19,7 +19,7 @@
 	"homepage": "https://github.com/ducompsoc/website#readme",
 	"dependencies": {
 		"body-parser": "^1.18.3",
-		"express": "^4.16.4",
+		"express": "^4.17.3",
 		"lodash": "^4.17.13",
 		"nodemailer": "^4.7.0"
 	}
