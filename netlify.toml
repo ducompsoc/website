@@ -9,8 +9,8 @@
 	status = 302
 
 [[redirects]]
-	from = "/slack"
-	to = "https://ducompsoc.slack.com"
+	from = "/fb"
+	to = "https://www.facebook.com/DurhamCompSoc"
 	status = 302
 
 [[redirects]]
@@ -19,19 +19,26 @@
 	status = 302
 
 [[redirects]]
-	from = "/constitution"
-	to = "https://community.dur.ac.uk/computing.society/constitution.pdf"
+	from = "/ins"
+	to = "https://www.instagram.com/ducompsoc/"
 	status = 302
 
 [[redirects]]
-	from = "/egm"
-	to = "https://community.dur.ac.uk/computing.society/egm.pdf"
+	from = "/linkedin"
+	to = "https://www.linkedin.com/company/ducompsoc/"
 	status = 302
 
 [[redirects]]
-	from = "/optiver"
-	to = "https://ducompsoc.typeform.com/to/ZKUyetZI"
+	from = "/nwg"
+	to = "https://drive.google.com/drive/folders/1KWkUfCxbWgsu8PAnPCfzoq4TwgCjXLUO?usp=share_link"
 	status = 302
+
+[[redirects]]
+	from = "/qrt"
+	to = "https://www.qube-rt.com/careers/"
+	status = 302
+
+
 
 [dev]
 	publish = "build/"
