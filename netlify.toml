@@ -53,7 +53,10 @@
 	to = "https://drive.google.com/file/d/1mNmLYH3xW0QEe78oRgcZHi-Capg2LtKw/view?usp=sharing"
 	status = 302
 
-
+[[redirects]]
+	from = "/balltickets"
+	to = "https://www.durhamsu.com/groups/computing-766e/events"
+	status = 302
 
 [dev]
 	publish = "build/"
