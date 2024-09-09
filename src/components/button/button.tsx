@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import { withRouter, RouteComponentProps } from "react-router";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 
 import "./button.scss";
 
