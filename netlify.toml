@@ -5,7 +5,7 @@
 
 [[redirects]]
 	from = "/join"
-	to = "https://docs.google.com/forms/d/e/1FAIpQLScjPyHlUbTRkK1rZa8mquWa7i8kLwWJErsMIQ80ml21jY73-A/viewform"
+	to = "https://www.durhamsu.com/groups/computing-766e/join"
 	status = 302
 
 [[redirects]]
@@ -59,4 +59,4 @@
 	status = 302
 
 [dev]
-	publish = "build/"
+	publish = "dist/"
