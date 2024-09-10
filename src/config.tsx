@@ -77,6 +77,32 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: "DurHack 2024",
+			description: [
+				"DurHack is CompSoc's flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.",
+			],
+			link: "https://durhack.com/",
+			thumbnail: "durhack/2023.jpg",
+			when: {
+				dates: [new Date("2024-11-02T12:00:00Z")],
+				text: "2nd-3rd November",
+			},
+			feature: {
+				title: "Registration now open for DurHack!",
+				tagline: [
+					"Secure your place at CompSoc's annual hackathon in November 2024. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.",
+				],
+				button: {
+					text: "Register now",
+					destination: "https://durhack.com/",
+				},
+				image: "stock/e.jpg",
+				priority: 1,
+				daysBefore: 50,
+			},
+			location: "Teaching and Learning Centre",
+		},
+		{
 			name: "DurHack 2022.2",
 			description: [
 				"DurHack is CompSoc's flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.",
@@ -764,6 +790,7 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			"2023/2024",
 			"2022/2023",
 			"2020/2021",
 			"2019/2020",
@@ -772,6 +799,42 @@ export const config: ISiteData = {
 			"2016/2017",
 		],
 		companies: [
+			{
+				name: "TPP",
+				link: "https://tpp-careers.com",
+				image: "sponsors/tpp.png",
+				description: [
+					"<b>TPP</b> is a leading global provider of healthcare technology, dedicated to delivering world class healthcare software in the UK and internationally. We work alongside governments to improve health outcomes, tackle inequalities in care, reduce health service costs, and improve experiences for both patients and clinicians.<br><br><i>For more information about career and recruitment opportunities, head to https://tpp-careers.com</i>",
+				],
+				years: ["2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
+			},
+			{
+				name: "Palantir",
+				link: "https://www.palantir.com/uk/",
+				image: "sponsors/palantir.png",
+				description: [
+					"<b>Palantir</b>: AI-Powered Operations, For Every Decision. Powering AI-assisted decision making - from war zones to factory floors. We build category-leading software that empowers organisations to create and govern artificial intelligence - across public and private networks",
+				],
+				years: ["2023/2024"],
+			},
+			{
+				name: "STEM Solutions",
+				link: "https://www.stem-solutions.co.uk/",
+				image: "sponsors/stemsolutions.png",
+				description: [
+					"<b>STEM Solutions</b> is a UK-based specialist graduate and junior recruitment agency working within the fields of science, technology, engineering, and mathematics. We partner with companies of all sizes, from small-scale start-ups to multinational enterprises. We love helping graduates secure their first role in industry, and our consultants are here to help every step of the way.<br><br>Our clients are always on the lookout for exceptionally bright and motivated STEM graduates. Please get in touch today by emailing us your CV at hello@stem-solutions.co.uk.",
+				],
+				years: ["2023/2024"],
+			},
+			{
+				name: "Ab Initio",
+				link: "https://www.abinitio.com/en/",
+				image: "sponsors/abinitio.png",
+				description: [
+					"<b>Ab Initio</b> constantly strive to build the world’s best software that can solve the toughest data processing and data management challenges that large organizations encounter. The only thing that is more important to us than providing the best software is being the best company for our people and the best company that our customers have ever worked with.",
+				],
+				years: ["2023/2024"],
+			},
 			{
 				name: "Thought Machine",
 				link: "https://thoughtmachine.net/",
@@ -821,15 +884,6 @@ export const config: ISiteData = {
 					"<b>Bede Gaming</b> is a leading supplier of software to the online gambling industry. We offer world class platforms to gaming and betting operators, powering some of the market’s biggest brands and processing hundreds of millions of transactions per month. Bede provides innovative solutions to achieve digital ambitions. Built on a single-code base and API-led, means that our products act as the enabler to operators&rsquo; online objectives. Easily integrated with any 3<sup>rd</sup> party supplier, Bede gives back choice and flexibility to customers.",
 				],
 				years: ["2018/2019"],
-			},
-			{
-				name: "TPP",
-				link: "https://www.tpp-uk.com/careers",
-				image: "sponsors/tpp.png",
-				description: [
-					"<b>TPP</b> is a cutting-edge software company based in Leeds. We're revolutionising healthcare across the world with our pioneering research and technology solutions. We're doing some amazing things here at TPP and we have some really exciting projects coming up. That's why we're looking for super-intelligent, geeky graduates for a number of vacancies, including our software developer and analyst roles. We don't require any previous experience at all and we offer amazing starting salaries of £60,000 with generous pay rises.",
-				],
-				years: ["2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
 			},
 			{
 				name: "StarLeaf",
@@ -915,55 +969,102 @@ export const config: ISiteData = {
 	teams: {
 		current: [
 			{
-				name: "Disha Gupta",
-				image: "disha.jpg",
+				name: "Kaal Sahele",
+				image: "kaal.jpg",
 				role: "President",
 				description:
-					"In charge of overseeing everything in the society and reaching out to sponsors.",
+					"In charge of overseeing the society and reaching out to sponsors.",
 			},
 			{
-				name: "Charlie Thomas",
-				image: "charlie.jpg",
+				name: "Evie Smith",
+				image: "evie.jpg",
 				role: "Secretary",
 				description:
-					"Responsible for working with sponsors and other organisations to ensure CompSoc runs smoothly, handling contracts and paperwork.",
+					"Works with sponsors and other organisations, handling contracts and paperwork.",
 			},
 			{
-				name: "Andrew Li",
-				image: "andrew.jpg",
-				role: "Finance Officer",
-				description: "Manages CompSoc's finances.",
+				name: "Brett McDowell",
+				image: "brett.jpg",
+				role: "Treasurer",
+				description: "Manages all of the society's finances, keeping our budget balanced.",
 			},
 			{
-				name: "Eve Routledge",
-				image: "eve.jpg",
+				name: "Jacob Wrenn",
+				image: "jacob.jpg",
+				role: "Technical Officer",
+				description:
+					"Manages the website and other technical projects (including for DurHack).",
+			},
+			{
+				name: "Seline Wongso",
+				image: "seline.jpg",
 				role: "Events Officer",
 				description:
 					"Works with sponsors and guest speakers to organise talks and workshops.",
 			},
 			{
-				name: "Luca Huelle",
-				image: "luca.jpg",
+				name: "SungOh (Eric) Cho",
+				image: "eric.jpg",
+				role: "Events Officer",
+				description:
+					"Works with sponsors and guest speakers to organise talks and workshops.",
+			},
+			{
+				name: "Jin Koh",
+				image: "jin.jpg",
 				role: "Media & Publicity Officer",
 				description:
-					"In charge of the website content, social media, the mailing list, and promoting the society around the university.",
+					"In charge of the social media content and promoting the society around the university.",
 			},
 			{
-				name: "Abhinav Bhandari",
-				image: "abhinav.png",
-				role: "Technical Officer",
+				name: "Nguyen Thien An",
+				image: "nguyen.jpg",
+				role: "Projects Officer",
 				description:
-					"Works with the Publicity Officer to manage the technical side of the website.",
-			},
-			{
-				name: "Aaron Cheung",
-				image: "aaron.jpg",
-				role: "Outreach Officer",
-				description:
-					"Responsible for engaging with external organisations and members.",
+					"Responsible for the new CompSoc Project Lab, hosting workshops and build-a-thons.",
 			},
 		],
 		past: [
+			{
+				year: "2022/2023",
+				members: [
+					{
+						name: "Disha Gupta",
+						image: "disha.jpg",
+						role: "President"
+					},
+					{
+						name: "Charlie Thomas",
+						image: "charlie.jpg",
+						role: "Secretary"
+					},
+					{
+						name: "Andrew Li",
+						image: "andrew.jpg",
+						role: "Finance Officer"
+					},
+					{
+						name: "Eve Routledge",
+						image: "eve.jpg",
+						role: "Events Officer"
+					},
+					{
+						name: "Luca Huelle",
+						image: "luca.jpg",
+						role: "Media & Publicity Officer"
+					},
+					{
+						name: "Abhinav Bhandari",
+						image: "abhinav.png",
+						role: "Technical Officer"
+					},
+					{
+						name: "Aaron Cheung",
+						image: "aaron.jpg",
+						role: "Outreach Officer"
+					}
+				]
+			},
 			{
 				year: "2021/2022",
 				members: [

@@ -20,7 +20,7 @@ export class EventCard extends React.PureComponent<IEventCardProps> {
 						<h4>And more coming soon</h4>
 						<p>
 							We have many exciting events lined up for the future, usually at least
-							once every Monday at the TLC. Stay tuned!
+							once a week in the MCS. Stay tuned!
 						</p>
 					</div>
 				</div>

@@ -21,8 +21,8 @@ export class DurHack extends React.PureComponent {
 				<div className="container">
 					<div className="row">
 						<div className="time">
-							<h3>2022</h3>
-							<div className="date">19th - 20th November</div>
+							<h3>2024</h3>
+							<div className="date">2nd - 3rd November</div>
 						</div>
 
 						<div className="description" style={{ width: "100%" }}>
@@ -32,13 +32,13 @@ export class DurHack extends React.PureComponent {
 							</p>
 
 							<p>
-								DurHack returns for its seventh iteration this November, and will be
-								taking place in the new Mathematics and Computer Sciences building at
+								DurHack returns for its ninth iteration this November, and will be
+								taking place in the Teaching and Learning Centre at
 								Durham University.
 							</p>
 
 							{/*<p>
-								Free tickets are now available for DurHack 2022. Don't miss out -- sign up now!
+								Free tickets are now available for DurHack 2024. Don't miss out -- sign up now!
 							</p>*/}
 
 							<div>
@@ -47,13 +47,37 @@ export class DurHack extends React.PureComponent {
 								</Button>
 							</div>
 
-							<p>If you're a business interested in sponsoring DurHack 2022:</p>
+							<p>If you're a business interested in sponsoring DurHack 2024:</p>
 
 							<div>
 								<Button raised={true} to="/contact">
 									Get in touch
 								</Button>
 							</div>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="time">
+							<h3>2023</h3>
+							<div className="date">4th - 5th November</div>
+						</div>
+
+						<div className="description">
+							<p>
+								With over 450 attendees and 100 submitted projects, Durhack 2023 was our largest event yet - taking place in Durham University's Teaching and Learning Centre.
+							</p>
+
+							<p>
+								The event was sponsored by companies such as platinum sponsors Marshall Wace, BidFX and QRT.
+							</p>
+
+							<p>
+								<img
+									src="/images/durhack/2023.jpg"
+									alt="Photograph from the DurHack 2023 website"
+								/>
+							</p>
 						</div>
 					</div>
 
