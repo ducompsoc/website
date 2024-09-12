@@ -973,7 +973,7 @@ export const config: ISiteData = {
 				image: "kaal.jpg",
 				role: "President",
 				description:
-					"In charge of overseeing the society and reaching out to sponsors.",
+					"In charge of overseeing everything in the society and reaching out to sponsors.",
 			},
 			{
 				name: "Evie Smith",
@@ -996,6 +996,20 @@ export const config: ISiteData = {
 					"Manages the website and other technical projects (including for DurHack).",
 			},
 			{
+				name: "Jin Koh",
+				image: "jin.jpg",
+				role: "Media & Publicity Officer",
+				description:
+					"In charge of the social media content and promoting the society around the university.",
+			},
+			{
+				name: "Akshat Gupta",
+				image: "akshat.jpg",
+				role: "Sponsorship Officer",
+				description:
+					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
+			},
+			{
 				name: "Seline Wongso",
 				image: "seline.jpg",
 				role: "Events Officer",
@@ -1008,13 +1022,6 @@ export const config: ISiteData = {
 				role: "Events Officer",
 				description:
 					"Works with sponsors and guest speakers to organise talks and workshops.",
-			},
-			{
-				name: "Jin Koh",
-				image: "jin.jpg",
-				role: "Media & Publicity Officer",
-				description:
-					"In charge of the social media content and promoting the society around the university.",
 			},
 			{
 				name: "Nguyen Thien An",
