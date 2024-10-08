@@ -5,6 +5,7 @@
 	left: calc(-33% + 64px);
 	width: calc(100% + 33% - 64px);
 	flex-wrap: nowrap;
+	overflow-x: hidden;
 
 	> div {
 		padding: 9px;

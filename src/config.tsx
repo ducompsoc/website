@@ -77,6 +77,71 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: "CV & Networking WorkShop",
+			when: {
+				dates: [new Date("2024-10-14T18:00:00Z")],
+				text: "Monday 14th Oct, 6pm",
+			},
+			thumbnail: "events/2022/01a.jpg",
+			link: "",
+			location: "TLC116",
+			description: [
+				"Get key insights from the incredible Rewriting the Code about how to make your CV stand out, and how to network like a pro, in this collab with DUWiT and DurHack.",
+			],
+		},
+		{
+			name: "The annual DurHack x CompSoc Bar Crawl",
+			when: {
+				dates: [new Date("2024-10-18T20:00:00Z")],
+				text: "Friday 18th Oct, 8pm",
+			},
+			thumbnail: "events/2022/07.jpg",
+			link: "",
+			location: "",
+			description: [
+				"Join us for our bar crawl to complete some themed challengers and meet your fellow DurHackers. Maybe even catch a glimpse of a dinosaur. ",
+			],
+		},
+		{
+			name: "Cloud Soc Workshop",
+			when: {
+				dates: [new Date("2024-10-21T18:00:00Z")],
+				text: "Monday 21st Oct, 6pm",
+			},
+			thumbnail: "events/2022/03.jpg",
+			link: "https://www.instagram.com/ducloudsoc",
+			location: "MCS0001",
+			description: [
+				"In this beginner friendly collab with Cloud Soc, learn how to build a simple project you can deploy using cloud services, the future of data storage!",
+			],
+		},
+		{
+			name: "Palantir x CompSoc",
+			when: {
+				dates: [new Date("2024-10-28T18:00:00Z")],
+				text: "Monday 28th Oct, 6pm",
+			},
+			thumbnail: "events/edcode.jpg",
+			link: "",
+			location: "MCS0001",
+			description: [
+				"The incredible Palantir are back! Join us for a chance to get to use their systems in their hands-on workshop, and hear about career opportunities at Palantir.",
+			],
+		},
+		{
+			name: "Intro to GitHub, Web Dev, Figma/ Design",
+			when: {
+				dates: [new Date("2024-10-30T13:00:00Z")],
+				text: "Wednesday 30th Oct, 1-3pm",
+			},
+			thumbnail: "events/durhack2018photo.jpg",
+			link: "",
+			location: "TLC025",
+			description: [
+				"We'll have 3 beginner-friendly workshops in GitHub, web dev, and Figma running simultaneously for you to choose from, so you can hone your tech skills for the upcoming hackathon!",
+			],
+		},
+		{
 			name: "DurHack 2024",
 			description: [
 				"DurHack is CompSoc's flagship annual hackathon, where students come together to push technology to new limits in a 24-hour invention marathon. Get your free ticket now at durhack.com.",
