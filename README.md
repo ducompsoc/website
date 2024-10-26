@@ -81,20 +81,19 @@ NPM is Node's Package Manager and is used to install third party libraries and f
 Install dependencies by running:
 
 ```bash
-npm install
+npm i -g pnpm
+pnpm install
 ```
 
 Running
 
 ```bash
-npm start
+pnpm run dev
 ```
 
-in your terminal/command line will start up a local web server that runs the web app. You will be sent to the homepage (or, just head straight to http://localhost:3000/).
+in your terminal/command line will start up a local web server that runs the web app. You will be sent to the homepage (or, just head straight to http://localhost:5173/).
 
 And that's it!
-
-But, the contact form requires you to start a separate Node.js webserver. If you're wanting to develop something with the contact form, head into the `server` directory and do something similar (i.e. `cd website`, then `npm install`, and then `npm start`).
 
 # How do I update the site?
 
@@ -114,4 +113,4 @@ Be aware that we use some extra stuff to make developing the site a bit more fun
 - For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
 - For the site, we use React. This lets us split the code up into separate components.
 
-As an aside, running `npm run build` will generate a folder called `build` containing all the final HTML files we should host in production. We use `react-snap` to make sure these files are understandable for search engines.
+As an aside, running `pnpm run build` will generate a folder called `dist` containing all the final HTML files we should host in production.

@@ -35,7 +35,6 @@
 		"react-google-recaptcha": "^2.1.0",
 		"react-helmet": "^5.2.1",
 		"react-router-dom": "^5.3.4",
-		"react-snap": "^1.23.0",
 		"sass-embedded": "^1.78.0",
 		"terser": "^5.32.0",
 		"typescript": "^5.0.0",
@@ -47,7 +46,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
-		"build:prod": "npm run build && react-snap"
+		"build:prod": "npm run build"
 	},
 	"reactSnap": {
 		"source": "dist"
