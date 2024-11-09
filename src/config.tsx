@@ -77,6 +77,19 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: "Bailey Bar Crawl",
+			when: {
+				dates: [new Date("2024-11-15T19:00:00Z")],
+				text: "Friday 15th Nov, 8pm",
+			},
+			thumbnail: "events/2022/07.jpg",
+			link: "",
+			location: "Castle Bar",
+			description: [
+				"Join CompSoc, DUWiT and DU Robotics for a Bailey Bar Crawl social! Hang out with your fellow ‘CompSoc’ers from all over and unwind the stress of the first six weeks of term.",
+			],
+		},
+		{
 			name: "CV & Networking WorkShop",
 			when: {
 				dates: [new Date("2024-10-14T18:00:00Z")],
