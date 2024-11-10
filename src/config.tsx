@@ -84,7 +84,7 @@ export const config: ISiteData = {
 			},
 			thumbnail: "events/2022/07.jpg",
 			link: "",
-			location: "Castle Bar",
+			location: "Cuth's Bar",
 			description: [
 				"Join CompSoc, DUWiT and DU Robotics for a Bailey Bar Crawl social! Hang out with your fellow ‘CompSoc’ers from all over and unwind the stress of the first six weeks of term.",
 			],
