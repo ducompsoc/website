@@ -77,6 +77,19 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: "Christmas Dinner",
+			when: {
+				dates: [new Date("2024-12-09T19:30:00Z")],
+				text: "Monday 9th Dec, 7:30pm",
+			},
+			thumbnail: "events/christmas.jpg",
+			link: "https://www.durhamsu.com/groups/computing-766e/events/compsoc-christmas-dinner",
+			location: "Cellar Door",
+			description: [
+				"Join us at the Cellar Door for Durham University Computing Society's annual Christmas Dinner!",
+			],
+		},
+		{
 			name: "Bailey Bar Crawl",
 			when: {
 				dates: [new Date("2024-11-15T19:00:00Z")],

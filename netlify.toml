@@ -58,5 +58,10 @@
 	to = "https://www.durhamsu.com/groups/computing-766e/events"
 	status = 302
 
+[[redirects]]
+	from = "/christmas"
+	to = "https://docs.google.com/forms/d/e/1FAIpQLSfI9WOzb5G7Id8QHiuYgbxc_5Gs0uemHXI1Ba7SqpCeSMls7A/viewform"
+	status = 302
+
 [dev]
 	publish = "dist/"
