@@ -881,6 +881,7 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			"2024/2025",
 			"2023/2024",
 			"2022/2023",
 			"2020/2021",
@@ -897,7 +898,7 @@ export const config: ISiteData = {
 				description: [
 					"<b>TPP</b> is a leading global provider of healthcare technology, dedicated to delivering world class healthcare software in the UK and internationally. We work alongside governments to improve health outcomes, tackle inequalities in care, reduce health service costs, and improve experiences for both patients and clinicians.<br><br><i>For more information about career and recruitment opportunities, head to https://tpp-careers.com</i>",
 				],
-				years: ["2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
+				years: ["2024/2025", "2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
 			},
 			{
 				name: "Palantir",
@@ -906,7 +907,7 @@ export const config: ISiteData = {
 				description: [
 					"<b>Palantir</b>: AI-Powered Operations, For Every Decision. Powering AI-assisted decision making - from war zones to factory floors. We build category-leading software that empowers organisations to create and govern artificial intelligence - across public and private networks",
 				],
-				years: ["2023/2024"],
+				years: ["2024/2025", "2023/2024"],
 			},
 			{
 				name: "STEM Solutions",
@@ -924,7 +925,7 @@ export const config: ISiteData = {
 				description: [
 					"<b>Ab Initio</b> constantly strive to build the world’s best software that can solve the toughest data processing and data management challenges that large organizations encounter. The only thing that is more important to us than providing the best software is being the best company for our people and the best company that our customers have ever worked with.",
 				],
-				years: ["2023/2024"],
+				years: ["2024/2025", "2023/2024"],
 			},
 			{
 				name: "Thought Machine",

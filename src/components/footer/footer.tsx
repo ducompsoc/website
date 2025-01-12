@@ -85,6 +85,14 @@ export const Footer: React.FC = () => (
 						>
 							privacy policy
 						</a>
+						and{" "}
+						<a
+							href="https://www.durhamsu.com/resources/student-members-code-of-conduct-e854"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							code of conduct
+						</a>
 						.
 					</p>
 
