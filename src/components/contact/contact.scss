@@ -1,6 +1,10 @@
 @import "../../variables.scss";
 
 .contact {
+	.hidden {
+		display: none;
+	}
+
 	> .container {
 		padding-left: 64px;
 	}
@@ -10,7 +14,7 @@
 	}
 
 	input,
-	textarea {
+	textarea, select {
 		border: solid 1px #999;
 		font-family: Source Code Pro, "Courier New", Courier, monospace;
 		font-size: 18px;
@@ -19,7 +23,7 @@
 		box-sizing: border-box;
 	}
 
-	input {
+	input, select {
 		width: 60%;
 	}
 
@@ -40,7 +44,7 @@
 	}
 
 	@media screen and (max-width: $breakpoint-small) {
-		input,
+		input, select,
 		textarea {
 			width: 100%;
 		}
