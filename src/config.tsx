@@ -77,6 +77,32 @@ export const config: ISiteData = {
 
 		// New events.
 		{
+			name: "CompSoc AGM",
+			when: {
+				dates: [new Date("2025-05-05T18:00:00Z")],
+				text: "Monday 5th May, 6-8pm",
+			},
+			thumbnail: "events/2022/01a.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"Want to join the CompSoc exec for next year? Come along to the AGM to get your chance to be an organiser to carry on the legacy of CompSoc's greatness!",
+			],
+		},
+		{
+			name: "Sage Info & Networking",
+			when: {
+				dates: [new Date("2025-04-28T18:00:00Z")],
+				text: "Monday 28th Apr, 6-7pm",
+			},
+			thumbnail: "events/2022/05.jpg",
+			link: "",
+			location: "TLC123",
+			description: [
+				"Want to find out about internship, placement, graduate and other career opportunities at Sage? Ask all your questions to recent graduates at Sage so you can know all you need to land that role!",
+			],
+		},
+		{
 			name: "Christmas Dinner",
 			when: {
 				dates: [new Date("2024-12-09T19:30:00Z")],
