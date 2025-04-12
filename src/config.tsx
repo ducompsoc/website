@@ -83,10 +83,10 @@ export const config: ISiteData = {
 				text: "Monday 5th May, 6-8pm",
 			},
 			thumbnail: "events/2022/01a.jpg",
-			link: "",
+			link: "https://forms.gle/wQAZdxsqwavHekM68",
 			location: "TLC123",
 			description: [
-				"Want to join the CompSoc exec for next year? Come along to the AGM to get your chance to be an organiser to carry on the legacy of CompSoc's greatness!",
+				"Want to join the CompSoc exec for next year? Come along to the AGM to get your chance to be an organiser to carry on the legacy of CompSoc's greatness. Click to apply!",
 			],
 		},
 		{
@@ -96,10 +96,10 @@ export const config: ISiteData = {
 				text: "Monday 28th Apr, 6-7pm",
 			},
 			thumbnail: "events/2022/05.jpg",
-			link: "",
+			link: "https://forms.gle/3nT6V6KBqvAo6huQ9",
 			location: "TLC123",
 			description: [
-				"Want to find out about internship, placement, graduate and other career opportunities at Sage? Ask all your questions to recent graduates at Sage so you can know all you need to land that role!",
+				"Want to find out about internship, placement, graduate and other career opportunities at Sage? Ask all your questions to recent graduates so you can know how to land that role. Click to register!",
 			],
 		},
 		{
