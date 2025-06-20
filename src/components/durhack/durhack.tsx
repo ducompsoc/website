@@ -21,25 +21,22 @@ export class DurHack extends React.PureComponent {
 				<div className="container">
 					<div className="row">
 						<div className="time">
-							<h3>2024</h3>
-							<div className="date">2nd - 3rd November</div>
+							<h3>2025</h3>
+							<div className="date">1st - 2nd November</div>
 						</div>
 
 						<div className="description" style={{ width: "100%" }}>
 							<p>
-								CompSoc runs a large-scale annual hackathon with students from all sorts
-								of backgrounds.
+								DurHack is Durham Computing Society's flagship 24- hour hackathon,
+								bringing students together to create tech projects which solve real
+								world problems. DurHack is all about learning something new, and we're
+								proud to champion community, collaboration, and innovation.
 							</p>
 
 							<p>
-								DurHack returns for its ninth iteration this November, and will be
-								taking place in the Teaching and Learning Centre at
-								Durham University.
+								For our 10th anniversary, join us in making history at one of Europe's
+								largest and most recognised student hackathons.
 							</p>
-
-							{/*<p>
-								Free tickets are now available for DurHack 2024. Don't miss out -- sign up now!
-							</p>*/}
 
 							<div>
 								<Button raised={true} onClick={this.goToWebsite}>
@@ -47,7 +44,7 @@ export class DurHack extends React.PureComponent {
 								</Button>
 							</div>
 
-							<p>If you're a business interested in sponsoring DurHack 2024:</p>
+							<p>If you're a business interested in sponsoring DurHack 2025:</p>
 
 							<div>
 								<Button raised={true} to="/contact">
@@ -59,17 +56,46 @@ export class DurHack extends React.PureComponent {
 
 					<div className="row">
 						<div className="time">
+							<h3>2024</h3>
+							<div className="date">2nd - 3rd November</div>
+						</div>
+
+						<div className="description">
+							<p>
+								With 600 attendees and 133 submitted projects, Durhack 2024 was a
+								record-breaking success.
+							</p>
+
+							<p>
+								The event was sponsored by companies such as platinum sponsors Marshall
+								Wace, Atom Bank and QRT.
+							</p>
+
+							<p>
+								<img
+									src="/images/durhack/2024.jpg"
+									alt="Photograph from DurHack 2024"
+								/>
+							</p>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="time">
 							<h3>2023</h3>
 							<div className="date">4th - 5th November</div>
 						</div>
 
 						<div className="description">
 							<p>
-								With over 450 attendees and 100 submitted projects, Durhack 2023 was our largest event yet - taking place in Durham University's Teaching and Learning Centre.
+								With over 450 attendees and 100 submitted projects, Durhack 2023 was our
+								largest event yet - taking place in Durham University's Teaching and
+								Learning Centre.
 							</p>
 
 							<p>
-								The event was sponsored by companies such as platinum sponsors Marshall Wace, BidFX and QRT.
+								The event was sponsored by companies such as platinum sponsors Marshall
+								Wace, BidFX and QRT.
 							</p>
 
 							<p>

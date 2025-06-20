@@ -9,6 +9,7 @@ import "./footer.scss";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const [thisYear] = config.sponsors.years;
+const currentYear = (new Date()).getFullYear()
 const sponsors = config.sponsors.companies.filter((company) =>
 	company.years.includes(thisYear)
 );
@@ -63,7 +64,7 @@ export const Footer: React.FC = () => (
 			<div className="container row">
 				<div className="info">
 					<p>
-						&copy; 2016-2024 <a href="/">Durham University Computing Society</a>.
+						&copy; 2016-{currentYear} <a href="/">Durham University Computing Society</a>.
 					</p>
 
 					<p>
@@ -95,14 +96,6 @@ export const Footer: React.FC = () => (
 						</a>
 						.
 					</p>
-
-					<p>
-						DurHack 2018-2019 photos by Durham Photographer. See{" "}
-						<a href="https://durhack.com" target="_blank" rel="noopener noreferrer">
-							durhack.com
-						</a>
-						.
-					</p>
 				</div>
 
 				<div className="links">
@@ -113,12 +106,6 @@ export const Footer: React.FC = () => (
 							</Link>
 						</div>
 					))}
-
-					<div>
-						<a href="https://durhack.com/" target="_blank" rel="noopener noreferrer">
-							<FontAwesomeIcon icon={faChevronRight} /> durhack.com
-						</a>
-					</div>
 
 					<div className="oss">
 						<a

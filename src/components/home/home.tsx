@@ -94,7 +94,7 @@ export class Home extends React.PureComponent {
 	}
 
 	private handleJoinClick = () => {
-		window.open("https://compsoc.tech/join");
+		window.open("https://compsoc.tech/discord");
 	};
 
 	private handleFeatureButtonClick = () => {

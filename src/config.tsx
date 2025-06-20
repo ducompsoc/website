@@ -907,6 +907,7 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			"2025/2026",
 			"2024/2025",
 			"2023/2024",
 			"2022/2023",
@@ -918,13 +919,23 @@ export const config: ISiteData = {
 		],
 		companies: [
 			{
+				name: "Sage",
+				link: "https://www.sage.com/en-gb/company/careers/",
+				image: "sponsors/sage.svg",
+				description: [
+					"<b>Sage</b> makes life easier for small and medium-sized businesses with AI-powered software. From automating invoices to supplying business insights, our technology removes friction for millions of people worldwide. With Sage, customers achieve more than they thought possible, and it’s because of our extraordinary colleagues who are redefining limits.",
+					"We’re able to take the best care of our customers because we take the best care of our colleagues. By collaborating with people of similar drive, our colleagues unleash their potential which enables small and medium-sized businesses to achieve more with our software. It’s why millions of customers and thousands of colleagues choose Sage."
+				],
+				years: ["2025/2026", "2024/2025"],
+			},
+			{
 				name: "TPP",
 				link: "https://tpp-careers.com",
 				image: "sponsors/tpp.png",
 				description: [
 					"<b>TPP</b> is a leading global provider of healthcare technology, dedicated to delivering world class healthcare software in the UK and internationally. We work alongside governments to improve health outcomes, tackle inequalities in care, reduce health service costs, and improve experiences for both patients and clinicians.<br><br><i>For more information about career and recruitment opportunities, head to https://tpp-careers.com</i>",
 				],
-				years: ["2024/2025", "2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
+				years: ["2025/2026", "2024/2025", "2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
 			},
 			{
 				name: "Palantir",
@@ -1069,87 +1080,134 @@ export const config: ISiteData = {
 				years: ["2020/2021", "2019/2020"],
 			},
 			{
-				name: "Qube RT",
+				name: "Qube Research & Technologies",
 				link: "https://www.qube-rt.com/careers",
 				image: "sponsors/qrt.svg",
 				thumb: "sponsors/qrt.svg",
 				description: [
-					"<strong>Qube Research & Technologies (QRT)</strong> is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges. ",
+					"<strong>Qube Research & Technologies (QRT)</strong> is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges.",
 					"We strongly believe that long-term investment into our people is critical to our future success and distinctive culture, as demonstrated by our low turnover in staff and continuous growth. We are proud of our exceptionally talented, collaborative and diverse teams, and now are looking to add motivated, intellectually curious STEM students and graduates with entrepreneurial spirit to our team. We have a number of internship, industrial placement and graduate roles across Software Engineering, Data Engineering & Analytics and Infrastructure & Cloud Engineering, all within our amazing new office that looks out over London.",
-					"We are one of the best performing and fastest growing multi-strat quant hedge funds over the last couple years and we are just getting started…",
-					'To find out more and apply to one of the 3 tracks mentioned above, visit our&nbsp;<a href="https://www.qube-rt.com/careers/intern-opportunities/" target="_blank">Internships &amp; Industrial Placements</a>&nbsp;or&nbsp;<a href="https://www.qube-rt.com/careers/graduate-opportunities/" target="_blank">Graduate</a>&nbsp;careers page.',
-					'If you have any questions, please email <a href="mailto:campus@qube-rt.com">campus@qube-rt.com</a>.',
 				],
-				years: ["2022/2023"],
+				years: ["2025/2026", "2022/2023"],
 			},
 		],
 	},
 	teams: {
 		current: [
 			{
-				name: "Kaal Sahele",
-				image: "kaal.jpg",
+				name: "Jacob Wrenn",
+				image: "jacob.jpg",
 				role: "President",
 				description:
 					"In charge of overseeing everything in the society and reaching out to sponsors.",
 			},
-			{
-				name: "Evie Smith",
-				image: "evie.jpg",
-				role: "Secretary",
-				description:
-					"Works with sponsors and other organisations, handling contracts and paperwork.",
-			},
-			{
-				name: "Brett McDowell",
-				image: "brett.jpg",
-				role: "Treasurer",
-				description: "Manages all of the society's finances, keeping our budget balanced.",
-			},
-			{
-				name: "Jacob Wrenn",
-				image: "jacob.jpg",
-				role: "Technical Officer",
-				description:
-					"Manages the website and other technical projects (including for DurHack).",
-			},
-			{
-				name: "Jin Koh",
-				image: "jin.jpg",
-				role: "Media & Publicity Officer",
-				description:
-					"In charge of the social media content and promoting the society around the university.",
-			},
-			{
-				name: "Akshat Gupta",
-				image: "akshat.jpg",
-				role: "Sponsorship Officer",
-				description:
-					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
-			},
-			{
-				name: "Seline Wongso",
-				image: "seline.jpg",
-				role: "Events Officer",
-				description:
-					"Works with sponsors and guest speakers to organise talks and workshops.",
-			},
-			{
-				name: "SungOh (Eric) Cho",
-				image: "eric.jpg",
-				role: "Events Officer",
-				description:
-					"Works with sponsors and guest speakers to organise talks and workshops.",
-			},
-			{
-				name: "Nguyen Thien An",
-				image: "nguyen.jpg",
-				role: "Projects Officer",
-				description:
-					"Responsible for the new CompSoc Project Lab, hosting workshops and build-a-thons.",
-			},
+			// {
+			// 	name: "Evie Smith",
+			// 	image: "evie.jpg",
+			// 	role: "Secretary",
+			// 	description:
+			// 		"Works with sponsors and other organisations, handling contracts and paperwork.",
+			// },
+			// {
+			// 	name: "Brett McDowell",
+			// 	image: "brett.jpg",
+			// 	role: "Treasurer",
+			// 	description: "Manages all of the society's finances, keeping our budget balanced.",
+			// },
+			// {
+			// 	name: "Jacob Wrenn",
+			// 	image: "jacob.jpg",
+			// 	role: "Technical Officer",
+			// 	description:
+			// 		"Manages the website and other technical projects (including for DurHack).",
+			// },
+			// {
+			// 	name: "Jin Koh",
+			// 	image: "jin.jpg",
+			// 	role: "Media & Publicity Officer",
+			// 	description:
+			// 		"In charge of the social media content and promoting the society around the university.",
+			// },
+			// {
+			// 	name: "Akshat Gupta",
+			// 	image: "akshat.jpg",
+			// 	role: "Sponsorship Officer",
+			// 	description:
+			// 		"Liaises with our sponsors and seeks out new sponsorship opportunities.",
+			// },
+			// {
+			// 	name: "Seline Wongso",
+			// 	image: "seline.jpg",
+			// 	role: "Events Officer",
+			// 	description:
+			// 		"Works with sponsors and guest speakers to organise talks and workshops.",
+			// },
+			// {
+			// 	name: "SungOh (Eric) Cho",
+			// 	image: "eric.jpg",
+			// 	role: "Events Officer",
+			// 	description:
+			// 		"Works with sponsors and guest speakers to organise talks and workshops.",
+			// },
+			// {
+			// 	name: "Nguyen Thien An",
+			// 	image: "nguyen.jpg",
+			// 	role: "Projects Officer",
+			// 	description:
+			// 		"Responsible for the new CompSoc Project Lab, hosting workshops and build-a-thons.",
+			// },
 		],
 		past: [
+			{
+				year: "2024/2025",
+				members: [
+					{
+						name: "Kaal Sahele",
+						image: "kaal.jpg",
+						role: "President"
+					},
+					{
+						name: "Evie Smith",
+						image: "evie.jpg",
+						role: "Secretary"
+					},
+					{
+						name: "Brett McDowell",
+						image: "brett.jpg",
+						role: "Treasurer"
+					},
+					{
+						name: "Jacob Wrenn",
+						image: "jacob.jpg",
+						role: "Technical Officer"
+					},
+					{
+						name: "Jin Koh",
+						image: "jin.jpg",
+						role: "Media & Publicity Officer"
+					},
+					{
+						name: "Akshat Gupta",
+						image: "akshat.jpg",
+						role: "Sponsorship Officer"
+					},
+					{
+						name: "Seline Wongso",
+						image: "seline.jpg",
+						role: "Events Officer"
+					},
+					{
+						name: "SungOh (Eric) Cho",
+						image: "eric.jpg",
+						role: "Events Officer"
+					},
+					{
+						name: "Nguyen Thien An",
+						image: "nguyen.jpg",
+						role: "Projects Officer"
+					},
+				]
+			},
 			{
 				year: "2022/2023",
 				members: [
