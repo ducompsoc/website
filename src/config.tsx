@@ -1101,56 +1101,56 @@ export const config: ISiteData = {
 				description:
 					"In charge of overseeing everything in the society and reaching out to sponsors.",
 			},
+			{
+				name: "Nathan Jones",
+				image: "nathan.jpg",
+				role: "Treasurer",
+				description: "Manages the society's finances, keeping our budget balanced.",
+			},
 			// {
 			// 	name: "Evie Smith",
 			// 	image: "evie.jpg",
 			// 	role: "Secretary",
 			// 	description:
-			// 		"Works with sponsors and other organisations, handling contracts and paperwork.",
+			// 		"Handles meetings, contracts and paperwork.",
 			// },
+			{
+				name: "Hannah Watson",
+				image: "hannah.jpg",
+				role: "Media & Publicity Officer",
+				description:
+				"In charge of social media content and promoting the society around the university.",
+			},
+			{
+				name: "Alex Pinheiro Dias",
+				image: "alex.jpg",
+				role: "Events Officer",
+				description:
+				"Works with sponsors and guest speakers to organise talks and workshops.",
+			},
 			// {
-			// 	name: "Brett McDowell",
-			// 	image: "brett.jpg",
-			// 	role: "Treasurer",
-			// 	description: "Manages all of the society's finances, keeping our budget balanced.",
-			// },
-			// {
-			// 	name: "Jacob Wrenn",
-			// 	image: "jacob.jpg",
-			// 	role: "Technical Officer",
-			// 	description:
-			// 		"Manages the website and other technical projects (including for DurHack).",
-			// },
-			// {
-			// 	name: "Jin Koh",
-			// 	image: "jin.jpg",
-			// 	role: "Media & Publicity Officer",
-			// 	description:
-			// 		"In charge of the social media content and promoting the society around the university.",
-			// },
-			// {
-			// 	name: "Akshat Gupta",
-			// 	image: "akshat.jpg",
-			// 	role: "Sponsorship Officer",
-			// 	description:
-			// 		"Liaises with our sponsors and seeks out new sponsorship opportunities.",
-			// },
-			// {
-			// 	name: "Seline Wongso",
-			// 	image: "seline.jpg",
-			// 	role: "Events Officer",
-			// 	description:
-			// 		"Works with sponsors and guest speakers to organise talks and workshops.",
-			// },
-			// {
-			// 	name: "SungOh (Eric) Cho",
-			// 	image: "eric.jpg",
-			// 	role: "Events Officer",
-			// 	description:
-			// 		"Works with sponsors and guest speakers to organise talks and workshops.",
-			// },
-			// {
-			// 	name: "Nguyen Thien An",
+				// 	name: "SungOh (Eric) Cho",
+				// 	image: "eric.jpg",
+				// 	role: "Events Officer",
+				// 	description:
+				// 		"Works with sponsors and guest speakers to organise talks and workshops.",
+				// },
+				{
+					name: "Shawn Goey",
+					image: "shawn.jpg",
+					role: "Sponsorship Officer",
+					description:
+					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
+				},
+				// {
+					// 	name: "Jacob Wrenn",
+					// 	image: "jacob.jpg",
+					// 	role: "Technical Officer",
+					// 	description:
+				// 		"Manages the website and other technical projects.",
+				// },
+				// {
+					// 	name: "Nguyen Thien An",
 			// 	image: "nguyen.jpg",
 			// 	role: "Projects Officer",
 			// 	description:
