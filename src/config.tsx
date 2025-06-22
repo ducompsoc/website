@@ -1116,13 +1116,13 @@ export const config: ISiteData = {
 					description:
 					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
 				},
-				// {
-					// 	name: "Jacob Wrenn",
-					// 	image: "jacob.jpg",
-					// 	role: "Technical Officer",
-					// 	description:
-				// 		"Manages the website and other technical projects.",
-				// },
+				{
+						name: "Max Marsden-Price",
+						image: "max.jpg",
+						role: "Technical Officer",
+						description:
+						"Manages the website and other technical projects.",
+				},
 				// {
 					// 	name: "Nguyen Thien An",
 			// 	image: "nguyen.jpg",
