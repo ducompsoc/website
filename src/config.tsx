@@ -1107,13 +1107,13 @@ export const config: ISiteData = {
 				role: "Treasurer",
 				description: "Manages the society's finances, keeping our budget balanced.",
 			},
-			// {
-			// 	name: "Evie Smith",
-			// 	image: "evie.jpg",
-			// 	role: "Secretary",
-			// 	description:
-			// 		"Handles meetings, contracts and paperwork.",
-			// },
+			{
+				name: "Keane Wong",
+				image: "keane.jpg",
+				role: "Secretary",
+				description:
+					"Handles meetings, contracts and paperwork.",
+			},
 			{
 				name: "Hannah Watson",
 				image: "hannah.jpg",
