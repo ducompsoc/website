@@ -27,7 +27,7 @@ export class DurHack extends React.PureComponent {
 
 						<div className="description" style={{ width: "100%" }}>
 							<p>
-								DurHack is Durham Computing Society's flagship 24- hour hackathon,
+								DurHack is Durham University Computing Society's flagship 24- hour hackathon,
 								bringing students together to create tech projects which solve real
 								world problems. DurHack is all about learning something new, and we're
 								proud to champion community, collaboration, and innovation.

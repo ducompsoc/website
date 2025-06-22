@@ -24,58 +24,32 @@ export const config: ISiteData = {
 	},
 
 	events: [
-		// Our recurring weekly meeting.
-		{
-			name: "Weekly Meeting",
+				{
+			name: "DurHack 2025",
 			description: [
-				"In the past, we've had quizzes, helping people with projects, programming help, and casual social events. We'll often provide free food to make it up to those of you who miss College supper.",
+				"Join us in making history at the 10th anniversary of CompSoc's annual flagship hackathon, where students come together to push technology to new limits.",
 			],
-			link: "",
-			thumbnail: "stock/j.jpg",
+			link: "https://durhack.com/",
+			thumbnail: "durhack/2025.jpg",
 			when: {
-				dates: [
-					new Date("2019-10-07T18:00:00+01:00"),
-					new Date("2019-10-14T18:00:00+01:00"),
-					new Date("2019-10-21T18:00:00+01:00"),
-					new Date("2019-10-28T18:00:00Z"), // BST ends 27th October
-					new Date("2019-11-04T18:00:00Z"),
-					new Date("2019-11-11T18:00:00Z"),
-					new Date("2019-11-18T18:00:00Z"),
-					new Date("2019-11-25T18:00:00Z"),
-					new Date("2019-12-02T18:00:00Z"),
-					new Date("2020-01-13T18:00:00Z"),
-					new Date("2020-01-27T18:00:00Z"),
-					new Date("2020-02-10T18:00:00Z"),
-					new Date("2020-02-24T18:00:00Z"),
-					new Date("2020-03-09T18:00:00Z"),
-
-					new Date("2021-10-04T18:00:00+01:00"),
-					new Date("2021-10-11T18:00:00+01:00"),
-					new Date("2021-10-18T18:00:00+01:00"),
-					new Date("2021-10-25T18:00:00+01:00"),
-					new Date("2021-11-01T18:00:00Z"), // BST ends 31st October
-					new Date("2021-11-08T18:00:00Z"),
-					new Date("2021-11-15T18:00:00Z"),
-					new Date("2021-11-22T18:00:00Z"),
-					new Date("2021-11-29T18:00:00Z"),
-					new Date("2021-12-06T18:00:00Z"),
-				],
-				text: "Mondays, 6pm",
+				dates: [new Date("2025-11-01T12:00:00Z")],
+				text: "1st-2nd November",
 			},
-			location: "TLC 113",
-			/* feature: {
-				title: 'Weekly meetings now in TLC 113',
+			feature: {
+				title: "Registration now open for DurHack!",
 				tagline: [
-					'We\'re moving! Durham University Computing Society\'s weekly meeting is now in TLC 113 (Teaching & Learning Centre).',
-					'Come along on Monday at 6pm.',
+					"Secure your place at CompSoc's annual hackathon in November 2025. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.",
 				],
-				image: 'stock/a.jpg',
-				priority: -1,
-				daysBefore: 7,
-			}, */
+				button: {
+					text: "Register now",
+					destination: "https://durhack.com/",
+				},
+				image: "stock/e.jpg",
+				priority: 1,
+				daysBefore: 30,
+			},
+			location: "Teaching and Learning Centre",
 		},
-
-		// New events.
 		{
 			name: "CompSoc AGM",
 			when: {

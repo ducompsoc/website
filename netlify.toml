@@ -5,7 +5,7 @@
 
 [[redirects]]
 	from = "/join"
-	to = "https://www.durhamsu.com/groups/computing-766e/join"
+	to = "http://eepurl.com/dKcvFQ"
 	status = 302
 
 [[redirects]]
@@ -31,36 +31,6 @@
 [[redirects]]
 	from = "/sponsorshipdeck"
 	to = "https://drive.google.com/file/d/1NdSjyCv39hsFdOKcOkDXjyuYhInRmObn/view?usp=sharing"
-	status = 302
-
-[[redirects]]
-	from = "/nwg"
-	to = "https://drive.google.com/drive/folders/1KWkUfCxbWgsu8PAnPCfzoq4TwgCjXLUO?usp=share_link"
-	status = 302
-
-[[redirects]]
-	from = "/qrt"
-	to = "https://www.qube-rt.com/careers/"
-	status = 302
-
-[[redirects]]
-	from = "/qrt-tracks"
-	to = "https://durhamuniversity-my.sharepoint.com/:b:/g/personal/jgcw74_durham_ac_uk/Ea7o7fwdGeRMhzhpD5loae0B31gukeH_yQXbLK5ofOZQRQ?e=ByBcUf"
-	status = 302
-
-[[redirects]]
-	from = "/gdsc"
-	to = "https://drive.google.com/file/d/1mNmLYH3xW0QEe78oRgcZHi-Capg2LtKw/view?usp=sharing"
-	status = 302
-
-[[redirects]]
-	from = "/tickets"
-	to = "https://www.durhamsu.com/groups/computing-766e/events"
-	status = 302
-
-[[redirects]]
-	from = "/christmas"
-	to = "https://docs.google.com/forms/d/e/1FAIpQLSfI9WOzb5G7Id8QHiuYgbxc_5Gs0uemHXI1Ba7SqpCeSMls7A/viewform"
 	status = 302
 
 [dev]
