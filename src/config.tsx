@@ -1100,15 +1100,15 @@ export const config: ISiteData = {
 				image: "alex.jpg",
 				role: "Events Officer",
 				description:
-				"Works with sponsors and guest speakers to organise talks and workshops.",
+				"Works to organise weekly talks, workshops, events and socials.",
 			},
-			// {
-				// 	name: "SungOh (Eric) Cho",
-				// 	image: "eric.jpg",
-				// 	role: "Events Officer",
-				// 	description:
-				// 		"Works with sponsors and guest speakers to organise talks and workshops.",
-				// },
+			{
+					name: "Andrea Johnson",
+					image: "andrea.jpg",
+					role: "Events Officer",
+					description:
+						"Works to organise weekly talks, workshops, events and socials.",
+				},
 				{
 					name: "Shawn Goey",
 					image: "shawn.jpg",
