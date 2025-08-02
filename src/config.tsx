@@ -24,7 +24,7 @@ export const config: ISiteData = {
 	},
 
 	events: [
-				{
+		{
 			name: "DurHack 2025",
 			description: [
 				"Join us in making history at the 10th anniversary of CompSoc's annual flagship hackathon, where students come together to push technology to new limits.",
@@ -83,7 +83,8 @@ export const config: ISiteData = {
 				text: "Monday 9th Dec, 7:30pm",
 			},
 			thumbnail: "events/christmas.jpg",
-			link: "https://www.durhamsu.com/groups/computing-766e/events/compsoc-christmas-dinner",
+			link:
+				"https://www.durhamsu.com/groups/computing-766e/events/compsoc-christmas-dinner",
 			location: "Cellar Door",
 			description: [
 				"Join us at the Cellar Door for Durham University Computing Society's annual Christmas Dinner!",
@@ -898,7 +899,7 @@ export const config: ISiteData = {
 				image: "sponsors/sage.svg",
 				description: [
 					"<b>Sage</b> makes life easier for small and medium-sized businesses with AI-powered software. From automating invoices to supplying business insights, our technology removes friction for millions of people worldwide. With Sage, customers achieve more than they thought possible, and it’s because of our extraordinary colleagues who are redefining limits.",
-					"We’re able to take the best care of our customers because we take the best care of our colleagues. By collaborating with people of similar drive, our colleagues unleash their potential which enables small and medium-sized businesses to achieve more with our software. It’s why millions of customers and thousands of colleagues choose Sage."
+					"We’re able to take the best care of our customers because we take the best care of our colleagues. By collaborating with people of similar drive, our colleagues unleash their potential which enables small and medium-sized businesses to achieve more with our software. It’s why millions of customers and thousands of colleagues choose Sage.",
 				],
 				years: ["2025/2026", "2024/2025"],
 			},
@@ -909,7 +910,16 @@ export const config: ISiteData = {
 				description: [
 					"<b>TPP</b> is a leading global provider of healthcare technology, dedicated to delivering world class healthcare software in the UK and internationally. We work alongside governments to improve health outcomes, tackle inequalities in care, reduce health service costs, and improve experiences for both patients and clinicians.<br><br><i>For more information about career and recruitment opportunities, head to https://tpp-careers.com</i>",
 				],
-				years: ["2025/2026", "2024/2025", "2023/2024", "2022/2023", "2020/2021", "2019/2020", "2018/2019", "2017/2018"],
+				years: [
+					"2025/2026",
+					"2024/2025",
+					"2023/2024",
+					"2022/2023",
+					"2020/2021",
+					"2019/2020",
+					"2018/2019",
+					"2017/2018",
+				],
 			},
 			{
 				name: "Palantir",
@@ -1085,51 +1095,49 @@ export const config: ISiteData = {
 				name: "Keane Wong",
 				image: "keane.jpg",
 				role: "Secretary",
-				description:
-					"Handles meetings, contracts and paperwork.",
+				description: "Handles meetings, contracts and paperwork.",
 			},
 			{
 				name: "Hannah Watson",
 				image: "hannah.jpg",
 				role: "Media & Publicity Officer",
 				description:
-				"In charge of social media content and promoting the society around the university.",
+					"In charge of social media content and promoting the society around the university.",
 			},
 			{
 				name: "Alex Pinheiro Dias",
 				image: "alex.jpg",
 				role: "Events Officer",
 				description:
-				"Works to organise weekly talks, workshops, events and socials.",
+					"Works to organise weekly talks, workshops, events and socials.",
 			},
 			{
-					name: "Andrea Johnson",
-					image: "andrea.jpg",
-					role: "Events Officer",
-					description:
-						"Works to organise weekly talks, workshops, events and socials.",
-				},
-				{
-					name: "Shawn Goey",
-					image: "shawn.jpg",
-					role: "Sponsorship Officer",
-					description:
+				name: "Andrea Johnson",
+				image: "andrea.jpg",
+				role: "Events Officer",
+				description:
+					"Works to organise weekly talks, workshops, events and socials.",
+			},
+			{
+				name: "Shawn Goey",
+				image: "shawn.jpg",
+				role: "Sponsorship Officer",
+				description:
 					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
-				},
-				{
-						name: "Max Marsden-Price",
-						image: "max.jpg",
-						role: "Technical Officer",
-						description:
-						"Manages the website and other technical projects.",
-				},
-				// {
-					// 	name: "Nguyen Thien An",
-			// 	image: "nguyen.jpg",
-			// 	role: "Projects Officer",
-			// 	description:
-			// 		"Responsible for the new CompSoc Project Lab, hosting workshops and build-a-thons.",
-			// },
+			},
+			{
+				name: "Max Marsden-Price",
+				image: "max.jpg",
+				role: "Technical Officer",
+				description: "Manages the website and other technical projects.",
+			},
+			{
+				name: "Mohana Maran",
+				image: "mohana.jpg",
+				role: "Projects Officer",
+				description:
+					"Responsible for facilitating project groups and hosting workshops.",
+			},
 		],
 		past: [
 			{
@@ -1138,49 +1146,49 @@ export const config: ISiteData = {
 					{
 						name: "Kaal Sahele",
 						image: "kaal.jpg",
-						role: "President"
+						role: "President",
 					},
 					{
 						name: "Evie Smith",
 						image: "evie.jpg",
-						role: "Secretary"
+						role: "Secretary",
 					},
 					{
 						name: "Brett McDowell",
 						image: "brett.jpg",
-						role: "Treasurer"
+						role: "Treasurer",
 					},
 					{
 						name: "Jacob Wrenn",
 						image: "jacob.jpg",
-						role: "Technical Officer"
+						role: "Technical Officer",
 					},
 					{
 						name: "Jin Koh",
 						image: "jin.jpg",
-						role: "Media & Publicity Officer"
+						role: "Media & Publicity Officer",
 					},
 					{
 						name: "Akshat Gupta",
 						image: "akshat.jpg",
-						role: "Sponsorship Officer"
+						role: "Sponsorship Officer",
 					},
 					{
 						name: "Seline Wongso",
 						image: "seline.jpg",
-						role: "Events Officer"
+						role: "Events Officer",
 					},
 					{
 						name: "SungOh (Eric) Cho",
 						image: "eric.jpg",
-						role: "Events Officer"
+						role: "Events Officer",
 					},
 					{
 						name: "Nguyen Thien An",
 						image: "nguyen.jpg",
-						role: "Projects Officer"
+						role: "Projects Officer",
 					},
-				]
+				],
 			},
 			{
 				year: "2022/2023",
@@ -1188,39 +1196,39 @@ export const config: ISiteData = {
 					{
 						name: "Disha Gupta",
 						image: "disha.jpg",
-						role: "President"
+						role: "President",
 					},
 					{
 						name: "Charlie Thomas",
 						image: "charlie.jpg",
-						role: "Secretary"
+						role: "Secretary",
 					},
 					{
 						name: "Andrew Li",
 						image: "andrew.jpg",
-						role: "Finance Officer"
+						role: "Finance Officer",
 					},
 					{
 						name: "Eve Routledge",
 						image: "eve.jpg",
-						role: "Events Officer"
+						role: "Events Officer",
 					},
 					{
 						name: "Luca Huelle",
 						image: "luca.jpg",
-						role: "Media & Publicity Officer"
+						role: "Media & Publicity Officer",
 					},
 					{
 						name: "Abhinav Bhandari",
 						image: "abhinav.png",
-						role: "Technical Officer"
+						role: "Technical Officer",
 					},
 					{
 						name: "Aaron Cheung",
 						image: "aaron.jpg",
-						role: "Outreach Officer"
-					}
-				]
+						role: "Outreach Officer",
+					},
+				],
 			},
 			{
 				year: "2021/2022",
