@@ -35,19 +35,19 @@ export const config: ISiteData = {
 				dates: [new Date("2025-11-01T12:00:00Z")],
 				text: "1st-2nd November",
 			},
-			feature: {
-				title: "Registration now open for DurHack!",
-				tagline: [
-					"Secure your place at CompSoc's annual hackathon in November 2025. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.",
-				],
-				button: {
-					text: "Register now",
-					destination: "https://durhack.com/",
-				},
-				image: "stock/e.jpg",
-				priority: 1,
-				daysBefore: 30,
-			},
+			// feature: {
+			// 	title: "Registration now open for DurHack!",
+			// 	tagline: [
+			// 		"Secure your place at CompSoc's annual hackathon in November 2025. Students of all experience levels will come together in teams of up to five, helping and learning from each other in order to create their own project.",
+			// 	],
+			// 	button: {
+			// 		text: "Register now",
+			// 		destination: "https://durhack.com/",
+			// 	},
+			// 	image: "stock/e.jpg",
+			// 	priority: 1,
+			// 	daysBefore: 30,
+			// },
 			location: "Teaching and Learning Centre",
 		},
 		{
