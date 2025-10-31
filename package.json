@@ -49,7 +49,13 @@
 		"build:prod": "pnpm run build && react-snap"
 	},
 	"reactSnap": {
-		"source": "dist"
+		"source": "dist",
+		"puppeteerArgs": [
+			"--no-sandbox",
+			"--disable-setuid-sandbox",
+			"--disable-gpu",
+			"--disable-dev-shm-usage"
+		]
 	},
 	"eslintConfig": {
 		"extends": "react-app"
