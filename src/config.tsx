@@ -894,6 +894,16 @@ export const config: ISiteData = {
 		],
 		companies: [
 			{
+				name: "Susquehanna",
+				link: "https://sig.com/careers/ ",
+				image: "sponsors/susquehanna.png",
+				description: [
+					"<b>Susquehanna</b> is a global quantitative trading firm powered by scientific rigor, curiosity, and innovation. Our culture is intellectually driven and highly collaborative, bringing together researchers, engineers, and traders to design and deploy impactful strategies in our systematic trading environment.",
+					"To meet the unique challenges of global markets, Susquehanna applies machine learning and advanced quantitative research to vast datasets in order to uncover actionable insights and build effective strategies. By uniting deep market expertise with cutting-edge technology, we excel in solving complex problems and pushing boundaries together.",
+				],
+				years: ["2025/2026"],
+			},
+			{
 				name: "Sage",
 				link: "https://www.sage.com/en-gb/company/careers/",
 				image: "sponsors/sage.svg",
