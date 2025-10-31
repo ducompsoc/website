@@ -35,3 +35,6 @@
 
 [dev]
 	publish = "dist/"
+
+[[plugins]]
+	package = "netlify-plugin-chromium"
