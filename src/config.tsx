@@ -25,6 +25,32 @@ export const config: ISiteData = {
 
 	events: [
 		{
+			name: "CompSoc Christmas Dinner",
+			description: [
+				"To celebrate the end of the year, we are hosting a Christmas Dinner! Book now to join us for a lovely 2-course meal at the Duke of Wellington.",
+			],
+			link: "https://www.durhamsu.com/groups/computing-766e/events/compsoc-christmas-dinner-2025",
+			thumbnail: "events/christmas.jpg",
+			when: {
+				dates: [new Date("2025-12-08T19:00:00Z")],
+				text: "8th December, 7-9pm",
+			},
+			location: "Duke of Wellington",
+		},
+		{
+			name: "Staff & Student Drinks",
+			description: [
+				"We're bringing back the annual staff & student drinks social! This is a fantastic opportunity to informally interact with your professors (with snacks provided!)",
+			],
+			link: "",
+			thumbnail: "events/2022/07.jpg",
+			when: {
+				dates: [new Date("2025-12-01T18:00:00Z")],
+				text: "1st December, 6-8pm",
+			},
+			location: "MCS Cafe",
+		},
+		{
 			name: "DurHack 2025",
 			description: [
 				"Join us in making history at the 10th anniversary of CompSoc's annual flagship hackathon, where students come together to push technology to new limits.",
