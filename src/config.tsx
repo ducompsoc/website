@@ -937,7 +937,7 @@ export const config: ISiteData = {
 					"<b>Sage</b> makes life easier for small and medium-sized businesses with AI-powered software. From automating invoices to supplying business insights, our technology removes friction for millions of people worldwide. With Sage, customers achieve more than they thought possible, and it’s because of our extraordinary colleagues who are redefining limits.",
 					"We’re able to take the best care of our customers because we take the best care of our colleagues. By collaborating with people of similar drive, our colleagues unleash their potential which enables small and medium-sized businesses to achieve more with our software. It’s why millions of customers and thousands of colleagues choose Sage.",
 				],
-				years: ["2025/2026", "2024/2025"],
+				years: ["2024/2025"],
 			},
 			{
 				name: "TPP",
