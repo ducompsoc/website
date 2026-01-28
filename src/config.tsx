@@ -1190,11 +1190,6 @@ export const config: ISiteData = {
 						role: "Secretary",
 					},
 					{
-						name: "Brett McDowell",
-						image: "brett.jpg",
-						role: "Treasurer",
-					},
-					{
 						name: "Jacob Wrenn",
 						image: "jacob.jpg",
 						role: "Technical Officer",
