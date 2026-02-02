@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -101,9 +100,9 @@ export const Footer: React.FC = () => (
 				<div className="links">
 					{links.map(({ to, name }) => (
 						<div key={to}>
-							<Link to={to}>
+							<a href={to}>
 								<FontAwesomeIcon icon={faChevronRight} /> {name}
-							</Link>
+							</a>
 						</div>
 					))}
 

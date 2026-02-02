@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHAModule from "react-google-recaptcha";
+
+// Handle ESM/CJS interop for react-google-recaptcha
+const ReCAPTCHA = (ReCAPTCHAModule as any).default || ReCAPTCHAModule;
 
 import { PageTitle } from "../page-title/page-title";
 import { Button } from "../button/button";

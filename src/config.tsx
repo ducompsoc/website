@@ -1,4 +1,4 @@
-import { ISiteData } from "./util/data";
+import type { ISiteData } from "./util/data";
 
 /**
  * Hiya! Most of the website's dynamic content can be edited from this file.

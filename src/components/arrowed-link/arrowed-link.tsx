@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 import "./arrowed-link.scss";
@@ -49,11 +48,11 @@ export const ArrowedLink: React.FC<IArrowedLinkProps> = (props) => {
 	}
 
 	return (
-		<Link
+		<a
 			className={classnames("arrowed-link", "row", { reversed: props.reverse })}
-			to={props.to}
+			href={props.to}
 		>
 			<ArrowedText {...props} />
-		</Link>
+		</a>
 	);
 };

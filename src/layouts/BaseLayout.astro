@@ -1,0 +1,50 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../index.css';
+import '../App.scss';
+
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Durham University Computing Society - Student-run society promoting programming, development and general computing through weekly meetings, workshops and hackathons." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		
+		<!-- Manifest -->
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="theme-color" content="#ffffff" />
+		
+		<!-- Apple Touch Icon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		
+		<!-- View Transitions -->
+		<ClientRouter />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

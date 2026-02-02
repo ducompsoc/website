@@ -1,7 +1,6 @@
 import React from "react";
 
 import "./page-title.scss";
-import Helmet from "react-helmet";
 
 export interface IPageTitleProps {
 	image: string;
@@ -22,10 +21,6 @@ export const PageTitle: React.FC<IPageTitleProps> = (
 
 	return (
 		<div className="page-title" style={style}>
-			<Helmet>
-				<title>{props.title || props.children} » Durham CompSoc</title>
-			</Helmet>
-
 			<div className="container">
 				<h2>{props.children}</h2>
 			</div>

@@ -1,4 +1,4 @@
-import { IEvent } from "./data";
+import type { IEvent } from "./data";
 import { config } from "../config";
 
 const { events, feature } = config;

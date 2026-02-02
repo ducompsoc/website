@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ISponsor } from "../../util/data";
+import type { ISponsor } from "../../util/data";
 import { ArrowedLink } from "../arrowed-link/arrowed-link";
 
 import "./sponsor.scss";

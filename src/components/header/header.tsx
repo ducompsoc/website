@@ -1,95 +1,105 @@
-import React from "react";
-import {
-	Link,
-	RouteComponentProps,
-	withRouter,
-	NavLink,
-} from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
-import WOW from "wow.js";
 
 import "./header.scss";
 
-const wow = new WOW();
-wow.init();
+export const Header: React.FC = () => {
+	const [open, setOpen] = useState(false);
+	const [currentPath, setCurrentPath] = useState("");
 
-export interface IHeaderState {
-	open: boolean;
-}
+	useEffect(() => {
+		// Only run on client side
+		if (typeof window === 'undefined') return;
+		
+		// Dynamically import WOW.js only on the client
+		import('wow.js').then((WOW) => {
+			const wow = new WOW.default();
+			wow.init();
+		});
+		
+		setCurrentPath(window.location.pathname);
+		
+		// Handle path changes
+		const handlePopState = () => {
+			setCurrentPath(window.location.pathname);
+			window.scrollTo(0, 0);
+		};
+		
+		window.addEventListener('popstate', handlePopState);
+		return () => window.removeEventListener('popstate', handlePopState);
+	}, []);
 
-class HeaderComponent extends React.PureComponent<
-	RouteComponentProps,
-	IHeaderState
-> {
-	constructor(props: RouteComponentProps) {
-		super(props);
-		this.state = { open: false };
-	}
+	const onToggle = () => {
+		setOpen(!open);
+	};
 
-	// This is a little hacky. :-( But we need to do a couple of things when we
-	// hop to another page.
-	componentDidUpdate(prevProps: RouteComponentProps) {
-		if (this.props.location.pathname !== prevProps.location.pathname) {
-			wow.sync(); // tell wow.js we've changed the DOM so our animations reset
-			window.scrollTo(0, 0); // scroll back to the top
-		}
-	}
+	const close = () => {
+		setOpen(false);
+	};
 
-	public render() {
-		const { open } = this.state;
+	const isActive = (path: string) => {
+		return currentPath === path;
+	};
 
-		return (
-			<header>
-				<div
-					className={classnames("row", "center", "container", {
-						open,
-						closed: !open,
-					})}
-				>
-					<div className="row center">
-						<div className="logo flex">
-							<Link to="/">
-								<img src="/images/logos/logo-with-text.png" alt="Durham CompSoc Logo" />
-							</Link>
-						</div>
-						<div className="menu">
-							<button onClick={this.onToggle}>
-								<FontAwesomeIcon icon={faBars} />
-							</button>
-						</div>
+	return (
+		<header>
+			<div
+				className={classnames("row", "center", "container", {
+					open,
+					closed: !open,
+				})}
+			>
+				<div className="row center">
+					<div className="logo flex">
+						<a href="/">
+							<img src="/images/logos/logo-with-text.png" alt="Durham CompSoc Logo" />
+						</a>
 					</div>
-					<div className="flex"></div>
-					<NavLink to="/events" onClick={this.close}>
-						Events
-					</NavLink>
-					<NavLink to="/sponsors" onClick={this.close}>
-						Sponsors
-					</NavLink>
-					<NavLink to="/team" onClick={this.close}>
-						The Team
-					</NavLink>
-					<NavLink to="/durhack" onClick={this.close}>
-						DurHack
-					</NavLink>
-					<NavLink to="/contact" onClick={this.close}>
-						Contact
-					</NavLink>
+					<div className="menu">
+						<button onClick={onToggle}>
+							<FontAwesomeIcon icon={faBars} />
+						</button>
+					</div>
 				</div>
-			</header>
-		);
-	}
-
-	private onToggle = () => {
-		const { open } = this.state;
-
-		this.setState({ open: !open });
-	};
-
-	private close = () => {
-		this.setState({ open: false });
-	};
-}
-
-export const Header = withRouter(HeaderComponent);
+				<div className="flex"></div>
+				<a 
+					href="/events" 
+					onClick={close}
+					className={isActive('/events') ? 'active' : ''}
+				>
+					Events
+				</a>
+				<a 
+					href="/sponsors" 
+					onClick={close}
+					className={isActive('/sponsors') ? 'active' : ''}
+				>
+					Sponsors
+				</a>
+				<a 
+					href="/team" 
+					onClick={close}
+					className={isActive('/team') ? 'active' : ''}
+				>
+					The Team
+				</a>
+				<a 
+					href="/durhack" 
+					onClick={close}
+					className={isActive('/durhack') ? 'active' : ''}
+				>
+					DurHack
+				</a>
+				<a 
+					href="/contact" 
+					onClick={close}
+					className={isActive('/contact') ? 'active' : ''}
+				>
+					Contact
+				</a>
+			</div>
+		</header>
+	);
+};

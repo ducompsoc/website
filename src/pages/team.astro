@@ -1,0 +1,8 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { Team as TeamPage } from '../components/team/team.tsx';
+---
+
+<MainLayout title="The Team » Durham CompSoc">
+	<TeamPage client:load />
+</MainLayout>

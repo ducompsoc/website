@@ -1,10 +1,9 @@
 import React from "react";
 import classnames from "classnames";
-import { withRouter, RouteComponentProps } from "react-router-dom";
 
 import "./button.scss";
 
-export interface IButtonProps extends RouteComponentProps {
+export interface IButtonProps {
 	size?: "small" | "medium" | "large";
 	children?: React.ReactNode;
 	to?: string;
@@ -12,35 +11,31 @@ export interface IButtonProps extends RouteComponentProps {
 	onClick?(): void;
 }
 
-class ButtonComponent extends React.PureComponent<IButtonProps> {
-	public render() {
-		const { size, children, raised } = this.props;
+export const Button: React.FC<IButtonProps> = ({ size, children, raised, to, onClick }) => {
+	const className = classnames("button", size || "medium", { raised });
 
+	const content = (
+		<>
+			<div className="hover"></div>
+			<div className="inner row center">
+				<div className="text">{children}</div>
+				<div className="arrow-line"></div>
+				<div className="arrow-head"></div>
+			</div>
+		</>
+	);
+
+	if (to) {
 		return (
-			<button
-				onClick={this.handleClick}
-				className={classnames("button", size || "medium", { raised })}
-			>
-				<div className="hover"></div>
-				<div className="inner row center">
-					<div className="text">{children}</div>
-					<div className="arrow-line"></div>
-					<div className="arrow-head"></div>
-				</div>
-			</button>
+			<a href={to} className={className} onClick={onClick}>
+				{content}
+			</a>
 		);
 	}
 
-	private handleClick = () => {
-		const { to, onClick, history } = this.props;
-		if (onClick) {
-			onClick();
-		}
-
-		if (to) {
-			history.push(to);
-		}
-	};
-}
-
-export const Button = withRouter(ButtonComponent);
+	return (
+		<button onClick={onClick} className={className}>
+			{content}
+		</button>
+	);
+};

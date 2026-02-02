@@ -16,68 +16,36 @@
 	"type": "module",
 	"private": true,
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^5.15.4",
-		"@fortawesome/fontawesome-svg-core": "^1.2.36",
-		"@fortawesome/free-brands-svg-icons": "^5.15.4",
-		"@fortawesome/free-regular-svg-icons": "^5.15.4",
-		"@fortawesome/free-solid-svg-icons": "^5.15.4",
-		"@fortawesome/react-fontawesome": "^0.1.19",
-		"@typeform/embed": "^0.12.2",
-		"@types/jest": "24.0.18",
-		"@types/node": "20.0.0",
-		"@types/react": "16.9.2",
-		"@types/react-dom": "16.9.0",
-		"@vitejs/plugin-legacy": "^5.4.2",
-		"@vitejs/plugin-react-swc": "^3.7.0",
+		"@astrojs/check": "^0.9.4",
+		"@astrojs/mdx": "^4.3.13",
+		"@astrojs/react": "^4.4.2",
+		"@astrojs/sitemap": "^3.7.0",
+		"@fortawesome/fontawesome-svg-core": "^6.7.2",
+		"@fortawesome/free-brands-svg-icons": "^6.7.2",
+		"@fortawesome/free-regular-svg-icons": "^6.7.2",
+		"@fortawesome/free-solid-svg-icons": "^6.7.2",
+		"@fortawesome/react-fontawesome": "^3.1.1",
+		"astro": "^5.17.1",
 		"classnames": "^2.5.1",
-		"react": "^16.14.0",
-		"react-dom": "^16.14.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"react-google-recaptcha": "^2.1.0",
-		"react-helmet": "^5.2.1",
-		"react-router-dom": "^5.3.4",
-		"sass-embedded": "^1.78.0",
-		"terser": "^5.32.0",
-		"typescript": "^5.0.0",
-		"vite": "^5.4.3",
-		"vite-plugin-svgr": "^4.2.0",
-		"vite-tsconfig-paths": "^5.0.1",
+		"sass": "^1.80.7",
+		"typescript": "^5.9.3",
 		"wow.js": "^1.2.2"
 	},
 	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"build:prod": "pnpm run build && react-snap"
-	},
-	"reactSnap": {
-		"source": "dist",
-		"puppeteerArgs": [
-			"--no-sandbox",
-			"--disable-setuid-sandbox",
-			"--disable-gpu",
-			"--disable-dev-shm-usage"
-		]
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro"
 	},
 	"devDependencies": {
-		"@types/classnames": "^2.3.1",
-		"@types/react-google-recaptcha": "^1.1.2",
-		"@types/react-helmet": "^5.0.27",
-		"@types/react-router-dom": "^5.3.3",
-		"react-snap": "^1.23.0"
+		"@types/node": "25.2.0",
+		"@types/react": "^18.3.27",
+		"@types/react-dom": "^18.3.7",
+		"@types/react-google-recaptcha": "^2.1.9"
 	},
 	"packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
 }

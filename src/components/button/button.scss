@@ -2,10 +2,12 @@
 
 .button {
 	position: relative;
+	display: inline-block;
 	background-color: #fff;
 	padding: 0px;
 	border: none;
 	cursor: pointer;
+	text-decoration: none;
 
 	&.raised {
 		background-color: #ddd;

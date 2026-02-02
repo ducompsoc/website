@@ -1,0 +1,8 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { Contact as ContactPage } from '../components/contact/contact.tsx';
+---
+
+<MainLayout title="Contact » Durham CompSoc">
+	<ContactPage client:load />
+</MainLayout>

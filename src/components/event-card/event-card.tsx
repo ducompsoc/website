@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import { IEvent } from "../../util/data";
+import type { IEvent } from "../../util/data";
 
 import "./event-card.scss";
 
@@ -60,9 +59,9 @@ export class EventCard extends React.PureComponent<IEventCardProps> {
 
 		if (!/^https?:\/\//.test(event.link)) {
 			return (
-				<Link to={event.link} className="event-card column linked">
+				<a href={event.link} className="event-card column linked">
 					{content}
-				</Link>
+				</a>
 			);
 		}
 

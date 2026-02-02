@@ -1,0 +1,8 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { Events as EventsPage } from '../components/events/events.tsx';
+---
+
+<MainLayout title="Events » Durham CompSoc">
+	<EventsPage client:load />
+</MainLayout>

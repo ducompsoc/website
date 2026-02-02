@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ICurrentTeamMember, ITeamMember } from "../../util/data";
+import type { ICurrentTeamMember, ITeamMember } from "../../util/data";
 
 import "./team-member.scss";
 

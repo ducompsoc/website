@@ -94,3 +94,10 @@ h2 {
 		transform: rotate(-135deg);
 	}
 }
+
+/* FontAwesome v6 icon sizing fix */
+svg.svg-inline--fa {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.125em;
+}

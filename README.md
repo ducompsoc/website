@@ -58,7 +58,7 @@ But it's the same folder? Why have the files changed? That's git at work. For mo
 
 ## Node and NPM
 
-The website's back end runs on the [nodejs](https://nodejs.org/en/) runtime. Head over to https://nodejs.org/en/download/ and download the LTS (long term support) version for your platform.
+The website runs on the [nodejs](https://nodejs.org/en/) runtime with [Astro](https://astro.build/) as the framework. Head over to https://nodejs.org/en/download/ and download the LTS (long term support) version for your platform.
 
 Once installed, run
 
@@ -109,8 +109,9 @@ The site's main code is in `src/components`. Quite a lot of static assets are in
 
 Be aware that we use some extra stuff to make developing the site a bit more fun:
 
-- For JavaScript, we use TypeScript (which is why files have the extension `.tsx`). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
-- For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
-- For the site, we use React. This lets us split the code up into separate components.
+- **Astro** - The site framework that handles routing, SSR, and page layouts. Pages are in `src/pages/` using file-based routing. Learn more at https://docs.astro.build/
+- **React** - Used for interactive components (with `client:load` directives). Components are in `src/components/`.
+- **TypeScript** - All code uses TypeScript (`.tsx` files for React, `.astro` for Astro components). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
+- **Sass** - For styling (`.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
 
 As an aside, running `pnpm run build` will generate a folder called `dist` containing all the final HTML files we should host in production.

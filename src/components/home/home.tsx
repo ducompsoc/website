@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import Helmet from "react-helmet";
 
 import { Button } from "../button/button";
 import { JoinBanner } from "../join-banner/join-banner";
@@ -26,10 +25,6 @@ export class Home extends React.PureComponent {
 
 		return (
 			<div className="home">
-				<Helmet>
-					<title>Homepage » Durham CompSoc</title>
-				</Helmet>
-
 				<div
 					className="feature"
 					style={{ backgroundImage: `url(/images/${feature.image})` }}
