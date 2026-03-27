@@ -4,6 +4,11 @@
 	status = 302
 
 [[redirects]]
+	from = "/tickets"
+	to = "https://www.durhamsu.com/groups/computing-766e/events/compsoc-x-duwit-x-dueg-ball"
+	status = 302
+
+[[redirects]]
 	from = "/join"
 	to = "http://eepurl.com/dKcvFQ"
 	status = 302

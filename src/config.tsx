@@ -25,6 +25,19 @@ export const config: ISiteData = {
 
 	events: [
 		{
+			name: "CompSoc x DUWiT X DUEG Ball",
+			description: [
+				"Beyond the vines and tangled ivy, something waits to be uncovered... You are cordially invited to this year's CompSoc secret garden ball! Get ready for a night full of fun, laughter and dancing!",
+			],
+			link: "https://www.durhamsu.com/groups/computing-766e/events/compsoc-x-duwit-x-dueg-ball",
+			thumbnail: "events/2026/ball.jpeg",
+			when: {
+				dates: [new Date("2026-06-15T19:00:00Z")],
+				text: "15th June, 7pm Sharp",
+			},
+			location: "Radisson Blu",
+		},
+		{
 			name: "CompSoc Christmas Dinner",
 			description: [
 				"To celebrate the end of the year, we are hosting a Christmas Dinner! Book now to join us for a lovely 2-course meal at the Duke of Wellington.",
