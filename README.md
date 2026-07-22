@@ -107,7 +107,7 @@ For documentation, please refer to `src/util/data.tsx` as a reference; each prop
 
 The site's main code is in `src/components`. Quite a lot of static assets are in the `public` folder.
 
-Be aware that we use some extra stuff to make developing the site a bit more fun:
+Be aware that we use some extra stuff to make developing the site a bit more fun (and complicated):
 
 - For JavaScript, we use TypeScript (which is why files have the extension `.tsx`). It's just JavaScript, but things have types. If you haven't used TypeScript before, check out https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html.
 - For CSS, we use Sass (in `.scss` files). It's just like CSS, but you can nest things and define $variables. If you haven't used Sass before, check out https://sass-lang.com/guide.
