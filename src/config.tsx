@@ -1129,7 +1129,7 @@ export const config: ISiteData = {
 		current: [
 			{
 				name: "Andrea Johnson",
-				image: "andrea26.png",
+				image: "andrea.jpg",
 				role: "President",
 				description:
 					"In charge of overseeing everything in the society and reaching out to sponsors.",
