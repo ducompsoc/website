@@ -1128,67 +1128,104 @@ export const config: ISiteData = {
 	teams: {
 		current: [
 			{
-				name: "Jacob Wrenn",
-				image: "jacob.jpg",
+				name: "Andrea Johnson",
+				image: "andrea.jpg",
 				role: "President",
 				description:
 					"In charge of overseeing everything in the society and reaching out to sponsors.",
 			},
 			{
-				name: "Nathan Jones",
-				image: "nathan.jpg",
-				role: "Treasurer",
-				description: "Manages the society's finances, keeping our budget balanced.",
-			},
-			{
-				name: "Keane Wong",
-				image: "keane.jpg",
+				name: "Oscar Ryley",
+				image: "oscar.png",
 				role: "Secretary",
 				description: "Handles meetings, contracts and paperwork.",
 			},
 			{
-				name: "Hannah Watson",
-				image: "hannah.jpg",
-				role: "Media & Publicity Officer",
-				description:
-					"In charge of social media content and promoting the society around the university.",
+				name: "Cait Horton",
+				image: "cait.jpeg",
+				role: "Treasurer",
+				description: "Manages the society's finances, keeping our budget balanced.",
 			},
 			{
-				name: "Alex Pinheiro Dias",
-				image: "alex.jpg",
+				name: "Abdulmuhmeen Leasu (AMAL)",
+				image: "abdulmuhmeen.jpg",
+				role: "Tech Officer",
+				description: "Manages the website and other technical projects.",
+			},
+			{
+				name: "Prema Poudyal",
+				image: "prema.jpg",
 				role: "Events Officer",
 				description:
 					"Works to organise weekly talks, workshops, events and socials.",
 			},
 			{
-				name: "Andrea Johnson",
-				image: "andrea.jpg",
-				role: "Events Officer",
-				description:
-					"Works to organise weekly talks, workshops, events and socials.",
-			},
-			{
-				name: "Shawn Goey",
-				image: "shawn.jpg",
+				name: "Mathew Simms",
+				image: "mathew.png",
 				role: "Sponsorship Officer",
 				description:
 					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
 			},
+			
 			{
-				name: "Max Marsden-Price",
-				image: "max.jpg",
-				role: "Technical Officer",
-				description: "Manages the website and other technical projects.",
-			},
-			{
-				name: "Mohana Maran",
-				image: "mohana.jpg",
-				role: "Projects Officer",
+				name: "Rebekah Hart",
+				image: "rebekah.jpg",
+				role: "Publicity Officer",
 				description:
-					"Responsible for facilitating project groups and hosting workshops.",
+					"Responsible for promoting the society and managing our public image.",
 			},
 		],
 		past: [
+			{
+				year: "2025/2026",
+				members: [
+					{
+						name: "Jacob Wrenn",
+						image: "jacob.jpg",
+						role: "President",
+					},
+					{
+						name: "Nathan Jones",
+						image: "nathan.jpg",
+						role: "Treasurer",
+					},
+					{
+						name: "Keane Wong",
+						image: "keane.jpg",
+						role: "Secretary",
+					},
+					{
+						name: "Hannah Watson",
+						image: "hannah.jpg",
+						role: "Media & Publicity Officer",
+					},
+					{
+						name: "Alex Pinheiro Dias",
+						image: "alex.jpg",
+						role: "Events Officer",
+					},
+					{
+						name: "Andrea Johnson",
+						image: "andrea.jpg",
+						role: "Events Officer",
+					},
+					{
+						name: "Shawn Goey",
+						image: "shawn.jpg",
+						role: "Sponsorship Officer",
+					},
+					{
+						name: "Max Marsden-Price",
+						image: "max.jpg",
+						role: "Technical Officer",
+					},
+					{
+						name: "Mohana Maran",
+						image: "mohana.jpg",
+						role: "Projects Officer",
+					},
+				],
+			},
 			{
 				year: "2024/2025",
 				members: [
