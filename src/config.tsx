@@ -1160,8 +1160,8 @@ export const config: ISiteData = {
 					"Works to organise weekly talks, workshops, events and socials.",
 			},
 			{
-				name: "Mathew Simms",
-				image: "mathew.png",
+				name: "Matthew Simms",
+				image: "matthew.png",
 				role: "Sponsorship Officer",
 				description:
 					"Liaises with our sponsors and seeks out new sponsorship opportunities.",
