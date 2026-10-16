@@ -14,6 +14,7 @@ import { ISiteData } from "./util/data";
  */
 
 // TODO: a *lot* of the copy needs changing/reviewing
+// TODO: break this down into multiple files, e.g. events.tsx, team.tsx, sponsors.tsx, etc.
 export const config: ISiteData = {
 	feature: {
 		title: "Welcome to CompSoc",
@@ -921,6 +922,7 @@ export const config: ISiteData = {
 
 	sponsors: {
 		years: [
+			"2026/2027",
 			"2025/2026",
 			"2024/2025",
 			"2023/2024",
@@ -932,6 +934,16 @@ export const config: ISiteData = {
 			"2016/2017",
 		],
 		companies: [
+			{
+				name: "Jane Street",
+				link: "https://www.janestreet.com/",
+				image: "sponsors/janestreet.png",
+				description: [
+					"<b>Jane Street</b> is a global trading firm and liquidity provider with a focus on technology and collaborative problem solving. We trade a broad range of products, including equities, bonds, options, and ETFs, on more than 200 venues in 45 countries.",
+					"At Jane Street, we believe that the best ideas can come from anywhere. We value curiosity, creativity, and collaboration, and we encourage our team members to challenge assumptions and explore new approaches. Our culture is built on trust, respect, and a shared commitment to excellence.",
+				],
+				years: ["2026/2027"],
+			},
 			{
 				name: "Susquehanna",
 				link: "https://sig.com/careers/ ",
@@ -960,6 +972,7 @@ export const config: ISiteData = {
 					"<b>TPP</b> is a leading global provider of healthcare technology, dedicated to delivering world class healthcare software in the UK and internationally. We work alongside governments to improve health outcomes, tackle inequalities in care, reduce health service costs, and improve experiences for both patients and clinicians.<br><br><i>For more information about career and recruitment opportunities, head to https://tpp-careers.com</i>",
 				],
 				years: [
+					"2026/2027",
 					"2025/2026",
 					"2024/2025",
 					"2023/2024",
@@ -1121,7 +1134,7 @@ export const config: ISiteData = {
 					"<strong>Qube Research & Technologies (QRT)</strong> is a global quantitative and systematic investment manager operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative and innovative mindset which enables us to solve the most complex challenges.",
 					"We strongly believe that long-term investment into our people is critical to our future success and distinctive culture, as demonstrated by our low turnover in staff and continuous growth. We are proud of our exceptionally talented, collaborative and diverse teams, and now are looking to add motivated, intellectually curious STEM students and graduates with entrepreneurial spirit to our team. We have a number of internship, industrial placement and graduate roles across Software Engineering, Data Engineering & Analytics and Infrastructure & Cloud Engineering, all within our amazing new office that looks out over London.",
 				],
-				years: ["2025/2026", "2024/2025", "2022/2023"],
+				years: ["2026/2027", "2025/2026", "2024/2025", "2022/2023"],
 			},
 		],
 	},
